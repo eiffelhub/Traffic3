@@ -1,6 +1,5 @@
                             Traffic
                             Version 3.3
-                            http://traffic.origo.ethz.ch
 
 1. Requirements
 2. Build environment
@@ -12,7 +11,7 @@ ____________________________________________________________
 
 1.1 Traffic relies on
 
-EiffelStudio 6.2. The vision2 examples do not rely on any additional libraries. 
+EiffelStudio 19.12. The vision2 examples do not rely on any additional libraries. 
 
 2. Build environment
 ____________________________________________________________
@@ -27,7 +26,7 @@ example		: The applications
 library		: Traffic library you can use in your application
 developer.txt	: This file
 forum.txt	: The Eiffel Forum License II
-readme.txt	: Installation instructions for users
+readme.md	: Installation instructions for users
 
 4. Style Guides
 ____________________________________________________________
@@ -36,4 +35,3 @@ ____________________________________________________________
   Style Guides: http://archive.eiffel.com/doc/manuals/language/style/style.pdf
   and to the $GOBO/doc/guidelines
 
-last change $Date: 2008-09-16 16:34:07 +0200 (Вт, 16 сен 2008) $
