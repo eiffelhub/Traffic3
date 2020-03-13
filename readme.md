@@ -1,6 +1,5 @@
                             TRAFFIC - City modeling library and applications
                             Version 3.3
-                            http://traffic.origo.ethz.ch
 
 1. General
 2. Requirements
@@ -20,8 +19,8 @@ The current version of Traffic uses Vision2 for visualization.
 ____________________________________________________________
 
 General:
-	- EiffelStudio 6.2 for Linux and Windows
-	- Vision2 (provided with ES 6.2)
+	- EiffelStudio 19.12 for Linux and Windows
+	- Vision2 (provided with ES 19.12)
 
 3. Building an example
 ____________________________________________________________
@@ -40,7 +39,7 @@ ____________________________________________________________
 	Patrick Schoenbach, Susanne Cech, Rolf Bruderer, Marcel Kessler, Sibylle Aregger,
 	Ursina Caluori, Roger Kueng, Valentin Wuestholz, Stefan David, Florian 
 	Geldmacher, Fabian Wueest, Susanne Kasper, Michele Croci, Sarah Hauser, Alan 
-	Fehr, Matthias Buehlmann, Adrian Helfenstein, Nicola Bizirianis, Michael K�ser, 
+	Fehr, Matthias Buehlmann, Adrian Helfenstein, Nicola Bizirianis, Michael Käser, 
 	Hans-Hermann Jonas, Lars Krapf, Etienne Reichenbach, Maria Husmann, Till Bay, 
 	Michela Pedroni, the team of the Chair of Software Engineering and the CS students 
 	of ETH Zurich
@@ -53,4 +52,4 @@ ____________________________________________________________
 	bugs: see http://traffic.origo.ethz.ch/issues
 	Michela Pedroni: http://se.inf.ethz.ch/people/pedroni
 
-last change $Date: 2008-09-16 16:34:07 +0200 (Вт, 16 сен 2008) $
+last change $Date: 2008-09-16 16:34:07 +0200 (Ð’Ñ‚, 16 ÑÐµÐ½ 2008) $
