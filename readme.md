@@ -6,7 +6,6 @@
 3. Building an example
 4. License
 5. Thanks
-6. Contact
 
 1. General
 ____________________________________________________________
@@ -44,12 +43,3 @@ ____________________________________________________________
 	Michela Pedroni, the team of the Chair of Software Engineering and the CS students 
 	of ETH Zurich
 
-6. Contact
-____________________________________________________________
-
-	http://traffic.origo.ethz.ch
-	mailto:traffic@se.inf.ethz.ch	
-	bugs: see http://traffic.origo.ethz.ch/issues
-	Michela Pedroni: http://se.inf.ethz.ch/people/pedroni
-
-last change $Date: 2008-09-16 16:34:07 +0200 (Ð’Ñ‚, 16 ÑÐµÐ½ 2008) $
