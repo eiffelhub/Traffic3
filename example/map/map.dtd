@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!--     An example how to use this DTD from your XML document:     
+<?xml version="1.0"?>     
+<!DOCTYPE map SYSTEM "map_simple_application.dtd">     
+<map>
+...
+</map> -->
+
+<!--- description. --> 
+<!ELEMENT description EMPTY> 
+<!ATTLIST description 
+	text CDATA #REQUIRED
+    >
+
+<!--- A Map can have places and links. --> 
+<!ELEMENT map (description, places, lines)> 
+<!ATTLIST map
+	name   CDATA #IMPLIED
+	scale_factor CDATA #REQUIRED
+    >   
+ 
+<!--- A Point must have two coordinates: x and y. --> 
+<!ELEMENT point EMPTY> 
+<!ATTLIST point     
+	y CDATA #REQUIRED     
+	x CDATA #REQUIRED   
+    >    
+
+<!--- File. --> 
+<!ELEMENT file EMPTY> 
+<!ATTLIST file     
+	name CDATA #REQUIRED     
+    >  
+
+<!--- A Color consists of 3 RGB-components and its use. --> 
+<!ELEMENT color EMPTY> 
+<!ATTLIST color     
+	blue  CDATA #REQUIRED     
+	green CDATA #REQUIRED     
+	red   CDATA #REQUIRED     
+   >    
+
+<!--- Places can be stops, landmarks... --> 
+<!ELEMENT places (place*)>   
+
+<!--- A place must have a name and a point. --> 
+<!ELEMENT place (file*,description?)> 
+<!ATTLIST place     
+	name CDATA #REQUIRED
+	x CDATA #REQUIRED
+	y CDATA #REQUIRED
+   >  
+
+<!--- Lines. --> 
+<!ELEMENT lines (line*)>   
+
+<!--- A line must have a name. --> 
+<!ELEMENT line (color?, line_section*)> 
+<!ATTLIST line     
+	name CDATA #REQUIRED
+	type CDATA #REQUIRED
+   >  
+
+<!--- Line sections connect places.  -->
+<!ELEMENT line_section (point,point+)>  
+
+<!ATTLIST line_section     
+	from CDATA #REQUIRED
+	to CDATA #REQUIRED     
+	direction (directed | undirected) "directed"
+  > 

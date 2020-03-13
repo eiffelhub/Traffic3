@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-21-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eiffel.com/developers/xml/configuration-1-21-0 http://www.eiffel.com/developers/xml/configuration-1-21-0.xsd" name="traffic" uuid="9FAB6FC9-CD89-4C61-82ED-081CA0AA1410" library_target="traffic-safe">
+	<target name="traffic-safe">
+		<root all_classes="true"/>
+		<option warning="warning" full_class_checking="false" is_attached_by_default="true" is_obsolete_routine_type="true" syntax="obsolete" manifest_array_type="mismatch_warning">
+			<warning name="export_class_missing" enabled="false"/>
+			<warning name="old_verbatim_strings" enabled="false"/>
+			<warning name="once_in_generic" enabled="false"/>
+			<warning name="syntax" enabled="false"/>
+			<warning name="vjrv" enabled="false"/>
+			<warning name="vweq" enabled="false"/>
+		</option>
+		<setting name="total_order_on_reals" value="false"/>
+		<setting name="dead_code_removal" value="feature"/>
+		<capability>
+			<concurrency support="none"/>
+			<void_safety support="none" use="none"/>
+		</capability>
+		<library name="base-safe" location="$ISE_LIBRARY\library\base\base-safe.ecf" readonly="false"/>
+		<library name="gobo_kernel" location="$ISE_LIBRARY\library\gobo\gobo_kernel-safe.ecf" readonly="false"/>
+		<library name="gobo_structure" location="$ISE_LIBRARY\library\gobo\gobo_structure-safe.ecf" readonly="false"/>
+		<library name="eiffel_time" location="$ISE_LIBRARY\library\time\time-safe.ecf"/>
+		<library name="gobo_time" location="$ISE_LIBRARY\contrib\library\gobo\library\time\src\library.ecf"/>
+		<library name="gobo_xml" location="$ISE_LIBRARY\contrib\library\gobo\library\xml\src\library.ecf"/>
+		<library name="vision2" location="$ISE_LIBRARY\library\vision2\vision2-safe.ecf" readonly="false"/>
+		<cluster name="traffic" location=".\">
+			<option is_attached_by_default="true" syntax="transitional">
+				<assertions precondition="true" postcondition="true" check="true" invariant="true" loop="true" supplier_precondition="true"/>
+			</option>
+			<file_rule>
+				<exclude>.svn</exclude>
+				<exclude>EIFGENs</exclude>
+				<exclude>visualization/em</exclude>
+			</file_rule>
+			<cluster name="building" location=".\building\" recursive="true"/>
+			<cluster name="factory" location=".\factory\" recursive="true"/>
+			<cluster name="input" location=".\input\" recursive="true"/>
+			<cluster name="moving" location=".\moving\" recursive="true"/>
+			<cluster name="structure" location=".\structure\" recursive="true"/>
+			<cluster name="type" location=".\type\" recursive="true"/>
+			<cluster name="utility" location=".\utility\" recursive="true"/>
+			<cluster name="visualization" location=".\visualization\" recursive="true">
+				<file_rule>
+					<exclude>em</exclude>
+				</file_rule>
+			</cluster>
+		</cluster>
+	</target>
+</system>

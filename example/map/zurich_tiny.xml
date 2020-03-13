@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!DOCTYPE city SYSTEM "map.dtd"> 
+<map name="Zurich (little)" scale_factor="5.52" center_x="467" center_y="109" radius="467"> 
+
+<description text="kleine zurich city map."/>
+
+<places>
+
+	<place name="Bahnhof Stadelhofen"/>
+	<place name="Bellevue"/>
+	<place name="Boersenstrasse"/>
+	<place name="Buerkliplatz"/>
+	<place name="Central"/>
+	<place name="Hauptbahnhof"/>
+	<place name="Helmhaus"/>
+	<place name="Kunsthaus"/>
+	<place name="Neumarkt"/>
+	<place name="Paradeplatz"/>
+	<place name="Rennweg"/>
+	<place name="Rathaus"/>
+	<place name="Rudolf-Brun-Bruecke"/>
+
+</places>
+
+<!--roads-->
+<roads>
+	<road id="1" from="Kunsthaus" to="Neumarkt" direction="undirected" type="street">
+			<point x="934" y="218"/>
+			<point x="880" y="164"/>
+	</road>
+	<road id="2" from="Neumarkt" to="Central" direction="undirected" type="street">
+			<point x="880" y="164"/>
+			<point x="833" y="117"/>
+	</road>
+	<road id="3" from="Central" to="Hauptbahnhof" direction="undirected" type="street">
+			<point x="833" y="117"/>
+			<point x="681" y="117"/>
+	</road>
+
+</roads> 
+
+
+
+<lines>
+
+<!-- bus lines -->
+<line name="31" type="bus">
+	<color red="153" green="204" blue="255"/>
+	<line_section from="Kunsthaus" to="Neumarkt" direction="undirected">
+			<onroad id="1" back="false"/>
+			<point x="934" y="218"/>
+			<point x="880" y="164"/>
+	</line_section>
+	<line_section from="Neumarkt" to="Central" direction="undirected">
+			<onroad id="2" back="false"/>
+			<point x="880" y="164"/>
+			<point x="833" y="117"/>
+	</line_section>
+	<line_section from="Central" to="Hauptbahnhof" direction="undirected">
+			<onroad id="3" back="false"/>
+			<point x="833" y="117"/>
+			<point x="681" y="117"/>
+	</line_section>
+</line> 
+
+</lines>
+
+</map>

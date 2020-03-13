@@ -1,0 +1,46 @@
+Version 3.3     (svn 1079)       22.9.2008
+	* Traffic synchronized with the textbook "A touch of Class" (although many changes discussed still need to be integrated in the book)
+	* All examples are implemented
+	* Movings are displayed as images
+
+Version 3.2     (svn 935)       26.9.2007
+	* Vision2 widget support (no eiffelmedia installation needed any more for running traffic)
+	* More examples are implemented
+	* Improved overall design and structure
+
+Version 3.1	(snv 800)	25.10.2006
+
+	* Taxis, trams, passengers, and other vehicles
+	* Improved 3d visualization with 3d obj models and textures
+	* Improved performance of display
+	* Roads and stops of transportation lines
+	* Extended path calculation
+
+Version 3.0		31.3.2006
+
+	* Buildings included in the library
+	* Time and travelers
+	* 3D-Widgets included in the library
+	* First examples of Touch of Class
+	* Touch library
+
+Version 2.1		25.11.2005
+
+	* Gobification of build process
+	* Bugfixes
+
+Version 2.0		31.10.2006
+	
+	* Switch from EiffelVision to EiffelMedia
+	* Prototype for 3D Graphics
+	* Redesing of the Traffic library
+
+Version 1.0		25.10.2004
+	
+	* Major redesign of Traffic library
+	* Flathunt application
+	* Touch of Class application
+
+Version 0.1		Not available
+
+	* Initial verion (not available any more)

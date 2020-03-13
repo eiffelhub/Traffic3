@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-2-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eiffel.com/developers/xml/configuration-1-2-0 http://www.eiffel.com/developers/xml/configuration-1-2-0.xsd" name="traffic" uuid="9FAB6FC9-CD89-4C61-82ED-081CA0AA1410" library_target="traffic">
+	<target name="traffic">
+		<root all_classes="true"/>
+		<option warning="true">
+			<warning name="export_class_missing" enabled="false"/>
+			<warning name="old_verbatim_strings" enabled="false"/>
+			<warning name="syntax" enabled="false"/>
+			<warning name="vjrv" enabled="false"/>
+			<warning name="vweq" enabled="false"/>
+			<warning name="once_in_generic" enabled="false"/>
+		</option>
+		<library name="base" location="$ISE_LIBRARY\library\base\base.ecf" readonly="true"/>
+		<library name="em" location="$EM\library\em.ecf" readonly="true"/>
+		<library name="ewg_runtime" location="$EM\resource\dependency\other\ewg\ewg_runtime.ecf"/>
+		<library name="gobo_kernel" location="$ISE_LIBRARY\library\gobo\gobo_kernel.ecf"/>
+		<library name="gobo_structure" location="$ISE_LIBRARY\library\gobo\gobo_structure.ecf"/>
+		<library name="gobo_time" location="$ISE_LIBRARY\library\gobo\gobo_time.ecf"/>
+		<library name="gobo_xml" location="$ISE_LIBRARY\library\gobo\gobo_xml.ecf"/>
+		<library name="time" location="$ISE_LIBRARY\library\time\time.ecf" readonly="true"/>
+		<library name="vision2" location="$ISE_LIBRARY\library\vision2\vision2.ecf" readonly="true"/>
+		<cluster name="traffic" location=".\">
+			<option>
+				<assertions precondition="true" postcondition="true" check="true" invariant="true"/>
+			</option>
+			<cluster name="building" location="$|building\"/>
+			<cluster name="factory" location="$|factory\"/>
+			<cluster name="moving" location="$|moving\"/>
+			<cluster name="structure" location="$|structure\">
+				<cluster name="container" location="$|container\"/>
+				<cluster name="graph" location="$|graph\">
+					<cluster name="graph_graph" location="$|graph\">
+						<cluster name="graph_implementation" location="$|implementation\">
+							<cluster name="graph_adjacency_matrix_graph" location="$|adjacency_matrix_graph\"/>
+							<cluster name="graph_linked_graph" location="$|linked_graph\"/>
+						</cluster>
+						<cluster name="graph_structure" location="$|structure\"/>
+						<cluster name="graph_walker" location="$|walker\"/>
+					</cluster>
+					<cluster name="traffic_dispenser" location="$|dispenser\"/>
+					<cluster name="traffic_topological_sort" location="$|topological_sort\"/>
+					<cluster name="traffic_tree" location="$|tree\"/>
+					<cluster name="traffic_union_find" location="$|union_find\"/>
+				</cluster>
+			</cluster>
+			<cluster name="traffic_input" location="$|input\"/>
+			<cluster name="traffic_utility" location="$|utility\">
+				<cluster name="traffic_gl_tools" location="$|gl_tools\"/>
+			</cluster>
+			<cluster name="type" location="$|type\"/>
+			<cluster name="visualization" location="$|visualization\">
+				<cluster name="tr_em" location="$|em\">
+					<cluster name="visualization_2d" location="$|visualization_2d\"/>
+					<cluster name="visualization_3d" location="$|visualization_3d\">
+						<cluster name="new" location="$|new\"/>
+						<cluster name="nodes" location="$|nodes\"/>
+					</cluster>
+					<cluster name="tr_time" location="$|time\"/>
+				</cluster>
+			</cluster>
+		</cluster>
+	</target>
+</system>

@@ -1,0 +1,24 @@
+all:
+- Update eiffelmedia examples to work again
+
+Travelers:
+- Real itineraries and delays for trams
+- Tram depots where all the trams start until they are on their route.
+- Drawing of deboard and board of TRAFFIC_PASSENGERs
+
+Buildings:
+- Make building generation along lines faster
+
+Shortest path:
+- make shortest path calculation faster
+
+Map_widgets:
+- Use separate threads for handling mouse events (see Alan Fehr's report 5.3)
+- Use logarithmic search for finding clicked places (see Alan Fehr's report 5.3)
+
+Map loading:
+- improve error handling and messages
+- use SAX parsing
+
+
+last change $Date: 2008-09-16 16:34:07 +0200 (Вт, 16 сен 2008) $
