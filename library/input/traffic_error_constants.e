@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Interface for error constant classes."
 	date: "$Date: 2009-08-21 13:35:22 +0200 (Пт, 21 авг 2009) $"
 	revision: "$Revision: 1098 $"
@@ -20,7 +20,7 @@ feature  -- Access
 	directory_name: STRING
 			-- Directory where file is located
 
-	error_description: STRING is
+	error_description: STRING
 			-- Textual description of error
 		require
 			has_error: has_error
@@ -33,7 +33,7 @@ feature  -- Access
 
 feature {NONE} -- Access
 
-	error_text (a_code: INTEGER): STRING is
+	error_text (a_code: INTEGER): STRING
 			-- Raw error text for code `a_code'
 		require
 			a_code_strictly_positive: a_code > 0
@@ -45,7 +45,7 @@ feature {NONE} -- Access
 
 feature -- Status report
 
-	has_error: BOOLEAN is
+	has_error: BOOLEAN
 			-- Did an error occur?
 		do
 			Result := (error_code > 0)
@@ -53,7 +53,7 @@ feature -- Status report
 
 feature {NONE} -- Status report
 
-	is_complete (a_code: INTEGER; an_error_string_array: ARRAY [STRING]): BOOLEAN is
+	is_complete (a_code: INTEGER; an_error_string_array: ARRAY [STRING]): BOOLEAN
 			-- Does `an_error_string_error' contain complete info for error `a_code'?
 		require
 			code_positive: a_code >= 0
@@ -68,7 +68,7 @@ feature {NONE} -- Status report
 
 feature {NONE} -- Status setting
 
-	set_error (a_code: INTEGER; an_error_string_array: ARRAY [STRING]) is
+	set_error (a_code: INTEGER; an_error_string_array: ARRAY [STRING])
 			-- Set error code to `a_code' and additional information to `an_error_string_array'.
 		require
 			error_code_positive: a_code >= 0
@@ -82,7 +82,7 @@ feature {NONE} -- Status setting
 			slots_set: slots = an_error_string_array
 		end
 
-	reset_error is
+	reset_error
 			-- Reset error code.
 		do
 			error_code := 0
@@ -94,7 +94,7 @@ feature {NONE} -- Status setting
 
 feature {NONE} -- Constants
 
-	Slot_character: CHARACTER is '$'
+	Slot_character: CHARACTER = '$'
 			-- Character that represents an information slot
 
 feature {TRAFFIC_ERROR_CONSTANTS} -- Implementation
@@ -104,7 +104,7 @@ feature {TRAFFIC_ERROR_CONSTANTS} -- Implementation
 
 feature {NONE} -- Implementation
 
-	slot_count (a_string: STRING): INTEGER is
+	slot_count (a_string: STRING): INTEGER
 			-- Number of information slots in error string `a_string'
 		require
 			string_exists: a_string /= Void
@@ -114,7 +114,7 @@ feature {NONE} -- Implementation
 			Result_positive: Result >= 0
 		end
 
-	full_message: STRING is
+	full_message: STRING 
 			-- Full error message with filled in information slots
 		require
 			has_error: has_error

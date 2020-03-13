@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Landmarks are special buildings with an image file or 3d model file for display"
 	date: "$Date$"
 	revision: "$Revision$"
@@ -15,7 +15,7 @@ create
 
 feature {NONE} -- Initialization
 
-	make (a_center: TRAFFIC_POINT; a_name: STRING; a_filename: STRING) is
+	make (a_center: TRAFFIC_POINT; a_name: STRING; a_filename: STRING)
 			-- Initialize with default size.
 		require
 			center_valid: a_center /= Void
@@ -42,13 +42,13 @@ feature -- Access
 
 feature -- Constants
 
-	default_width: REAL_64 is 27.0
+	default_width: REAL_64 = 27.0
 			-- Default width of a landmark building
 
-	default_depth: REAL_64 is 13.0
+	default_depth: REAL_64 = 13.0
 			-- Default depth of a landmark building
 
-	default_height: REAL_64 is 35.0
+	default_height: REAL_64 = 35.0
 			-- Default height of a landmark building
 
 end

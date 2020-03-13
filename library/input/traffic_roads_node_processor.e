@@ -1,4 +1,4 @@
-indexing
+note
 	description: "XML processors for <roads> elements."
 	date: "$Date: 2007-07-24 11:47:24 +0200 (Tue, 24 Jul 2007) $"
 	revision: "$Revision: 901 $"
@@ -14,19 +14,19 @@ create
 
 feature -- Access
 
-	Name: STRING is "roads"
+	Name: STRING = "roads"
 			-- Name of node to process
 
-	Mandatory_attributes: ARRAY [STRING] is
+	Mandatory_attributes: ARRAY [STRING]
 			-- Table of mandatory attributes
 		once
-			Result := << >>
+			Result := {ARRAY [STRING]}<< >>
 			Result.compare_objects
 		end
 
 feature -- Basic operations
 
-	process is
+	process
 			-- Process node.
 		do
 			if has_subnodes then

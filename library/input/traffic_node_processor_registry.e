@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Shared registry of known XML node processors."
 	date: "$Date: 2009-08-21 13:35:22 +0200 (Пт, 21 авг 2009) $"
 	revision: "$Revision: 1098 $"
@@ -8,7 +8,7 @@ class
 
 feature {NONE} -- Access
 
-	processor (a_name: STRING): TRAFFIC_NODE_PROCESSOR is
+	processor (a_name: STRING): TRAFFIC_NODE_PROCESSOR
 			-- Node processor named `a_name'
 		require
 			name_exists: a_name /= Void
@@ -26,7 +26,7 @@ feature -- Access
 	map_factory: TRAFFIC_MAP_FACTORY
 			-- Traffic map factory
 
-	city: TRAFFIC_CITY is
+	city: TRAFFIC_CITY
 			-- City that is built
 		do
 			Result := map_factory.city
@@ -34,7 +34,7 @@ feature -- Access
 
 feature -- Status setting
 
-	set_map_factory (a_factory: TRAFFIC_MAP_FACTORY) is
+	set_map_factory (a_factory: TRAFFIC_MAP_FACTORY)
 			-- Set map factory to `a_factory'.
 		do
 			map_factory := a_factory
@@ -44,13 +44,13 @@ feature -- Status setting
 
 feature -- Status report
 
-	processor_registered (a_processor: TRAFFIC_NODE_PROCESSOR): BOOLEAN is
+	processor_registered (a_processor: TRAFFIC_NODE_PROCESSOR): BOOLEAN
 			-- Is `a_processor' registered?
 		do
 			Result := Processor_registry.has_item (a_processor)
 		end
 
-	has_processor (a_name: STRING): BOOLEAN is
+	has_processor (a_name: STRING): BOOLEAN
 			-- Is processor named `a_name' available?
 		require
 			name_exists: a_name /= Void
@@ -61,7 +61,7 @@ feature -- Status report
 
 feature -- Basic operations
 
-	register_processor (a_processor: TRAFFIC_NODE_PROCESSOR) is
+	register_processor (a_processor: TRAFFIC_NODE_PROCESSOR)
 			-- Register `a_processor' in registry.
 		require
 			processor_exists: a_processor /= Void
@@ -72,7 +72,7 @@ feature -- Basic operations
 			registered: Processor_registry.has_item (a_processor)
 		end
 
-	register_allowed_subnode (a_parent_name: STRING; a_subnode_name: STRING) is
+	register_allowed_subnode (a_parent_name: STRING; a_subnode_name: STRING) 
 			-- Register processor with name `a_subnode_name' as allowed subnode of processor with name `a_parent_name'.
 			-- Use `register_processor' for new node types and
 			-- `register_allowed_subnode' for registering their subnode types.
@@ -90,12 +90,12 @@ feature -- Basic operations
 
 feature {NONE} -- Constants
 
-	Default_registry_capacity: INTEGER is 100
+	Default_registry_capacity: INTEGER = 100
 			-- Default capacity of registry
 
 feature {NONE} -- Implementation
 
-	Processor_registry: DS_HASH_TABLE [TRAFFIC_NODE_PROCESSOR, STRING] is
+	Processor_registry: DS_HASH_TABLE [TRAFFIC_NODE_PROCESSOR, STRING]
 			-- System-wide registry for known map node processors
 			-- Use `register_processor' for new node types and
 			-- `register_allowed_subnode' for registering their subnode types.
@@ -127,7 +127,7 @@ feature {NONE} -- Implementation
 			Result_not_empty: not Result.is_empty
 		end
 
-	Allowed_subnode_registry: DS_HASH_TABLE [ARRAY [STRING], STRING] is
+	Allowed_subnode_registry: DS_HASH_TABLE [ARRAY [STRING], STRING]
 			-- System-wide registry for known map node processors
 			-- Use `register_processor' for new node types and
 			-- `register_allowed_subnode' for registering their subnode types.

@@ -1,4 +1,4 @@
-indexing
+note
 	description: "[
 		Linked list that contains city items, 
 		calls add_to_city and remove_from_city on insertion and deletion,
@@ -19,7 +19,7 @@ create
 
 feature {NONE} -- Initialization
 
-	make (a_city: TRAFFIC_CITY) is
+	make (a_city: TRAFFIC_CITY)
 			-- Initialize.
 		do
 			city := a_city
@@ -38,13 +38,13 @@ feature -- Access
 	city: TRAFFIC_CITY
 			-- Container contains elements of this city
 
-	count: INTEGER is
+	count: INTEGER
 			-- Number of items in list
 		do
 			Result := internal_list.count
 		end
 
-	first: like item_for_iteration is
+	first: like item_for_iteration
 			-- First item in list
 		require
 			not_empty: not is_empty
@@ -54,7 +54,7 @@ feature -- Access
 			has_first: has (Result)
 		end
 
-	item_for_iteration: G is
+	item_for_iteration: G
 			-- Item at internal cursor position
 		require
 			not_after: not after
@@ -83,13 +83,13 @@ feature -- Access
 
 feature -- Cursor movement
 
-	start is
+	start
 			-- Move internal cursor to first position.
 		do
 			internal_list.start
 		end
 
-	forth is
+	forth
 			-- Move internal cursor to next position.
 		require
 			not_after: not after
@@ -107,13 +107,13 @@ feature -- Status report
 			not_empty: Result implies not is_empty
 		end
 
-	is_empty: BOOLEAN is
+	is_empty: BOOLEAN
 			-- Is container empty?
 		do
 			Result := internal_list.is_empty
 		end
 
-	after: BOOLEAN is
+	after: BOOLEAN
 			-- Is there no valid position to right of internal cursor?
 		do
 			Result := internal_list.after
@@ -147,7 +147,7 @@ feature -- Insertion
 			same_order: (not other.is_empty) implies (item (i) = other.first)
 		end
 
-	put, put_last (v: like item_for_iteration) is
+	put, put_last (v: like item_for_iteration)
 			-- Add `v' to end of list.
 			-- Do not move cursors.
 		require
@@ -161,7 +161,7 @@ feature -- Insertion
 			is_in_list: internal_list.has (v)
 		end
 
-	put_first (v: like item_for_iteration) is
+	put_first (v: like item_for_iteration)
 			-- Add `v' to beginning of list.
 			-- Do not move cursors.
 		require
@@ -175,7 +175,7 @@ feature -- Insertion
 			is_in_list: internal_list.has (v)
 		end
 
-	replace (v: G; i: INTEGER) is
+	replace (v: G; i: INTEGER)
 			-- Replace item at index `i' by `v'.
 			-- Do not move cursors.
 		require
@@ -194,7 +194,7 @@ feature -- Insertion
 			replaced: item (i) = v
 		end
 
-	put_i_th (v: G; i: INTEGER) is
+	put_i_th (v: G; i: INTEGER)
 			-- Add `v' at `i'-th position.
 			-- Do not move cursors.
 		require
@@ -280,7 +280,7 @@ feature -- Removal
 			new_count: count = old count - n
 		end
 
-	wipe_out is
+	wipe_out
 			-- Remove all items from list.
 			-- Move all cursors off.
 		require
@@ -300,7 +300,7 @@ feature -- Removal
 			wiped_out: is_empty
 		end
 
-	delete (v: like item_for_iteration) is
+	delete (v: like item_for_iteration) 
 			-- Remove all occurrences of `v'.
 			-- Move all cursors off.
 		require

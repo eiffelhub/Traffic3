@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Buildings for the traffic library"
 	date: "$Date$"
 	revision: "$Revision$"
@@ -25,7 +25,7 @@ inherit
 
 feature {NONE} -- Initialization
 
-	make_new (a_width, a_depth, a_height: REAL_64; a_center: TRAFFIC_POINT) is
+	make_new (a_width, a_depth, a_height: REAL_64; a_center: TRAFFIC_POINT)
 			-- Initialize `Current' with size and `a_center'.
 		require
 			size_valid: a_width > 0.0 and a_height > 0.0 and a_depth > 0.0
@@ -55,14 +55,14 @@ feature -- Status report
 	is_landmark: BOOLEAN
 			-- Is the building a landmark?
 
-	is_insertable (a_city: TRAFFIC_CITY): BOOLEAN is
+	is_insertable (a_city: TRAFFIC_CITY): BOOLEAN
 			-- Is `Current' insertable into `a_city'?
 			-- (All nodes need to be insertable. See `TRAFFIC_NODE is_insertable' for requirements.)
 		do
 			Result := True
 		end
 
-	is_removable: BOOLEAN is
+	is_removable: BOOLEAN
 			-- Is `Current' removable from `city'?
 		do
 			Result := True
@@ -88,7 +88,7 @@ feature -- Access
 	description: STRING
 			-- Description
 
-	corner_1: TRAFFIC_POINT is
+	corner_1: TRAFFIC_POINT
 			-- Lower left corner of the building
 		do
 			create Result.make (center.x - width/2, center.y - depth/2)
@@ -97,7 +97,7 @@ feature -- Access
 			Result_exists: Result /= Void
 		end
 
-	corner_2: TRAFFIC_POINT is
+	corner_2: TRAFFIC_POINT
 			-- Lower right corner of the building
 		do
 			create Result.make (center.x + width/2, center.y - depth/2)
@@ -106,7 +106,7 @@ feature -- Access
 			Result_exists: Result /= Void
 		end
 
-	corner_3: TRAFFIC_POINT is
+	corner_3: TRAFFIC_POINT
 			-- Upper right corner of the building
 		do
 			create Result.make (center.x + width/2, center.y + depth/2)
@@ -115,7 +115,7 @@ feature -- Access
 			Result_exists: Result /= Void
 		end
 
-	corner_4: TRAFFIC_POINT is
+	corner_4: TRAFFIC_POINT
 			-- Upper left corner of the building
 		do
 			create Result.make (center.x - width/2, center.y + depth/2)
@@ -126,7 +126,7 @@ feature -- Access
 
 feature -- Status report
 
-	contains_point(a_x: REAL_64; a_y: REAL_64): BOOLEAN is
+	contains_point(a_x: REAL_64; a_y: REAL_64): BOOLEAN
 			-- Is point (`a_x', `a_y') inside building?
 		local
 			delta_x1: REAL_64
@@ -153,7 +153,7 @@ feature -- Status report
 
 feature -- Element change
 
-	set_size (a_width, a_height, a_depth: REAL_64) is
+	set_size (a_width, a_height, a_depth: REAL_64)
 			-- Set `width' to `a_width', `height' to `a_height', and `depth' to `a_depth'.
 		require
 			size_valid: a_width > 0.0 and a_height > 0.0 and a_depth > 0.0
@@ -165,7 +165,7 @@ feature -- Element change
 			size_set: width = a_width and height = a_height and depth = a_depth
 		end
 
-	set_description (a_description: STRING) is
+	set_description (a_description: STRING)
 			-- Set description to `a_description'.
 		require
 			a_description_valid: a_description /= void
@@ -176,7 +176,7 @@ feature -- Element change
 			description_set: description = a_description
 		end
 
-	set_angle (an_angle: REAL_64) is
+	set_angle (an_angle: REAL_64)
 			-- Set angle to `a_angle'.
 		require
 			angle_valid: an_angle >= -70 and an_angle <=70
@@ -187,7 +187,7 @@ feature -- Element change
 			angle_set: angle = an_angle
 		end
 
-	 set_center (a_center: TRAFFIC_POINT) is
+	 set_center (a_center: TRAFFIC_POINT) 
 	 		-- Set `center' to `a_center'.
 	 	require
 	 		a_center_valid: a_center /= Void

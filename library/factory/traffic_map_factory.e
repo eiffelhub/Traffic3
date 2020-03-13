@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Factory for traffic elements like TRAFFIC_STATION, TRAFFIC_LINE etc."
 	date: "$Date: 2009-08-21 13:35:22 +0200 (Пт, 21 авг 2009) $"
 	revision: "$Revision: 1098 $"
@@ -18,7 +18,7 @@ create
 
 feature {NONE} -- Initialization
 
-	make is
+	make
 			-- Initialize `Current'.
 		do
 			make_type_factory
@@ -34,7 +34,7 @@ feature {NONE} -- Initialization
 
 feature -- Initialization
 
-	reset_factory is
+	reset_factory
 			-- Reset traffic map factory.
 		do
 			internal_map := Void
@@ -53,7 +53,7 @@ feature -- Initialization
 
 feature -- Traffic city building
 
-	build_city (a_name: STRING) is
+	build_city (a_name: STRING)
 			-- Generate new city object with name `a_name'.
 			-- (Access generated object through feature `city')
 		require
@@ -66,7 +66,7 @@ feature -- Traffic city building
 			city_has_name: equal (city.name, a_name)
 		end
 
-	city: TRAFFIC_CITY is
+	city: TRAFFIC_CITY
 			-- Generated city object
 		require
 			city_available: has_city
@@ -76,7 +76,7 @@ feature -- Traffic city building
 			Result_exists: Result /= Void
 		end
 
-	has_city: BOOLEAN is
+	has_city: BOOLEAN
 			-- Is traffic city object available?
 		do
 			Result := internal_map /= Void
@@ -84,7 +84,7 @@ feature -- Traffic city building
 
 feature -- Traffic station building
 
-	build_station (a_name: STRING; a_city: TRAFFIC_CITY) is
+	build_station (a_name: STRING; a_city: TRAFFIC_CITY)
 			-- Generate new traffic station object with name `a_name' belonging to traffic map `a_city'.
 			-- (Access generated object through feature `station')
 		require
@@ -101,7 +101,7 @@ feature -- Traffic station building
 			in_city: a_city.stations.has (a_name)
 		end
 
-	build_station_with_position (a_name: STRING; a_x, a_y: INTEGER; a_city: TRAFFIC_CITY) is
+	build_station_with_position (a_name: STRING; a_x, a_y: INTEGER; a_city: TRAFFIC_CITY)
 			-- Generate new traffic station object with name `a_name' and
 			-- position (`a_x', `a_y') belonging to traffic map `a_city'.
 			-- (Access generated object through feature `station')
@@ -119,7 +119,7 @@ feature -- Traffic station building
 			in_city: a_city.stations.has (a_name)
 		end
 
-	station: TRAFFIC_STATION is
+	station: TRAFFIC_STATION
 			-- Generated traffic station object
 		require
 			is_available: has_station
@@ -129,7 +129,7 @@ feature -- Traffic station building
 			Result_exists: Result /= Void
 		end
 
-	has_station: BOOLEAN is
+	has_station: BOOLEAN
 			-- Is traffic station object available?
 		do
 			Result := internal_station /= Void
@@ -137,7 +137,7 @@ feature -- Traffic station building
 
 feature -- Traffic station building
 
-	build_landmark (x, y: INTEGER; a_name: STRING; a_city: TRAFFIC_CITY; a_filename: STRING) is
+	build_landmark (x, y: INTEGER; a_name: STRING; a_city: TRAFFIC_CITY; a_filename: STRING)
 			-- Generate new traffic landmark object with name `a_name' belonging to traffic map `a_city'.
 			-- (Access generated object through feature `landmark')
 		require
@@ -157,7 +157,7 @@ feature -- Traffic station building
 			in_city: a_city.landmarks.has (a_name)
 		end
 
-	landmark: TRAFFIC_LANDMARK is
+	landmark: TRAFFIC_LANDMARK
 			-- Generated traffic landmark object
 		require
 			is_available: has_landmark
@@ -167,7 +167,7 @@ feature -- Traffic station building
 			Result_exists: Result /= Void
 		end
 
-	has_landmark: BOOLEAN is
+	has_landmark: BOOLEAN
 			-- Is traffic landmark object available?
 		do
 			Result := internal_landmark /= Void
@@ -175,7 +175,7 @@ feature -- Traffic station building
 
 feature -- Line segment building
 
-	build_line_segment (a_origin, a_destination:STRING; a_polypoints: DS_ARRAYED_LIST [TRAFFIC_POINT]; a_city: TRAFFIC_CITY; a_line: TRAFFIC_LINE) is
+	build_line_segment (a_origin, a_destination:STRING; a_polypoints: DS_ARRAYED_LIST [TRAFFIC_POINT]; a_city: TRAFFIC_CITY; a_line: TRAFFIC_LINE)
 			-- Generate new traffic line segment object going from origin `a_origin' to `a_destination'
 			-- belonging to line `a_line' in map `a_city'.
 			-- (Access the generated object through feature `line_segments')
@@ -251,7 +251,7 @@ feature -- Line segment building
 			line_segment_has_destination: connection_one_direction.destination = a_city.stations.item (a_destination) and connection_other_direction.origin = a_city.stations.item (a_destination)
 		end
 
-	connection_one_direction: TRAFFIC_LINE_SEGMENT is
+	connection_one_direction: TRAFFIC_LINE_SEGMENT
 			-- Generated traffic line segment object
 		require
 			line_segment_available: has_line_segment
@@ -261,7 +261,7 @@ feature -- Line segment building
 			Result_exists: Result /= Void
 		end
 
-	connection_other_direction: TRAFFIC_LINE_SEGMENT is
+	connection_other_direction: TRAFFIC_LINE_SEGMENT
 			-- Generated traffic line segment object
 		require
 			line_segment_available: has_line_segment
@@ -271,7 +271,7 @@ feature -- Line segment building
 			Result_exists: Result /= Void
 		end
 
-	has_line_segment: BOOLEAN is
+	has_line_segment: BOOLEAN
 			-- Is there a line segment object available?
 		do
 			Result := internal_one_direction /= Void and internal_other_direction /= Void
@@ -279,7 +279,7 @@ feature -- Line segment building
 
 feature -- Road segment building
 
-	build_road (a_origin, a_destination:STRING; a_city: TRAFFIC_CITY; a_type: STRING; an_id:STRING; a_direction:STRING) is
+	build_road (a_origin, a_destination:STRING; a_city: TRAFFIC_CITY; a_type: STRING; an_id:STRING; a_direction:STRING)
 			-- Generate new traffic road object going from origin `a_origin' to `a_destination'
 			-- belonging to `a_city'.
 			-- (Access the generated object through feature `road')
@@ -305,7 +305,7 @@ feature -- Road segment building
 			road_created: road /= Void
 		end
 
-	road: TRAFFIC_ROAD is
+	road: TRAFFIC_ROAD
 			-- Generated traffic road object
 		require
 			road_available: has_road
@@ -315,7 +315,7 @@ feature -- Road segment building
 			Result_exists: Result /= Void
 		end
 
-	has_road: BOOLEAN is
+	has_road: BOOLEAN
 			-- Is there a road object available?
 		do
 			Result := internal_road /= Void
@@ -323,7 +323,7 @@ feature -- Road segment building
 
 feature -- Traffic line building
 
-	build_line (a_name: STRING; a_type_name: STRING; a_city: TRAFFIC_CITY) is
+	build_line (a_name: STRING; a_type_name: STRING; a_city: TRAFFIC_CITY)
 			-- Generate new traffic line object with name `name' and type `type'
 			-- belonging to map `a_city'.
 			-- (Access the generated object through feature `line')
@@ -346,7 +346,7 @@ feature -- Traffic line building
 			line_in_city: a_city.lines.has (a_name)
 		end
 
-	line: TRAFFIC_LINE is
+	line: TRAFFIC_LINE
 			-- Generated traffic line object
 		require
 			line_available: has_line
@@ -356,7 +356,7 @@ feature -- Traffic line building
 			Result_exists: Result /= Void
 		end
 
-	has_line: BOOLEAN is
+	has_line: BOOLEAN
 			-- Is there a traffic line object available?
 		do
 			Result := internal_line /= Void
@@ -375,7 +375,7 @@ feature {NONE} -- Implementation
 
 	internal_one_direction, internal_other_direction: TRAFFIC_LINE_SEGMENT
 			-- Internal representation of last created traffic line segment
-			
+
 	internal_line: TRAFFIC_LINE
 			-- Internal representation of last created traffic line
 
@@ -385,7 +385,7 @@ feature {NONE} -- Implementation
 	internal_map: TRAFFIC_CITY
 			-- Internal representation of last created traffic map
 
-	create_road_connection (a_origin, a_destination: STRING; a_city: TRAFFIC_CITY; a_type:STRING;an_id:STRING): TRAFFIC_ROAD_SEGMENT is
+	create_road_connection (a_origin, a_destination: STRING; a_city: TRAFFIC_CITY; a_type:STRING;an_id:STRING): TRAFFIC_ROAD_SEGMENT 
 			-- Create road with type `a_type', origin `a_origin', destination `a_destination' belonging to line `a_city'.
 		require
 			a_origin_exists: a_origin /= Void

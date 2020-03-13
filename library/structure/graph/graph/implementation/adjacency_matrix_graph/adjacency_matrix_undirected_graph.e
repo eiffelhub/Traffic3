@@ -1,4 +1,4 @@
-indexing
+note
 	description: "[
 		Undirected graphs, implemented on the basis
 		of an adjacency matrix.
@@ -65,7 +65,7 @@ feature -- Access
 
 feature -- Measurement
 
-	degree: INTEGER is
+	degree: INTEGER
 			-- Number of edges attached to `item'
 		local
 			i: INTEGER
@@ -93,7 +93,7 @@ feature -- Measurement
 			end
 		end
 
-	edge_count: INTEGER is
+	edge_count: INTEGER
 			-- Number of edges in the graph
 		local
 			i, j: INTEGER
@@ -120,7 +120,7 @@ feature -- Measurement
 
 feature -- Status report
 
-	has_edge_between (a_start_node, a_end_node: like item): BOOLEAN is
+	has_edge_between (a_start_node, a_end_node: like item): BOOLEAN
 			-- Are `a_start_node' and `a_end_node' directly connected?
 		local
 			start_index, end_index: INTEGER
@@ -136,7 +136,7 @@ feature -- Cursor movement
 
 feature -- Element change
 
-	put_edge (a_start_node, a_end_node: like item; a_label: L) is
+	put_edge (a_start_node, a_end_node: like item; a_label: L)
 			-- Create an edge between `a_start_node' and `a_end_node'
 			-- and set its label to `a_label'.
 			-- The cursor is not moved.
@@ -161,7 +161,7 @@ feature -- Element change
 
 feature -- Removal
 
-	prune_edge_between (a_start_node, a_end_node: like item) is
+	prune_edge_between (a_start_node, a_end_node: like item)
 			-- Remove the edge connecting `a_start_node' and `a_end_node'.
 			-- This operation is only permitted on simple graphs because of ambiguity.
 			-- The cursor will turn right if `edge_item' is removed.
@@ -196,7 +196,7 @@ feature -- Removal
 			end
 		end
 
-	prune_edge (a_edge: EDGE [like item, L]) is
+	prune_edge (a_edge: EDGE [like item, L])
 			-- Remove `a_edge' from the graph.
 			-- The cursor will turn right if `current_egde' is removed.
 		do
@@ -218,7 +218,7 @@ feature -- Basic operations
 
 feature -- Output
 
-	out: STRING is
+	out: STRING
 			-- Textual representation of the graph
 		local
 			i, j: INTEGER
@@ -270,7 +270,7 @@ feature -- Inapplicable
 
 feature {NONE} -- Implementation
 
-	empty_graph: like Current is
+	empty_graph: like Current 
 			-- Empty graph with the same actual type than `Current'
 		do
 			create Result.make_simple_graph

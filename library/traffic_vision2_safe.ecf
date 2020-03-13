@@ -2,11 +2,11 @@
 <system xmlns="http://www.eiffel.com/developers/xml/configuration-1-21-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eiffel.com/developers/xml/configuration-1-21-0 http://www.eiffel.com/developers/xml/configuration-1-21-0.xsd" name="traffic" uuid="9FAB6FC9-CD89-4C61-82ED-081CA0AA1410" library_target="traffic-safe">
 	<target name="traffic-safe">
 		<root all_classes="true"/>
-		<option warning="warning" full_class_checking="false" is_attached_by_default="true" is_obsolete_routine_type="true" syntax="obsolete" manifest_array_type="mismatch_warning">
+		<option warning="warning" full_class_checking="false" is_attached_by_default="true" is_obsolete_routine_type="true" manifest_array_type="mismatch_warning">
 			<warning name="export_class_missing" enabled="false"/>
 			<warning name="old_verbatim_strings" enabled="false"/>
 			<warning name="once_in_generic" enabled="false"/>
-			<warning name="syntax" enabled="false"/>
+			<warning name="syntax" enabled="true"/>
 			<warning name="vjrv" enabled="false"/>
 			<warning name="vweq" enabled="false"/>
 		</option>
@@ -17,9 +17,9 @@
 			<void_safety support="none" use="none"/>
 		</capability>
 		<library name="base-safe" location="$ISE_LIBRARY\library\base\base-safe.ecf" readonly="false"/>
+		<library name="eiffel_time" location="$ISE_LIBRARY\library\time\time-safe.ecf"/>
 		<library name="gobo_kernel" location="$ISE_LIBRARY\library\gobo\gobo_kernel-safe.ecf" readonly="false"/>
 		<library name="gobo_structure" location="$ISE_LIBRARY\library\gobo\gobo_structure-safe.ecf" readonly="false"/>
-		<library name="eiffel_time" location="$ISE_LIBRARY\library\time\time-safe.ecf"/>
 		<library name="gobo_time" location="$ISE_LIBRARY\contrib\library\gobo\library\time\src\library.ecf"/>
 		<library name="gobo_xml" location="$ISE_LIBRARY\contrib\library\gobo\library\xml\src\library.ecf"/>
 		<library name="vision2" location="$ISE_LIBRARY\library\vision2\vision2-safe.ecf" readonly="false"/>

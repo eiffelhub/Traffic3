@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Objects that ..."
 	author: ""
 	date: "$Date$"
@@ -17,7 +17,7 @@ create
 
 feature -- Initialization
 
-	make (a_point_a, a_point_b: REAL_COORDINATE) is
+	make (a_point_a, a_point_b: REAL_COORDINATE)
 			-- Create a rounded_rectangle  from `a_point_a' and `a_point_b'
 		require
 			a_point_a_not_void: a_point_a /= Void
@@ -36,7 +36,7 @@ feature -- Initialization
 
 feature -- Access
 
-	bounding_box : REAL_RECTANGLE is
+	bounding_box : REAL_RECTANGLE
 			-- The bounding box of the rounded_rectangle
 		do
 			create Result.make (point_a, point_b)
@@ -53,7 +53,7 @@ feature -- Access
 
 feature -- Element change
 
-	set_points (a_new_point_a, a_new_point_b: REAL_COORDINATE) is
+	set_points (a_new_point_a, a_new_point_b: REAL_COORDINATE)
 			-- Replace the rounded rectangel's points with `a_new_point_a' and `a_new_point_b'.
 		require
 			a_new_point_a_not_void: a_new_point_a /= Void
@@ -67,7 +67,7 @@ feature -- Element change
 			a_new_point_b_set: point_b = a_new_point_b
 		end
 
-	set_edge_color (a_color: EV_COLOR) is
+	set_edge_color (a_color: EV_COLOR)
 			-- Set the color of the rounded rectangle's edge to `a_color'
 		require
 			a_color_not_void: a_color /= Void
@@ -85,7 +85,7 @@ feature -- Status report
 
 feature -- Status setting
 
-	enable_filled is
+	enable_filled
 			-- Fill the circle.
 		do
 			is_filled:= True
@@ -94,7 +94,7 @@ feature -- Status setting
 			is_filled: is_filled
 		end
 
-	disable_filled is
+	disable_filled
 			-- Unfill the circle.
 		do
 			is_filled:= False
@@ -105,7 +105,7 @@ feature -- Status setting
 
 feature{CANVAS} -- Display
 
-	draw_object is
+	draw_object 
 			-- Draws the polygon.
 		local
 			point_to_draw_a : EV_COORDINATE

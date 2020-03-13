@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Apartment buildings with lots of condos"
 	date: "$Date$"
 	revision: "$Revision$"
@@ -19,7 +19,7 @@ create
 
 feature {NONE} -- Initialization
 
-	make_default (a_center: TRAFFIC_POINT) is
+	make_default (a_center: TRAFFIC_POINT)
 			-- Initialize with default size.
 		require
 			center_valid: a_center /= Void
@@ -32,7 +32,7 @@ feature {NONE} -- Initialization
 			center_set: center = a_center
 		end
 
-	make_new (a_width, a_depth, a_height: REAL_64; a_center: TRAFFIC_POINT) is
+	make_new (a_width, a_depth, a_height: REAL_64; a_center: TRAFFIC_POINT)
 			-- Initialize with size.
 		do
 			Precursor (a_width, a_depth, a_height, a_center)
@@ -43,13 +43,13 @@ feature {NONE} -- Initialization
 
 feature -- Constants
 
-	default_width: REAL_64 is 27.0
+	default_width: REAL_64 = 27.0
 			-- Default width of an apartment
 
-	default_depth: REAL_64 is 13.0
+	default_depth: REAL_64 = 13.0
 			-- Default depth of an apartment
 
-	default_height: REAL_64 is 35.0
+	default_height: REAL_64 = 35.0
 			-- Default height of an apartment
 
 end
