@@ -22,8 +22,9 @@ Traffic relies on ecf files (and gobo tools for svn version) for its build proce
 ____________________________________________________________
 
 doc		: Contains a URL to Traffic user and developer documentation
-example		: The applications
+example		: The applications (the examples to work on)
 library		: Traffic library you can use in your application
+solution	: The application solutions (predefined examples)
 developer.txt	: This file
 forum.txt	: The Eiffel Forum License II
 readme.md	: Installation instructions for users
