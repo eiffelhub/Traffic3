@@ -1,4 +1,5 @@
 Version 3.4
+	* Updated obsolete syntax
 	* Renamed examples folder as solutions
 	* Built new examples folders to match the printed examples of the textbook
 Version 3.3     (svn 1079)       22.9.2008
