@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-6-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eiffel.com/developers/xml/configuration-1-6-0 http://www.eiffel.com/developers/xml/configuration-1-6-0.xsd" name="assignment_9" uuid="76483667-5CF2-EE91-9FB4-3A8B782B84F1">
+	<target name="assignment_9">
+		<root class="APPLICATION" feature="make_and_launch"/>
+		<option trace="false" profile="false" debug="false" warning="true" syntax="transitional">
+			<assertions/>
+			<warning name="export_class_missing" enabled="false"/>
+			<warning name="old_verbatim_strings" enabled="false"/>
+			<warning name="syntax" enabled="false"/>
+			<warning name="vjrv" enabled="false"/>
+			<warning name="vweq" enabled="false"/>
+		</option>
+		<setting name="address_expression" value="false"/>
+		<setting name="array_optimization" value="false"/>
+		<setting name="check_vape" value="true"/>
+		<setting name="console_application" value="false"/>
+		<setting name="dead_code_removal" value="true"/>
+		<setting name="dotnet_naming_convention" value="false"/>
+		<setting name="dynamic_runtime" value="false"/>
+		<setting name="exception_trace" value="false"/>
+		<setting name="il_verifiable" value="true"/>
+		<setting name="inlining" value="false"/>
+		<setting name="inlining_size" value="4"/>
+		<setting name="line_generation" value="false"/>
+		<setting name="msil_generation" value="false"/>
+		<setting name="msil_generation_type" value="exe"/>
+		<setting name="multithreaded" value="false"/>
+		<precompile name="vision2_pre" location="$ISE_PRECOMP\vision2.ecf"/>
+		<library name="base" location="$ISE_LIBRARY\library\base\base.ecf" readonly="true"/>
+		<library name="time" location="$ISE_LIBRARY\library\time\time.ecf" readonly="true"/>
+		<library name="traffic" location="..\..\library\traffic_vision2.ecf" readonly="false">
+			<option profile="false">
+				<assertions precondition="true" postcondition="true" check="true" invariant="true" loop="true" supplier_precondition="true"/>
+			</option>
+		</library>
+		<library name="vision2" location="$ISE_LIBRARY\library\vision2\vision2.ecf"/>
+		<cluster name="assignment_9" location=".\">
+			<option>
+				<assertions precondition="true" postcondition="true" check="true" invariant="true" loop="true" supplier_precondition="true"/>
+			</option>
+		</cluster>
+	</target>
+</system>
