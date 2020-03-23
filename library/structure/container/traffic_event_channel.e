@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Event channel that implements a publish-subscribe mechanism"
 	date: "$Date$"
 	revision: "$Revision$"

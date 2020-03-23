@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Part of a TRAFFIC_ROUTE,%
 		% goes from `origin' to `destination' using a SINGLE line or walking"
 	date: "$Date$"

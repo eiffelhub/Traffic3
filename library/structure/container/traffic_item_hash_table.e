@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Hash table that contains city items, calls add_to_city and remove_from_city on insertion and deletion, and throws events when a new item is added/removed"
 	date: "$Date$"
 	revision: "$Revision$"

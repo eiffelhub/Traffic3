@@ -1,4 +1,4 @@
-indexing
+note
 	description: "[
 		Undirected weighted graphs, implemented as
 		dynamically linked structure.

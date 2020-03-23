@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Traffic console for output in examples"
 	date: "$Date$"
 	revision: "$Revision$"

@@ -1,4 +1,4 @@
-indexing
+note
 	description: "[
 		Directed or undirected graph edges that consist of
 		two node items and a label.
@@ -107,7 +107,7 @@ feature -- Comparison
 			-- Start and end node must be equal.
 			Result := start_node.is_equal (other.start_node) and
 					  end_node.is_equal (other.end_node)
-			
+
 			-- Consider also flipped edges in undirected graphs.
 			if not is_directed then
 				Result := Result or
@@ -182,7 +182,7 @@ feature -- Inapplicable
 feature {NONE} -- Implementation
 
 invariant
-	
+
 	nodes_not_void: start_node /= Void and end_node /= Void
 
 end -- class EDGE

@@ -1,4 +1,4 @@
-indexing
+note
 	description: "[
 		Heap priority queue sorted such that the item with the lowest
 		priority is placed at the head of the queue.

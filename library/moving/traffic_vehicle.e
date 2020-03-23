@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Deferred class for objects that can be used to transport cargo or passengers"
 	date: "$Date: 2006/06/06 12:23:40 $"
 	revision: "$Revision$"

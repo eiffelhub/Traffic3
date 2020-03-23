@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Deferred class for moving items in the city"
 	date: "$Date$"
 	revision: "$Revision$"

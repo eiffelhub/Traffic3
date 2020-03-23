@@ -2,7 +2,7 @@
 <system xmlns="http://www.eiffel.com/developers/xml/configuration-1-21-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eiffel.com/developers/xml/configuration-1-21-0 http://www.eiffel.com/developers/xml/configuration-1-21-0.xsd" name="traffic" uuid="9FAB6FC9-CD89-4C61-82ED-081CA0AA1410" library_target="traffic">
 	<target name="traffic">
 		<root all_classes="true"/>
-		<option warning="warning" full_class_checking="false" is_attached_by_default="true" is_obsolete_routine_type="true" syntax="transitional" manifest_array_type="mismatch_warning">
+		<option warning="warning" full_class_checking="false" is_attached_by_default="true" is_obsolete_routine_type="true" syntax="standard" manifest_array_type="mismatch_warning">
 			<warning name="export_class_missing" enabled="false"/>
 			<warning name="old_verbatim_strings" enabled="false"/>
 			<warning name="once_in_generic" enabled="false"/>

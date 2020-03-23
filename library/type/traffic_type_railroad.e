@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Railroad type."
 	date: "$Date: 6/6/2006$"
 	revision: "$Revision$"

@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Grid that stores what objects occupy positions on the city"
 	date: "$Date$"
 	revision: "$Revision$"

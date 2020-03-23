@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Deferred class for vehicles serving a line and pursuing a schedule."
 	date: "$Date: 2006/06/06 12:23:40$"
 	revision: "$Revision$"

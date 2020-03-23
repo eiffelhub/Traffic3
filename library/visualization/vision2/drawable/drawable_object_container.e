@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Drawable object that is a container for other drawable objects"
 	date: "$Date$"
 	revision: "$Revision$"

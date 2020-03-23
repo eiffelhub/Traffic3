@@ -1,4 +1,4 @@
-indexing
+note
 	description: "A simple version of the class TRAFFIC_STOP"
 	date: "$Date$"
 	revision: "$Revision$"

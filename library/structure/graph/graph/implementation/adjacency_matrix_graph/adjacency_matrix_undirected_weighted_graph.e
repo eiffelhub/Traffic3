@@ -1,4 +1,4 @@
-indexing
+note
 	description: "[
 		Undirected weighted graphs, implemented
 		on the basis of an adjacency matrix.

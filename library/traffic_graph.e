@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Traffic graph containing nodes and connections"
 	date: "$Date$"
 	revision: "$Revision$"

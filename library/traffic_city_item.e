@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Elements that belong to the city"
 	date: "$Date$"
 	revision: "$Revision$"

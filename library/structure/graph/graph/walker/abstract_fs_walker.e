@@ -1,4 +1,4 @@
-indexing
+note
 	description: "[
 		An abstract "something first search" implementation,
 		that can be transformed to "breadth first search" or

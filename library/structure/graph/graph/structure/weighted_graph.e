@@ -1,4 +1,4 @@
-indexing
+note
 	description: "[
 		Directed weighted graphs without commitment to a particular representation.
 		Simple graphs, multigraphs, directed graphs and symmetric graphs

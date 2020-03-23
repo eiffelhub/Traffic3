@@ -1,4 +1,4 @@
-indexing
+note
 	description: "[
 		Annotated graph nodes that can be used for graph algorithms
 		such as finding the shortest routes between two nodes.

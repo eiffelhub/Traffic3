@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Deferred segments for the graph"
 	date: "$Date: 2006-03-27 19:42:12 +0200 (Mon, 27 Mar 2006) $"
 	revision: "$Revision: 601 $"
