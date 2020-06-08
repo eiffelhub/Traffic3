@@ -1,4 +1,4 @@
-indexing
+note
 
 	description: "[ 
 			Sub pixmaps for use with EV_CANVAS not scaling.

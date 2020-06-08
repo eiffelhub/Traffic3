@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Random route generator (used for providing passengers with their routes)"
 	date: "$Date$"
 	revision: "$Revision$"

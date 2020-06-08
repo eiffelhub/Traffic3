@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Trolleys (not yet included in the city)"
 	date: "$Date$"
 	revision: "$Revision$"

@@ -1,4 +1,4 @@
-indexing
+note
 	description: "[
 		Segment that represent the changing from one means of transportation to the other. 
 		Will most probably be invisible.

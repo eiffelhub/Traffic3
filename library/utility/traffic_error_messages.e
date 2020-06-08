@@ -1,4 +1,4 @@
-indexing
+note
 	description: "[
 
 		Provide mapping of error constants from EM_ERROR_CODES to string messages.
@@ -28,9 +28,9 @@ feature {NONE} -- Initialisation
 			Error_messages.force ("Directory {1} does not exist", Traffic_error_directory_does_not_exist)
 			Error_messages.force ("Xml file {1} does not exist", Traffic_error_xml_file_does_not_exist)
 			Error_messages.force ("Dump file loading {1} did not work", Traffic_error_loading_dump_file)
-			
+
 			-- Todo add other errors
-			
+
 			-- Miscellaneous error messages
 			Error_messages.force ("A 'this should never happen' error has occured in section '{1}'. Please notify the developers", Traffic_error_this_should_never_happen)
 		end

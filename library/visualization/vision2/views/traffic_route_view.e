@@ -1,4 +1,4 @@
-indexing
+note
 	description: "View for routes"
 	date: "$Date$"
 	revision: "$Revision$"

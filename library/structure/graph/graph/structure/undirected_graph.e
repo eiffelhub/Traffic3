@@ -1,4 +1,4 @@
-indexing
+note
 	description: "[
 		Undirected graphs without commitment to a particular representation.
 		Both simple graphs and multigraphs are supported.

@@ -1,4 +1,4 @@
-indexing
+note
 	description: "[
 		The DFS walker is a LINEAR abstraction of a graph, that starts
 		on a specific node and will walk in a depth first search order

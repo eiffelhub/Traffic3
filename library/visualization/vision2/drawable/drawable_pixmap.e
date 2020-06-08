@@ -1,4 +1,4 @@
-indexing
+note
 
 	description: "Sub pixmaps for use with EV_CANVAS, scaling"
 	status:	"See notice at end of class"

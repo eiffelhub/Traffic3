@@ -1,4 +1,4 @@
-indexing
+note
 	description: "[
 		Undirected graphs, implemented as dynamically linked structure.
 		Both simple graphs and multigraphs are supported.

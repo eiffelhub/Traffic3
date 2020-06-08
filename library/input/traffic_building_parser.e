@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Parser for XML building files"
 	date: "$Date$"
 	revision: "$Revision$"

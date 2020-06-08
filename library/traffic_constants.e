@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Constants for Traffic"
 	date: "$Date$"
 	revision: "$Revision$"

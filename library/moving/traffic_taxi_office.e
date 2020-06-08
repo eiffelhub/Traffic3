@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Class for taxi offices"
 	date: "$Date$"
 	revision: "$Revision$"

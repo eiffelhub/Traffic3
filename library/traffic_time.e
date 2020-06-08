@@ -1,4 +1,4 @@
-indexing
+note
 	description: "This object represent the time in the city model"
 	date: "$Date$"
 	revision: "$Revision$"

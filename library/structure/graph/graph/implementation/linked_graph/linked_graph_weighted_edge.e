@@ -1,4 +1,4 @@
-indexing
+note
 	description: "[
 		Weighted graph edges used for the LINKED_GRAPH data structure.
 		]"

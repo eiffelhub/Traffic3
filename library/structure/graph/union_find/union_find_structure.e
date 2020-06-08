@@ -1,4 +1,4 @@
-indexing
+note
 	description: "[
 			Union-find data structure.
 			Element lookup with `find' completes in O(log(n))
@@ -45,7 +45,7 @@ feature -- Access
 			set_index, root_index, par: INTEGER
 		do
 			set_index := index_of_element.item (e)
-			
+
 			-- Traverse the "tree" upwards to get the root index.
 			from
 				root_index := set_index
@@ -56,7 +56,7 @@ feature -- Access
 				-- Get the parent set number until the "root" set number is found.
 				root_index := parent.item (root_index)
 			end
-			
+
 			-- Optimize `parent' array for "root" access in one single step.
 			from
 			until
@@ -66,7 +66,7 @@ feature -- Access
 				parent.put (root_index, set_index)
 				set_index := par
 			end
-			
+
 			Result := root_index
 		ensure
 			valid_identifier: valid_identifier (Result)
@@ -189,7 +189,7 @@ feature -- Element change
 				elements_in_set.force (1, count)
 				next_element_in_set.force (-1, count)
 				last_element_in_set.force (count, count)
-				
+
 				-- Update `valid_identifiers' list.
 				next_valid_identifier.force (-1, count)
 				if count = 1 then
@@ -227,7 +227,7 @@ feature -- Basic operations
 		do
 			-- `a_set_identifier' and `other_set_identifier' are both root elements
 			-- (because of `valid_identifier').
-			
+
 			-- Make smaller set part of larger set.
 			if item_count (a_identifier) >= item_count (other_identifier) then
 				merge_sets (a_identifier, other_identifier)
@@ -260,7 +260,7 @@ feature {NONE} -- Implementation
 
 	next_element_in_set: ARRAY [INTEGER]
 			-- "Linked list" of elements in the same set (realized as array). Terminated by "-1"
-	
+
 	last_element_in_set: ARRAY [INTEGER]
 			-- Positions of the entry "-1" in `next_element_in_set' for each set.
 
@@ -270,7 +270,7 @@ feature {NONE} -- Implementation
 	next_valid_identifier: ARRAY [INTEGER]
 			-- Forward links of "doubly linked list" of valid identifiers
 			-- Terminated by "-1"
-	
+
 	prev_valid_identifier: ARRAY [INTEGER]
 			-- Backward links of "doubly linked list" of valid identifiers
 			-- Terminated by "-1"
@@ -289,13 +289,13 @@ feature {NONE} -- Implementation
 
 			-- Reparent set items.
 			parent.put (a_identifier, other_identifier)
-			
+
 			-- Update element list.
 			last_of_larger := last_element_in_set.item (a_identifier)
 			last_of_smaller := last_element_in_set.item (other_identifier)
 			last_element_in_set.put (last_of_smaller, a_identifier)
 			next_element_in_set.put (other_identifier, last_of_larger)
-			
+
 			-- Invalidate `other_identifier'.
 			remove_identifier (other_identifier)
 
@@ -304,8 +304,8 @@ feature {NONE} -- Implementation
 		ensure
 			set_count: set_count = old set_count - 1
 			first_set_invalid: not valid_identifier (other_identifier)
-			new_set_size: item_count (a_identifier) = 
-						  (old item_count (a_identifier) + 
+			new_set_size: item_count (a_identifier) =
+						  (old item_count (a_identifier) +
 						   old item_count (other_identifier))
 		end
 
@@ -341,7 +341,7 @@ invariant
 
 	parent_count: parent.count = elements.count
 	hash_table_count: index_of_element.count = count
-	
+
 	set_count: sets.count = set_count
 	same_count: identifiers.count = set_count
 

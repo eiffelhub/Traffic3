@@ -1,4 +1,4 @@
-indexing
+note
 	description: "View for moving items such as trams, passengers, etc."
 	date: "$Date$"
 	revision: "$Revision$"

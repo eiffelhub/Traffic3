@@ -1,4 +1,4 @@
-indexing
+note
 	description: "[
 		Directed or undirected weighted graph edges that consist of
 		two node items and a label.

@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Point (coordinate) objects for visualization independent traffic representations"
 	date: "$Date$"
 	revision: "$Revision$"

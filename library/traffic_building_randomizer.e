@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Objects that distribute buildings randomly over the city"
 	date: "$Date$"
 	revision: "$Revision$"

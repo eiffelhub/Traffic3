@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Iconic view of a building (for special buildings such as landmarks)"
 	date: "$Date$"
 	revision: "$Revision$"

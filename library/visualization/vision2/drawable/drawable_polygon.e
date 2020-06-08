@@ -1,4 +1,4 @@
-indexing
+note
 
 	description: "Polygon that will scale when zooming in EV_CANVAS"
 	status:	"See notice at end of class"

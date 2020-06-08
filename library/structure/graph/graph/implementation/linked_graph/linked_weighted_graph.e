@@ -1,4 +1,4 @@
-indexing
+note
 	description: "[
 		Directed weighted graphs, implemented as
 		dynamically linked structure.

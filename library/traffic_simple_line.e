@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Transportation lines (not showing contracts)"
 	date: "$Date$"
 	revision: "$Revision$"

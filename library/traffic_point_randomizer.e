@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Randomizer that allows to produce lists of random positions that are on the city "
 	date: "$Date$"
 	revision: "$Revision$"

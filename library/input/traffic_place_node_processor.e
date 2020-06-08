@@ -1,4 +1,4 @@
-indexing
+note
 	description: "XML processors for <place> nodes."
 	date: "$Date: 2009-08-21 13:35:22 +0200 (Пт, 21 авг 2009) $"
 	revision: "$Revision: 1098 $"

@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Manager for road ids"
 	date: "$Date$"
 	revision: "$Revision$"

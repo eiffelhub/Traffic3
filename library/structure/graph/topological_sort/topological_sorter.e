@@ -1,4 +1,4 @@
-indexing
+note
 	description	: "[
 			Topological sorter.
 			Used to produce a total order on a set of
@@ -61,7 +61,7 @@ feature -- Initialization
 			-- Ensure `e' and `f' are inserted (no effect if they already were):
 			record_element (e)
 			record_element (f)
-			
+
 			x := index_of_element.item (e)
 			y := index_of_element.item (f)
 			predecessor_count.put (predecessor_count.item (y) + 1, y)
@@ -77,7 +77,7 @@ feature -- Access
 		do
 			Result := has_cycle
 		end
-	
+
 	cycle_list: LIST [G] is
 			-- Elements involved in cycles
 		require
@@ -88,7 +88,7 @@ feature -- Access
 			void_iff_none: (not cycle_found) = (Result = Void)
 			not_empty_if_cycle: cycle_found implies (not Result.is_empty)
 		end
-	
+
 	sorted_elements: LIST [G] is
 			-- List, in an order respecting the constraints, of all
 			-- the elements that can be ordered in that way
@@ -260,7 +260,7 @@ feature {NONE} -- Implementation
 	has_cycle: like cycle_found
 			-- Internal attribute with same value as `cycle_found'.
 			-- (needed because `cycle_found' has precondition `done'.)
-	
+
 	cycle_list_impl: like cycle_list
 			-- Internal attribute with same value as `cycle_list'.
 			-- (needed because `cycle_list' has precondition `done'.)
@@ -272,7 +272,7 @@ feature {NONE} -- Implementation
 
 	index_of_element: HASH_TABLE [INTEGER, G]
 			-- Index of every element
-	
+
 	element_of_index: ARRAY [G]
 			-- For every assigned index, gives the associated element
 
@@ -341,13 +341,13 @@ feature {NONE} -- Implementation
 		end
 
 invariant
-	
+
 	elements_not_void:			element_of_index /= Void
 	hash_table_not_void:		index_of_element /= Void
 	predecessor_count_not_void:	predecessor_count /= Void
 	successors_not_void:		successors /= Void
 	candidates_not_void:		candidates /= Void
-	
+
 	element_count:			element_of_index.count = count
 	predecessor_list_count:	predecessor_count.count = count
 	successor_list_count:	successors.count = count
