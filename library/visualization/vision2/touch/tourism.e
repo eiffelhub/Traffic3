@@ -1,4 +1,4 @@
-indexing
+note
 	description: "[
 					Contains all the predefines and classes to run 'explore'.
 					]"

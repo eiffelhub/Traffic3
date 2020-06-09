@@ -1,4 +1,4 @@
-indexing
+note
 	description: "View for line segments"
 	date: "$Date$"
 	revision: "$Revision$"

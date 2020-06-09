@@ -1,4 +1,4 @@
-indexing
+note
 	description: "[
 		Structures of walkable containers. Walkable means that every item of
 		the container can be connected via a (directed or undirected) link to
@@ -50,7 +50,7 @@ feature -- Status report
 			not_off: not off
 		deferred
 		end
-		
+
 	exhausted: BOOLEAN is
 			-- Last `left' or `right' turned to the first link ?
 		require
@@ -59,13 +59,13 @@ feature -- Status report
 		ensure
 			no_links_always_exhausted: not has_links implies exhausted
 		end
-	
+
 	has_previous: BOOLEAN is
 			-- Is there another node in the traversal history?
 			-- Must be True in order to use the `back' command.
 		deferred
 		end
-	
+
 	is_first: BOOLEAN is
 			-- Am I on the first link ?
 		require
@@ -73,7 +73,7 @@ feature -- Status report
 			has_links: has_links
 		deferred
 		end
-	
+
 feature -- Cursor movement
 
 	left is
@@ -85,7 +85,7 @@ feature -- Cursor movement
 		ensure
 			went_around: is_first = exhausted
 		end
-		
+
 	right is
 			-- Turn to the right link.
 		require
@@ -95,7 +95,7 @@ feature -- Cursor movement
 		ensure
 			went_around: is_first = exhausted
 		end
-		
+
 	turn_to (t: like target) is
 			-- Try to turn the cursor towards `t'.
 			-- If not possible, `exhausted' will be set
@@ -134,7 +134,7 @@ feature -- Cursor movement
 			moved_to_target: item = old target
 			move_to_off: not old has_links = off
 		end
-		
+
 	start is
 			-- Turn to the first link.
 		require else
@@ -158,7 +158,7 @@ feature -- Cursor movement
 invariant
 
 	zero_link_count: not off implies (has_links = (link_count > 0))
-	
+
 	exhausted_if_no_links: (not off and not has_links) implies exhausted
 
 end -- class WALKABLE

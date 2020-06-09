@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Objects that can move around the city freely (do not need to travel on streets)"
 	date: "$Date$"
 	revision: "$Revision$"

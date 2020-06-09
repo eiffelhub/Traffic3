@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Cursor for TRAFFIC_LINE objects (to avoid moving internal cursors of the line)"
 	date: "$Date$"
 	revision: "$Revision$"

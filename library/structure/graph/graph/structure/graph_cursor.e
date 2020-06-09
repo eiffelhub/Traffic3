@@ -1,4 +1,4 @@
-indexing
+note
 	description: "[
 		Cursors for remembering positions in graphs.
 		]"
@@ -34,7 +34,7 @@ feature {GRAPH} -- Access
 
 	current_node: G
 			-- Node at the current cursor position
-			
+
 	edge_item: EDGE [G, L]
 			-- Edge which is currently focused
 

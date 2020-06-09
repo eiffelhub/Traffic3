@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Vehicles of type bus"
 	date: "$Date: 6/6/2006$"
 	revision: "$Revision$"
@@ -50,7 +50,7 @@ feature -- Basic operations
     	do
 			count := count + a_quantity
     	end
-    	
+
     unload(a_quantity: INTEGER) is
 			-- Load cargo or a passenger.
     	do

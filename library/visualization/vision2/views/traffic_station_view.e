@@ -1,4 +1,4 @@
-indexing
+note
 	description: "View for stations"
 	date: "$Date$"
 	revision: "$Revision$"

@@ -1,4 +1,4 @@
-indexing
+note
 	description: "View for movings, subclasses make this class effective"
 	date: "$Date$"
 	revision: "$Revision$"

@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Superclass of containers that throw events when elements are added or removed"
 	date: "$Date$"
 	revision: "$Revision$"

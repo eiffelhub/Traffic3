@@ -1,4 +1,4 @@
-indexing
+note
 
 	description: "[
 					Circle that wont scale when zooming in

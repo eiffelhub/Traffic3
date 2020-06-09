@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Container for city item views of a certain type"
 	date: "$Date$"
 	revision: "$Revision$"

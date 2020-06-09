@@ -1,4 +1,4 @@
-indexing
+note
 	description: 	"[
 		Linked lists that throw events whenever an element is added or removed.
 		Note: For this class the features for manipulation are publicly available!!!

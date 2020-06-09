@@ -1,5 +1,5 @@
-indexing
-	description: "XML processors for <point> elements. Example: <point x="3.2" y="1.7">."
+note
+	description: "XML processors for <point> elements. Example: <point x=%"3.2%" y=%"1.7%">."
 	date: "$Date: 2008-09-09 11:36:48 +0200 (Вт, 09 сен 2008) $"
 	revision: "$Revision: 1070 $"
 

@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Balanced search trees."
 	author: "Olivier Jeger"
 	license: "Eiffel Forum License v2 (see forum.txt)"
@@ -86,7 +86,7 @@ feature -- Status report
 
 	is_sorted: BOOLEAN is
 			-- Are all tree items in sorted order?
-			-- (Order can be destroyed by modifying 
+			-- (Order can be destroyed by modifying
 			-- item values after insertion in tree.)
 		deferred
 		end
@@ -105,7 +105,7 @@ feature -- Status report
 
 	child_writable: BOOLEAN is False
 			-- Is there a current `child_item' that may be modified?
-	
+
 	writable_child: BOOLEAN is False
 			-- Is there a current child that may be modified?
 			-- False because balanced trees are self-organizing.
@@ -119,7 +119,7 @@ feature -- Element change
 	put, extend (v: G) is
 			-- Put `v' at proper position in tree
 			-- (unless `v' exists already).
-			-- (Reference or object equality, 
+			-- (Reference or object equality,
 			-- based on `object_comparison'.)
 		require
 			item_not_void: v /= Void
@@ -208,7 +208,7 @@ feature {BALANCED_SEARCH_TREE} -- Inapplicable
 feature {NONE} -- Implementation
 
 invariant
-	
+
 	object_comparison: object_comparison
 
 end -- class BALANCED_SEARCH_TREE

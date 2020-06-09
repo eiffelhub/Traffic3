@@ -1,4 +1,4 @@
-indexing
+note
 	description: "A route calculator facility"
 	date: "$Date$"
 	revision: "$Revision$"

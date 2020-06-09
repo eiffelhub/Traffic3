@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Base class for road's types"
 	date: "$Date: 6/6/2006$"
 	revision: "$Revision$"

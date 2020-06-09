@@ -1,9 +1,9 @@
-indexing
+note
 	description: "[
 		
 		A 3-dimensional vector that can be used with OpenGL.
 		Note: this is a simple implementation which doesn't allow any mathematics.
-		
+
 	]"
 	date: "$Date: 2005/09/05 11:08:11 $"
 	revision: "$Revision: 1.1 $"
@@ -14,9 +14,9 @@ class
 inherit
 	ANY
 		redefine
-			out 
+			out
 		end
-	
+
 	DEBUG_OUTPUT
 		redefine
 			out
@@ -24,7 +24,7 @@ inherit
 
 create
 	make_xyz
-	
+
 feature {NONE} -- Initialisation
 
 	make_xyz (a_x, a_y, a_z: G) is
@@ -41,7 +41,7 @@ feature {NONE} -- Initialisation
 			y_set: y = a_y
 			z_set: z = a_z
 		end
-	
+
 	make_from_other (other: like Current) is
 			-- Initialise `Current' with values from `other'.
 		require
@@ -55,7 +55,7 @@ feature {NONE} -- Initialisation
 		end
 
 feature -- Access
-		
+
 	x: G is
 			-- First element
 		do
@@ -63,7 +63,7 @@ feature -- Access
 		ensure
 			result_exists: Result /= Void
 		end
-		
+
 	y: G is
 			-- Second element
 		do
@@ -71,7 +71,7 @@ feature -- Access
 		ensure
 			result_exists: Result /= Void
 		end
-		
+
 	z: G is
 			-- Third element
 		do
@@ -88,7 +88,7 @@ feature -- Access
 			tmp := array.to_c
 			Result := $tmp
 		end
-	
+
 feature -- Element change
 
 	set_xyz (a, b, c: G) is
@@ -116,8 +116,8 @@ feature -- Support
 		end
 
 feature {NONE} -- Implementation
-	
+
 	array: ARRAY [G]
 			-- The array to hold the elements
-	
+
 end

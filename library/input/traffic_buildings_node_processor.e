@@ -1,4 +1,4 @@
-indexing
+note
 	description: "XML processors for <buildings> nodes."
 	date: "$Date$"
 	revision: "$Revision$"

@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Line segment of line from one station to another."
 	date: "$Date: 2010-06-28 20:14:26 +0200 (Пн, 28 июн 2010) $"
 	revision: "$Revision: 1133 $"

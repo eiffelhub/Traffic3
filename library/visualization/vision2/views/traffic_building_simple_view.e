@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Simple view for buildings (grey rectangle)"
 	date: "$Date$"
 	revision: "$Revision$"

@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Stops that belong to a line and are nodes of the graph"
 	date: "$Date$"
 	revision: "$Revision$"

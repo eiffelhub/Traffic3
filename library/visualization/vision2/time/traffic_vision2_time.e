@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Timing facilities with vision2"
 	date: "$Date$"
 	revision: "$Revision$"

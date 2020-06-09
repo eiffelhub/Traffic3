@@ -1,4 +1,4 @@
-indexing
+note
 	description: "City with a traffic system of a region."
 	date: "$Date: 2006/01/09 12:23:40 $"
 	revision: "$Revision: 1.5 $"

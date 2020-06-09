@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Singleton that simulates time of the day"
 	date: "$Date$"
 

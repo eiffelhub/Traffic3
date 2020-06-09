@@ -1,4 +1,4 @@
-indexing
+note
 
 	description: "A position in a 2 dimensional space as REALs (x, y)"
 	status:	"See notice at end of class"

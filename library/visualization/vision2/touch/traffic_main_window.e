@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Vision2 Main window for touch examples, containing a console and a button plus a city canvas"
 	date: "$Date$"
 	revision: "$Revision$"
