@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Objects that ..."
 	date: "$Date$"
 	revision: "$Revision$"

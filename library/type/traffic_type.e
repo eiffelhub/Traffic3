@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Describes types of TRAFFIC_ROADs and TRAFFIC_LINEs"
 	date: "$Date: 6/6/2006$"
 	revision: "$Revision: 1133 $"
@@ -19,7 +19,7 @@ feature -- Access
 			-- String representation
 
 	speed: REAL_64 is 10.0
-			-- Default speed 
+			-- Default speed
 
 feature -- Output
 

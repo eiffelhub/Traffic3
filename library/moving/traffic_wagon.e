@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Wagon objects can be used to increase the capacity of trams."
 	date: "$Date: 6/6/2006$"
 	revision: "$Revision$"

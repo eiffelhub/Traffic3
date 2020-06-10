@@ -1,4 +1,4 @@
-indexing
+note
 	description: "XML processors for <line section> nodes."
 	date: "$Date: 2009-08-21 13:35:22 +0200 (Пт, 21 авг 2009) $"
 	revision: "$Revision: 1098 $"
@@ -17,10 +17,10 @@ create
 
 feature -- Access
 
-	Name: STRING is "line_section"
+	Name: STRING = "line_section"
 			-- Name of element to process
 
-	Mandatory_attributes: ARRAY [STRING] is
+	Mandatory_attributes: ARRAY [STRING]
 			-- Table of mandatory attributes
 		do
 			Result := << "from", "to", "direction" >>
@@ -29,7 +29,7 @@ feature -- Access
 
 feature -- Basic operations
 
-	process is
+	process 
 			-- Process node.
 		local
 			line: TRAFFIC_LINE

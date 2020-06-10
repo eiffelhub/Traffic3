@@ -1,5 +1,4 @@
-indexing
-
+note
 	description: "[
 			Graphical picture stored as a two dimensional map of pixels.
 		 	Can be zoomed, panned, modified and displayed.

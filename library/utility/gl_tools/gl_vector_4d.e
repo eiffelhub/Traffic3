@@ -1,9 +1,9 @@
-indexing
+note
 	description: "[
 		
 		A 4-dimensional vector that can be used with OpenGL.
 		Note: this is a simple implementation which doesn't allow any mathematics.
-		
+
 	]"
 	date: "$Date: 2005/09/05 11:08:11 $"
 	revision: "$Revision: 1.1 $"
@@ -13,14 +13,14 @@ class
 
 inherit
 	GL_VECTOR_3D [G]
-		redefine 
+		redefine
 			out,
 			debug_output
 		 end
 
 create
 	make_xyzt
-	
+
 feature {NONE} -- Initialisation
 
 	make_xyzt (a_x, a_y, a_z, a_t: G) is
@@ -39,9 +39,9 @@ feature {NONE} -- Initialisation
 			z_set: z = a_z
 			t_set: t = a_t
 		end
-	
+
 feature -- Access
-		
+
 	t: G is
 			-- Fourth element
 		do
@@ -49,7 +49,7 @@ feature -- Access
 		ensure
 			result_exists: Result /= Void
 		end
-	
+
 feature -- Element change
 
 	set_xyzt (a_x, a_y, a_z, a_t: G) is

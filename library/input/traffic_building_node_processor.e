@@ -1,4 +1,4 @@
-indexing
+note
 	description: "XML processors for <building> nodes."
 	date: "$Date:$"
 	revision: "$Revision:$"
@@ -20,10 +20,10 @@ create
 
 feature -- Access
 
-	Name: STRING is "building"
+	Name: STRING = "building"
 			-- Name of element to process
 
-	Mandatory_attributes: ARRAY [STRING] is
+	Mandatory_attributes: ARRAY [STRING]
 			-- Table of mandatory attributes
 		do
 			Result := << "name", "x1", "x2", "y1", "y2", "height", "angle" >>
@@ -32,7 +32,7 @@ feature -- Access
 
 feature -- Basic operations
 
-	process is
+	process 
 			-- Process node.
 		local
 			building: TRAFFIC_BUILDING

@@ -1,5 +1,4 @@
-indexing
-
+note
 	description: "Text labels for use with EV_CANVAS"
 	status:	"See notice at end of class"
 	author: "Till G. Bay"

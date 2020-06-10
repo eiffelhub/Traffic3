@@ -1,4 +1,4 @@
-indexing
+note
 	description: "B-Trees: implementation of balanced search trees."
 	author: "Olivier Jeger"
 	license: "Eiffel Forum License v2 (see forum.txt)"

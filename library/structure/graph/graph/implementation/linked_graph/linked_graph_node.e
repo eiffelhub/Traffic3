@@ -1,4 +1,4 @@
-indexing
+note
 	description: "[
 		Graph nodes used for the LINKED_GRAPH data structure.
 		]"

@@ -1,4 +1,4 @@
-indexing
+note
 	description:
 		"[
 			Canvas with comfortable zooming and panning abilities.

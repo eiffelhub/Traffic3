@@ -1,4 +1,4 @@
-indexing
+note
 	description: "[
 			Union-find data structure.
 			Element lookup with `find' completes in O(log(n))
@@ -17,7 +17,7 @@ create
 
 feature {NONE} -- Initialization
 
-	make (n: INTEGER) is
+	make (n: INTEGER) 
 			-- Create union-find structure for `n' elements.
 			-- Structure grows automatically for more elements.
 		do
@@ -37,7 +37,7 @@ feature {NONE} -- Initialization
 
 feature -- Access
 
-	find (e: G): INTEGER is
+	find (e: G): INTEGER
 			-- Identifier of set containing `e'
 		require
 			has_element: has (e)
@@ -45,7 +45,7 @@ feature -- Access
 			set_index, root_index, par: INTEGER
 		do
 			set_index := index_of_element.item (e)
-			
+
 			-- Traverse the "tree" upwards to get the root index.
 			from
 				root_index := set_index
@@ -56,7 +56,7 @@ feature -- Access
 				-- Get the parent set number until the "root" set number is found.
 				root_index := parent.item (root_index)
 			end
-			
+
 			-- Optimize `parent' array for "root" access in one single step.
 			from
 			until
@@ -66,13 +66,13 @@ feature -- Access
 				parent.put (root_index, set_index)
 				set_index := par
 			end
-			
+
 			Result := root_index
 		ensure
 			valid_identifier: valid_identifier (Result)
 		end
 
-	i_th_set (a_identifier: INTEGER): SET [G] is
+	i_th_set (a_identifier: INTEGER): SET [G]
 			-- Members of the set identified by `a_identifier'
 		require
 			valid_identifier: valid_identifier (a_identifier)
@@ -94,7 +94,7 @@ feature -- Access
 			item_count: Result.count = item_count (a_identifier)
 		end
 
-	identifiers: SET [INTEGER] is
+	identifiers: SET [INTEGER]
 			-- All valid set identifiers
 		local
 			id: INTEGER
@@ -112,7 +112,7 @@ feature -- Access
 			identifier_count: Result.count = set_count
 		end
 
-	sets: SET [SET [G]] is
+	sets: SET [SET [G]]
 			-- All sets
 		local
 			id: INTEGER
@@ -138,7 +138,7 @@ feature -- Measurement
 	set_count: INTEGER
 			-- Number of disjoint sets
 
-	item_count (a_identifier: INTEGER): INTEGER is
+	item_count (a_identifier: INTEGER): INTEGER
 			-- Number of elements in set identified by `a_identifier'
 		require
 			valid_identifier: valid_identifier (a_identifier)
@@ -150,13 +150,13 @@ feature -- Measurement
 
 feature -- Status report
 
-	has (e: G): BOOLEAN is
+	has (e: G): BOOLEAN
 			-- Is `e' a registered element?
 		do
 			Result := index_of_element.has (e)
 		end
 
-	valid_identifier (a_identifier: INTEGER): BOOLEAN is
+	valid_identifier (a_identifier: INTEGER): BOOLEAN
 			-- Is `a_identifier' a valid set identifier?
 		do
 			-- An identifier is only valid if it denotes a root element.
@@ -174,7 +174,7 @@ feature -- Cursor movement
 
 feature -- Element change
 
-	put (e: G) is
+	put (e: G)
 			-- Put `e' into new unary set.
 			-- Do nothing if `e' has been inserted before.
 		do
@@ -189,7 +189,7 @@ feature -- Element change
 				elements_in_set.force (1, count)
 				next_element_in_set.force (-1, count)
 				last_element_in_set.force (count, count)
-				
+
 				-- Update `valid_identifiers' list.
 				next_valid_identifier.force (-1, count)
 				if count = 1 then
@@ -219,7 +219,7 @@ feature -- Miscellaneous
 
 feature -- Basic operations
 
-	union (a_identifier, other_identifier: INTEGER) is
+	union (a_identifier, other_identifier: INTEGER)
 			-- Merge sets identified by `a_identifier' and `other_identifier'.
 			-- The smaller set gets merged into the larger set.
 		require
@@ -227,7 +227,7 @@ feature -- Basic operations
 		do
 			-- `a_set_identifier' and `other_set_identifier' are both root elements
 			-- (because of `valid_identifier').
-			
+
 			-- Make smaller set part of larger set.
 			if item_count (a_identifier) >= item_count (other_identifier) then
 				merge_sets (a_identifier, other_identifier)
@@ -260,7 +260,7 @@ feature {NONE} -- Implementation
 
 	next_element_in_set: ARRAY [INTEGER]
 			-- "Linked list" of elements in the same set (realized as array). Terminated by "-1"
-	
+
 	last_element_in_set: ARRAY [INTEGER]
 			-- Positions of the entry "-1" in `next_element_in_set' for each set.
 
@@ -270,12 +270,12 @@ feature {NONE} -- Implementation
 	next_valid_identifier: ARRAY [INTEGER]
 			-- Forward links of "doubly linked list" of valid identifiers
 			-- Terminated by "-1"
-	
+
 	prev_valid_identifier: ARRAY [INTEGER]
 			-- Backward links of "doubly linked list" of valid identifiers
 			-- Terminated by "-1"
 
-	merge_sets (a_identifier, other_identifier: INTEGER) is
+	merge_sets (a_identifier, other_identifier: INTEGER)
 			-- Make set identified by `other_identifier' child of set with name `a_identifier'.
 		require
 			valid_identifier: valid_identifier (a_identifier) and valid_identifier (other_identifier)
@@ -289,13 +289,13 @@ feature {NONE} -- Implementation
 
 			-- Reparent set items.
 			parent.put (a_identifier, other_identifier)
-			
+
 			-- Update element list.
 			last_of_larger := last_element_in_set.item (a_identifier)
 			last_of_smaller := last_element_in_set.item (other_identifier)
 			last_element_in_set.put (last_of_smaller, a_identifier)
 			next_element_in_set.put (other_identifier, last_of_larger)
-			
+
 			-- Invalidate `other_identifier'.
 			remove_identifier (other_identifier)
 
@@ -304,12 +304,12 @@ feature {NONE} -- Implementation
 		ensure
 			set_count: set_count = old set_count - 1
 			first_set_invalid: not valid_identifier (other_identifier)
-			new_set_size: item_count (a_identifier) = 
-						  (old item_count (a_identifier) + 
+			new_set_size: item_count (a_identifier) =
+						  (old item_count (a_identifier) +
 						   old item_count (other_identifier))
 		end
 
-	remove_identifier (a_identifier: INTEGER) is
+	remove_identifier (a_identifier: INTEGER)
 			-- Remove `a_identifier' from "valid identifier" list.
 		local
 			prev_valid, next_valid: INTEGER
@@ -341,7 +341,7 @@ invariant
 
 	parent_count: parent.count = elements.count
 	hash_table_count: index_of_element.count = count
-	
+
 	set_count: sets.count = set_count
 	same_count: identifiers.count = set_count
 

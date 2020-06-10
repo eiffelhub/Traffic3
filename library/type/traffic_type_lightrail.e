@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Lightrail road type."
 	date: "$Date: 6/6/2006$"
 	revision: "$Revision$"
@@ -16,7 +16,7 @@ create
 
 feature -- Creation
 
-	make is
+	make 
 			-- Create new street type.
 		do
 			name := "lightrail"

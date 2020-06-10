@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Singleton that simulates time of the day"
 	date: "$Date$"
 
@@ -7,7 +7,7 @@ class
 
 feature -- Access
 
-	time: TRAFFIC_TIME is
+	time: TRAFFIC_TIME 
 			-- Time singleton that simulates a day
 		once
 			create {TRAFFIC_VISION2_TIME} Result.make_with_speedup (2)

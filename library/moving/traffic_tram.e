@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Tram"
 	date: "$Date$"
 	revision: "$Revision$"

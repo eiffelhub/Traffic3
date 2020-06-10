@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Widgets that display a city"
 	date: "$Date$"
 	revision: "$Revision$"

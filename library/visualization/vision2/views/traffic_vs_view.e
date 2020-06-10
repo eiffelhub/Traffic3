@@ -1,5 +1,4 @@
-
-indexing
+note
 	description: "Deferred class for all vision2 city item views"
 	date: "$Date$"
 	revision: "$Revision$"

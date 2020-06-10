@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Deferred class for moving items in the city"
 	date: "$Date$"
 	revision: "$Revision$"
@@ -48,7 +48,7 @@ feature -- Status report
 
 feature -- Basic operations
 
-	start is
+	start
 			-- Start taking a tour.
 		do
 			time.add_callback_tour (agent advance)
@@ -56,7 +56,7 @@ feature -- Basic operations
 
 feature -- Element change
 
-	set_speed (a_speed: REAL_64) is
+	set_speed (a_speed: REAL_64)
 			-- Set the speed to 'a_speed'.
 		require
 			a_speed_valid: a_speed >= 0
@@ -66,7 +66,7 @@ feature -- Element change
 			speed_set: speed = a_speed
 		end
 
-	set_reiterate (a_boolean: BOOLEAN) is
+	set_reiterate (a_boolean: BOOLEAN)
 			-- Set the moving reiterating his itinerary.
 		do
 			is_reiterating := a_boolean
@@ -76,7 +76,7 @@ feature -- Element change
 
 feature {NONE} -- Implementation
 
-	advance is
+	advance
 			-- Move from origin to destination.
 		local
 			direction: TRAFFIC_POINT
@@ -104,7 +104,7 @@ feature {NONE} -- Implementation
 			end
 		end
 
-	move_next is
+	move_next 
 			--  Move to following position
 		require
 			poly_cursor_valid: not poly_cursor.after and not poly_cursor.before
@@ -116,7 +116,7 @@ feature {NONE} -- Implementation
 			destination /= Void
 		end
 
-	update_angle is
+	update_angle
 			-- Set the angles to the x- and y-axis respectively.
 		local
 			x_difference, y_difference, hypo, quad: REAL_64

@@ -1,4 +1,4 @@
-indexing
+note
 	description: "City with a traffic system of a region."
 	date: "$Date: 2006/01/09 12:23:40 $"
 	revision: "$Revision: 1.5 $"
@@ -26,7 +26,7 @@ create
 
 feature {NONE} -- Initialization
 
-	make (a_name: STRING) is
+	make (a_name: STRING)
 			-- Create an empty city with name `a_name'.
 		require
 			a_name_exists: a_name /= Void
@@ -60,7 +60,7 @@ feature {NONE} -- Initialization
 
 feature -- TODO
 
-	display is
+	display
 			-- Just for the first example of touch of class.
 		do
 			-- Do nothing
@@ -68,7 +68,7 @@ feature -- TODO
 
 feature -- Status report
 
-	station_at_location (a_point: TRAFFIC_POINT): TRAFFIC_STATION	is
+	station_at_location (a_point: TRAFFIC_POINT): TRAFFIC_STATION
 			-- Station that `a_point' is located on
 			-- Returns Void if there is no station at this location
 		require
@@ -119,7 +119,7 @@ feature -- Status report
 
 feature -- Element change
 
-	set_center (a_center: TRAFFIC_POINT) is
+	set_center (a_center: TRAFFIC_POINT)
 			-- Set city center to `a_center'.
 		require
 			a_center_exists: a_center /= Void
@@ -129,7 +129,7 @@ feature -- Element change
 			center_set: center = a_center
 		end
 
-	set_radius (a_radius: REAL_64) is
+	set_radius (a_radius: REAL_64)
 			-- Set city radius to `a_radius'.
 		require
 			a_radius_exists: a_radius /= Void
@@ -139,7 +139,7 @@ feature -- Element change
 			radius_set: radius = a_radius
 		end
 
-	set_description (a_description: STRING) is
+	set_description (a_description: STRING)
 			-- Set city description.
 		do
 			description := a_description
@@ -147,7 +147,7 @@ feature -- Element change
 			description_set: description = a_description
 		end
 
-	set_scale_factor (a_scale_factor: REAL_64) is
+	set_scale_factor (a_scale_factor: REAL_64)
 			-- Set `a_scale_factor'.
 		require
 			a_scale_factor_valid: a_scale_factor > 0
@@ -169,7 +169,7 @@ feature -- Insertion
 			station_added: stations.has (a_station.name)
 		end
 
-	put_line(a_line: TRAFFIC_LINE) is
+	put_line(a_line: TRAFFIC_LINE)
 			-- Add `a_line' to `lines'.
 		require
 			a_line_exists: a_line /= void
@@ -346,7 +346,7 @@ feature -- Access (city objects)
 
 feature -- Access
 
-	line_segments_of_stop (a_name: STRING; a_line: TRAFFIC_LINE): LIST [TRAFFIC_LINE_SEGMENT] is
+	line_segments_of_stop (a_name: STRING; a_line: TRAFFIC_LINE): LIST [TRAFFIC_LINE_SEGMENT]
 			-- Line segments (2 or 1) of the stop specified by `a_name' for the line `a_line'
 		require
 			stations.has (a_name) and then stations.item (a_name).has_stop (a_line)
@@ -370,7 +370,7 @@ feature -- Access
 
 feature -- Output
 
-	out: STRING is
+	out: STRING
 			-- Textual representation.
 		do
 			Result := "Traffic city%Nnamed: " + name + "%Ndescription: " + description_out +
@@ -379,7 +379,7 @@ feature -- Output
 
 feature {TRAFFIC_MAP_LOADER}
 
-	recalculate_weights_and_connect_stops is
+	recalculate_weights_and_connect_stops
 			-- Due to an error in processing the weights need to be recalculated.
 			-- In addition, the stops of different lines are connected at nodes.
 		local
@@ -410,7 +410,7 @@ feature {TRAFFIC_MAP_LOADER}
 
 feature {NONE}-- Implementation
 
-	station_location (a_name: STRING): INTEGER is
+	station_location (a_name: STRING): INTEGER
 			-- Location of station `a_name' in stations
 		require
 			a_name_exists: a_name /= Void
@@ -432,7 +432,7 @@ feature {NONE}-- Implementation
 		end
 
 
-	description_out: STRING is
+	description_out: STRING
 			-- Textual representation of description
 		do
 			if description = Void then
@@ -444,7 +444,7 @@ feature {NONE}-- Implementation
 			Result_exists: Result /= Void
 		end
 
-	location_from_segmentss (a_segments: LIST [TRAFFIC_SEGMENT]; a_node: TRAFFIC_NODE): TRAFFIC_POINT is
+	location_from_segmentss (a_segments: LIST [TRAFFIC_SEGMENT]; a_node: TRAFFIC_NODE): TRAFFIC_POINT 
 			-- Location of `a_node'
 		do
 

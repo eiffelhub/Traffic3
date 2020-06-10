@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Color objects (independent of the visualization to be used, vision2 or em)"
 	date: "$Date$"
 	revision: "$Revision$"
@@ -12,7 +12,7 @@ create
 
 feature -- Initialization
 
-	make_black is
+	make_black
 			-- Create a black color.
 		do
 			set_red (0)
@@ -24,7 +24,7 @@ feature -- Initialization
 			blue_set: blue = 0
 		end
 
-	make_with_rgb (red_value, green_value, blue_value: INTEGER) is
+	make_with_rgb (red_value, green_value, blue_value: INTEGER)
 			-- Create color with `red_value', `green_value' and `blue_value'.
 		require
 			red_value_in_range: 0 <= red_value and red_value <= 255
@@ -40,7 +40,7 @@ feature -- Initialization
 			blue_set: blue = blue_value
 		end
 
-	make_white is
+	make_white
 			-- Create a white color
 		do
 			set_red (255)
@@ -65,7 +65,7 @@ feature -- Access
 
 feature -- Element change
 
-	set_red (a_value: INTEGER) is
+	set_red (a_value: INTEGER)
 			-- Set red spectre of the color to `a_value'
 		require
 			a_value_in_range: 0 <= a_value and a_value <= 255
@@ -75,7 +75,7 @@ feature -- Element change
 			red_set: red = a_value
 		end
 
-	set_green (a_value: INTEGER) is
+	set_green (a_value: INTEGER)
 			-- Set green spectre of the color to `a_value'
 		require
 			a_value_in_range: 0 <= a_value and a_value <= 255
@@ -85,7 +85,7 @@ feature -- Element change
 			green_set: green = a_value
 		end
 
-	set_blue (a_value: INTEGER) is
+	set_blue (a_value: INTEGER)
 			-- Set blue spectre of the color to `a_value'
 		require
 			a_value_in_range: 0 <= a_value and a_value <= 255
@@ -95,7 +95,7 @@ feature -- Element change
 			blue_set: blue = a_value
 		end
 
-	set_rgb (red_value, green_value, blue_value: INTEGER) is
+	set_rgb (red_value, green_value, blue_value: INTEGER)
 			-- Set red, green and blue values
 		require
 			red_value_in_range: 0 <= red_value and red_value <= 255

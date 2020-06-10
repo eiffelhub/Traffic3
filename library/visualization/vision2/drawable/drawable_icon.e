@@ -1,6 +1,5 @@
-indexing
-
-	description: "[ 
+note
+	description: "[
 			Sub pixmaps for use with EV_CANVAS not scaling.
 			Therefore position is given in the center.
 			]"

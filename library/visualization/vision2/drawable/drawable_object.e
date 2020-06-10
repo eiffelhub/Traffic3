@@ -1,5 +1,4 @@
-indexing
-
+note
 	description: "[
 					Objects that can be drawn on EV_CANVAS and
 					that will scale when zooming

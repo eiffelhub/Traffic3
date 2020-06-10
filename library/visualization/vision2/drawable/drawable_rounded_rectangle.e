@@ -1,5 +1,4 @@
-indexing
-
+note
 	description: "[
 					Rounded rectangle that will scale when zooming in EV_CANVAS
 					]"

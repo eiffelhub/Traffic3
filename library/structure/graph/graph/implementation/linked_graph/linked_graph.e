@@ -1,4 +1,4 @@
-indexing
+note
 	description: "[
 		Directed graphs, implemented as dynamically linked structure.
 		Simple graphs, multigraphs, symmetric graphs and symmetric

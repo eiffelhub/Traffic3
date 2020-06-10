@@ -1,5 +1,4 @@
-indexing
-
+note
 	description: "Rectangular areas."
 	status:	"See notice at end of class"
 	author: "Till G. Bay"

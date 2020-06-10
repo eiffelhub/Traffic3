@@ -1,4 +1,4 @@
-indexing
+note
 	description: "City widget for vision2"
 	date: "$Date$"
 	revision: "$Revision$"

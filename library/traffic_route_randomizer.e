@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Random route generator (used for providing passengers with their routes)"
 	date: "$Date$"
 	revision: "$Revision$"
@@ -11,7 +11,7 @@ create
 
 feature -- Element change
 
-	set_city (a_city: TRAFFIC_CITY) is
+	set_city (a_city: TRAFFIC_CITY)
 			-- Initialize with `a_city'.
 		require
 			a_city_exists: a_city /= Void
@@ -28,7 +28,7 @@ feature -- Element change
 
 feature -- Basic operations
 
-	generate_route (n: INTEGER) is
+	generate_route (n: INTEGER) 
 			-- Generate a new route with at most `n' random connections to be taken on `city'.
 			-- Result is accessable via `last_route'.
 		require

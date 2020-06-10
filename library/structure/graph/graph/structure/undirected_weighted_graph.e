@@ -1,4 +1,4 @@
-indexing
+note
 	description: "[
 		Undirected weighted graphs without commitment to
 		a particular representation.

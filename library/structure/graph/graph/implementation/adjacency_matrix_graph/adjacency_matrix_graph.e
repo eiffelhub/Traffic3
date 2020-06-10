@@ -1,4 +1,4 @@
-indexing
+note
 	description: "[
 		Directed graphs, implemented on the basis
 		of an adjacency matrix.

@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Node in the graph (a node is an endpoint of a connection)"
 	date: "$Date$"
 	revision: "$Revision$"

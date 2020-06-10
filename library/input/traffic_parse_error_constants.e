@@ -1,4 +1,4 @@
-indexing
+note
 	description:"Error constants used for XML parsing."
 	date: "$Date: 2007-09-24 11:12:13 +0200 (Пн, 24 сен 2007) $"
 	revision: "$Revision: 931 $"

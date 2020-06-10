@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Represents a route from one TRAFFIC_STATION to another"
 	date: "$Date$"
 	revision: "$Revision$"

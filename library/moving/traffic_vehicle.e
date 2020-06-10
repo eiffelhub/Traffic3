@@ -1,7 +1,8 @@
-indexing
+note
 	description: "Deferred class for objects that can be used to transport cargo or passengers"
 	date: "$Date: 2006/06/06 12:23:40 $"
 	revision: "$Revision$"
+
 deferred class
 	TRAFFIC_VEHICLE
 
@@ -15,7 +16,7 @@ feature --Access
 		deferred
 		end
 
-	capacity:INTEGER is
+	capacity:INTEGER
 			-- Maximum possible load
 		do
 			Result := unit_capacity
@@ -23,7 +24,7 @@ feature --Access
 
 feature -- Basic operations
 
-	load(a_quantity: INTEGER) is
+	load(a_quantity: INTEGER)
 			-- Load cargo or a passenger.
 		require
 			a_quantity_non_negative: a_quantity >= 0
@@ -33,7 +34,7 @@ feature -- Basic operations
     		loaded: count = old count + a_quantity
     	end
 
-	unload(a_quantity: INTEGER) is
+	unload(a_quantity: INTEGER) 
 			-- Unload cargo or a passenger.
 		require
 			  a_quantity_non_negative: a_quantity >= 0

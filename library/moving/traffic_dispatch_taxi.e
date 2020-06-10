@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Taxi used for taxi dispatcher application using method call communication"
 	date: "$Date: 6/6/2006$"
 	revision: "$Revision$"

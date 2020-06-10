@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Factory for city item views"
 	date: "$Date$"
 	revision: "$Revision$"

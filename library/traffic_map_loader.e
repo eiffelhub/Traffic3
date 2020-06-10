@@ -1,4 +1,4 @@
-indexing
+note
 	description: "Loader that handles the city loading from xml and dump files"
 	date: "$Date$"
 	revision: "$Revision$"

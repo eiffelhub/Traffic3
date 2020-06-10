@@ -72,7 +72,7 @@ feature -- Basic operations
 			registered: Processor_registry.has_item (a_processor)
 		end
 
-	register_allowed_subnode (a_parent_name: STRING; a_subnode_name: STRING) 
+	register_allowed_subnode (a_parent_name: STRING; a_subnode_name: STRING)
 			-- Register processor with name `a_subnode_name' as allowed subnode of processor with name `a_parent_name'.
 			-- Use `register_processor' for new node types and
 			-- `register_allowed_subnode' for registering their subnode types.
@@ -148,7 +148,7 @@ feature {NONE} -- Implementation
 			Result.put (a, "place")
 			Result.put (a, "landmark")
 --			point
-			a := <<  >>
+			a := {ARRAY [STRING_8]} <<  >>
 			a.compare_objects
 			Result.put (a, "point")
 
@@ -168,11 +168,11 @@ feature {NONE} -- Implementation
 			Result.put (a, "line_section")
 
 --			file
-			a := <<  >>
+			a := {ARRAY [STRING_8]} <<  >>
 			a.compare_objects
 			Result.put (a, "file")
 --			color
-			a := <<  >>
+			a := {ARRAY [STRING_8]} <<  >>
 			a.compare_objects
 			Result.put (a, "color")
 
@@ -201,7 +201,7 @@ feature {NONE} -- Implementation
 			Result.put (a, "buildings")
 
 --			building
-			a := << >>
+			a := {ARRAY [STRING_8]} << >>
 			a.compare_objects
 			Result.put (a, "building")
 

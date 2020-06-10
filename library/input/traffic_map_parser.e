@@ -1,4 +1,4 @@
-indexing
+note
 	description: "XML parser for the traffic map data."
 	date: "$Date: 2007-09-24 11:12:13 +0200 (Пн, 24 сен 2007) $"
 	revision: "$Revision: 931 $"
