@@ -82,7 +82,7 @@ feature -- Status report
 			Result := True
 		end
 
-	is_valid_line (a_line: TRAFFIC_LINE): BOOLEAN 
+	is_valid_line (a_line: TRAFFIC_LINE): BOOLEAN
 			-- Is `a_line' valid for a tram to move on?
 		do
 			if a_line.type.is_equal (create {TRAFFIC_TYPE_TRAM}.make) or a_line.type.is_equal (create {TRAFFIC_TYPE_BUS}.make) then
