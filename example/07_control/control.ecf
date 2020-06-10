@@ -13,7 +13,6 @@
 		<setting name="address_expression" value="false"/>
 		<setting name="array_optimization" value="false"/>
 		<setting name="check_vape" value="true"/>
-		<setting name="cls_compliant" value="true"/>
 		<setting name="console_application" value="false"/>
 		<setting name="dotnet_naming_convention" value="false"/>
 		<setting name="dynamic_runtime" value="false"/>
@@ -24,7 +23,6 @@
 		<setting name="line_generation" value="false"/>
 		<setting name="msil_generation" value="false"/>
 		<setting name="msil_generation_type" value="exe"/>
-		<setting name="total_order_on_reals" value="false"/>
 		<setting name="dead_code_removal" value="feature"/>
 		<capability>
 			<concurrency support="none" use="none"/>
