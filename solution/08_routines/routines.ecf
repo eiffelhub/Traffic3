@@ -13,7 +13,6 @@
 		<setting name="address_expression" value="false"/>
 		<setting name="array_optimization" value="false"/>
 		<setting name="check_vape" value="true"/>
-		<setting name="cls_compliant" value="true"/>
 		<setting name="console_application" value="false"/>
 		<setting name="dotnet_naming_convention" value="false"/>
 		<setting name="dynamic_runtime" value="false"/>
