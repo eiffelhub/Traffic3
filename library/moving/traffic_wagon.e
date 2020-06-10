@@ -11,7 +11,7 @@ create
 
 feature -- Initialization
 
-	make_default is
+	make_default
 			-- Set capacity to Default_capacity
 		do
 			capacity := Default_capacity
@@ -43,7 +43,7 @@ feature -- Basic operations
 
 feature --Access
 
-	capacity:INTEGER
+	capacity: INTEGER
 			-- Load allowed
 
 	count: INTEGER
@@ -51,7 +51,7 @@ feature --Access
 
 feature --Constants
 
-	Default_capacity: INTEGER is 100
+	Default_capacity: INTEGER = 100
 			-- Default capacity
 
 invariant

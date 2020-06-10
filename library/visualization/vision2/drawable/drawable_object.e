@@ -1,5 +1,4 @@
 note
-
 	description: "[
 					Objects that can be drawn on EV_CANVAS and
 					that will scale when zooming
@@ -13,7 +12,7 @@ deferred class DRAWABLE_OBJECT
 
 feature -- Commands
 
-	set_color (a_color: like color) is
+	set_color (a_color: like color) 
 			-- Set the color of the object to `a_color'
 		require
 			a_color_not_void: a_color /= Void
@@ -24,7 +23,7 @@ feature -- Commands
 			color_set: color = a_color
 		end
 
-	hide is
+	hide
 			-- Highlight the view.
 		do
 			is_shown := False
@@ -33,7 +32,7 @@ feature -- Commands
 			hidden: not is_shown
 		end
 
-	show is
+	show
 			-- Unhighlight the view.
 		do
 			is_shown := True
@@ -58,14 +57,14 @@ feature -- Access
 	color: EV_COLOR
 			-- The color of the drawable object
 
-	bounding_box: REAL_RECTANGLE is
+	bounding_box: REAL_RECTANGLE
 			-- The bounding box of `Current'
 		deferred
 		ensure
 			bounding_box_not_void: Result /= Void
 		end
 
-	real_to_integer_coordinate (a_real_coordinate: REAL_COORDINATE): EV_COORDINATE	is
+	real_to_integer_coordinate (a_real_coordinate: REAL_COORDINATE): EV_COORDINATE
 			-- Convert `a_real_coordinate' to an integer coordinate.
 		require
 			a_real_coordinate_not_void: a_real_coordinate /= Void
@@ -85,7 +84,7 @@ feature -- Access
 			result_not_void: Result /= Void
 		end
 
-	integer_to_real_coordinate (an_integer_coordinate: EV_COORDINATE): REAL_COORDINATE is
+	integer_to_real_coordinate (an_integer_coordinate: EV_COORDINATE): REAL_COORDINATE
 			-- Convert `an_integer_coordinate' to a real coordinate.
 		require
 			an_integer_coordinate_not_void: an_integer_coordinate /= Void
@@ -105,7 +104,7 @@ feature -- Access
 
 feature {CANVAS, DRAWABLE_OBJECT} -- Display
 
-	draw (a_target: CANVAS) is
+	draw (a_target: CANVAS)
 			-- Draw `Current' onto `a_target'
 		require
 			a_target_not_void: a_target /= Void
@@ -123,14 +122,14 @@ feature {CANVAS, DRAWABLE_OBJECT} -- Display
 			canvas_set: canvas = a_target
 		end
 
-	draw_object is
+	draw_object
 			-- Draw the object.
 		deferred
 		end
 
 feature {NONE} -- Implementation
 
-	invalidate is
+	invalidate
 			-- Some property of `Current' has changed.
 		do
 			is_valid := False
@@ -139,7 +138,7 @@ feature {NONE} -- Implementation
 			end
 		end
 
-	validate is
+	validate
 			-- `Current' has been updated by a projector.
 		do
 			if not is_valid then

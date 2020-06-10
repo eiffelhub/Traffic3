@@ -37,7 +37,7 @@ create
 
 feature -- Initialization
 
-	make is
+	make
 			-- Initialize canvas.
 		local
 			figure_world : EV_FIGURE_WORLD
@@ -79,7 +79,7 @@ feature -- Initialization
 
 feature -- Element change
 
-	set_city (a_city: TRAFFIC_CITY) is
+	set_city (a_city: TRAFFIC_CITY)
 			-- Set city that is displayed to `a_city'.
 		do
 			create internal_station_representations.make
@@ -97,14 +97,14 @@ feature -- Element change
 
 feature -- Status setting
 
-	enable_city_hidden is
+	enable_city_hidden
 			-- Set `is_city_hidden' to `True'.
 		do
 			is_city_hidden := True
 			redraw
 		end
 
-	disable_city_hidden is
+	disable_city_hidden
 			-- Set `is_city_hidden' to `False'.
 		do
 			is_city_hidden := False
@@ -113,19 +113,19 @@ feature -- Status setting
 
 feature -- Access
 
-	line_representations:  TRAFFIC_VIEW_CONTAINER [TRAFFIC_LINE, TRAFFIC_VIEW [TRAFFIC_LINE]] is
+	line_representations:  TRAFFIC_VIEW_CONTAINER [TRAFFIC_LINE, TRAFFIC_VIEW [TRAFFIC_LINE]]
 			-- Container for line views
 		do
 			Result := internal_line_representations
 		end
 
-	road_representations:  TRAFFIC_VIEW_CONTAINER [TRAFFIC_ROAD, TRAFFIC_VIEW [TRAFFIC_ROAD]] is
+	road_representations:  TRAFFIC_VIEW_CONTAINER [TRAFFIC_ROAD, TRAFFIC_VIEW [TRAFFIC_ROAD]]
 			-- Container for road views
 		do
 			Result := internal_road_representations
 		end
 
-	route_representations:  TRAFFIC_VIEW_CONTAINER [TRAFFIC_ROUTE, TRAFFIC_VIEW [TRAFFIC_ROUTE]] is
+	route_representations:  TRAFFIC_VIEW_CONTAINER [TRAFFIC_ROUTE, TRAFFIC_VIEW [TRAFFIC_ROUTE]]
 			-- Container for route views
 		do
 			Result := internal_route_representations
@@ -149,7 +149,7 @@ feature -- Access
 			Result := internal_moving_representations
 		end
 
-	factory: TRAFFIC_VIEW_FACTORY is
+	factory: TRAFFIC_VIEW_FACTORY
 			-- Factory for creating views
 		do
 			Result := internal_factory
@@ -157,7 +157,7 @@ feature -- Access
 
 feature -- Basic operations
 
-	redraw_now is
+	redraw_now
 			-- Refresh all items on `Current'.
 		do
 			background_color.set_rgb (1.0, 1.0, 1.0)
@@ -184,7 +184,7 @@ feature -- Basic operations
 			end
 		end
 
-	fast_redraw_now is
+	fast_redraw_now
 			-- Refresh only the objects in mutable_object_list.
 		do
 			clear
@@ -218,7 +218,7 @@ feature {NONE} -- Implementation
 	map_image: EV_PIXMAP
 	background_polygons: LINKED_LIST[DRAWABLE_POLYGON]
 
-	add_background_polygons(polygons: LINKED_LIST[TRAFFIC_POLYGON]) is
+	add_background_polygons(polygons: LINKED_LIST[TRAFFIC_POLYGON])
 		-- adds `polygons' to `background_polygons'  (converted to DRAWABLE_POLYGON)
 	local
 		c: EV_COLOR

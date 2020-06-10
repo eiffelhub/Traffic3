@@ -1,5 +1,5 @@
 note
-	description: "[
+	description : "[
 		Linked list that contains city items, 
 		calls add_to_city and remove_from_city on insertion and deletion,
 		and throws events when a new item is added/removed
@@ -300,7 +300,7 @@ feature -- Removal
 			wiped_out: is_empty
 		end
 
-	delete (v: like item_for_iteration) 
+	delete (v: like item_for_iteration)
 			-- Remove all occurrences of `v'.
 			-- Move all cursors off.
 		require

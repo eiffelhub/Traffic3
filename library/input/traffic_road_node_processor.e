@@ -18,10 +18,10 @@ create
 
 feature -- Access
 
-	Name: STRING is "road"
+	Name: STRING = "road"
 			-- Name of element to process
 
-	Mandatory_attributes: ARRAY [STRING] is
+	Mandatory_attributes: ARRAY [STRING]
 			-- Table of mandatory attributes
 		do
 			Result := << "id", "from", "to", "direction", "type" >>
@@ -30,7 +30,7 @@ feature -- Access
 
 feature -- Basic operations
 
-	process is
+	process
 			-- Process node.
 		local
 			road: TRAFFIC_ROAD
@@ -76,7 +76,7 @@ feature -- Basic operations
 			end
 		end
 
-	process_subnodes is
+	process_subnodes
 			-- Process subnodes.
 		local
 			n: XM_ELEMENT
@@ -123,12 +123,12 @@ feature {NONE} -- Implementation
 			-- Polypoints of this link
 
 
-	zero_vector: TRAFFIC_POINT is
+	zero_vector: TRAFFIC_POINT
 		once
 			Result := create {TRAFFIC_POINT}.make (0, 0)
 		end
 
-	adjust_location (road: TRAFFIC_ROAD_SEGMENT; a_polypoints: DS_LIST [TRAFFIC_POINT]) is
+	adjust_location (road: TRAFFIC_ROAD_SEGMENT; a_polypoints: DS_LIST [TRAFFIC_POINT])
 			-- Adjust positions
 		do
 			if road.origin.location = Void or equal(road.origin.location, zero_vector) then

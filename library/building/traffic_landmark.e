@@ -1,5 +1,5 @@
 note
-	description: "Landmarks are special buildings with an image file or 3d model file for display"
+	description:"Landmarks are special buildings with an image file or 3d model file for display"
 	date: "$Date$"
 	revision: "$Revision$"
 

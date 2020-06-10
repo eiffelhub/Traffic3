@@ -12,7 +12,7 @@ class TRAFFIC_SHARED_ERROR_HANDLER
 
 feature -- Access
 
-	Error_handler: TRAFFIC_ERROR_HANDLER is
+	Error_handler: TRAFFIC_ERROR_HANDLER 
 			-- EiffelMedia error handler
 		once
 			create Result.make

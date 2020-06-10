@@ -20,7 +20,7 @@ create
 
 feature {NONE} -- Initialization
 
-	make_random (a_point_list: DS_ARRAYED_LIST [TRAFFIC_POINT]) is
+	make_random (a_point_list: DS_ARRAYED_LIST [TRAFFIC_POINT])
 			-- Create a taxi with an associated 'a_taxi_office'.
 			-- Random speed and stops at 'stops' random positions.
 			-- Set seed of random_number to 'a_seed'.
@@ -57,13 +57,13 @@ feature -- Access
 
 feature -- Status report
 
-	is_insertable (a_city: TRAFFIC_CITY): BOOLEAN is
+	is_insertable (a_city: TRAFFIC_CITY): BOOLEAN
 			-- Is `Current' insertable into `a_city'?
 		do
 			Result := True
 		end
 
-	is_removable: BOOLEAN is
+	is_removable: BOOLEAN
 			-- Is `Current' removable from `city'?
 		do
 			Result := True
@@ -74,13 +74,13 @@ feature -- Status report
 
 feature -- Basic operations
 
-	load(a_quantity: INTEGER) is
+	load(a_quantity: INTEGER)
 			-- Load cargo or a passenger.
     	do
 			count := count + a_quantity
     	end
 
-    unload(a_quantity: INTEGER) is
+    unload(a_quantity: INTEGER)
 			-- Load cargo or a passenger.
     	do
 			count := count - a_quantity
@@ -106,7 +106,7 @@ feature -- Basic operations
 
 feature{NONE} --Implementation
 
-	move_next is
+	move_next
 			--  Move to following position
 		do
 			-- Set the locations to the corresponding ones of the line segment.
@@ -140,7 +140,7 @@ feature{NONE} --Implementation
 			end
 		end
 
-	advance is
+	advance
 			-- Take a tour in the city.
 			-- Set new random directions and if 'Current' has done a request and is available again.
 		do
@@ -161,7 +161,7 @@ feature{NONE} --Implementation
 
 	polypoints: DS_ARRAYED_LIST [TRAFFIC_POINT]
 
-	set_request_information (from_location: TRAFFIC_POINT; to_location: TRAFFIC_POINT) is
+	set_request_information (from_location: TRAFFIC_POINT; to_location: TRAFFIC_POINT)
 			-- Set new origin and destination, new points to drive from from_location to to_location.
 		require
 			valid_from_location: from_location /= void

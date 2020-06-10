@@ -18,12 +18,12 @@ feature -- Access
 	name: STRING
 			-- String representation
 
-	speed: REAL_64 is 10.0
+	speed: REAL_64 = 10.0
 			-- Default speed
 
 feature -- Output
 
-	out: STRING is
+	out: STRING
 			-- String representation of class
 		do
 			Result := name
@@ -31,7 +31,7 @@ feature -- Output
 
 feature -- Comparison
 
-		is_equal (other: like Current): BOOLEAN is
+		is_equal (other: like Current): BOOLEAN
 				-- Is `other' equal to `Current'?
 			do
 				Result := name.is_equal (other.name)

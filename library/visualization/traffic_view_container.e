@@ -8,12 +8,12 @@ deferred class
 
 feature -- Access
 
-	count: INTEGER is
+	count: INTEGER 
 			-- Number of items in list
 		deferred
 		end
 
-	item_for_iteration: H is
+	item_for_iteration: H
 			-- Item at internal cursor position
 		require
 			not_after: not after
@@ -27,7 +27,7 @@ feature -- Access
 		deferred
 		end
 
-	view_for_item (a_item: G): H is
+	view_for_item (a_item: G): H
 			-- View for `a_item' if it exists
 			-- (Result may be Void!)
 		do
@@ -57,12 +57,12 @@ feature -- Status report
 		deferred
 		end
 
-	after: BOOLEAN is
+	after: BOOLEAN
 			-- Is there no item at internal cursor position?
 		deferred
 		end
 
-	has_view_for_item (a_item: G): BOOLEAN is
+	has_view_for_item (a_item: G): BOOLEAN
 			-- Is there a view for `a_item'?
 			-- (Result may be Void!)
 		do
@@ -78,7 +78,7 @@ feature -- Status report
 			end
 		end
 
-	first: H is
+	first: H
 			-- First item in list
 		require
 			not_empty: not is_empty
@@ -108,7 +108,7 @@ feature -- Insertion
 			inserted: first = v
 		end
 
-	put_last (v: H) is
+	put_last (v: H)
 			-- Add `v' to end of list.
 			-- Do not move cursors.
 		deferred
@@ -118,7 +118,7 @@ feature -- Insertion
 			inserted: last = v
 		end
 
-	replace (v: H; i: INTEGER) is
+	replace (v: H; i: INTEGER)
 			-- Replace item at index `i' by `v'.
 			-- Do not move cursors.
 		require
@@ -129,7 +129,7 @@ feature -- Insertion
 			replaced: item (i) = v
 		end
 
-	put (v: H; i: INTEGER) is
+	put (v: H; i: INTEGER)
 			-- Add `v' at `i'-th position.
 			-- Do not move cursors.
 		require
@@ -199,7 +199,7 @@ feature -- Cursor movement
 			not_empty_behavior: not is_empty implies item_for_iteration = first
 		end
 
-	forth is
+	forth
 			-- Move internal cursor to next position.
 		require
 			not_after: not after
@@ -208,7 +208,7 @@ feature -- Cursor movement
 
 feature -- Basic operations
 
-	hide is
+	hide
 			-- Hide all elements.
 		do
 			from
@@ -221,7 +221,7 @@ feature -- Basic operations
 			end
 		end
 
-	show is
+	show
 			-- Show all elements.
 		do
 			from

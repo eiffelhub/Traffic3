@@ -1,5 +1,4 @@
 note
-
 	description: "Sub pixmaps for use with EV_CANVAS, scaling"
 	status:	"See notice at end of class"
 	author: "Till G. Bay"
@@ -24,7 +23,7 @@ create
 
 feature {NONE} -- Initialization
 
-	make (a_sub_pixmap: EV_PIXMAP; a_pixmap_position: REAL_COORDINATE) is
+	make (a_sub_pixmap: EV_PIXMAP; a_pixmap_position: REAL_COORDINATE)
 			-- Create `a_pixmap_position' at `a_pixmap_position'
 		require
 			a_pixmap_position_not_void: a_pixmap_position /= Void
@@ -56,7 +55,7 @@ feature -- Access
 
 feature -- Element change
 
-	set_position (a_coordinate: REAL_COORDINATE) is
+	set_position (a_coordinate: REAL_COORDINATE)
 			-- Set center of icon to `a_coordinate'.
 		require
 			a_coordinate_exists: a_coordinate /= Void
@@ -68,7 +67,7 @@ feature -- Element change
 
 		end
 
-	enable_transparency is
+	enable_transparency
 			-- Ignore `color' as background color (to allow transparency).
 		do
 			has_transparency := True
@@ -76,7 +75,7 @@ feature -- Element change
 			has_transparency
 		end
 
-	disable_transparency is
+	disable_transparency
 			-- Use `color' as background color (no transparency).
 		do
 			has_transparency := False
@@ -86,7 +85,7 @@ feature -- Element change
 
 feature {EV_CANVAS} -- Display
 
-	draw_object is
+	draw_object
 			-- Draw the sub pixmap
 		local
 			copied_pixmap_coordinate : EV_COORDINATE
@@ -143,7 +142,7 @@ feature {EV_CANVAS} -- Display
 
 feature {NONE} -- Implementation/Calculations
 
-	integer_to_real_x (an_integer_x: INTEGER): REAL_64 is
+	integer_to_real_x (an_integer_x: INTEGER): REAL_64
 			-- Convert `an_integer_x' to an x value in world coordinates
 		do
 			Result := (an_integer_x * bounding_box.width)/pixmap.width
@@ -151,7 +150,7 @@ feature {NONE} -- Implementation/Calculations
 		--	definition: Result = (an_integer_x * bounding_box.width)/pixmap.width
 		end
 
-	integer_to_real_y (an_integer_y: INTEGER): REAL_64 is
+	integer_to_real_y (an_integer_y: INTEGER): REAL_64
 			-- Convert `an_integer_y' to an y value in world coordinates
 		do
 			Result:= (an_integer_y * bounding_box.height)/pixmap.height
@@ -159,7 +158,7 @@ feature {NONE} -- Implementation/Calculations
 		--	definition: Result = (an_integer_y * bounding_box.height)/pixmap.height
 		end
 
-	real_to_integer_x_floor (a_real_x: REAL_64): INTEGER	is
+	real_to_integer_x_floor (a_real_x: REAL_64): INTEGER
 			-- Convert `a_real_x' to an x value in screen coordinates, rounding down
 		do
 			Result := ((a_real_x * pixmap.width) / bounding_box.width).floor
@@ -167,7 +166,7 @@ feature {NONE} -- Implementation/Calculations
 		--	definition: Result = ((a_real_x * pixmap.width) / bounding_box.width).floor
 		end
 
-	real_to_integer_x_ceiling (a_real_x: REAL_64): INTEGER	is
+	real_to_integer_x_ceiling (a_real_x: REAL_64): INTEGER
 			-- Convert `a_real_x' to an x value in screen coordinates, rounding up
 		do
 			Result := ((a_real_x * pixmap.width) / bounding_box.width).ceiling
@@ -175,7 +174,7 @@ feature {NONE} -- Implementation/Calculations
 		--	definition: Result = ((a_real_x * pixmap.width) / bounding_box.width).ceiling
 		end
 
-	real_to_integer_y_floor (a_real_y: REAL_64): INTEGER	is
+	real_to_integer_y_floor (a_real_y: REAL_64): INTEGER
 			-- Convert `a_real_y' to an y value in screen coordinates, rounding down
 		do
 			Result := ((a_real_y * pixmap.height) / bounding_box.height).floor
@@ -183,7 +182,7 @@ feature {NONE} -- Implementation/Calculations
 		--	definition: Result = ((a_real_y * pixmap.height) / bounding_box.height).floor
 		end
 
-	real_to_integer_y_ceiling (a_real_y: REAL_64): INTEGER	is
+	real_to_integer_y_ceiling (a_real_y: REAL_64): INTEGER
 			-- Convert `a_real_y' to an y value in screen coordinates, rounding up
 		do
 			Result := ((a_real_y * pixmap.height) / bounding_box.height).ceiling
@@ -193,7 +192,7 @@ feature {NONE} -- Implementation/Calculations
 
 feature {NONE} -- Implementation
 
-	pixmap: EV_PIXMAP is
+	pixmap: EV_PIXMAP
 			-- Pixmap that is displayed.
 		do
 			Result := id_pixmap.pixmap

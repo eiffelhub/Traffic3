@@ -18,7 +18,7 @@ inherit
 
 feature -- Initialization
 
-	make (g: GRAPH [G, L]) is
+	make (g: GRAPH [G, L])
 			-- Create a new walker that is walking on `g'. The starting position
 			-- of the walker is the current node of the graph.
 		require
@@ -41,7 +41,7 @@ feature -- Access
 	graph: GRAPH [G, L]
 			-- The graph the walker is processing
 
-	item: G is
+	item: G
 			-- Current graph node
 		do
 			Result := graph.item
@@ -56,11 +56,11 @@ feature -- Status report
 
 	after: BOOLEAN
 
-	is_empty: BOOLEAN is False
+	is_empty: BOOLEAN = False
 
 feature -- Cursor movement
 
-	start is
+	start 
 			-- Move the cursor back to the start
 		do
 			graph.go_to (first_node)
@@ -72,7 +72,7 @@ feature -- Cursor movement
 			after := False
 		end
 
-	forth is
+	forth
 			-- Move the cursor to the next item
 		do
 			if dispenser.is_empty then
@@ -111,7 +111,7 @@ feature -- Cursor movement
 			end
 		end
 
-	finish is
+	finish
 			-- Move the cursor to the last item
 		do
 			from
@@ -134,14 +134,14 @@ feature {NONE} -- Implementation
 	visited_nodes: HASH_TABLE [BOOLEAN, HASHABLE]
 			-- Provides fast lookup for already processed nodes
 
-	create_dispenser is
+	create_dispenser
 			-- Create the dispenser
 		deferred
 		ensure
 			dispenser_created: dispenser /= Void
 		end
 
-	add_targets_to_dispenser is
+	add_targets_to_dispenser
 			-- Add all targets of the current node to the dispenser
 		require
 			not_off_graph: not graph.off
@@ -156,7 +156,7 @@ feature {NONE} -- Implementation
 			end
 		end
 
-	next_will_be_after: BOOLEAN is
+	next_will_be_after: BOOLEAN
 			-- Will the next forth result in an after ?
 			-- (all items in the dispenser are already visited)
 		local

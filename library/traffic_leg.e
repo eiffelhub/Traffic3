@@ -19,14 +19,14 @@ create
 
 feature {NONE} -- Creation
 
-	default_create is
+	default_create
 			-- Initialize `Current'.
 		do
 			create segments.make
 		end
 
-	make (a_segment: TRAFFIC_SEGMENT) is
-			-- Initialize `current', used if line-type is unknown.
+	make (a_segment: TRAFFIC_SEGMENT)
+			-- Initialize `current', used if line-type  unknown.
 		require
 			a_segment_exists: a_segment /= Void
 		local
@@ -43,7 +43,7 @@ feature {NONE} -- Creation
 			extend (a_segment)
 		end
 
-	make_tram (a_line_segment: TRAFFIC_LINE_SEGMENT) is
+	make_tram (a_line_segment: TRAFFIC_LINE_SEGMENT)
 			-- Initialize `Current' of type tram.
 		require
 			line_segment_exists: a_line_segment /= Void
@@ -57,7 +57,7 @@ feature {NONE} -- Creation
 			extend (a_line_segment)
 		end
 
-	make_metro (a_origin, a_destination: TRAFFIC_STATION) is
+	make_metro (a_origin, a_destination: TRAFFIC_STATION)
 			-- Make `Current' from `a_origin' to `a_destination' of type tram.
 		require
 			at_least_one_common_line: not a_origin.lines.disjoint (a_destination.lines)
@@ -84,8 +84,7 @@ feature {NONE} -- Creation
 
 		end
 
-
-	make_bus (a_line_segment: TRAFFIC_LINE_SEGMENT) is
+	make_bus (a_line_segment: TRAFFIC_LINE_SEGMENT)
 			-- Initialize `Current' of type bus.
 		require
 			line_sectin_exists: a_line_segment /= Void
@@ -99,7 +98,7 @@ feature {NONE} -- Creation
 			extend (a_line_segment)
 		end
 
-	make_rail (a_line_segment: TRAFFIC_LINE_SEGMENT) is
+	make_rail (a_line_segment: TRAFFIC_LINE_SEGMENT)
 			-- Initialize `Current' ob type rail.
 		require
 			line_segment_exists: a_line_segment /= Void
@@ -113,7 +112,7 @@ feature {NONE} -- Creation
 			extend (a_line_segment)
 		end
 
-	make_walk_with_road (a_road: TRAFFIC_ROAD_SEGMENT) is
+	make_walk_with_road (a_road: TRAFFIC_ROAD_SEGMENT)
 			-- Initialize `Current' of type walk.
 		require
 			road_exists: a_road /= Void
@@ -126,7 +125,7 @@ feature {NONE} -- Creation
 			extend (a_road)
 		end
 
-	make_walk (a_origin, a_destination: TRAFFIC_STATION) is
+	make_walk (a_origin, a_destination: TRAFFIC_STATION)
 			-- Initialize `Current' of type walk.
 		require
 			directly_connected_by_one_road: a_origin.is_road_connected (a_destination)
@@ -146,19 +145,19 @@ feature {NONE} -- Creation
 
 feature -- Access
 
-	type: TRAFFIC_TYPE is
+	type: TRAFFIC_TYPE
 			-- Type of the route segment
 		do
 			Result := segments.first.type
 		end
 
-	origin: TRAFFIC_STATION is
+	origin: TRAFFIC_STATION
 			-- Origin of the route
 		do
 			Result := segments.first.origin
 		end
 
-	destination: TRAFFIC_STATION is
+	destination: TRAFFIC_STATION
 			-- Destination of the route
 		do
 			Result := segments.last.destination
@@ -178,13 +177,13 @@ feature -- Access
 
 feature -- Status report
 
-	has_line: BOOLEAN is
+	has_line: BOOLEAN
 			-- Does this route segment use a line?
 		do
 			Result := line /= Void
 		end
 
-	is_insertable (a_segment: TRAFFIC_SEGMENT): BOOLEAN is
+	is_insertable (a_segment: TRAFFIC_SEGMENT): BOOLEAN
 			-- Can `a_segment' be inserted?
 		require
 			a_segment_exists: a_segment /= Void
@@ -205,7 +204,7 @@ feature -- Status report
 			end
 		end
 
-	is_joinable (a_segment: TRAFFIC_LEG): BOOLEAN is
+	is_joinable (a_segment: TRAFFIC_LEG): BOOLEAN
 			-- Can `a_segment' be inserted?
 		require
 			a_segment_exists: a_segment /= Void
@@ -213,7 +212,7 @@ feature -- Status report
 			Result := a_segment.segments = Void or else is_insertable (a_segment.segments.first)
 		end
 
-	is_valid_next (a_segment: TRAFFIC_LEG): BOOLEAN is
+	is_valid_next (a_segment: TRAFFIC_LEG): BOOLEAN
 			-- Is the origin of `a_segment' the same station as the current destination?
 		require
 			a_segment_exists: a_segment /= Void
@@ -222,7 +221,7 @@ feature -- Status report
 
 		end
 
-	is_tram (a_line_segment: TRAFFIC_LINE_SEGMENT): BOOLEAN is
+	is_tram (a_line_segment: TRAFFIC_LINE_SEGMENT): BOOLEAN
 			-- is `a_line_segment' of type tram?
 		require
 			a_line_segment_exists: a_line_segment /= Void
@@ -234,7 +233,7 @@ feature -- Status report
 			Result := a_line_segment.line.type.name.is_equal (tram_type)
 		end
 
-	is_bus (a_line_segment: TRAFFIC_LINE_SEGMENT): BOOLEAN is
+	is_bus (a_line_segment: TRAFFIC_LINE_SEGMENT): BOOLEAN
 			-- is `a_line_segment' of type tram?
 		require
 			a_line_segment_exists: a_line_segment /= Void
@@ -246,7 +245,7 @@ feature -- Status report
 			Result := a_line_segment.line.type.name.is_equal (bus_type)
 		end
 
-	is_rail (a_line_segment: TRAFFIC_LINE_SEGMENT): BOOLEAN is
+	is_rail (a_line_segment: TRAFFIC_LINE_SEGMENT): BOOLEAN
 			-- is `a_line_segment' of type tram?
 		require
 			a_line_segment_exists: a_line_segment /= Void
@@ -260,7 +259,7 @@ feature -- Status report
 
 feature -- Basic operations
 
-	join (a_leg: TRAFFIC_LEG) is
+	join (a_leg: TRAFFIC_LEG)
 			-- Extend with `a_leg'.
 		require
 			leg_exists: a_leg /= Void
@@ -280,7 +279,7 @@ feature -- Basic operations
 			end
 		end
 
-	extend (a_segment: TRAFFIC_SEGMENT) is
+	extend (a_segment: TRAFFIC_SEGMENT)
 			-- Add `a_segment' to the end of the route leg.
 		require
 			a_segment_exists: a_segment /= Void
@@ -298,7 +297,7 @@ feature -- Basic operations
 			one_more: segments.count = old segments.count + 1
 		end
 
-	set_next (a_leg: TRAFFIC_LEG) is
+	set_next (a_leg: TRAFFIC_LEG)
 			-- Set pointer to next route leg `a_leg'.
 		require
 			a_leg_exists: a_leg /= Void

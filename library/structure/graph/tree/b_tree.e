@@ -39,7 +39,7 @@ create
 
 feature {NONE} -- Initialization
 
-	make (n: INTEGER) is
+	make (n: INTEGER)
 			-- Create an empty B tree of order `n',
 			-- i.e. maximum `n' children and `n'-1 items per node.
 		require
@@ -61,13 +61,13 @@ feature -- Access
 	parent: like Current
 			-- Parent of current node
 
-	child: like parent is
+	child: like parent
 			-- Current child node
 		do
 			Result := children_list.item
 		end
 
-	item: G is
+	item: G
 			-- Current item
 			-- Result is Void when `off'.
 		do
@@ -80,13 +80,13 @@ feature -- Access
 			off_definition: off = (Result = Void)
 		end
 
-	item_cursor: CURSOR is
+	item_cursor: CURSOR
 			-- Current item cursor position
 		do
 			Result := item_list.cursor
 		end
 
-	item_index: INTEGER is
+	item_index: INTEGER
 			-- Index of current item
 		require
 			not_off: not off
@@ -94,37 +94,37 @@ feature -- Access
 			Result := item_list.index
 		end
 
-	child_item: like item is
+	child_item: like item
 			-- Current item in current child node
 		do
 			Result := child.item
 		end
 
-	child_cursor: CURSOR is
+	child_cursor: CURSOR
 			-- Current child cursor position
 		do
 			Result := children_list.cursor
 		end
 
-	child_index: INTEGER is
+	child_index: INTEGER
 			-- Index of current child
 		do
 			Result := children_list.index
 		end
 
-	first_child: like parent is
+	first_child: like parent
 			-- Leftmost child
 		do
 			Result := children_list.first
 		end
 
-	last_child: like parent is
+	last_child: like parent
 			-- Rightmost child
 		do
 			Result := children_list.last
 		end
 
-	left_sibling: like parent is
+	left_sibling: like parent
 			-- Left neighbor (if any)
 		local
 			index: INTEGER
@@ -137,7 +137,7 @@ feature -- Access
 			end
 		end
 
-	right_sibling: like parent is
+	right_sibling: like parent
 			-- Right neighbor (if any)
 		local
 			index: INTEGER
@@ -152,7 +152,7 @@ feature -- Access
 
 feature -- Measurement
 
-	min: like item is
+	min: like item
 			-- Minimum item stored in tree
 		local
 			n: like Current
@@ -171,7 +171,7 @@ feature -- Measurement
 			end
 		end
 
-	max: like item is
+	max: like item
 			-- Maximum item stored in tree
 		local
 			n: like Current
@@ -190,39 +190,39 @@ feature -- Measurement
 			end
 		end
 
-	order: INTEGER is
+	order: INTEGER
 			-- Order of the B-tree (maximum number of children)
 		do
 			Result := child_capacity
 		end
 
-	arity: INTEGER is
+	arity: INTEGER
 			-- Number of children
 		do
 			Result := children_list.count
 		end
 
-	child_capacity: INTEGER is
+	child_capacity: INTEGER
 			-- Maximal number of children
 		do
 			-- 1 item is reserved for overflow at `put' operations.
 			Result := children_list.capacity - 1
 		end
 
-	item_count: INTEGER is
+	item_count: INTEGER
 			-- Number of items in current node
 		do
 			Result := item_list.count
 		end
 
-	item_capacity: INTEGER is
+	item_capacity: INTEGER
 			-- Maximal number of items
 		do
 			-- 1 item is reserved for overflow at `put' operations.
 			Result := item_list.capacity - 1
 		end
 
-	count: INTEGER is
+	count: INTEGER
 			-- Total number of items in tree
 		local
 			pos: CURSOR
@@ -242,7 +242,7 @@ feature -- Measurement
 			child_go_to (pos)
 		end
 
-	height: INTEGER is
+	height: INTEGER
 			-- Tree height
 		do
 			if is_leaf then
@@ -254,7 +254,7 @@ feature -- Measurement
 
 feature -- Comparison
 
-	is_equal (other: like Current): BOOLEAN is
+	is_equal (other: like Current): BOOLEAN
 			-- Does `other' contain the same elements and
 			-- has `other' the same structure as Current?
  			-- (Object equality)
@@ -307,7 +307,7 @@ feature -- Comparison
 
 feature -- Status report
 
-	is_sorted: BOOLEAN is
+	is_sorted: BOOLEAN
 			-- Is tree sorted?
 		local
 			largest_until_now: CELL [G]
@@ -321,7 +321,7 @@ feature -- Status report
 			end
 		end
 
-	has_unique_items: BOOLEAN is
+	has_unique_items: BOOLEAN
 			-- Are all item values unique?
 		local
 			item_set: ARRAYED_SET [like item]
@@ -331,49 +331,49 @@ feature -- Status report
 			Result := node_has_unique_items (item_set)
 		end
 
-	item_before: BOOLEAN is
+	item_before: BOOLEAN
 			-- Is there no valid item position to the left of cursor?
 		do
 			Result := item_list.before
 		end
 
-	item_after: BOOLEAN is
+	item_after: BOOLEAN
 			-- Is there no valid item position to the right of cursor?
 		do
 			Result := item_list.index > item_count
 		end
 
-	readable_child: BOOLEAN is
+	readable_child: BOOLEAN
 			-- Is there a current child to be read?
 		do
 			Result := not children_list.off
 		end
 
-	child_off: BOOLEAN is
+	child_off: BOOLEAN
 			-- Is there no current child?
 		do
 			Result := children_list.off
 		end
 
-	child_before: BOOLEAN is
+	child_before: BOOLEAN
 			-- Is there no valid child position to the left of cursor?
 		do
 			Result := children_list.before
 		end
 
-	child_after: BOOLEAN is
+	child_after: BOOLEAN
 			-- Is there no valid child position to the right of cursor?
 		do
 			Result := children_list.index > arity
 		end
 
-	is_empty: BOOLEAN is
+	is_empty: BOOLEAN
 			-- Is structure empty of items?
 		do
 			Result := is_root and item_list.is_empty
 		end
 
-	has (v: like item): BOOLEAN is
+	has (v: like item): BOOLEAN
 			-- Does subtree include `v'?
 			-- (object equality)
 		local
@@ -408,7 +408,7 @@ feature -- Status report
 			end
 		end
 
-	off: BOOLEAN is
+	off: BOOLEAN
 			-- Is there no current item?
 		do
 			Result := item_list.off
@@ -418,73 +418,73 @@ feature -- Status setting
 
 feature -- Cursor movement
 
-	item_start is
+	item_start
 			-- Move cursor to first item.
 		do
 			item_list.start
 		end
 
-	item_forth is
+	item_forth
 			-- Move cursor to next item.
 		do
 			item_list.forth
 		end
 
-	item_back is
+	item_back
 			-- Move cursor to previous item.
 		do
 			item_list.back
 		end
 
-	item_finish is
+	item_finish
 			-- Move cursor to last item.
 		do
 			item_list.finish
 		end
 
-	item_go_to (p: CURSOR) is
+	item_go_to (p: CURSOR)
 			-- Move item cursor to position `p'.
 		do
 			item_list.go_to (p)
 		end
 
-	item_go_i_th (i: INTEGER) is
+	item_go_i_th (i: INTEGER)
 			-- Move cursor to `i'-th item.
 		do
 			item_list.go_i_th (i)
 		end
 
-	child_go_to (p: CURSOR) is
+	child_go_to (p: CURSOR)
 			-- Move child cursor to position `p'.
 		do
 			children_list.go_to (p)
 		end
 
-	child_start is
+	child_start
 			-- Move cursor to first child.
 		do
 			children_list.start
 		end
 
-	child_finish is
+	child_finish
 			-- Move cursor to last child.
 		do
 			children_list.finish
 		end
 
-	child_forth is
+	child_forth
 			-- Move cursor to next child.
 		do
 			children_list.forth
 		end
 
-	child_back is
+	child_back
 			-- Move cursor to previous child.
 		do
 			children_list.back
 		end
 
-	child_go_i_th (i: INTEGER) is
+	child_go_i_th (i: INTEGER)
 			-- Move cursor to `i'-th child.
 		do
 			if (1 <= i) and (i <= arity) then
@@ -494,7 +494,7 @@ feature -- Cursor movement
 
 feature -- Element change
 
-	put, extend (v: G) is
+	put, extend (v: G)
 			-- Put `v' at proper position in tree
 			-- unless `v' exists already (object equality).
 		do
@@ -505,7 +505,7 @@ feature -- Element change
 			end
 		end
 
-	fill (other: TREE [G]) is
+	fill (other: TREE [G])
 			-- Fill with as many items of `other' as possible.
 			-- The representations of `other' and current node
 			-- need not be the same.
@@ -558,7 +558,7 @@ feature -- Element change
 
 feature -- Removal
 
-	prune (v: G) is
+	prune (v: G)
 			-- Remove `v' from tree (object comparison).
 			-- Tree is rebalanced as necessary.
 		do
@@ -571,7 +571,7 @@ feature -- Removal
 
 ----- ??? --- ??? --- ??? --- ??? --- ??? --- ??? --- ??? --- ??? -----
 	-- SHOULD THIS OPERATION BE ALLOWED???
-	prune_tree (n: like Current) is
+	prune_tree (n: like Current)
 			-- Remove all items contained in `n' from tree.
 		require else
 			sorted_tree: is_sorted
@@ -598,7 +598,7 @@ feature -- Transformation
 
 feature -- Conversion
 
-	linear_representation: LINEAR [G] is
+	linear_representation: LINEAR [G]
 			-- Representation as a linear structure
 		local
 			lin_rep: ARRAYED_LIST [G]
@@ -608,7 +608,7 @@ feature -- Conversion
 			Result := lin_rep
 		end
 
-	binary_representation: BINARY_TREE [G] is
+	binary_representation: BINARY_TREE [G]
 			-- Convert to binary tree representation:
 		do
 			--| TODO |--
@@ -618,13 +618,13 @@ feature -- Duplication
 
 feature -- Miscellaneous
 
-	clone_node (n: like Current): like Current is
+	clone_node (n: like Current): like Current
 			-- Clone node `n'.
 		do
 			--| TODO |--
 		end
 
-	copy_node (n: like Current) is
+	copy_node (n: like Current)
 			-- Copy node contents but no tree information into `Current'.
 		do
 			--| TODO |--
@@ -633,7 +633,7 @@ feature -- Miscellaneous
 
 feature -- Basic operations
 
-	sort is
+	sort
 			-- Restore order of all elements and balance tree.
 			-- Necessary when item values have changed after insertion in tree.
 			-- Note that duplicate item values will be removed (object comparison).
@@ -653,7 +653,7 @@ feature -- Obsolete
 
 feature {NONE} -- Inapplicable
 
-	duplicate (n: INTEGER): like Current is
+	duplicate (n: INTEGER): like Current
 			-- Copy of sub-tree beginning at cursor position and
 			-- having min (`n', `arity' - `child_index' + 1)
 			-- children.
@@ -668,7 +668,7 @@ feature {B_TREE} -- Implementation
 	item_list: FIXED_LIST [G]
 			-- Items stored in current node
 
-	set_matching_node (a_node: like Current) is
+	set_matching_node (a_node: like Current)
 			-- Set `matching_node' to `a_tree_node' (both results of `binary_search').
 		do
 			matching_node := a_node
@@ -676,10 +676,10 @@ feature {B_TREE} -- Implementation
 			node_set: matching_node = a_node
 		end
 
-	put_impl (v: G; c: like Current) is
+	put_impl (v: G; c: like Current)
 			-- Put `v' at proper position into `item_list' of current node.
 			-- if `c' is not void, it points to child node immediately greater than `v'.
-			-- Tree is rebalanced as necessary.
+			-- Tree   rebalanced as necessary.
 		require
 			v_not_void: v /= Void
 		local
@@ -700,7 +700,7 @@ feature {B_TREE} -- Implementation
 			end
 		end
 
-	split_node is
+	split_node
 			-- Split current node => right sibling,
 			-- put upper half of `item_list' there
 			-- and put middle item into `parent'.
@@ -768,7 +768,7 @@ feature {B_TREE} -- Implementation
 			end
 		end
 
-	prune_impl (v: like item) is
+	prune_impl (v: like item)
 			-- Prune `v' from current node.
 		require
 			node_has_item: item_list.has (v)
@@ -799,7 +799,7 @@ feature {B_TREE} -- Implementation
 			item_removed: not item_list.has (v)
 		end
 
-	handle_underflow is
+	handle_underflow
 			-- Handle underflow in current node, i.e. `item_count' is
 			-- smaller than `order'//2.
 		local
@@ -863,7 +863,7 @@ feature {B_TREE} -- Implementation
 			end
 		end
 
-	merge_with_left_sibling is
+	merge_with_left_sibling
 			-- Merge current node with left sibling.
 			-- Current node is removed from tree.
 		require
@@ -901,7 +901,7 @@ feature {B_TREE} -- Implementation
 			end
 		end
 
-	symmetric_predecessor (v: like item): like item is
+	symmetric_predecessor (v: like item): like item
 			-- Next smaller item than `v'
 		require
 			not_leaf: not is_leaf
@@ -924,7 +924,7 @@ feature {B_TREE} -- Implementation
 			Result := t.item_list.last
 		end
 
-	reparent_all_children is
+	reparent_all_children
 			-- Set `parent' of all children to `Current'.
 		local
 			c: CURSOR
@@ -946,25 +946,25 @@ feature {B_TREE} -- Implementation
 			child_go_to (c)
 		end
 
-	cut_off_node is
+	cut_off_node
 			-- Cut off all links from current node.
 		do
 			--| TODO |--
 		end
 
-	fill_subtree (other: TREE [G]) is
+	fill_subtree (other: TREE [G])
 			-- Fill children with children of `other'
 		do
 			--| TODO |--
 		end
 
-	is_overflow: BOOLEAN is
+	is_overflow: BOOLEAN
 			-- Does the current node need to be split?
 		do
 			Result := item_list.full
 		end
 
-	is_sorted_node (largest_until_now: CELL [G]): BOOLEAN is
+	is_sorted_node (largest_until_now: CELL [G]): BOOLEAN
 			-- Is current node sorted?
 		require
 			at_least_one_item: item_count >= 1
@@ -1010,7 +1010,7 @@ feature {B_TREE} -- Implementation
 			end
 		end
 
-	fill_list (al: ARRAYED_LIST [G]) is
+	fill_list (al: ARRAYED_LIST [G])
 			-- Fill `al' with items from current node and all children.
 			-- `al' is filled in sorted order.
 		local
@@ -1051,7 +1051,7 @@ feature {B_TREE} -- Implementation
 			end
 		end
 
-	node_has_unique_items (item_set: SET [like item]): BOOLEAN is
+	node_has_unique_items (item_set: SET [like item]): BOOLEAN
 			-- Does current have different items than `item_set'?
 		require
 			item_set_not_void: item_set /= Void
@@ -1085,7 +1085,7 @@ feature {B_TREE} -- Implementation
 			child_go_to (c)
 		end
 
-	set_item_list (l: like item_list) is
+	set_item_list (l: like item_list)
 			-- Set `item_list' to `l'.
 		require
 			l_not_void: l /= Void
@@ -1096,7 +1096,7 @@ feature {B_TREE} -- Implementation
 			item_list_set: item_list = l
 		end
 
-	set_children_list (l: like children_list) is
+	set_children_list (l: like children_list)
 			-- Set `children_list' to `l'.
 		require
 			l_not_void: l /= Void
@@ -1107,7 +1107,7 @@ feature {B_TREE} -- Implementation
 			children_list_set: children_list = l
 		end
 
-	copy (other: like Current) is
+	copy (other: like Current)
 			-- Copy contents from `other'.
 			-- Only allowed if `object_comparison' of `other'
 			-- conforms to `object_comparison' of current.
@@ -1139,13 +1139,13 @@ feature {NONE} -- Implementation
 			-- Tree node where the last `has' query has ended
 
 
-	valid_index (a_index: INTEGER): BOOLEAN is
+	valid_index (a_index: INTEGER): BOOLEAN
 			-- Is `a_index' a valid index of `item_list'?
 		do
 			Result := (a_index >= 1) and (a_index <= item_count)
 		end
 
-	put_into_fixed (a_list: FIXED_LIST [ANY]; a_item: ANY; a_pos: INTEGER) is
+	put_into_fixed (a_list: FIXED_LIST [ANY]; a_item: ANY; a_pos: INTEGER)
 			-- Put `a_item' into `a_list' at position `a_pos'.
 			-- Other items are shift one position to the right if necessary.
 		require
@@ -1176,7 +1176,7 @@ feature {NONE} -- Implementation
 			item_in_between: a_pos <= old a_list.count implies a_item = a_list.i_th (a_pos)
 		end
 
-	binary_search (v: G): INTEGER is
+	binary_search (v: G): INTEGER
 			-- Search in for `v' in `item_list'.
 			-- Result is: index of `v' (if found),
 			--            target position for insertion (otherwise).

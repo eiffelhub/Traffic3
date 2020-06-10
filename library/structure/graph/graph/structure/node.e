@@ -24,7 +24,7 @@ create
 
 feature {NONE} -- Initialization
 
-	make (a_item: like item) is
+	make (a_item: like item)
 			-- Initialize `Current'.
 		require
 			item_not_void: a_item /= Void
@@ -40,7 +40,7 @@ feature {NONE} -- Initialization
 
 feature {GRAPH} -- Access
 
-	hash_code: INTEGER is
+	hash_code: INTEGER
 			-- Hash code value
 		do
 			Result := item.hash_code
@@ -70,7 +70,7 @@ feature {GRAPH, NODE} -- Status report
 
 feature -- Status setting
 
-	set_processed is
+	set_processed
 			-- Set `processed' flag.
 		do
 			processed := True
@@ -78,7 +78,7 @@ feature -- Status setting
 			processed: processed
 		end
 
-	reset is
+	reset
 			-- Reset `referring_edge', `distance' and `processed'.
 		do
 			referring_node := Void
@@ -93,7 +93,7 @@ feature -- Status setting
 
 feature {GRAPH} -- Element change
 
-	set_referrer (a_node: like Current; a_edge: like referring_edge; a_distance: like distance) is
+	set_referrer (a_node: like Current; a_edge: like referring_edge; a_distance: like distance)
 			-- Set the referring edge to `a_edge' and the referring node to `a_node'.
 		require
 			positive_distance: a_distance >= 0
@@ -111,7 +111,7 @@ feature {GRAPH} -- Element change
 
 feature -- Basic operations
 
-	is_less alias "<" (other: like Current): BOOLEAN is
+	is_less alias "<" (other: like Current): BOOLEAN 
 			-- Is current route shorter than the one of `other'?
 		do
 			Result := distance < other.distance

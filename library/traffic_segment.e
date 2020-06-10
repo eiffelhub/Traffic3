@@ -27,7 +27,7 @@ inherit
 
 feature {NONE} -- Initialization
 
-	make_directed (a_start_node, a_end_node: like start_node) is
+	make_directed (a_start_node, a_end_node: like start_node)
 		require
 			nodes_not_void: a_start_node /= Void and a_end_node /= Void
 		do
@@ -46,7 +46,7 @@ feature {NONE} -- Initialization
 feature -- Measure
 
 
-	travel_time(speed: REAL_64):REAL_64 is
+	travel_time(speed: REAL_64):REAL_64
 			-- calculates the travel time between 'origin' and 'destination'
 			-- with a certain speed (km/h).Result is given in Minutes.
 			local
@@ -68,7 +68,7 @@ feature -- Measure
 
 feature -- Element change
 
-	set_state (a_state: TRAFFIC_SEGMENT_STATE) is
+	set_state (a_state: TRAFFIC_SEGMENT_STATE)
 			-- Change state to `a_state'.
 		require
 			a_state_exists: a_state /= Void
@@ -79,7 +79,7 @@ feature -- Element change
 			state_set: state = a_state
 		end
 
-	set_polypoints (a_polypoints: DS_ARRAYED_LIST [TRAFFIC_POINT]) is
+	set_polypoints (a_polypoints: DS_ARRAYED_LIST [TRAFFIC_POINT])
 			-- Set polypoints to `a_polypoints'.
 		require
 			a_polypoints_exist: a_polypoints /= Void
@@ -90,7 +90,7 @@ feature -- Element change
 			polypoints_exists: polypoints /= Void
 		end
 
-	remove_polypoints is
+	remove_polypoints
 			-- Remove polypoints.
 		do
 			polypoints.wipe_out
@@ -107,13 +107,13 @@ feature -- Access
 	type: TRAFFIC_TYPE
 			-- Type of the line segment
 
-	origin: TRAFFIC_STATION is
+	origin: TRAFFIC_STATION
 			-- Station of origin
 		do
 			Result := start_node.station
 		end
 
-	destination: TRAFFIC_STATION is
+	destination: TRAFFIC_STATION
 			-- Station of destination
 		do
 			Result := end_node.station
@@ -122,7 +122,7 @@ feature -- Access
 	polypoints: DS_ARRAYED_LIST [TRAFFIC_POINT]
 			-- Location representation of the segment.
 
-	length: REAL_64 is
+	length: REAL_64
 			-- Length from start of polypoints to end.
 			-- If no polypoints exists, distance between origin and destination.
 		local
@@ -145,7 +145,7 @@ feature -- Access
 
 feature -- Access
 
-	weight_factor: REAL_64 is
+	weight_factor: REAL_64
 			-- Factor with which the length of the segment is multiplied
 		deferred
 		ensure
@@ -158,7 +158,7 @@ feature -- Access
 
 feature -- Status report
 
-	is_equal (other: like Current): BOOLEAN is
+	is_equal (other: like Current): BOOLEAN
 			-- Is `other' attached to an object considered
 			-- equal to current object?
 		do
@@ -169,7 +169,7 @@ feature -- Status report
 
 feature -- Output
 
-	out: STRING is
+	out: STRING
 			-- Textual representation of the edge
 		do
 			Result := start_node.out

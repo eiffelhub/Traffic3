@@ -31,7 +31,7 @@ create
 
 feature {NONE} -- Initialization
 
-	default_create is
+	default_create
 			-- Initialize lists.
 		do
 			create available_taxis.make
@@ -44,7 +44,7 @@ feature {NONE} -- Initialization
 			color_exists: color /= Void
 		end
 
-	make_with_color (r, g, b: INTEGER) is
+	make_with_color (r, g, b: INTEGER)
 			-- Set `color' to rgb values.
 		require
 			r_valid: r >= 0 and r <= 255
@@ -71,7 +71,7 @@ feature -- Access
 
 feature -- Basic operations
 
-	add_taxi (a_taxi: TRAFFIC_DISPATCH_TAXI) is
+	add_taxi (a_taxi: TRAFFIC_DISPATCH_TAXI)
 			-- Add `a_taxi' to the taxi_list of the office.
 		require
 			a_taxi_valid: a_taxi /= Void
@@ -83,7 +83,7 @@ feature -- Basic operations
 			end
 		end
 
-	remove_taxi (a_taxi:TRAFFIC_DISPATCH_TAXI) is
+	remove_taxi (a_taxi:TRAFFIC_DISPATCH_TAXI)
 			-- Remove `a_taxi' from current taxi office.
 		require
 			a_taxi_valid: a_taxi /= Void
@@ -96,7 +96,7 @@ feature -- Basic operations
 		end
 
 
-	call (from_location:TRAFFIC_POINT; to_location:TRAFFIC_POINT) is
+	call (from_location:TRAFFIC_POINT; to_location:TRAFFIC_POINT)
 			-- Determine nearest taxi to from_location station, pass request on to this taxi.
 		require
 			from_location_not_void: from_location /= void
@@ -132,13 +132,13 @@ feature -- Basic operations
 
 feature -- Status report
 
-	is_insertable (a_city: TRAFFIC_CITY): BOOLEAN is
+	is_insertable (a_city: TRAFFIC_CITY): BOOLEAN
 			-- Is `Current' insertable into `a_city'?
 		do
 			Result := True
 		end
 
-	is_removable: BOOLEAN is
+	is_removable: BOOLEAN
 			-- Is `Current' removable from `a_city'?
 		do
 			Result := True
@@ -147,7 +147,7 @@ feature -- Status report
 
 feature {TRAFFIC_ITEM_LINKED_LIST} -- Basic operations
 
-	add_to_city (a_city: TRAFFIC_CITY) is
+	add_to_city (a_city: TRAFFIC_CITY)
 			-- Add `Current' and all taxis to `a_city'.
 		do
 			is_in_city := True
@@ -164,7 +164,7 @@ feature {TRAFFIC_ITEM_LINKED_LIST} -- Basic operations
 			end
 		end
 
-	remove_from_city is
+	remove_from_city
 			-- Remove all nodes from `city'.
 		do
 			from
@@ -181,7 +181,7 @@ feature {TRAFFIC_ITEM_LINKED_LIST} -- Basic operations
 
 feature {TRAFFIC_DISPATCH_TAXI} -- Basic operations for taxis
 
-	enlist(a_taxi:TRAFFIC_DISPATCH_TAXI) is
+	enlist(a_taxi:TRAFFIC_DISPATCH_TAXI)
 			-- Put a_taxi into available list.
 		require
 			a_taxi_not_busy: a_taxi.busy = false
@@ -192,7 +192,7 @@ feature {TRAFFIC_DISPATCH_TAXI} -- Basic operations for taxis
 			a_taxi_added: available_taxis.count = old available_taxis.count + 1
 		end
 
-	delist(a_taxi: TRAFFIC_DISPATCH_TAXI) is
+	delist(a_taxi: TRAFFIC_DISPATCH_TAXI)
 			-- Take a_taxi out of available_taxi_list.
 		require
 			a_taxi_not_available: a_taxi.busy = true
@@ -203,7 +203,7 @@ feature {TRAFFIC_DISPATCH_TAXI} -- Basic operations for taxis
 				end
 		end
 
-	recall(from_location: TRAFFIC_POINT; to_location: TRAFFIC_POINT) is
+	recall(from_location: TRAFFIC_POINT; to_location: TRAFFIC_POINT)
 			-- Recall the request again because a taxi rejected to take it.
 		require
 			from_location_not_void: from_location /= void

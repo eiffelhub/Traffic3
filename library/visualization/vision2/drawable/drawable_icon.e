@@ -1,6 +1,5 @@
 note
-
-	description: "[ 
+	description: "[
 			Sub pixmaps for use with EV_CANVAS not scaling.
 			Therefore position is given in the center.
 			]"
@@ -19,7 +18,7 @@ create
 
 feature -- Creation
 
-	make (a_sub_pixmap: EV_PIXMAP; a_position: REAL_COORDINATE ) is
+	make (a_sub_pixmap: EV_PIXMAP; a_position: REAL_COORDINATE )
 			-- Create a `a_sub_pixmap' at `a_position'.
 		require
 			a_sub_pixmap_not_void: a_sub_pixmap /= Void
@@ -38,7 +37,7 @@ feature -- Creation
 
 feature -- Element change
 
-	set_position (a_coordinate: REAL_COORDINATE) is
+	set_position (a_coordinate: REAL_COORDINATE)
 			-- Set `position' to `a_coordinate'.
 		require
 			a_coordinate_exists: a_coordinate /= Void
@@ -61,7 +60,7 @@ feature -- Access
 	area: EV_RECTANGLE
 			-- The area of the icon
 
-	bounding_box : REAL_RECTANGLE is
+	bounding_box : REAL_RECTANGLE
 			-- The bounding box of the icon
 		do
 			create Result.make (position, create {REAL_COORDINATE}.make (position.x + pixmap.width, position.y + pixmap.height))
@@ -69,7 +68,7 @@ feature -- Access
 
 feature {CANVAS} -- Display
 
-	draw_object is
+	draw_object
 			-- Draw the icon.
 		local
 			scaled_position : EV_COORDINATE

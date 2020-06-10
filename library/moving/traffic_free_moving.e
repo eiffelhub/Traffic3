@@ -15,7 +15,7 @@ create
 
 feature -- Initialization
 
-	make_with_points (a_list: DS_ARRAYED_LIST [TRAFFIC_POINT]; a_speed: REAL_64) is
+	make_with_points (a_list: DS_ARRAYED_LIST [TRAFFIC_POINT]; a_speed: REAL_64)
 			-- Set passengers route as `a_list' and speed to `a_speed' (in m/s).
 			-- `a_list' is the list of the points where the passenger will go through.
 		require
@@ -34,13 +34,13 @@ feature -- Initialization
 
 feature -- Status report
 
-	is_insertable (a_city: TRAFFIC_CITY): BOOLEAN is
+	is_insertable (a_city: TRAFFIC_CITY): BOOLEAN
 			-- Is `Current' insertable into `a_city'?
 		do
 			Result := True
 		end
 
-	is_removable: BOOLEAN is
+	is_removable: BOOLEAN
 			-- Is `Current' removable from `a_city'?
 		do
 			Result := True
@@ -48,7 +48,7 @@ feature -- Status report
 
 feature {NONE} --Implementation
 
-	move_next is
+	move_next
 			--  Move to following position
 		do
 			-- Set the locations to the corresponding ones of the line segment.

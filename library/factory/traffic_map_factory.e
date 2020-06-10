@@ -1,5 +1,5 @@
 note
-	description: "Factory for traffic elements like TRAFFIC_STATION, TRAFFIC_LINE etc."
+	description : "Factory for traffic elements like TRAFFIC_STATION, TRAFFIC_LINE etc."
 	date: "$Date: 2009-08-21 13:35:22 +0200 (Пт, 21 авг 2009) $"
 	revision: "$Revision: 1098 $"
 
@@ -385,7 +385,7 @@ feature {NONE} -- Implementation
 	internal_map: TRAFFIC_CITY
 			-- Internal representation of last created traffic map
 
-	create_road_connection (a_origin, a_destination: STRING; a_city: TRAFFIC_CITY; a_type:STRING;an_id:STRING): TRAFFIC_ROAD_SEGMENT 
+	create_road_connection (a_origin, a_destination: STRING; a_city: TRAFFIC_CITY; a_type:STRING;an_id:STRING): TRAFFIC_ROAD_SEGMENT
 			-- Create road with type `a_type', origin `a_origin', destination `a_destination' belonging to line `a_city'.
 		require
 			a_origin_exists: a_origin /= Void

@@ -1,5 +1,5 @@
 note
-	description: "Buildings for the traffic library"
+	description :"Buildings for the traffic library"
 	date: "$Date$"
 	revision: "$Revision$"
 
@@ -187,7 +187,7 @@ feature -- Element change
 			angle_set: angle = an_angle
 		end
 
-	 set_center (a_center: TRAFFIC_POINT) 
+	 set_center (a_center: TRAFFIC_POINT)
 	 		-- Set `center' to `a_center'.
 	 	require
 	 		a_center_valid: a_center /= Void

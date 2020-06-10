@@ -16,7 +16,7 @@ inherit
 
 feature {NONE} -- Initialization
 
-	make is
+	make
 			-- Create parser.
 		do
 			xml_parser := new_xml_parser
@@ -31,7 +31,7 @@ feature {NONE} -- Initialization
 
 feature -- Access
 
-	xml_document: XM_DOCUMENT is
+	xml_document: XM_DOCUMENT
 			-- Parsed XML document
 		require
 			parsed: is_parsed
@@ -41,7 +41,7 @@ feature -- Access
 			Result_exists: Result /= Void
 		end
 
-	root_element: XM_ELEMENT is
+	root_element: XM_ELEMENT
 			-- Root element of document
 		require
 			parsed: is_parsed
@@ -51,7 +51,7 @@ feature -- Access
 			Result_exists: Result /= Void
 		end
 
-	error_description: STRING is
+	error_description: STRING
 			-- Description of last parser error
 		do
 			if error_code > 0 then
@@ -66,7 +66,7 @@ feature -- Access
 
 feature -- Status report
 
-	has_error: BOOLEAN is
+	has_error: BOOLEAN
 			-- Did a parser error occur?
 		do
 			Result := Precursor or not xml_parser.is_correct
@@ -75,20 +75,20 @@ feature -- Status report
 	is_parsed: BOOLEAN
 			-- Has a map been parsed?
 
-	has_file_name: BOOLEAN is
+	has_file_name: BOOLEAN
 			-- Has a file name been set?
 		do
 			Result := file_name /= Void and then not file_name.is_empty
 		end
 
-	can_process: BOOLEAN is
+	can_process: BOOLEAN
 			-- Can document tree be processed?
 		deferred
 		end
 
 feature -- Status setting
 
-	set_file_name (a_name: STRING) is
+	set_file_name (a_name: STRING)
 			-- Set file name to `a_name'.
 		require
 			file_name_valid:  File_system.is_file_readable (a_name)
@@ -104,7 +104,7 @@ feature -- Status setting
 
 feature -- Basic operations
 
-	parse is
+	parse
 			-- Parse map.
 		require
 			file_name_set: has_file_name
@@ -134,7 +134,7 @@ feature -- Basic operations
 			parsed_if_no_error: not has_error implies is_parsed
 		end
 
-	process is
+	process
 			-- Process document tree.
 		require
 			processing_ready: can_process
@@ -149,7 +149,7 @@ feature {NONE} -- Implementation
 	tree_pipe: XM_TREE_CALLBACKS_PIPE
 			-- Tree generating callbacks
 
-	new_xml_parser: XM_PARSER is
+	new_xml_parser: XM_PARSER
 			-- Create new parser
 		local
 			factory: XM_EXPAT_PARSER_FACTORY

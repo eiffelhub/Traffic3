@@ -20,7 +20,7 @@ create
 
 feature {NONE} -- Initialization
 
-	make is
+	make
 			-- Initialize.
 		do
 			create internal_list.make
@@ -33,13 +33,13 @@ feature {NONE} -- Initialization
 
 feature -- Access
 
-	count: INTEGER is
+	count: INTEGER
 			-- Number of items in list
 		do
 			Result := internal_list.count
 		end
 
-	first: like item_for_iteration is
+	first: like item_for_iteration
 			-- First item in list
 		require
 			not_empty: not is_empty
@@ -49,7 +49,7 @@ feature -- Access
 			has_first: has (Result)
 		end
 
-	item_for_iteration: G is
+	item_for_iteration: G
 			-- Item at internal cursor position
 		require
 			not_after: not after
@@ -76,7 +76,7 @@ feature -- Access
 			has_last: has (Result)
 		end
 
-	bounding_box : REAL_RECTANGLE is
+	bounding_box : REAL_RECTANGLE
 			-- Bounding box of the container
 		local
 			rect: REAL_RECTANGLE
@@ -106,7 +106,7 @@ feature -- Access
 
 feature -- Element change
 
-	hide is
+	hide
 			-- Hide all children.
 		local
 			i: INTEGER
@@ -123,7 +123,7 @@ feature -- Element change
 			invalidate
 		end
 
-	show is
+	show
 			-- Show all children.
 		local
 			i: INTEGER
@@ -142,13 +142,13 @@ feature -- Element change
 
 feature -- Cursor movement
 
-	start is
+	start
 			-- Move internal cursor to first position.
 		do
 			internal_list.start
 		end
 
-	forth is
+	forth
 			-- Move internal cursor to next position.
 		require
 			not_after: not after
@@ -166,13 +166,13 @@ feature -- Status report
 			not_empty: Result implies not is_empty
 		end
 
-	is_empty: BOOLEAN is
+	is_empty: BOOLEAN
 			-- Is container empty?
 		do
 			Result := internal_list.is_empty
 		end
 
-	after: BOOLEAN is
+	after: BOOLEAN
 			-- Is there no valid position to right of internal cursor?
 		do
 			Result := internal_list.after
@@ -180,7 +180,7 @@ feature -- Status report
 
 feature -- Insertion
 
-	put_last (a_drawable: like item_for_iteration) is
+	put_last (a_drawable: like item_for_iteration)
 			-- Add `a_drawable' to end of list.
 			-- Do not move cursors.
 		do
@@ -190,7 +190,7 @@ feature -- Insertion
 			is_in_list: internal_list.has (a_drawable)
 		end
 
-	put_first (a_drawable: like item_for_iteration) is
+	put_first (a_drawable: like item_for_iteration)
 			-- Add `a_drawable' to beginning of list.
 			-- Do not move cursors.
 		do
@@ -200,7 +200,7 @@ feature -- Insertion
 			is_in_list: internal_list.has (a_drawable)
 		end
 
-	replace (v: G; i: INTEGER) is
+	replace (v: G; i: INTEGER)
 			-- Replace item at index `i' by `v'.
 			-- Do not move cursors.
 		require
@@ -213,7 +213,7 @@ feature -- Insertion
 			replaced: item (i) = v
 		end
 
-	put (v: G; i: INTEGER) is
+	put (v: G; i: INTEGER)
 			-- Add `v' at `i'-th position.
 			-- Do not move cursors.
 		require
@@ -265,7 +265,7 @@ feature -- Removal
 			one_less: count = old count - 1
 		end
 
-	wipe_out is
+	wipe_out
 			-- Remove all items from list.
 			-- Move all cursors off.
 		do
@@ -275,7 +275,7 @@ feature -- Removal
 			wiped_out: is_empty
 		end
 
-	delete (a_drawable: like item_for_iteration) is
+	delete (a_drawable: like item_for_iteration)
 			-- Remove all occurrences of `v'.
 			-- Move all cursors off.
 		do
@@ -287,7 +287,7 @@ feature -- Removal
 
 feature {CANVAS} -- Basic operations
 
-	draw (a_target: CANVAS) is
+	draw (a_target: CANVAS)
 			-- Draw `Current' onto `a_target'
 		local
 			i: INTEGER
@@ -306,7 +306,7 @@ feature {CANVAS} -- Basic operations
 			end
 		end
 
-	draw_object is
+	draw_object
 			-- Draw `Current' (nothing to be done).
 		do
 		end

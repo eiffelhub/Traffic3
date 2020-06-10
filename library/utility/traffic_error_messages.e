@@ -20,7 +20,7 @@ inherit
 
 feature {NONE} -- Initialisation
 
-	make_default_messages is
+	make_default_messages
 			-- Initialise default error messages.
 		do
 
@@ -37,7 +37,7 @@ feature {NONE} -- Initialisation
 
 feature -- Access
 
-	Error_messages: DS_HASH_TABLE [STRING, INTEGER] is
+	Error_messages: DS_HASH_TABLE [STRING, INTEGER]
 			-- Table which maps error codes to error messages.
 		once
 			create Result.make (100)
@@ -46,7 +46,7 @@ feature -- Access
 			error_messages_not_void: Result /= Void
 		end
 
-	Default_error_message: STRING is
+	Default_error_message: STRING
 			-- Message of errors whitout specialized message
 		once
 			Result := "Errorcode '{0}' - See traffic.tr_util.TRAFFIC_ERROR_CODES for more information"

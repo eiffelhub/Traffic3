@@ -17,7 +17,7 @@ inherit
 
 feature -- Initialization
 
-	make is
+	make
 			-- Create processor.
 		do
 			create {LINKED_LIST [XM_ELEMENT]} subnodes.make
@@ -29,7 +29,7 @@ feature -- Initialization
 
 feature -- Access
 
-	name: STRING is
+	name: STRING
 			-- Name of node to process
 		deferred
 		ensure
@@ -49,7 +49,7 @@ feature -- Access
 	data: ANY
 			-- Data from subnodes for parent
 
-	xml_attribute (a_name: STRING): STRING is
+	xml_attribute (a_name: STRING): STRING
 			-- Attribute named `a_name'
 		require
 			has_source: has_source
@@ -62,7 +62,7 @@ feature -- Access
 			Result_exists: Result /= Void
 		end
 
-	attribute_integer (a_name: STRING): INTEGER is
+	attribute_integer (a_name: STRING): INTEGER
 			-- Integer attribute named `a_name'
 		require
 			has_source: has_source
@@ -74,7 +74,7 @@ feature -- Access
 			Result := xml_attribute (a_name).to_integer
 		end
 
-	attribute_double (a_name: STRING): REAL_64 is
+	attribute_double (a_name: STRING): REAL_64
 			-- Double attribute named `a_name'
 		require
 			has_source: has_source
@@ -92,7 +92,7 @@ feature -- Access
 			Result  := attr.to_double
 		end
 
-	attribute_boolean (a_name: STRING): BOOLEAN is
+	attribute_boolean (a_name: STRING): BOOLEAN
 			-- Boolean attribute named `a_name'
 		require
 			has_source: has_source
@@ -104,7 +104,7 @@ feature -- Access
 			Result  := xml_attribute (a_name).to_boolean
 		end
 
-	text: STRING is
+	text: STRING
 			-- Text of element
 		require
 			has_source: has_source
@@ -132,7 +132,7 @@ feature -- Access
 			Result_exists: Result /= Void
 		end
 
-	allowed_subnode_types: ARRAY [STRING] is
+	allowed_subnode_types: ARRAY [STRING]
 			-- Table of allowed subnode types
 		do
 			if Allowed_subnode_registry.has (name) then
@@ -145,7 +145,7 @@ feature -- Access
 			object_comparison: Result.object_comparison
 		end
 
-	mandatory_attributes: ARRAY [STRING] is
+	mandatory_attributes: ARRAY [STRING]
 			-- Table of mandatory attributes
 		deferred
 		ensure
@@ -159,7 +159,7 @@ feature -- Access
 
 feature -- Measurement
 
-	subnode_count: INTEGER is
+	subnode_count: INTEGER
 			-- Number of subnodes
 		do
 			Result := subnodes.count
@@ -167,31 +167,31 @@ feature -- Measurement
 
 feature -- Status report
 
-	has_subnodes: BOOLEAN is
+	has_subnodes: BOOLEAN
 			-- Are there any subnodes?
 		do
 			Result := (subnode_count > 0)
 		end
 
-	has_source: BOOLEAN is
+	has_source: BOOLEAN
 			-- Is a source set?
 		do
 			Result := (source /= Void)
 		end
 
-	has_target: BOOLEAN is
+	has_target: BOOLEAN
 			-- Is a target set?
 		do
 			Result := (target /= Void)
 		end
 
-	has_parent: BOOLEAN is
+	has_parent: BOOLEAN
 			-- Is a parent set?
 		do
 			Result := (parent /= Void)
 		end
 
-	has_attribute (a_name: STRING): BOOLEAN is
+	has_attribute (a_name: STRING): BOOLEAN
 			-- Is there an attribute named `a_name'?
 		require
 			has_source: has_source
@@ -201,7 +201,7 @@ feature -- Status report
 			Result := source.has_attribute_by_name (a_name)
 		end
 
-	is_attribute_integer (a_name: STRING): BOOLEAN is
+	is_attribute_integer (a_name: STRING): BOOLEAN
 			-- Is attribute named `a_name' an integer?
 		require
 			has_source: has_source
@@ -212,7 +212,7 @@ feature -- Status report
 			Result  := xml_attribute (a_name).is_integer
 		end
 
-	is_attribute_double (a_name: STRING): BOOLEAN is
+	is_attribute_double (a_name: STRING): BOOLEAN
 			-- Is attribute named `a_name' a double?
 		require
 			has_source: has_source
@@ -223,7 +223,7 @@ feature -- Status report
 			Result  := is_attribute_integer (a_name) or else xml_attribute (a_name).is_double
 		end
 
-	is_attribute_boolean (a_name: STRING): BOOLEAN is
+	is_attribute_boolean (a_name: STRING): BOOLEAN
 			-- Is attribute named `a_name' a boolean?
 		require
 			has_source: has_source
@@ -234,7 +234,7 @@ feature -- Status report
 			Result  := xml_attribute (a_name).is_boolean
 		end
 
-	valid_source (an_element: XM_ELEMENT): BOOLEAN is
+	valid_source (an_element: XM_ELEMENT): BOOLEAN
 			-- Is `an_element' a valid source?
 		require
 			source_exists: an_element /= Void
@@ -246,13 +246,13 @@ feature -- Status report
 			Result := equal (n, name)
 		end
 
-	has_text: BOOLEAN is
+	has_text: BOOLEAN
 			-- Does element have text attached?
 		do
 			Result := has_source and then source.text /= Void
 		end
 
-	is_reset: BOOLEAN is
+	is_reset: BOOLEAN
 			-- Is processor in default state?
 		do
 			Result := not has_source and not has_target and not has_parent and
@@ -261,7 +261,7 @@ feature -- Status report
 
 feature -- Status setting
 
-	set_source (an_element: XM_ELEMENT) is
+	set_source (an_element: XM_ELEMENT)
 			-- Set source to `an_element'.
 		require
 			an_element_exists: an_element /= Void
@@ -273,7 +273,7 @@ feature -- Status setting
 			source_set: source = an_element
 		end
 
-	set_target (a_target: like target) is
+	set_target (a_target: like target)
 			-- Set target to `a_target'.
 		do
 			target := a_target
@@ -281,7 +281,7 @@ feature -- Status setting
 			target_set: target = a_target
 		end
 
-	set_parent (a_parent: like parent) is
+	set_parent (a_parent: like parent) 
 			-- Set parent to `a_parent'.
 		do
 			parent := a_parent
@@ -289,7 +289,7 @@ feature -- Status setting
 			parent_set: parent = a_parent
 		end
 
-	reset is
+	reset
 			-- Reset processor.
 		do
 			source := Void
@@ -303,7 +303,7 @@ feature -- Status setting
 
 feature {TRAFFIC_NODE_PROCESSOR} -- Status setting
 
-	set_error (a_code: INTEGER; an_error_string_array: ARRAY [STRING]) is
+	set_error (a_code: INTEGER; an_error_string_array: ARRAY [STRING])
 			-- Set error to `a_code' with additional information `an_error_string_array'.
 		local
 			p: like parent
@@ -323,7 +323,7 @@ feature {TRAFFIC_NODE_PROCESSOR} -- Status setting
 
 feature {TRAFFIC_NODE_PROCESSOR} -- Status report
 
-	is_complete	(a_code: INTEGER; an_error_string_array: ARRAY [STRING]): BOOLEAN is
+	is_complete	(a_code: INTEGER; an_error_string_array: ARRAY [STRING]): BOOLEAN
 			-- Does `an_error_string_error' contain complete info for error `a_code'?
 			-- (Redefined to provide visibility as it is used in the precondition of set_error)
 		do
@@ -332,13 +332,13 @@ feature {TRAFFIC_NODE_PROCESSOR} -- Status report
 
 feature -- Basic operations
 
-	send_data (a_data: ANY) is
+	send_data (a_data: ANY)
 			-- Store `a_data'.
 		do
 			data := a_data
 		end
 
-	process is
+	process
 			-- Process node.
 		require
 			has_source: has_source
@@ -346,7 +346,7 @@ feature -- Basic operations
 		deferred
 		end
 
-	process_subnodes is
+	process_subnodes
 			-- Process subnodes.
 		require
 			has_source: has_source
@@ -392,7 +392,7 @@ feature -- Basic operations
 
 feature {NONE} -- Implementation
 
-	initialize is
+	initialize
 			-- Initialize processor.
 		require
 			has_source: has_source

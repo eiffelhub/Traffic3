@@ -33,7 +33,7 @@ create
 
 feature -- Initialization
 
-	make (a_item: like item) is
+	make (a_item: like item)  
 			-- Initialize view for `a_item'.
 		local
 			pp: ARRAY [REAL_COORDINATE]
@@ -61,7 +61,7 @@ feature -- Initialization
 
 feature -- Basic operations
 
-	set_width (a_width: like width) is
+	set_width (a_width: like width)
 			-- Set the polyline's width to `a_width'
 		do
 			width:= a_width
@@ -69,7 +69,7 @@ feature -- Basic operations
 			invalidate
 		end
 
-	update is
+	update
 			-- Update to reflect changes in city item.
 		local
 			pp: ARRAY [REAL_COORDINATE]
@@ -107,19 +107,19 @@ feature -- Basic operations
 
 feature -- Constants
 
-	default_color: EV_COLOR is
+	default_color: EV_COLOR
 			-- Default color
 		once
 			create Result.make_with_8_bit_rgb (100, 100, 100)
 		end
 
-	default_highlight_color: EV_COLOR is
+	default_highlight_color: EV_COLOR
 			-- Default highlight color
 		once
 			create Result.make_with_8_bit_rgb (0, 0, 255)
 		end
 
-	Default_highlight_width_delta: INTEGER is 5
+	Default_highlight_width_delta: INTEGER = 5
 			-- Delta to make lines thicker when highlighted
 
 feature {NONE}-- Implementation

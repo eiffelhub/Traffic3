@@ -1,5 +1,4 @@
 note
-
 	description: "[
 			Graphical picture stored as a two dimensional map of pixels.
 		 	Can be zoomed, panned, modified and displayed.
@@ -21,7 +20,7 @@ create
 
 feature -- Creation
 
-	make is
+	make
 			-- Create a new canvas.
 		local
 			figure_world : EV_FIGURE_WORLD
@@ -43,7 +42,7 @@ feature -- Access
 
 feature -- Display
 
-	set_visible_area (an_area: like visible_area) is
+	set_visible_area (an_area: like visible_area)
 			-- Replace `visible_area' with `an_area'.
 		do
 			visible_area := an_area
@@ -51,7 +50,7 @@ feature -- Display
 			new_visible_area: visible_area = an_area
 		end
 
-	draw_all_items (objects_to_draw: like object_list) is
+	draw_all_items (objects_to_draw: like object_list)
 			-- Draw all `objects_to_draw'
 		require
 			objects_to_draw_not_void: objects_to_draw /= Void
@@ -68,7 +67,7 @@ feature -- Display
 			end
 		end
 
-	redraw_now is
+	redraw_now
 			-- Redraw all items on `Current'.
 		do
 			clear
@@ -86,7 +85,7 @@ feature -- Display
 			(create {EV_ENVIRONMENT}).application.remove_idle_action (redraw_agent)
 		end
 
-	redraw is
+	redraw
 			-- Redraw the canvas as soon as possible.
 		do
 			if not has_pending_redraw then
@@ -107,7 +106,7 @@ feature -- Queries
 
 feature {NONE} -- Implementation
 
-	draw_item (an_item: DRAWABLE_OBJECT) is
+	draw_item (an_item: DRAWABLE_OBJECT)
 			-- Draw `an_item'.
 		require
 			an_item_not_void: an_item /= Void

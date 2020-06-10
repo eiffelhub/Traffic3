@@ -1,5 +1,4 @@
 note
-
 	description: "Polygon that will scale when zooming in EV_CANVAS"
 	status:	"See notice at end of class"
 	author: "Till G. Bay"
@@ -16,7 +15,7 @@ create
 
 feature -- Creation
 
-	make (a_point_array: like points) is
+	make (a_point_array: like points)
 			-- Create a polygon from `a_point_array'
 		require
 			a_point_array_not_void: a_point_array /= Void
@@ -31,7 +30,7 @@ feature -- Creation
 
 feature -- Commands
 
-	set_points (new_points: like points) is
+	set_points (new_points: like points)
 			-- Replace the polygon's points with `new_points'
 		require
 			new_points_not_void: new_points /= Void
@@ -45,7 +44,7 @@ feature -- Commands
 
 feature{EV_CANVAS} -- Display
 
-	bounding_box: REAL_RECTANGLE is
+	bounding_box: REAL_RECTANGLE
 			-- The bounding box of the polygon
 		local
 			index: INTEGER
@@ -76,7 +75,7 @@ feature{EV_CANVAS} -- Display
 		end
 
 
-	draw_object is
+	draw_object
 			-- Draw the polygon.
 		local
 			index: INTEGER

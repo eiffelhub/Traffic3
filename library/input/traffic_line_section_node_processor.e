@@ -17,10 +17,10 @@ create
 
 feature -- Access
 
-	Name: STRING is "line_section"
+	Name: STRING = "line_section"
 			-- Name of element to process
 
-	Mandatory_attributes: ARRAY [STRING] is
+	Mandatory_attributes: ARRAY [STRING]
 			-- Table of mandatory attributes
 		do
 			Result := << "from", "to", "direction" >>
@@ -29,7 +29,7 @@ feature -- Access
 
 feature -- Basic operations
 
-	process is
+	process
 			-- Process node.
 		local
 			line: TRAFFIC_LINE
@@ -89,7 +89,7 @@ feature -- Basic operations
 			end
 		end
 
-	process_subnodes is
+	process_subnodes 
 			-- Process subnodes.
 		local
 			n: XM_ELEMENT

@@ -28,19 +28,19 @@ inherit
 
 feature -- Access
 
-	edge_item: WEIGHTED_EDGE [like item, L] is
+	edge_item: WEIGHTED_EDGE [like item, L]
 			-- Current edge
 		deferred
 		end
 
-	edge_from_values (a_start_node, a_end_node: like item; a_label: L; a_weight: REAL_64): like edge_item is
+	edge_from_values (a_start_node, a_end_node: like item; a_label: L; a_weight: REAL_64): like edge_item
 			-- Edge that matches `a_start_node', `a_end_node', `a_label' and `a_weight'.
 			-- Result is Void if there is no match.
 			-- The cursor is not moved.
 		deferred
 		end
 
-	shortest_path: like path is
+	shortest_path: like path 
 			-- Shortest path, that has been found with `find_shortest_path'
 		require
 			path_found: path_found
@@ -53,7 +53,7 @@ feature -- Access
 
 feature -- Measurement
 
-	weight_sum: REAL_64 is
+	weight_sum: REAL_64
 			-- Sum of all edge weights of the graph
 		local
 			lin_rep: LINEAR [like edge_item]
@@ -74,7 +74,7 @@ feature -- Measurement
 
 feature -- Status report
 
-	all_weights_positive: BOOLEAN is
+	all_weights_positive: BOOLEAN
 			-- Are all edge weights positive?
 		local
 			lin_rep: LINEAR [like edge_item]
@@ -95,7 +95,7 @@ feature -- Status report
 
 feature -- Status setting
 
-	enable_user_defined_weight_function (a_function: FUNCTION [ANY, TUPLE [WEIGHTED_EDGE [G, L]], REAL_64]) is
+	enable_user_defined_weight_function (a_function: FUNCTION [ANY, TUPLE [WEIGHTED_EDGE [G, L]], REAL_64])
 			-- Use `a_function' to compute edge weight instead of stored value.
 		local
 			edge_list: like edges
@@ -113,7 +113,7 @@ feature -- Status setting
 			end
 		end
 
-	restore_default_weights is
+	restore_default_weights
 			-- Revert to stored edge weights.
 		local
 			edge_list: like edges
@@ -135,7 +135,7 @@ feature -- Cursor movement
 
 feature -- Element change
 
-	put_edge (a_start_node, a_end_node: like item; a_label: L; a_weight: REAL_64) is
+	put_edge (a_start_node, a_end_node: like item; a_label: L; a_weight: REAL_64)
 			-- Create an edge with weight `a_weight' between `a_start_node' and `a_end_node'.
 			-- The edge will be labeled `a_label'.
 			-- For symmetric graphs, another edge is inserted in the opposite direction.
@@ -151,7 +151,7 @@ feature -- Element change
 																  has_edge_between (a_end_node, a_start_node)
 		end
 
-	put_unlabeled_edge (a_start_node, a_end_node: like item; a_weight: REAL_64) is
+	put_unlabeled_edge (a_start_node, a_end_node: like item; a_weight: REAL_64)
 			-- Create an edge with weight `a_weight' between `a_start_node' and `a_end_node'.
 			-- For symmetric graphs, another edge is inserted in the opposite direction.
 			-- The cursor is not moved.
@@ -181,7 +181,7 @@ feature -- Miscellaneous
 
 feature -- Basic operations
 
-	find_shortest_path (a_start_node: like item; a_end_node: like item) is
+	find_shortest_path (a_start_node: like item; a_end_node: like item)
 			-- Shortest path from `a_start_node' to `a_end_node'
 		do
 			find_path (a_start_node, a_end_node)
@@ -191,14 +191,14 @@ feature -- Obsolete
 
 feature {NONE} -- Inapplicable
 
-	put_unweighted_edge (a_start_node, a_end_node: like item; a_label: L) is
+	put_unweighted_edge (a_start_node, a_end_node: like item; a_label: L)
 			-- Not applicable anymore. Edges must be weighted.
 		do
 			-- Workaround for catcalls: Put unweighted edge instead.
 			put_edge (a_start_node, a_end_node, a_label, 0)
 		end
 
-	unweighted_edge_from_values (a_start_node, a_end_node: like item; a_label: L): EDGE [like item, L] is
+	unweighted_edge_from_values (a_start_node, a_end_node: like item; a_label: L): EDGE [like item, L]
 			-- Edge that matches `a_start_node', `a_end_node' and `a_label'.
 			-- Result is Void if there is no match.
 			-- The cursor is not moved.
@@ -209,13 +209,13 @@ feature {NONE} -- Inapplicable
 
 feature {NONE} -- Implementation
 
-	edge_length (a_edge: like edge_item): REAL_64 is
+	edge_length (a_edge: like edge_item): REAL_64
 			-- Edge length, used in `find_path' and `shortest_path' algorithm
 		do
 			Result := a_edge.weight
 		end
 
-	adopt_edge (a_edge: WEIGHTED_EDGE [like item, L]) is
+	adopt_edge (a_edge: WEIGHTED_EDGE [like item, L])
 			-- Put `a_edge' into current graph.
 		do
 			put_edge (a_edge.start_node, a_edge.end_node, a_edge.label, a_edge.weight)

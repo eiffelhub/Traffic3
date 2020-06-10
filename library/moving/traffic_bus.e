@@ -14,7 +14,7 @@ create
 
 feature -- Initialization	
 
-	make_with_line (a_line: TRAFFIC_LINE) is
+	make_with_line (a_line: TRAFFIC_LINE)
 			-- Create a bus following `a_line'.
 			-- Set unit_capacity and speed to default values.
 		require
@@ -34,7 +34,7 @@ feature -- Access
 
 feature -- Basic operations
 
-	replace (a_line: TRAFFIC_LINE) is
+	replace (a_line: TRAFFIC_LINE)
 			-- Serve as replacement bus for `a_line'.
 		require
 			a_line_not_void: a_line /= void
@@ -45,13 +45,13 @@ feature -- Basic operations
 			new_line_set:  line = a_line
 		end
 
-	load(a_quantity: INTEGER) is
+	load(a_quantity: INTEGER)
 			-- Load cargo or a passenger.
     	do
 			count := count + a_quantity
     	end
 
-    unload(a_quantity: INTEGER) is
+    unload(a_quantity: INTEGER)
 			-- Load cargo or a passenger.
     	do
 			count := count - a_quantity
@@ -59,7 +59,7 @@ feature -- Basic operations
 
 feature-- Constants
 
-	Default_capacity: INTEGER is 180
+	Default_capacity: INTEGER = 180
 		-- Default capacity of a bus
 
 	Default_virtual_speed: REAL_64
@@ -70,19 +70,19 @@ feature-- Constants
 
 feature -- Status report
 
-	is_insertable (a_city: TRAFFIC_CITY): BOOLEAN is
+	is_insertable (a_city: TRAFFIC_CITY): BOOLEAN
 			-- Is `Current' insertable into `a_city'?
 		do
 			Result := True
 		end
 
-	is_removable: BOOLEAN is
+	is_removable: BOOLEAN
 			-- Is `Current' removable from `a_city'?
 		do
 			Result := True
 		end
 
-	is_valid_line (a_line: TRAFFIC_LINE): BOOLEAN is
+	is_valid_line (a_line: TRAFFIC_LINE): BOOLEAN
 			-- Is `a_line' valid for a tram to move on?
 		do
 			if a_line.type.is_equal (create {TRAFFIC_TYPE_TRAM}.make) or a_line.type.is_equal (create {TRAFFIC_TYPE_BUS}.make) then

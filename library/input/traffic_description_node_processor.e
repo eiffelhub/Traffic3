@@ -14,13 +14,10 @@ create
 
 feature -- Access
 
-	Name: STRING is
+	Name: STRING = "description"
 			-- Name of node to process
-		once
-			Result := "description"
-		end
 
-	Mandatory_attributes: ARRAY [STRING] is
+	Mandatory_attributes: ARRAY [STRING]
 			-- Table of mandatory attributes
 		do
 			Result := << "text" >>
@@ -29,7 +26,7 @@ feature -- Access
 
 feature -- Basic operations
 
-	process is
+	process 
 			-- Process element.
 		require else
 			has_target: has_target -- Because it has been passed down from the parent.

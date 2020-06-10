@@ -31,7 +31,7 @@ create
 
 feature {NONE} -- Initialization
 
-	make (a_origin, a_destination: TRAFFIC_STOP; a_type: TRAFFIC_TYPE_LINE; a_list: DS_ARRAYED_LIST [TRAFFIC_POINT] ) is
+	make (a_origin, a_destination: TRAFFIC_STOP; a_type: TRAFFIC_TYPE_LINE; a_list: DS_ARRAYED_LIST [TRAFFIC_POINT] )
 			-- Initialize `Current'.
 			-- If `a_list' is Void, a list of polypoints with the coordinate of `a_origin' and
 			-- `a_destination' are generated.
@@ -69,7 +69,7 @@ feature -- Access
 	roads: ARRAYED_LIST [TRAFFIC_ROAD_SEGMENT]
 			-- Roads on which the line segment lies
 
-	hash_code: INTEGER is
+	hash_code: INTEGER
 			-- Hash code value
 		local
 			line_name: STRING
@@ -84,7 +84,7 @@ feature -- Access
 
 feature -- Element change
 
-	set_roads (a_roads: ARRAYED_LIST [TRAFFIC_ROAD_SEGMENT]) is
+	set_roads (a_roads: ARRAYED_LIST [TRAFFIC_ROAD_SEGMENT])
 			-- Set roads to `a_roads'.
 		require
 			a_roads_exist: a_roads /= Void
@@ -99,7 +99,7 @@ feature -- Element change
 
 feature -- Basic operations
 
-	remove_roads is
+	remove_roads
 			-- Remove roads.
 		do
 			roads.wipe_out
@@ -110,7 +110,7 @@ feature -- Basic operations
 
 feature -- Status report
 
-	is_insertable (a_city: TRAFFIC_CITY): BOOLEAN is
+	is_insertable (a_city: TRAFFIC_CITY): BOOLEAN
 			-- Is `Current' insertable into `a_city'?
 			-- (All stations, stops, and the line need to be in the city already)
 		do
@@ -123,7 +123,7 @@ feature -- Status report
 
 		end
 
-	is_removable: BOOLEAN is
+	is_removable: BOOLEAN
 			-- Is `Current' removable from `city'?
 			-- In general yes. The line needs to make sure that there is no problem...
 		do
@@ -132,7 +132,7 @@ feature -- Status report
 
 feature -- Access
 
-	weight_factor: REAL_64 is
+	weight_factor: REAL_64
 			-- Factor with which the length of the connection is multiplied
 		do
 			if type.is_equal (create {TRAFFIC_TYPE_TRAM}.make) then
@@ -152,7 +152,7 @@ feature -- Access
 
 feature -- Output
 
-	out: STRING is
+	out: STRING
 			-- Textual representation
 		local
 			line_name: STRING
@@ -170,7 +170,7 @@ feature -- Output
 
 feature {TRAFFIC_LINE} -- Status setting
 
-	set_line (a_line: TRAFFIC_LINE) is
+	set_line (a_line: TRAFFIC_LINE)
 			-- Set line this line segment belongs to.
 		require
 			a_line_exists: a_line /= Void
@@ -182,7 +182,7 @@ feature {TRAFFIC_LINE} -- Status setting
 			line_set: line = a_line
 		end
 
-	remove_line is
+	remove_line
 			-- Remove line segment from line.
 		require
 			line_set: line /= Void
@@ -195,7 +195,7 @@ feature {TRAFFIC_LINE} -- Status setting
 
 feature {TRAFFIC_LINE} -- Basic operations
 
-	add_to_city (a_city: TRAFFIC_CITY) is
+	add_to_city (a_city: TRAFFIC_CITY)
 			-- Add `Current' and all nodes to `a_city'.
 		do
 			a_city.graph.put_line_segment (Current)
@@ -206,7 +206,7 @@ feature {TRAFFIC_LINE} -- Basic operations
 			graph_has: a_city.graph.has_edge (Current)
 		end
 
-	remove_from_city is
+	remove_from_city 
 			-- Remove all nodes from `city'.
 		do
 			city.graph.prune_edge (Current)

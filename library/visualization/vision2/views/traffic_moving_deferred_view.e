@@ -33,7 +33,7 @@ inherit
 
 feature -- Initialization
 
-	make (a_item: like item) is
+	make (a_item: like item)  
 			-- Initialize view for `a_item'.
 		do
 			item := a_item
@@ -48,19 +48,19 @@ feature -- Initialization
 
 feature -- Constants
 
-	default_color: EV_COLOR is
+	default_color: EV_COLOR
 			-- Default color
 		deferred
 		end
 
-	default_highlight_color: EV_COLOR is
+	default_highlight_color: EV_COLOR
 			-- Default highlight color
 		deferred
 		end
 
 feature{EV_CANVAS} -- Display
 
-	draw_object is
+	draw_object
 			-- Draws the rectangle.
 		do
 			if is_shown then
@@ -70,7 +70,7 @@ feature{EV_CANVAS} -- Display
 
 feature {NONE} -- Implementation
 
-	define is
+	define
 			-- Define the objects in the container.
 		deferred
 		end

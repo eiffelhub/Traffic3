@@ -20,7 +20,7 @@ create
 
 feature {NONE} -- Creation
 
-	make (a_origin, a_destination: TRAFFIC_NODE; a_type: TRAFFIC_TYPE_ROAD; an_id: INTEGER) is
+	make (a_origin, a_destination: TRAFFIC_NODE; a_type: TRAFFIC_TYPE_ROAD; an_id: INTEGER)
 			-- Initialize `Current'.
 		require
 			a_origin_exists: a_origin /= Void
@@ -46,13 +46,13 @@ feature {NONE} -- Creation
 
 feature -- Access
 
-	weight_factor: REAL_64 is
+	weight_factor: REAL_64
 			-- Factor with which the length of the connection is multiplied
 		do
 			Result := 10
 		end
 
-	hash_code: INTEGER is
+	hash_code: INTEGER
 			-- Hash code value
 		do
 			Result := ([origin, destination, id]).hash_code
@@ -66,7 +66,7 @@ feature -- Access
 
 feature {TRAFFIC_ROAD} -- Basic operations
 
-	add_to_city (a_city: TRAFFIC_CITY) is
+	add_to_city (a_city: TRAFFIC_CITY)
 			-- Add `Current' and all nodes to `a_city'.
 		do
 			a_city.graph.put_road (Current)
@@ -76,7 +76,7 @@ feature {TRAFFIC_ROAD} -- Basic operations
 			graph_has: a_city.graph.has_edge (Current)
 		end
 
-	remove_from_city is
+	remove_from_city
 			-- Remove all nodes from `city'.
 		do
 			city.graph.prune_edge (Current)
@@ -86,7 +86,7 @@ feature {TRAFFIC_ROAD} -- Basic operations
 
 feature -- Status report
 
-	is_insertable (a_city: TRAFFIC_CITY): BOOLEAN is
+	is_insertable (a_city: TRAFFIC_CITY): BOOLEAN
 			-- Is `Current' insertable into `a_city'?
 			-- E.g. are all needed elements already inserted in the city?
 		do
@@ -94,7 +94,7 @@ feature -- Status report
 						origin.is_in_city and destination.is_in_city
 		end
 
-	is_removable: BOOLEAN is
+	is_removable: BOOLEAN
 			-- Is `Current' removable from `a_city'?
 		do
 			Result := True

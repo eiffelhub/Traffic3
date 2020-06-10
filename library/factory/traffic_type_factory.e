@@ -11,7 +11,7 @@ create
 
 feature {NONE} -- Initialization
 
-	make is
+	make
 			-- Set internal traffic type representation to void.
 		do
 			internal_traffic_type := Void
@@ -22,7 +22,7 @@ feature {NONE} -- Initialization
 
 feature -- Access
 
-	traffic_type: TRAFFIC_TYPE is
+	traffic_type: TRAFFIC_TYPE
 			-- Traffic type last created by `build'
 		do
 			Result := internal_traffic_type
@@ -30,7 +30,7 @@ feature -- Access
 
 feature -- Basic operation
 
-	reset is
+	reset 
 			-- Reset internal traffic type representation.
 		do
 			internal_traffic_type := Void
@@ -38,7 +38,7 @@ feature -- Basic operation
 			internal_traffic_type_is_void: internal_traffic_type = Void
 		end
 
-	build (a_name: STRING) is
+	build (a_name: STRING)
 			-- Build traffic type depending on type name `a_name'.
 			-- Access traffic type with `traffic_type'.
 		require
@@ -53,7 +53,7 @@ feature -- Basic operation
 
 feature -- Status report
 
-	valid_name (a_name: STRING): BOOLEAN is
+	valid_name (a_name: STRING): BOOLEAN
 			-- Is `a_name' a valid traffic type name?
 		require
 			a_name_exists: a_name /= Void
@@ -62,7 +62,7 @@ feature -- Status report
 			Result := type_table.has (a_name)
 		end
 
-	has_type: BOOLEAN is
+	has_type: BOOLEAN
 			-- Has a type object been generated?
 		do
 			Result := internal_traffic_type /= Void
@@ -73,49 +73,49 @@ feature {NONE} -- Implementation
 	internal_traffic_type: TRAFFIC_TYPE
 			-- Traffic type last created
 
-	bus_type: TRAFFIC_TYPE_BUS is
+	bus_type: TRAFFIC_TYPE_BUS
 			-- Bus traffic type
 		once
 			create Result.make
 		end
 
-	rail_type: TRAFFIC_TYPE_RAIL is
+	rail_type: TRAFFIC_TYPE_RAIL
 			-- Rail traffic type
 		once
 			create Result.make
 		end
 
-	tram_type: TRAFFIC_TYPE_TRAM is
+	tram_type: TRAFFIC_TYPE_TRAM
 			-- Tram traffic type
 		once
 			create Result.make
 		end
 
-	walking_type: TRAFFIC_TYPE_WALKING is
+	walking_type: TRAFFIC_TYPE_WALKING
 			-- Walking traffic type
 		once
 			create Result.make
 		end
 
-	street_type: TRAFFIC_TYPE_STREET is
+	street_type: TRAFFIC_TYPE_STREET
 			-- Street type
 		once
 			create Result.make
 		end
 
-	lightrail_type: TRAFFIC_TYPE_LIGHTRAIL is
+	lightrail_type: TRAFFIC_TYPE_LIGHTRAIL
 			-- Lightrail type
 		once
 			create Result.make
 		end
 
-	railroad_type: TRAFFIC_TYPE_RAILROAD is
+	railroad_type: TRAFFIC_TYPE_RAILROAD
 			-- Railroad type
 		once
 			create Result.make
 		end
 
-	type_table: HASH_TABLE [TRAFFIC_TYPE, STRING] is
+	type_table: HASH_TABLE [TRAFFIC_TYPE, STRING]
 			-- Table with all types
 		once
 			create Result.make (9)

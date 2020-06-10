@@ -197,7 +197,7 @@ feature -- Removal
 
 feature --
 
-	to_array: ARRAY [G] is
+	to_array: ARRAY [G] 
 			-- Array containing the same items as current
 			-- container in the same order
 		do

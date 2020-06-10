@@ -14,7 +14,7 @@ create
 
 feature -- Creation
 
-	make is
+	make 
 			-- Create new dispatcher taxi type.
 		do
 			name := "dispatcher taxi"

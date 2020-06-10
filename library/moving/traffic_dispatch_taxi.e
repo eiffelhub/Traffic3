@@ -27,7 +27,7 @@ create
 
 feature -- Initialization
 
-	make_random (a_point_list: DS_ARRAYED_LIST [TRAFFIC_POINT]) is
+	make_random (a_point_list: DS_ARRAYED_LIST [TRAFFIC_POINT])
 			-- Create a taxi with an associated 'a_taxi_office'.
 			-- Random speed and stops at 'stops' random positions.
 			-- Set seed of random_number to 'a_seed'.
@@ -39,7 +39,7 @@ feature -- Initialization
 			taxi_office_set: office /= Void
 		end
 
-	make_with_office (a_taxi_office: TRAFFIC_TAXI_OFFICE; a_point_list: DS_ARRAYED_LIST [TRAFFIC_POINT]) is
+	make_with_office (a_taxi_office: TRAFFIC_TAXI_OFFICE; a_point_list: DS_ARRAYED_LIST [TRAFFIC_POINT])
 			-- Create a taxi with an associated 'a_taxi_office'.
 			-- Random speed and stops at 'stops' random positions.
 			-- Set seed of random_number to 'a_seed'.
@@ -69,7 +69,7 @@ feature -- Access
 
 feature -- Basic operations
 
-	advance is
+	advance
 			-- Take a tour in the city.
 			-- Set new random directions and if 'Current' has done a request and is available again.
 		do
@@ -81,7 +81,7 @@ feature -- Basic operations
 
 feature {TRAFFIC_TAXI_OFFICE} -- Basic operations
 
-	add_to_city (a_city: TRAFFIC_CITY) is
+	add_to_city (a_city: TRAFFIC_CITY)
 			-- Add `Current' and all taxis to `a_city'.
 		do
 			Precursor (a_city)

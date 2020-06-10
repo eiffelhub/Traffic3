@@ -37,7 +37,7 @@ create
 
 feature -- Initialization
 
-	make (a_item: TRAFFIC_STATION) is
+	make (a_item: TRAFFIC_STATION)  
 			-- Initialize view for `a_item'.
 		do
 			make_container
@@ -58,7 +58,7 @@ feature -- Initialization
 
 feature -- Status setting
 
-	set_color (a_color: TRAFFIC_COLOR) is
+	set_color (a_color: TRAFFIC_COLOR)
 			-- Set the color of the view to `a_color'.
 		do
 			color := a_color
@@ -73,7 +73,7 @@ feature -- Status setting
 			end
 		end
 
-	set_highlight_color (a_color: TRAFFIC_COLOR) is
+	set_highlight_color (a_color: TRAFFIC_COLOR)
 			-- Set the color of the view to `a_color'.
 		do
 			highlight_color := a_color
@@ -90,7 +90,7 @@ feature -- Status setting
 
 feature -- Basic operations
 
-	update is
+	update
 			-- Update to reflect changes in item.
 		do
 			if item.is_highlighted then
@@ -114,7 +114,7 @@ feature -- Basic operations
 							create {REAL_COORDINATE}.make ((item.location.x+(item.width/2).max(5)), (-item.location.y+(item.breadth/2).max(5))))
 		end
 
-	highlight is
+	highlight
 			-- Highlight the view.
 		do
 			if highlight_color /= Void then
@@ -127,7 +127,7 @@ feature -- Basic operations
 			is_highlighted := True
 		end
 
-	unhighlight is
+	unhighlight
 			-- Unhighlight the view.
 		do
 			if color /= Void then
@@ -142,13 +142,13 @@ feature -- Basic operations
 
 feature -- Constants
 
-	default_color: EV_COLOR is
+	default_color: EV_COLOR
 			-- Default color
 		once
 			create Result.make_with_8_bit_rgb (100, 100, 100)
 		end
 
-	default_highlight_color: EV_COLOR is
+	default_highlight_color: EV_COLOR
 			-- Default highlight color
 		once
 			create Result.make_with_8_bit_rgb (255, 62, 150)

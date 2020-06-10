@@ -11,7 +11,7 @@ inherit
 
 feature -- Basic
 
-	is_allowed_type(a_moving: TRAFFIC_MOVING): BOOLEAN is
+	is_allowed_type(a_moving: TRAFFIC_MOVING): BOOLEAN 
 			-- Is 'a_moving' allowed to go on a route?
 		local
 			line_vehicle: TRAFFIC_LINE_VEHICLE

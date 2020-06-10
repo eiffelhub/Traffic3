@@ -1,5 +1,7 @@
 note
-	description: "XML processors for <point> elements. Example: <point x=%"3.2%" y=%"1.7%">."
+	description: "[
+		XML processors for <point> elements. Example: <point x="3.2" y="1.7">.
+		]"
 	date: "$Date: 2008-09-09 11:36:48 +0200 (Вт, 09 сен 2008) $"
 	revision: "$Revision: 1070 $"
 
@@ -14,10 +16,10 @@ create
 
 feature -- Access
 
-	Name: STRING is "point"
+	Name: STRING = "point"
 			-- Name of node to process
 
-	Mandatory_attributes: ARRAY [STRING] is
+	Mandatory_attributes: ARRAY [STRING]
 			-- Table of mandatory attributes
 		once
 			Result := << "x", "y" >>
@@ -26,7 +28,7 @@ feature -- Access
 
 feature -- Basic operations
 
-	process is
+	process 
 			-- Process node.
 		local
 			x: INTEGER

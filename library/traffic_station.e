@@ -24,7 +24,7 @@ create
 
 feature {NONE} -- Initialize
 
-	make (a_name: STRING) is
+	make (a_name: STRING)
 			-- Initilize `Current'.
 		require
 			a_name_exists: a_name /= Void
@@ -42,7 +42,7 @@ feature {NONE} -- Initialize
 			location_exists: location /= Void
 		end
 
-	make_with_location (a_name: STRING; a_x, a_y: INTEGER) is
+	make_with_location (a_name: STRING; a_x, a_y: INTEGER)
 			-- Initialize `Current' with name `a_name' and location `a_x', `a_y'.
 		require
 			a_name_exists: a_name /= Void
@@ -63,7 +63,7 @@ feature {NONE} -- Initialize
 
 feature -- Access
 
-	outgoing_line_connections: DS_ARRAYED_LIST [TRAFFIC_LINE_SEGMENT] is
+	outgoing_line_connections: DS_ARRAYED_LIST [TRAFFIC_LINE_SEGMENT]
 			-- All outgoing line connections
 		local
 			l: TWO_WAY_CIRCULAR [TRAFFIC_SEGMENT]
@@ -96,7 +96,7 @@ feature -- Access
 	name: STRING
 			-- Name of station
 
-	location: TRAFFIC_POINT is
+	location: TRAFFIC_POINT
 			-- Location on city
 		do
 			Result := dummy_node.location
@@ -117,7 +117,7 @@ feature -- Access
 	dummy_node: TRAFFIC_NODE
 			-- Node used for shortest route calculation
 
-	stop (a_line: TRAFFIC_LINE): TRAFFIC_STOP is
+	stop (a_line: TRAFFIC_LINE): TRAFFIC_STOP
 			-- Stop belonging to `a_line'
 		do
 			from stops.start until stops.after or stops.item.line.name.is_equal (a_line.name) loop
@@ -134,13 +134,13 @@ feature -- Access
 	breadth: REAL_64
 			-- Breadth of the station (enclosing all stops)
 
-	hash_code: INTEGER is
+	hash_code: INTEGER
 			-- Hash code value
 		do
 			Result := name.hash_code
 		end
 
-	lines: LINKED_SET[TRAFFIC_LINE] is
+	lines: LINKED_SET[TRAFFIC_LINE]
 			-- Returns all the lines used by stops of `current'
 		do
 			create result.make
@@ -159,7 +159,7 @@ feature -- Access
 
 feature -- Status report
 
-	is_exchange: BOOLEAN is
+	is_exchange: BOOLEAN
 			-- Is this an exchange station (where multiple transportation lines stop)
 		do
 			if outgoing_line_connections.count > 2 then
@@ -169,7 +169,7 @@ feature -- Status report
 			is_exchange: Result = (outgoing_line_connections.count > 2)
 		end
 
-	 is_railway_connection: BOOLEAN is
+	 is_railway_connection: BOOLEAN
              -- Is this a railway connection
         require
             not_empty: not outgoing_line_connections.is_empty
@@ -192,7 +192,7 @@ feature -- Status report
 
           end
 
-	is_hub: BOOLEAN is
+	is_hub: BOOLEAN
 			-- Is this an exchange station (where multiple transportation lines stop)
 		do
 			if outgoing_line_connections.count > Hub_size then
@@ -203,7 +203,7 @@ feature -- Status report
 			is_hub: Result = (outgoing_line_connections.count > Hub_size)
 		end
 
-	has_stop (a_line: TRAFFIC_LINE): BOOLEAN is
+	has_stop (a_line: TRAFFIC_LINE): BOOLEAN
 			-- Does the station have a stop for `a_line'?
 		require
 			a_line_exists: a_line /= Void
@@ -211,7 +211,7 @@ feature -- Status report
 			Result := stops.there_exists (agent is_stop_of_line (?, a_line))
 		end
 
-	is_insertable (a_city: TRAFFIC_CITY): BOOLEAN is
+	is_insertable (a_city: TRAFFIC_CITY): BOOLEAN
 			-- Is `Current' insertable into `a_city'?
 			-- (All nodes need to be insertable. See `TRAFFIC_NODE is_insertable' for requirements.)
 		do
@@ -228,7 +228,7 @@ feature -- Status report
 			end
 		end
 
-	is_removable: BOOLEAN is
+	is_removable: BOOLEAN
 			-- Is `Current' removable from `city'?
 			-- Only internal exchange connections are allowed...
 		local
@@ -258,7 +258,7 @@ feature -- Status report
 			end
 		end
 
-	is_road_connected(a_station: TRAFFIC_STATION): BOOLEAN is
+	is_road_connected(a_station: TRAFFIC_STATION): BOOLEAN
 			-- Is `a_station' reachable through one road in the city?
 		local
 			roads: TRAFFIC_ITEM_HASH_TABLE [TRAFFIC_ROAD, INTEGER]
@@ -276,7 +276,7 @@ feature -- Status report
 			end
 		end
 
-	connecting_road(a_station: TRAFFIC_STATION): TRAFFIC_ROAD is
+	connecting_road(a_station: TRAFFIC_STATION): TRAFFIC_ROAD
 			-- A (arbitrary) road connection `current' and `a_station'
 		require
 			connected: is_road_connected(a_station)
@@ -301,7 +301,7 @@ feature -- Status report
 
 feature {TRAFFIC_ITEM_LINKED_LIST}-- Basic operations
 
-	add_to_city (a_city: TRAFFIC_CITY) is
+	add_to_city (a_city: TRAFFIC_CITY)
 			-- Add `Current' and all nodes to `a_city'.
 		do
 			is_in_city := True
@@ -316,7 +316,7 @@ feature {TRAFFIC_ITEM_LINKED_LIST}-- Basic operations
 			end
 		end
 
-	remove_from_city is
+	remove_from_city
 			-- Remove all nodes from `city'.
 		do
 			from
@@ -333,7 +333,7 @@ feature {TRAFFIC_ITEM_LINKED_LIST}-- Basic operations
 
 feature -- Element change
 
-	set_information (a_information: TRAFFIC_STATION_INFORMATION) is
+	set_information (a_information: TRAFFIC_STATION_INFORMATION)
 			-- Set information to `a_information'.
 		require
 			a_information_exists: a_information /= Void
@@ -344,7 +344,7 @@ feature -- Element change
 			information_set: information = a_information
 		end
 
-	set_location (a_location: TRAFFIC_POINT) is
+	set_location (a_location: TRAFFIC_POINT)
 			-- Set location to `a_location'.
 		require
 			a_location_exists: a_location /= Void
@@ -357,7 +357,7 @@ feature -- Element change
 
 feature -- Basic operations
 
-	register_in_schedule (an_object: TRAFFIC_LINE_VEHICLE; time: TIME; target: TRAFFIC_STATION) is
+	register_in_schedule (an_object: TRAFFIC_LINE_VEHICLE; time: TIME; target: TRAFFIC_STATION)
 			-- Register a visiting tram in the schedule.
 		require
 			valid_object: an_object /= Void
@@ -375,7 +375,7 @@ feature -- Basic operations
 
 feature {TRAFFIC_NODE} -- Insertion
 
-	add_stop (a_stop: TRAFFIC_STOP) is
+	add_stop (a_stop: TRAFFIC_STOP)
 			-- add a traffic stop
 		require
 			is_insertable: a_stop.is_insertable (city)
@@ -389,7 +389,7 @@ feature {TRAFFIC_NODE} -- Insertion
 			changed_event.publish ([])
 		end
 
-	add_node (a_node: TRAFFIC_NODE) is
+	add_node (a_node: TRAFFIC_NODE)
 			-- Add `a_node' to `Current'.
 		local
 			s: TRAFFIC_STOP
@@ -408,7 +408,7 @@ feature {TRAFFIC_NODE} -- Insertion
 
 feature -- Output
 
-	out: STRING is
+	out: STRING
 			-- Textual representation of station
 		local
 			information_string: STRING
@@ -443,18 +443,18 @@ feature -- Output
 
 feature -- Constants
 
-	Hub_size: INTEGER is 8
+	Hub_size: INTEGER = 8
 			-- A station is considered a hub if it has more than `Hub_size' outgoing connections (or since lines are bidirection `Hub_size'/2 lines)
 
 feature {NONE} -- Implementation
 
-	is_stop_of_line (a_stop: TRAFFIC_STOP; a_line: TRAFFIC_LINE): BOOLEAN is
+	is_stop_of_line (a_stop: TRAFFIC_STOP; a_line: TRAFFIC_LINE): BOOLEAN
 			-- Does `a_stop' service `a_line'?
 		do
 			Result := a_stop.line.name.is_equal (a_line.name)
 		end
 
-	update_location is
+	update_location
 			-- Update the location, breadth, and width of the station using the stop's line-segments locations.
 			-- This strange hack with the line_segments is needed because of Touch of class.
 		do

@@ -11,7 +11,7 @@ create
 
 feature {NONE} -- Initialization
 
-	make (a_line: TRAFFIC_LINE) is
+	make (a_line: TRAFFIC_LINE)
 			-- Create for `a_line' and set direction to forward.
 		require
 			a_line_exists: a_line /= Void
@@ -25,7 +25,7 @@ feature {NONE} -- Initialization
 
 feature -- Access
 
-	item_for_iteration: TRAFFIC_LINE_SEGMENT is
+	item_for_iteration: TRAFFIC_LINE_SEGMENT
 			-- Item at internal cursor position of line
 		require
 			not_after: not after
@@ -38,7 +38,7 @@ feature -- Access
 
 feature -- Cursor movement
 
-	set_cursor_direction (forward: BOOLEAN) is
+	set_cursor_direction (forward: BOOLEAN)
 			-- Use `True' for traversal from `terminal_1' to `terminal_2', `false' otherwise.
 		do
 			if forward then
@@ -52,13 +52,13 @@ feature -- Cursor movement
 			internal_cursor_exists: internal_cursor /= Void
 		end
 
-	start is
+	start
 			-- Move internal cursor to first position.
 		do
 			internal_cursor.start
 		end
 
-	forth is
+	forth
 			-- Move internal cursor to next position.
 		require
 			not_after: not after
@@ -68,13 +68,13 @@ feature -- Cursor movement
 
 feature -- Status report
 
-	is_cursor_one_direction: BOOLEAN is
+	is_cursor_one_direction: BOOLEAN
 			-- Is the cursor currently working on the direction from `terminal_1' to `terminal_2'?
 		do
 			Result := internal_cursor.container = line.one_direction
 		end
 
-	after: BOOLEAN is
+	after: BOOLEAN 
 			-- Is there no valid position to right of internal cursor?
 		do
 			Result := internal_cursor.after

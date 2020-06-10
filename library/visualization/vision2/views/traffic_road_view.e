@@ -31,7 +31,7 @@ create
 
 feature -- Initialization
 
-	make (a_item: like item) is
+	make (a_item: like item)  
 			-- Initialize view for `a_item'.
 		local
 			pp: ARRAY [REAL_COORDINATE]
@@ -58,7 +58,7 @@ feature -- Initialization
 
 feature -- Basic operations
 
-	update is
+	update
 			-- Update to reflect changes in item.
 		local
 			pp: ARRAY [REAL_COORDINATE]
@@ -91,13 +91,13 @@ feature -- Basic operations
 
 feature -- Constants
 
-	default_color: EV_COLOR is
+	default_color: EV_COLOR
 			-- Default color
 		once
 			create Result.make_with_8_bit_rgb (200, 200, 200)
 		end
 
-	default_highlight_color: EV_COLOR is
+	default_highlight_color: EV_COLOR
 			-- Default highlight color
 		once
 			create Result.make_with_8_bit_rgb (255, 255,0)

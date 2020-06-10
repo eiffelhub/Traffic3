@@ -15,7 +15,7 @@ create
 
 feature -- Element change
 
-	set_city (a_city: TRAFFIC_CITY) is
+	set_city (a_city: TRAFFIC_CITY)
 			-- Initialize with `a_city'.
 		require
 			a_city_exists: a_city /= Void
@@ -39,7 +39,7 @@ feature -- Element change
 
 feature -- Basic operations
 
-	generate_random_buildings (a_number: INTEGER; a_radius: REAL_64; a_template: INTEGER) is
+	generate_random_buildings (a_number: INTEGER; a_radius: REAL_64; a_template: INTEGER)
 			-- Generate at most `a_number' buildings of same type as `a_template' in `a_radius' around the city center.
 		require
 			a_number_valid: a_number > 0
@@ -83,7 +83,7 @@ feature -- Basic operations
 
 feature -- Access
 
-	template_count: INTEGER is
+	template_count: INTEGER
 			-- Number of templates
 		do
 			Result := templates.count
@@ -101,10 +101,10 @@ feature -- Access
 
 feature {NONE} -- Implementation
 
-	Max_iterations: INTEGER is 1000
+	Max_iterations: INTEGER = 1000
 			-- Maximal number of iterations to ensure termination of the algorithm
 
-	Line_width: INTEGER is 10
+	Line_width: INTEGER = 10
 			-- Line width used for marking line segments as occupied
 
 	random: RANDOM
@@ -113,7 +113,7 @@ feature {NONE} -- Implementation
 	templates: ARRAY [TRAFFIC_BUILDING]
 			-- Building templates
 
-	mark_occupied is
+	mark_occupied
 			-- Mark all cells of the grid that are already occupied by a city item.
 		local
 			poly_points: DS_ARRAYED_LIST [TRAFFIC_POINT]

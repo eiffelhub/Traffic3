@@ -14,7 +14,7 @@ feature
 	right: TRAFFIC_SIMPLE_STOP
 		-- Next stop on same line
 
-	set_station(s: TRAFFIC_STATION) is
+	set_station(s: TRAFFIC_STATION)
 		--Associate this stop with `s'
 		require
 			station_exists: s/= void
@@ -24,7 +24,7 @@ feature
 			station_set: station = s
 		end
 
-	link(s: TRAFFIC_SIMPLE_STOP) is
+	link(s: TRAFFIC_SIMPLE_STOP) 
 			-- make `s' the next stop on the line
 		do
 			right := s

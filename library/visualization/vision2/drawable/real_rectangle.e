@@ -1,5 +1,4 @@
 note
-
 	description: "Rectangular areas."
 	status:	"See notice at end of class"
 	author: "Till G. Bay"
@@ -20,7 +19,7 @@ create
 
 feature -- Creation
 
-	make (a_point_a, a_point_b: REAL_COORDINATE) is
+	make (a_point_a, a_point_b: REAL_COORDINATE)
 			-- Create a new rectangle from `a_point_a' and `a_point_b'.
 		require
 			a_point_a_not_void: a_point_a /= Void
@@ -33,7 +32,7 @@ feature -- Creation
 			point_b_set: point_b = a_point_b
 		end
 
-	make_from_reals (x1, y1, x2, y2: REAL_64) is
+	make_from_reals (x1, y1, x2, y2: REAL_64)
 			-- Create a rectangle from real coordinates.
 		do
 			make (create {REAL_COORDINATE}.make (x1,y1), create {REAL_COORDINATE}.make (x2,y2))
@@ -47,13 +46,13 @@ feature -- Access
 	point_b: REAL_COORDINATE
 			-- The other corner point of the rectangle
 
-	width: REAL_64 is
+	width: REAL_64
 			-- Width of `Current'
 		do
 			Result := (point_a.x - point_b.x).abs
 		end
 
-	height: REAL_64 is
+	height: REAL_64
 			-- Height of `Current'
 		do
 			Result := (point_a.y - point_b.y).abs
@@ -62,7 +61,7 @@ feature -- Access
 
 feature -- Status report
 
-	upper_left: REAL_COORDINATE is
+	upper_left: REAL_COORDINATE
 			-- Upper-left corner of `Current'
 		do
 			create Result.make (point_a.x.min (point_b.x),point_a.y.max (point_b.y))
@@ -70,7 +69,7 @@ feature -- Status report
 			result_not_void: Result /= Void
 		end
 
-	upper_right: REAL_COORDINATE is
+	upper_right: REAL_COORDINATE
 			-- Upper-right corner of `Current'
 		do
 			create Result.make (point_a.x.max (point_b.x),point_a.y.max (point_b.y))
@@ -78,7 +77,7 @@ feature -- Status report
 			result_not_void: Result /= Void
 		end
 
-	lower_left: REAL_COORDINATE is
+	lower_left: REAL_COORDINATE
 			-- Lower-left corner of `Current'
 		do
 			create Result.make (point_a.x.min (point_b.x),point_a.y.min (point_b.y))
@@ -86,7 +85,7 @@ feature -- Status report
 			result_not_void: Result /= Void
 		end
 
-	lower_right: REAL_COORDINATE is
+	lower_right: REAL_COORDINATE
 			-- Lower-right corner of `Current'
 		do
 			create Result.make (point_a.x.max (point_b.x),point_a.y.min (point_b.y))
@@ -94,7 +93,7 @@ feature -- Status report
 			result_not_void: Result /= Void
 		end
 
-	center: REAL_COORDINATE is
+	center: REAL_COORDINATE
 		-- Center of `Current'
 		do
 			create Result.make ((point_a.x+point_b.x) / 2, (point_a.y+point_b.y) / 2)
@@ -102,25 +101,25 @@ feature -- Status report
 			result_not_void: Result /= Void
 		end
 
-	upper_bound: REAL_64 is
+	upper_bound: REAL_64
 			-- Upper bound of `Current'
 		do
 			Result := point_a.y.max (point_b.y)
 		end
 
-	lower_bound: REAL_64 is
+	lower_bound: REAL_64
 			-- Upper bound of `Current'
 		do
 			Result := point_a.y.min (point_b.y)
 		end
 
-	left_bound: REAL_64 is
+	left_bound: REAL_64
 			-- Upper bound of `Current'
 		do
 			Result := point_a.x.min (point_b.x)
 		end
 
-	right_bound: REAL_64 is
+	right_bound: REAL_64
 			-- Upper bound of `Current'
 		do
 			Result := point_a.x.max (point_b.x)
@@ -128,35 +127,35 @@ feature -- Status report
 
 feature -- Calculations
 
-	right_by (a_distance: REAL_64) is
+	right_by (a_distance: REAL_64)
 			-- Return a new point `a_distance' right of the current point.
 		do
 			point_a := point_a.right_by (a_distance)
 			point_b := point_b.right_by (a_distance)
 		end
 
-	up_by (a_distance: REAL_64) is
+	up_by (a_distance: REAL_64)
 			-- Return a new point `a_distance' above of the current point.
 		do
 			point_a := point_a.up_by (a_distance)
 			point_b := point_b.up_by (a_distance)
 		end
 
-	down_by (a_distance: REAL_64) is
+	down_by (a_distance: REAL_64)
 			-- Return a new point `a_distance' right of the current point.
 		do
 			point_a := point_a.down_by (a_distance)
 			point_b := point_b.down_by (a_distance)
 		end
 
-	left_by (a_distance: REAL_64) is
+	left_by (a_distance: REAL_64)
 			-- Return a new point `a_distance' above of the current point.
 		do
 			point_a := point_a.left_by (a_distance)
 			point_b := point_b.left_by (a_distance)
 		end
 
-	translate (a_distance: REAL_COORDINATE) is
+	translate (a_distance: REAL_COORDINATE)
 			-- Move the rectangle by the vector `a_distance'.
 		require
 			a_distance_not_void: a_distance /= Void
@@ -165,7 +164,7 @@ feature -- Calculations
 			point_b := point_b + a_distance
 		end
 
-	scale (a_factor: REAL_64) is
+	scale (a_factor: REAL_64)
 			-- Scalar multiplication by `a_factor'
 		do
 			point_a := point_a * a_factor
@@ -174,7 +173,7 @@ feature -- Calculations
 
 feature -- Status report
 
-	has (a_coordinate: REAL_COORDINATE): BOOLEAN is
+	has (a_coordinate: REAL_COORDINATE): BOOLEAN
 			-- Is `a_coordinate' inside `Current'?
 		require
 			a_coordinate_not_void: a_coordinate /= Void
@@ -190,7 +189,7 @@ feature -- Status report
 					  (a_coordinate.y <= upper_right_coordinate.y)
 		end
 
-	intersects (other: like Current): BOOLEAN is
+	intersects (other: like Current): BOOLEAN
 			-- Does `Current' and `other' overlap
 		require
 			other_not_void: other /= Void
@@ -203,7 +202,7 @@ feature -- Status report
 
 feature -- Output
 
-	out: STRING is
+	out: STRING
 			-- Return readable string.
 		do
 			Result := "(X1: " + point_a.x.out + ", Y1: " + point_a.y.out +

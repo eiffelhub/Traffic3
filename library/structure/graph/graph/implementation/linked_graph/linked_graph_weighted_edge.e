@@ -37,7 +37,7 @@ create
 
 feature {NONE} -- Initialization
 
-	make_directed (a_start_node, a_end_node: LINKED_GRAPH_NODE [G, L]; a_label: L; a_weight: REAL_64) is
+	make_directed (a_start_node, a_end_node: LINKED_GRAPH_NODE [G, L]; a_label: L; a_weight: REAL_64)
 			-- Make a directed labeled edge from two nodes with weight `a_weight'.
 		do
 			unweighted_make_directed (a_start_node, a_end_node, a_label)
@@ -48,7 +48,7 @@ feature {NONE} -- Initialization
 			default_weight_function: not user_defined_weight_function
 		end
 
-	make_undirected (a_start_node, a_end_node: LINKED_GRAPH_NODE [G, L]; a_label: L; a_weight: REAL_64) is
+	make_undirected (a_start_node, a_end_node: LINKED_GRAPH_NODE [G, L]; a_label: L; a_weight: REAL_64) 
 			-- Make an undirected labeled edge from two nodes with weight `a_weight'.
 		do
 			unweighted_make_undirected (a_start_node, a_end_node, a_label)

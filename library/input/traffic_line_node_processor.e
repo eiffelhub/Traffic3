@@ -17,10 +17,10 @@ create
 
 feature -- Access
 
-	Name: STRING is "line"
+	Name: STRING = "line"
 			-- Name of element to process
 
-	Mandatory_attributes: ARRAY [STRING] is
+	Mandatory_attributes: ARRAY [STRING]
 			-- Table of mandatory attributes
 		do
 			Result := << "name", "type" >>
@@ -32,7 +32,7 @@ feature -- Access
 
 feature -- Basic operations
 
-	process is
+	process
 			-- Process node.
 		do
 			if not has_attribute ("name") then
@@ -60,7 +60,7 @@ feature -- Basic operations
 			end
 		end
 
-	process_subnodes is
+	process_subnodes
 			-- Process subnodes.
 		local
 			n: XM_ELEMENT
@@ -99,7 +99,7 @@ feature -- Basic operations
 			end
 		end
 
-	reset is
+	reset 
 			-- Reset processor.
 		do
 			source := Void

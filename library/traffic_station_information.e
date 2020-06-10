@@ -17,7 +17,7 @@ create
 
 feature {NONE} -- Initialization
 
-	make is
+	make 
 			-- Create empty information.
 		do
 			create pictures.make
@@ -35,7 +35,7 @@ feature -- Access
 
 feature -- Element change
 
-	extend_picture (a_picture_path: STRING) is
+	extend_picture (a_picture_path: STRING)
 			-- Set picture path to `a_picture_path'.
 		require
 			a_picture_path_exists: a_picture_path /= Void
@@ -45,7 +45,7 @@ feature -- Element change
 			picture_set: pictures.has (a_picture_path)
 		end
 
-	set_description (a_description: STRING) is
+	set_description (a_description: STRING)
 			-- Set description to `a_desciption'.
 		require
 			a_description_exists: a_description /= Void
@@ -57,7 +57,7 @@ feature -- Element change
 
 feature -- Removal
 
-	remove_picture (a_picture_path: STRING) is
+	remove_picture (a_picture_path: STRING)
 			-- Remove picture path from pictures.
 		require
 			picture_in_pictures: pictures.has (a_picture_path)
@@ -67,7 +67,7 @@ feature -- Removal
 			picture_removed: not pictures.has (a_picture_path)
 		end
 
-	remove_description is
+	remove_description
 			-- Remove desription.
 		do
 			description := Void
@@ -77,7 +77,7 @@ feature -- Removal
 
 feature -- Output
 
-	out: STRING is
+	out: STRING
 			-- Textual representation.
 		do
 			Result := ""

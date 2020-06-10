@@ -22,7 +22,7 @@ create
 
 feature {NONE} -- Initialization
 
-	make (a_item: G) is
+	make (a_item: G)
 			-- Make a new linked graph node.
 		do
 			Precursor (a_item)
@@ -43,7 +43,7 @@ feature {LINKED_GRAPH} -- Access
 
 feature -- Measurement
 
-	out_degree: INTEGER is
+	out_degree: INTEGER
 			-- Number of outgoing edges of `item'
 		do
 			Result := edge_list.count
@@ -51,7 +51,7 @@ feature -- Measurement
 
 feature -- Cursor movement
 
-	turn_to (a_node: LINKED_GRAPH_NODE [G, L]) is
+	turn_to (a_node: LINKED_GRAPH_NODE [G, L])
 			-- Turn to the edge where `a_node' is the opposite node.
 		require
 			node_not_void: a_node /= Void
@@ -73,7 +73,7 @@ feature -- Cursor movement
 
 feature -- Element change
 
-	put_edge (a_edge: LINKED_GRAPH_EDGE [G, L]) is
+	put_edge (a_edge: LINKED_GRAPH_EDGE [G, L]) 
 			--
 		require
 			incident_node: item = a_edge.start_node or item = a_edge.end_node

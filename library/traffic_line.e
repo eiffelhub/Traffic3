@@ -44,7 +44,7 @@ create
 
 feature {NONE} -- Initialization
 
-	make (a_name: STRING; a_type: TRAFFIC_TYPE_LINE) is
+	make (a_name: STRING; a_type: TRAFFIC_TYPE_LINE)
 			-- Create a line with name `a_name' of type `a_type'.
 		require
 			a_name_exists: a_name /= Void
@@ -77,7 +77,7 @@ feature {NONE} -- Initialization
 			other_direction_exists: other_direction /= Void
 		end
 
-	make_metro (a_name: STRING) is
+	make_metro (a_name: STRING)
 			-- Create a line with name `a_name' of type TRAFFIC_TYPE_TRAM.
 		require
 			a_name_exists: a_name /= Void
@@ -104,7 +104,7 @@ feature {NONE} -- Initialization
 		end
 
 
-	make_with_terminal (a_name: STRING; a_type: TRAFFIC_TYPE_LINE; a_station: TRAFFIC_STATION) is
+	make_with_terminal (a_name: STRING; a_type: TRAFFIC_TYPE_LINE; a_station: TRAFFIC_STATION)
 			-- Create a line with a name `a_name' of type `a_type' and a planned terminal `a_station'.
 		require
 			a_name_exists: a_name /= Void
@@ -134,7 +134,7 @@ feature {NONE} -- Initialization
 
 feature -- Measurement
 
-	total_time: REAL_64 is
+	total_time: REAL_64
 			-- Estimated travel time for full line, time measured in Minutes.
 			-- By Speed which depends on the type of the line
 		do
@@ -155,13 +155,13 @@ feature -- Measurement
 		end
 
 
-	segment_count: INTEGER is
+	segment_count: INTEGER
 			-- Number of segments per direction in line
 		do
 			Result := one_direction.count
 		end
 
-	count: INTEGER is
+	count: INTEGER
 			-- Number of stations in this line
 		do
 			Result := stops.count
@@ -172,7 +172,7 @@ feature -- Access
 	index: INTEGER
 			-- Internal cursor index
 
-	i_th (i: INTEGER): TRAFFIC_STATION is
+	i_th (i: INTEGER): TRAFFIC_STATION
 			-- The i-th station on this line		
 		require
 			not_too_small: i >= 1
@@ -183,7 +183,7 @@ feature -- Access
 			end
 		end
 
-	item: TRAFFIC_STATION is
+	item: TRAFFIC_STATION
 			-- Item at internal cursor position of line
 		require
 			not_after: not after
@@ -191,7 +191,7 @@ feature -- Access
 			Result := i_th (index)
 		end
 
-	hash_code: INTEGER is
+	hash_code: INTEGER
 			-- Hash code value
 		do
 			Result := (name + type.name).hash_code
@@ -203,7 +203,7 @@ feature -- Access
 	type: TRAFFIC_TYPE_LINE
 			-- Type of line
 
-	terminal_1: TRAFFIC_STATION is
+	terminal_1: TRAFFIC_STATION
 			-- Terminal of line in one direction
 		do
 			if not is_empty then
@@ -211,7 +211,7 @@ feature -- Access
 			end
 		end
 
-	terminal_2: TRAFFIC_STATION is
+	terminal_2: TRAFFIC_STATION
 			-- Terminal of line in other direction
 		do
 			if not is_empty then
@@ -223,7 +223,7 @@ feature -- Access
 			-- Line color
 			-- Used as color represenation
 
-	south_end: TRAFFIC_STATION is
+	south_end: TRAFFIC_STATION
 			-- End station on South side
 			do
 				if not is_empty then
@@ -231,7 +231,7 @@ feature -- Access
 				end
 			end
 
-	north_end: TRAFFIC_STATION is
+	north_end: TRAFFIC_STATION
 			-- End station on North side
 			do
 				if not is_empty then
@@ -243,7 +243,7 @@ feature -- Access
 			-- A list of all stops of this line
 
 
-	road_points: DS_ARRAYED_LIST[TRAFFIC_POINT] is
+	road_points: DS_ARRAYED_LIST[TRAFFIC_POINT]
 			-- Polypoints from the roads belonging to this line
 		local
 			roads:ARRAYED_LIST[TRAFFIC_ROAD_SEGMENT]
@@ -319,7 +319,7 @@ feature -- Access
 			end
 		end
 
-	is_forward(a_start,a_destination: TRAFFIC_STATION): BOOLEAN is
+	is_forward(a_start,a_destination: TRAFFIC_STATION): BOOLEAN
 			-- do you have to move forward to get from a to b?
 		require
 			on_this_line: a_start.lines.has (current) and a_destination.lines.has (current)
@@ -345,7 +345,7 @@ feature -- Access
 			end
 		end
 
-	get_segments(a_origin, a_destination: TRAFFIC_STATION): LINKED_LIST[TRAFFIC_LINE_SEGMENT] is
+	get_segments(a_origin, a_destination: TRAFFIC_STATION): LINKED_LIST[TRAFFIC_LINE_SEGMENT]
 			-- Line segments connecting `a_origin' and `a_destination'
 		require
 			on_this_line: a_origin.lines.has (current) and a_destination.lines.has (current)
@@ -386,7 +386,7 @@ feature -- Access
 
 feature -- Cursor movement
 
-	start is
+	start
 			-- Bring station cursor to frist element.
 		do
 			index := 1
@@ -394,7 +394,7 @@ feature -- Cursor movement
 			on_first: index = 1
 		end
 
-	forth is
+	forth
 			-- Move internal cursor to next position.
 		require
 			not_after: not after
@@ -404,7 +404,7 @@ feature -- Cursor movement
 			moved_forth: index = old index + 1
 		end
 
-	go_i_th (i: INTEGER) is
+	go_i_th (i: INTEGER)
 			-- Move station cursor to item at position i
 		require
 			not_over_left:  i >= 0
@@ -431,19 +431,19 @@ feature -- Status report
 			not_empty: Result implies not is_empty
 		end
 
-	is_empty: BOOLEAN is
+	is_empty: BOOLEAN
 			-- Does `current' have any stops?
 		do
 			Result := stops.is_empty
 		end
 
-	after: BOOLEAN is
+	after: BOOLEAN
 			-- Is there no valid position to right of internal cursor?
 		do
 			Result := index > count
 		end
 
-	is_before: BOOLEAN is
+	is_before: BOOLEAN
 			-- Is there no valid position to left of internal cursor?
 		do
 			Result := index = 0
@@ -451,7 +451,7 @@ feature -- Status report
 
 feature -- Element change
 
-	highlight is
+	highlight
 			-- Highlight all line segments
 		local
 			lc: TRAFFIC_LINE_CURSOR
@@ -478,7 +478,7 @@ feature -- Element change
 			changed_event.publish ([])
 		end
 
-	unhighlight is
+	unhighlight
 			-- Unhighlight all line segments
 		local
 			lc: TRAFFIC_LINE_CURSOR
@@ -505,7 +505,7 @@ feature -- Element change
 			changed_event.publish ([])
 		end
 
-	set_color (a_color: TRAFFIC_COLOR) is
+	set_color (a_color: TRAFFIC_COLOR)
 			-- Set color to `a_color'.
 		require
 			a_color_exists: a_color /= Void
@@ -518,7 +518,7 @@ feature -- Element change
 
 feature {TRAFFIC_ITEM_LINKED_LIST} -- Basic operations
 
-	add_to_city (a_city: TRAFFIC_CITY) is
+	add_to_city (a_city: TRAFFIC_CITY)
 			-- Add `Current' and all nodes to `a_city'.
 		local
 			lc: TRAFFIC_LINE_CURSOR
@@ -546,7 +546,7 @@ feature {TRAFFIC_ITEM_LINKED_LIST} -- Basic operations
 			end
 		end
 
-	remove_from_city is
+	remove_from_city
 			-- Remove all nodes from `city'.
 		do
 			wipe_out
@@ -556,7 +556,7 @@ feature {TRAFFIC_ITEM_LINKED_LIST} -- Basic operations
 
 feature -- Removal
 
-	remove_all_segments, wipe_out is
+	remove_all_segments, wipe_out
 			-- Remove all segments.
 		local
 			first_stop: TRAFFIC_STOP
@@ -594,7 +594,7 @@ feature -- Removal
 		end
 
 
-	remove_color is
+	remove_color
 			-- Remove color.
 		do
 			color := Void
@@ -603,7 +603,7 @@ feature -- Removal
 			color_removed: color = Void
 		end
 
-	remove_last is
+	remove_last
 			-- Remove end of the line.
 		require
 			count_valid: segment_count >= 1
@@ -625,7 +625,7 @@ feature -- Removal
 			count_smaller: segment_count = old segment_count - 1
 		end
 
-	remove_first is
+	remove_first
 			-- Remove start of the line.
 		require
 			count_valid: segment_count >= 1
@@ -650,7 +650,7 @@ feature -- Removal
 feature -- Status report
 
 
-	is_insertable (a_city: TRAFFIC_CITY): BOOLEAN is
+	is_insertable (a_city: TRAFFIC_CITY): BOOLEAN
 			-- Is `Current' insertable into `a_city'?
 			-- E.g. are all needed elements already inserted in the city?
 		local
@@ -673,13 +673,13 @@ feature -- Status report
 			end
 		end
 
-	is_removable: BOOLEAN is
+	is_removable: BOOLEAN
 			-- Is `Current' removable from `city'?
 		do
 			Result := True
 		end
 
-	is_terminal (a_terminal: TRAFFIC_STATION): BOOLEAN is
+	is_terminal (a_terminal: TRAFFIC_STATION): BOOLEAN
 			-- Is `a_terminal' a terminal of line?
 		require
 			a_terminal_exists: a_terminal /= Void
@@ -689,7 +689,7 @@ feature -- Status report
 
 feature -- Basic operations
 
-	put_first (l1, l2: TRAFFIC_LINE_SEGMENT) is
+	put_first (l1, l2: TRAFFIC_LINE_SEGMENT)
 			-- Add l1 and l2 at beginning (l2 connects the same two stations in reverse order).
 		require
 			l1_exists: l1 /= Void
@@ -715,7 +715,7 @@ feature -- Basic operations
 			element_inserted_event.publish ([l2])
 		end
 
-	put_last (l1, l2: TRAFFIC_LINE_SEGMENT) is
+	put_last (l1, l2: TRAFFIC_LINE_SEGMENT)
 			-- Add l1 and l2 at end (l2 connects the same two stations in reverse order).
 		require
 			l1_exists: l1 /= Void
@@ -742,7 +742,7 @@ feature -- Basic operations
 			element_inserted_event.publish ([l2])
 		end
 
-	extend (s: TRAFFIC_STATION) is
+	extend (s: TRAFFIC_STATION)
 			-- Add connection (segment) to `a_station' at end.
 		require
 			not_empty: not is_empty
@@ -773,7 +773,7 @@ feature -- Basic operations
 			one_more: count = old count + 1
 		end
 
-	prepend (a_station: TRAFFIC_STATION) is
+	prepend (a_station: TRAFFIC_STATION)
 			-- Add connection (segment) from `a_station' to the beginning of the line.
 		require
 			has_terminal_1: terminal_1 /= void
@@ -808,7 +808,7 @@ feature -- Basic operations
 
 feature -- Output
 
-	out: STRING is
+	out: STRING
 			-- Textual representation
 		local
 			color_text: STRING
@@ -846,7 +846,7 @@ feature {TRAFFIC_LINE_CURSOR} -- Implementation
 
 	one_direction, other_direction: DS_LINKED_LIST [TRAFFIC_LINE_SEGMENT]
 
-	angle(st,dest: TRAFFIC_POINT):REAL_64 is
+	angle(st,dest: TRAFFIC_POINT):REAL_64
 			-- Set the angles to the x- and y-axis respectively.
 		local
 			x_difference, y_difference, hypo, quad: REAL_64

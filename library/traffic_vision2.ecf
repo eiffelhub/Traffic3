@@ -10,7 +10,6 @@
 			<warning name="vjrv" enabled="false"/>
 			<warning name="vweq" enabled="false"/>
 		</option>
-		<setting name="total_order_on_reals" value="false"/>
 		<setting name="dead_code_removal" value="feature"/>
 		<capability>
 			<concurrency support="none"/>

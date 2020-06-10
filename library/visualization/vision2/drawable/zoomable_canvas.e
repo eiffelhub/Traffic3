@@ -21,7 +21,7 @@ create
 
 feature -- Canvas elements
 
-	make is
+	make
 			-- Initialize.
 		do
 			Precursor
@@ -46,7 +46,7 @@ feature -- Canvas elements
 	zoom_minimum: REAL_64
 			-- Max zoom in factor
 
-	set_zoom_limits (min, max: REAL_64) is
+	set_zoom_limits (min, max: REAL_64)
 			-- Set the both zoom limits `zoom_minimum' and `zoom_maximum'.
 		require
 			min_smaller_than_max: min < max
@@ -56,7 +56,7 @@ feature -- Canvas elements
 			zoom_maximum := max
 		end
 
-	update_visible_area is
+	update_visible_area
 			-- Updates the visible area according to `width', `height' and `zoom_factor'.
 		local
 			old_center: REAL_COORDINATE
@@ -79,49 +79,49 @@ feature -- Canvas elements
 			redraw
 		end
 
-	zoom_in (zoom_factor_delta: REAL_64) is
+	zoom_in (zoom_factor_delta: REAL_64)
 			-- Zoom in stepwise.
 		do
 			zoom_factor := (zoom_factor - zoom_factor_delta).max (zoom_minimum)
 			update_visible_area
 		end
 
-	zoom_out (zoom_factor_delta: REAL_64) is
+	zoom_out (zoom_factor_delta: REAL_64)
 			-- Zoom out stepwise.
 		do
 			zoom_factor := (zoom_factor + zoom_factor_delta).min (zoom_maximum)
 			update_visible_area
 		end
 
-	go_right (pan_distance: REAL_64) is
+	go_right (pan_distance: REAL_64)
 			-- Move right.
 		do
 			visible_area.left_by (pan_distance)
 			redraw
 		end
 
-	go_left (pan_distance: REAL_64) is
+	go_left (pan_distance: REAL_64)
 			-- Move left.	
 		do
 			visible_area.right_by (pan_distance)
 			redraw
 		end
 
-	go_up (pan_distance: REAL_64) is
+	go_up (pan_distance: REAL_64)
 			-- Move up.	
 		do
 			visible_area.down_by (pan_distance)
 			redraw
 		end
 
-	go_down (pan_distance: REAL_64) is
+	go_down (pan_distance: REAL_64)
 			-- Move down.	
 		do
 			visible_area.up_by (pan_distance)
 			redraw
 		end
 
-	set_size (a_width, a_height: INTEGER) is
+	set_size (a_width, a_height: INTEGER)
 			-- Assign `a_width' and `a_height' to `width' and `weight'.
 			-- Keep `zoom_factor' and keep center position.
 		do
@@ -132,7 +132,7 @@ feature -- Canvas elements
 feature {NONE} -- Implementation
 
 
-	zoom  (y: INTEGER) is
+	zoom  (y: INTEGER)
 			-- Zoom in or out.
 		do
 			if y > 0 then
@@ -143,7 +143,7 @@ feature {NONE} -- Implementation
 		end
 
 	move_start (x, y, b: INTEGER; x_t, y_t, p: REAL_64;
-			scr_x, scr_y: INTEGER) is
+			scr_x, scr_y: INTEGER)
 			-- Mouse down on the canvas (evt. start of moving).
 			-- (For an explanation of arguments look at
 			-- EV_POINTER_BUTTON_ACTION_SEQUENCE).
@@ -160,7 +160,7 @@ feature {NONE} -- Implementation
 
 	pan_agent: PROCEDURE [ANY, TUPLE [INTEGER_32, INTEGER_32, REAL_64, REAL_64, REAL_64, INTEGER_32, INTEGER_32]]
 
-	pan (x, y: INTEGER_32; x_t, y_t, p: REAL_64; scr_x, scr_y: INTEGER_32) is
+	pan (x, y: INTEGER_32; x_t, y_t, p: REAL_64; scr_x, scr_y: INTEGER_32)
 			--
 		local
 			pt: REAL_COORDINATE
@@ -184,7 +184,7 @@ feature {NONE} -- Implementation
 	last_cursor_position: REAL_COORDINATE
 
 	move_end (x, y, b: INTEGER; x_t, y_t, p: REAL_64;
-			scr_x, scr_y: INTEGER) is
+			scr_x, scr_y: INTEGER)
 			-- Release mouse pointer.
 			-- (For an explanation of arguments look at
 			-- EV_POINTER_BUTTON_ACTION_SEQUENCE.)
@@ -207,14 +207,14 @@ feature {NONE} -- Implementation
 			pointer_motion_actions.prune (pan_agent)
 		end
 
-	release is
+	release
 			-- Leave application window.
 		do
 			last_cursor_position := Void
 			pointer_motion_actions.prune (pan_agent)
 		end
 
-	Zoom_factor_stepwise: REAL_64 is 0.05
+	Zoom_factor_stepwise: REAL_64 = 0.05
 			-- Stepwise zoom factor
 
 end -- class SPECIAL_CANVAS

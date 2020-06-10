@@ -16,10 +16,10 @@ create
 
 feature -- Access
 
-	Name: STRING is "buildings"
+	Name: STRING = "buildings"
 			-- Name of node to process
 
-	Mandatory_attributes: ARRAY [STRING] is
+	Mandatory_attributes: ARRAY [STRING]
 			-- Table of mandatory attributes
 		once
 			Result := << >>
@@ -28,7 +28,7 @@ feature -- Access
 
 feature -- Basic operations
 
-	process is
+	process 
 			-- Process node.
 		do
 			if has_subnodes then

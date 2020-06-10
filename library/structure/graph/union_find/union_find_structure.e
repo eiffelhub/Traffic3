@@ -17,7 +17,7 @@ create
 
 feature {NONE} -- Initialization
 
-	make (n: INTEGER) is
+	make (n: INTEGER) 
 			-- Create union-find structure for `n' elements.
 			-- Structure grows automatically for more elements.
 		do
@@ -37,7 +37,7 @@ feature {NONE} -- Initialization
 
 feature -- Access
 
-	find (e: G): INTEGER is
+	find (e: G): INTEGER
 			-- Identifier of set containing `e'
 		require
 			has_element: has (e)
@@ -72,7 +72,7 @@ feature -- Access
 			valid_identifier: valid_identifier (Result)
 		end
 
-	i_th_set (a_identifier: INTEGER): SET [G] is
+	i_th_set (a_identifier: INTEGER): SET [G]
 			-- Members of the set identified by `a_identifier'
 		require
 			valid_identifier: valid_identifier (a_identifier)
@@ -94,7 +94,7 @@ feature -- Access
 			item_count: Result.count = item_count (a_identifier)
 		end
 
-	identifiers: SET [INTEGER] is
+	identifiers: SET [INTEGER]
 			-- All valid set identifiers
 		local
 			id: INTEGER
@@ -112,7 +112,7 @@ feature -- Access
 			identifier_count: Result.count = set_count
 		end
 
-	sets: SET [SET [G]] is
+	sets: SET [SET [G]]
 			-- All sets
 		local
 			id: INTEGER
@@ -138,7 +138,7 @@ feature -- Measurement
 	set_count: INTEGER
 			-- Number of disjoint sets
 
-	item_count (a_identifier: INTEGER): INTEGER is
+	item_count (a_identifier: INTEGER): INTEGER
 			-- Number of elements in set identified by `a_identifier'
 		require
 			valid_identifier: valid_identifier (a_identifier)
@@ -150,13 +150,13 @@ feature -- Measurement
 
 feature -- Status report
 
-	has (e: G): BOOLEAN is
+	has (e: G): BOOLEAN
 			-- Is `e' a registered element?
 		do
 			Result := index_of_element.has (e)
 		end
 
-	valid_identifier (a_identifier: INTEGER): BOOLEAN is
+	valid_identifier (a_identifier: INTEGER): BOOLEAN
 			-- Is `a_identifier' a valid set identifier?
 		do
 			-- An identifier is only valid if it denotes a root element.
@@ -174,7 +174,7 @@ feature -- Cursor movement
 
 feature -- Element change
 
-	put (e: G) is
+	put (e: G)
 			-- Put `e' into new unary set.
 			-- Do nothing if `e' has been inserted before.
 		do
@@ -219,7 +219,7 @@ feature -- Miscellaneous
 
 feature -- Basic operations
 
-	union (a_identifier, other_identifier: INTEGER) is
+	union (a_identifier, other_identifier: INTEGER)
 			-- Merge sets identified by `a_identifier' and `other_identifier'.
 			-- The smaller set gets merged into the larger set.
 		require
@@ -275,7 +275,7 @@ feature {NONE} -- Implementation
 			-- Backward links of "doubly linked list" of valid identifiers
 			-- Terminated by "-1"
 
-	merge_sets (a_identifier, other_identifier: INTEGER) is
+	merge_sets (a_identifier, other_identifier: INTEGER)
 			-- Make set identified by `other_identifier' child of set with name `a_identifier'.
 		require
 			valid_identifier: valid_identifier (a_identifier) and valid_identifier (other_identifier)
@@ -309,7 +309,7 @@ feature {NONE} -- Implementation
 						   old item_count (other_identifier))
 		end
 
-	remove_identifier (a_identifier: INTEGER) is
+	remove_identifier (a_identifier: INTEGER)
 			-- Remove `a_identifier' from "valid identifier" list.
 		local
 			prev_valid, next_valid: INTEGER

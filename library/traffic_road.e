@@ -19,7 +19,7 @@ create
 
 feature {NONE} -- Initialization
 
-	make (a_conn1, a_conn2: TRAFFIC_ROAD_SEGMENT) is
+	make (a_conn1, a_conn2: TRAFFIC_ROAD_SEGMENT)
 			-- Initialize a two way road with `a_conn1' and `a_conn2'.
 		require
 			a_conn1_exists: a_conn1 /= Void
@@ -41,7 +41,7 @@ feature {NONE} -- Initialization
 			id_set: id = one_way.id
 		end
 
-	make_one_way (a_conn: TRAFFIC_ROAD_SEGMENT) is
+	make_one_way (a_conn: TRAFFIC_ROAD_SEGMENT)
 			-- Initialize a one way road with `a_conn'.
 		require
 			a_conn_exists: a_conn /= Void
@@ -59,7 +59,7 @@ feature {NONE} -- Initialization
 
 feature -- Access
 
-	type: TRAFFIC_TYPE_ROAD is
+	type: TRAFFIC_TYPE_ROAD
 			-- Type of the road
 		do
 			Result := one_way.type
@@ -76,7 +76,7 @@ feature -- Access
 	id: INTEGER
 			-- Id of the road
 
-	get_connecting_segment(a_origin, a_destination: TRAFFIC_STATION): TRAFFIC_ROAD_SEGMENT is
+	get_connecting_segment(a_origin, a_destination: TRAFFIC_STATION): TRAFFIC_ROAD_SEGMENT
 			-- returns the road segment connecting `a_origin' and `a_destination'
 		require
 			connected: connects(a_origin, a_destination)
@@ -93,7 +93,7 @@ feature -- Access
 
 feature {TRAFFIC_EVENT_CONTAINER}-- Basic operations
 
-	add_to_city (a_city: TRAFFIC_CITY) is
+	add_to_city (a_city: TRAFFIC_CITY)
 			-- Add `Current' and all nodes to `a_city'.
 		do
 			one_way.add_to_city (a_city)
@@ -104,7 +104,7 @@ feature {TRAFFIC_EVENT_CONTAINER}-- Basic operations
 			city := a_city
 		end
 
-	remove_from_city is
+	remove_from_city
 			-- Remove all nodes from `city'.
 		do
 			one_way.remove_from_city
@@ -119,7 +119,7 @@ feature {TRAFFIC_EVENT_CONTAINER}-- Basic operations
 
 feature -- Status report
 
-	is_insertable (a_city: TRAFFIC_CITY): BOOLEAN is
+	is_insertable (a_city: TRAFFIC_CITY): BOOLEAN
 			-- Is `Current' insertable into `a_city'?
 			-- E.g. are all needed elements already inserted in the city?
 		do
@@ -127,7 +127,7 @@ feature -- Status report
 						one_way.origin.is_in_city and one_way.destination.is_in_city
 		end
 
-	is_removable: BOOLEAN is
+	is_removable: BOOLEAN
 			-- Is `Current' removable from `city'?
 		local
 			l: DS_ARRAYED_LIST [TRAFFIC_LINE_SEGMENT]
@@ -165,7 +165,7 @@ feature -- Status report
 			-- Is this a one way road?
 
 
-	connects(a_origin, a_destination: TRAFFIC_STATION): BOOLEAN is
+	connects(a_origin, a_destination: TRAFFIC_STATION): BOOLEAN
 			-- does this road connect `a_origin' and `a_destination?
 		require
 			a_origin_exists: a_origin /= void

@@ -21,7 +21,7 @@ create
 
 feature {NONE} -- Comparison
 
-	safe_less_than (a, b: G): BOOLEAN is
+	safe_less_than (a, b: G): BOOLEAN 
 			-- Same as `a > b' when `a' and `b' are not Void.
 			-- If `b' is Void and `a' is not, then True
 			-- Otherwise False

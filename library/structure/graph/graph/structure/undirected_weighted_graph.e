@@ -53,14 +53,14 @@ inherit
 
 feature -- Access
 
-	edge_item: WEIGHTED_EDGE [like item, L] is
+	edge_item: WEIGHTED_EDGE [like item, L]
 			-- Current edge
 		deferred
 		end
 
 feature -- Measurement
 
-	degree: INTEGER is
+	degree: INTEGER
 			-- Number of edges attached to `item'
 		do
 			Result := Precursor {UNDIRECTED_GRAPH}
@@ -68,7 +68,7 @@ feature -- Measurement
 
 feature -- Status report
 
-	has_edge_between (a_start_node, a_end_node: like item): BOOLEAN is
+	has_edge_between (a_start_node, a_end_node: like item): BOOLEAN
 			-- Are `a_start_node' and `a_end_node' directly connected?
 		deferred
 		end
@@ -79,7 +79,7 @@ feature -- Cursor movement
 
 feature -- Element change
 
-	put_edge (a_start_node, a_end_node: like item; a_label: L; a_weight: REAL_64) is
+	put_edge (a_start_node, a_end_node: like item; a_label: L; a_weight: REAL_64)
 			-- Create an edge with weight `a_weight' between `a_start_node' and `a_end_node'.
 			-- The edge will be labeled `a_label'.
 			-- The cursor is not moved.
@@ -88,7 +88,7 @@ feature -- Element change
 			undirected_graph: has_edge_between (a_start_node, a_end_node) and has_edge_between (a_end_node, a_start_node)
 		end
 
-	put_unlabeled_edge (a_start_node, a_end_node: like item; a_weight: REAL_64) is
+	put_unlabeled_edge (a_start_node, a_end_node: like item; a_weight: REAL_64)
 			-- Create an edge with weight `a_weight' between `a_start_node' and `a_end_node'.
 			-- The cursor is not moved.
 		do
@@ -103,7 +103,7 @@ feature -- Resizing
 
 feature -- Transformation
 
-	minimum_spanning_tree: like Current is
+	minimum_spanning_tree: like Current
 			-- Minimum spanning tree of the current graph
 			-- The cursor is not moved.
 		require
@@ -187,7 +187,7 @@ feature -- Obsolete
 
 feature {NONE} -- Inapplicable
 
-	put_unweighted_edge (a_start_node, a_end_node: like item; a_label: L) is
+	put_unweighted_edge (a_start_node, a_end_node: like item; a_label: L)
 			-- Not applicable anymore. Edges must be weighted.
 		do
 			-- Workaround for catcalls: Put unweighted edge instead.
@@ -196,13 +196,13 @@ feature {NONE} -- Inapplicable
 
 feature {NONE} -- Implementation
 
-	adopt_edge (a_edge: WEIGHTED_EDGE [like item, L]) is
+	adopt_edge (a_edge: WEIGHTED_EDGE [like item, L])
 			-- Put `a_edge' into current graph.
 		do
 			put_edge (a_edge.start_node, a_edge.end_node, a_edge.label, a_edge.weight)
 		end
 
-	sorted_put (a_edge: like edge_item; edge_list: ARRAYED_LIST [like edge_item]) is
+	sorted_put (a_edge: like edge_item; edge_list: ARRAYED_LIST [like edge_item])
 			-- Put `a_edge' into `edge_list' such that `edge_list' is
 			-- sorted by increasing edge weights.
 		require
