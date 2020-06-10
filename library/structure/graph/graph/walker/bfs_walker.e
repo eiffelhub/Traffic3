@@ -26,7 +26,7 @@ create
 
 feature -- Initialize
 
-	create_dispenser is
+	create_dispenser
 			-- Create the dispenser as a queue for the BFS
 		do
 			create {LINKED_QUEUE [GRAPH_CURSOR [G,L]]} dispenser.make

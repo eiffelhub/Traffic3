@@ -37,7 +37,7 @@ create
 
 feature -- Initialization
 
-	make (a_item: like item) is
+	make (a_item: like item) 
 			-- Initialize view for `a_item'.
 		local
 			c: TRAFFIC_LINE_SEGMENT_VIEW
@@ -83,13 +83,13 @@ feature -- Initialization
 
 feature -- Constants
 
-	default_color: EV_COLOR is
+	default_color: EV_COLOR
 			-- Default color
 		once
 			create Result.make_with_8_bit_rgb (100, 100, 100)
 		end
 
-	default_highlight_color: EV_COLOR is
+	default_highlight_color: EV_COLOR
 			-- Default highlight color
 		once
 			create Result.make_with_8_bit_rgb (255, 0, 0)
@@ -97,7 +97,7 @@ feature -- Constants
 
 feature -- Basic operations
 
-	update is
+	update
 			-- Update the view to represent changes in the city item.
 		do
 			from
@@ -110,7 +110,7 @@ feature -- Basic operations
 			end
 		end
 
-	highlight is
+	highlight
 			-- Highlight the view.
 		do
 			if highlight_color /= Void then
@@ -135,7 +135,7 @@ feature -- Basic operations
 			is_highlighted := True
 		end
 
-	unhighlight is
+	unhighlight
 			-- Unhighlight the view.
 		do
 			if color /= Void then
@@ -160,7 +160,7 @@ feature -- Basic operations
 			is_highlighted := False
 		end
 
-	set_color (a_color: TRAFFIC_COLOR) is
+	set_color (a_color: TRAFFIC_COLOR)
 			-- Set the color of the view to `a_color'.
 		do
 			color := a_color
@@ -187,7 +187,7 @@ feature -- Basic operations
 			end
 		end
 
-	set_highlight_color (a_color: TRAFFIC_COLOR) is
+	set_highlight_color (a_color: TRAFFIC_COLOR)
 			-- Set the color of the view to `a_color'.
 		do
 			highlight_color := a_color
@@ -216,7 +216,7 @@ feature -- Basic operations
 
 feature {NONE} -- Implementation
 
-	add_connection_view (a_item: TRAFFIC_LINE_SEGMENT) is
+	add_connection_view (a_item: TRAFFIC_LINE_SEGMENT)
 			-- Add new view for inserted item.
 		local
 			c: TRAFFIC_LINE_SEGMENT_VIEW
@@ -230,7 +230,7 @@ feature {NONE} -- Implementation
 			end
 		end
 
-	remove_connection_view (a_item: TRAFFIC_LINE_SEGMENT) is
+	remove_connection_view (a_item: TRAFFIC_LINE_SEGMENT)
 			-- Add new view for inserted item.
 		local
 			found: BOOLEAN
@@ -249,7 +249,7 @@ feature {NONE} -- Implementation
 			end
 		end
 
-	new_connection_view (a_item: TRAFFIC_SEGMENT): DRAWABLE_POLYLINE is
+	new_connection_view (a_item: TRAFFIC_SEGMENT): DRAWABLE_POLYLINE
 			-- Generate connection view for `a_item'.
 		local
 			pp: ARRAY [REAL_COORDINATE]

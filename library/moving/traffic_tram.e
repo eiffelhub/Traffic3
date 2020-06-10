@@ -20,7 +20,7 @@ create
 
 feature -- Initialization
 
-	make_with_line (a_line: TRAFFIC_LINE) is
+	make_with_line (a_line: TRAFFIC_LINE)
 			-- Create a tram, set default values for capacity, number of wagons and speed.
 		require
 			a_line_not_void: a_line /= Void
@@ -47,7 +47,7 @@ feature -- Access
 	wagons: ARRAYED_LIST[TRAFFIC_WAGON]
 			-- List of the wagons
 
-	capacity: INTEGER is
+	capacity: INTEGER
 			-- Capacity as the sum of wagons' capacities plus engine_capacity
 		do
 			Result := engine_capacity
@@ -77,7 +77,7 @@ feature -- Access
 
 feature -- Basic operations
 
-	add_wagon is
+	add_wagon
 			-- Attach new wagon.
 		require
 			not_too_many_wagons: wagon_limitation >= wagons.count + 1
@@ -90,7 +90,7 @@ feature -- Basic operations
 			wagon_added: wagons.count = old wagons.count + 1
 		end
 
-	remove_wagon(i: INTEGER) is
+	remove_wagon(i: INTEGER)
 			-- Remove wagon at position i.
 		require
 			there_are_wagons: wagons.count > 0
@@ -171,10 +171,10 @@ feature -- Basic operations
 
 feature -- Constants
 
-	Default_engine_capacity: INTEGER is 200
+	Default_engine_capacity: INTEGER = 200
 			-- Default load capacity of the motorized carriage
 
-	Default_wagon_limitation: INTEGER is 2
+	Default_wagon_limitation: INTEGER = 2
 			-- Default number of wagons attached
 
 	Default_virtual_speed: REAL_64
@@ -185,19 +185,19 @@ feature -- Constants
 
 feature -- Status report
 
-	is_insertable (a_city: TRAFFIC_CITY): BOOLEAN is
+	is_insertable (a_city: TRAFFIC_CITY): BOOLEAN
 			-- Is `Current' insertable into `a_city'?
 		do
 			Result := True
 		end
 
-	is_removable: BOOLEAN is
+	is_removable: BOOLEAN
 			-- Is `Current' removable from `city'?
 		do
 			Result := True
 		end
 
-	is_valid_line (a_line: TRAFFIC_LINE): BOOLEAN is
+	is_valid_line (a_line: TRAFFIC_LINE): BOOLEAN
 			-- Is `a_line' valid for a tram to move on?
 		do
 			if a_line.type.is_equal (create {TRAFFIC_TYPE_TRAM}.make) then

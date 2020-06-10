@@ -31,7 +31,7 @@ create
 
 feature {NONE} -- Initialization
 
-	make_with_station (s: TRAFFIC_STATION; a_location: TRAFFIC_POINT) is
+	make_with_station (s: TRAFFIC_STATION; a_location: TRAFFIC_POINT)
 			-- Initialize `Current'.
 		require
 			not_void: s /= Void
@@ -68,7 +68,7 @@ feature -- Access
 	connection_list: TWO_WAY_CIRCULAR [TRAFFIC_SEGMENT]
 			-- List of all segments that this node is an startpoint of
 
-	hash_code: INTEGER is
+	hash_code: INTEGER
 			-- Hash code value
 		do
 			Result := ([station, location]).hash_code
@@ -76,7 +76,7 @@ feature -- Access
 
 feature -- Element change
 
-	set_location (a_location: TRAFFIC_POINT) is
+	set_location (a_location: TRAFFIC_POINT)
 			-- Set location to `a_location'.
 		require
 			location_exists: a_location /= Void
@@ -89,13 +89,13 @@ feature -- Element change
 
 feature -- Status report
 
-	is_insertable (a_city: TRAFFIC_CITY): BOOLEAN is
+	is_insertable (a_city: TRAFFIC_CITY): BOOLEAN
 			-- Is `Current' insertable into `a_city'?
 		do
 			Result := connection_list.is_empty
 		end
 
-	is_removable: BOOLEAN is
+	is_removable: BOOLEAN
 			-- Is `Current' removable from `city'?
 		do
 			Result := True
@@ -103,7 +103,7 @@ feature -- Status report
 
 feature {TRAFFIC_STATION} -- Basic operations
 
-	add_to_city (a_city: TRAFFIC_CITY) is
+	add_to_city (a_city: TRAFFIC_CITY)
 			-- Add `Current' and all nodes to `a_city'.
 		local
 			e: TRAFFIC_EXCHANGE_SEGMENT
@@ -131,7 +131,7 @@ feature {TRAFFIC_STATION} -- Basic operations
 			graph_has: a_city.graph.has_node (Current)
 		end
 
-	remove_from_city is
+	remove_from_city
 			-- Remove all nodes from `city'.
 		do
 			city.graph.prune_node (Current)
@@ -141,7 +141,7 @@ feature {TRAFFIC_STATION} -- Basic operations
 
 feature {TRAFFIC_GRAPH} -- Element change
 
-	put_connection (a_connection: like referring_connection) is
+	put_connection (a_connection: like referring_connection)
 			-- Insert `a_connection'.
 		do
 			connection_list.extend (a_connection)

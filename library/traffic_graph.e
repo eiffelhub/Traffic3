@@ -31,7 +31,7 @@ create
 
 feature {NONE} -- Initialization
 
-	make is
+	make
 			-- Initialize `Current'.
 		local
 			default_size: INTEGER
@@ -44,7 +44,7 @@ feature {NONE} -- Initialization
 
 feature {TRAFFIC_CITY_ITEM} -- Insertion
 
-	connect_nodes (a_start_node, a_end_node: like item; a_label: REAL_64; a_weight: REAL_64) is
+	connect_nodes (a_start_node, a_end_node: like item; a_label: REAL_64; a_weight: REAL_64)
 			-- Redefined to record weight.
 		local
 			r: TRAFFIC_ROAD_SEGMENT
@@ -56,7 +56,7 @@ feature {TRAFFIC_CITY_ITEM} -- Insertion
 			total_weight := total_weight + r.length
 		end
 
-	put_road (a_road: TRAFFIC_ROAD_SEGMENT) is
+	put_road (a_road: TRAFFIC_ROAD_SEGMENT)
 			-- Insert `a_road' into the graph.
 		require
 			a_road_exists: a_road /= Void
@@ -71,7 +71,7 @@ feature {TRAFFIC_CITY_ITEM} -- Insertion
 			end
 		end
 
-	put_line_segment (a_segment: TRAFFIC_LINE_SEGMENT) is
+	put_line_segment (a_segment: TRAFFIC_LINE_SEGMENT)
 			-- Insert `a_segment' into the graph.
 		require
 			a_segment_exists: a_segment /= Void
@@ -85,7 +85,7 @@ feature {TRAFFIC_CITY_ITEM} -- Insertion
 			end
 		end
 
-	put_segment (a_segment: TRAFFIC_SEGMENT) is
+	put_segment (a_segment: TRAFFIC_SEGMENT)
 			-- Insert `a_segment' into the graph.
 		require
 			a_segment_exists: a_segment /= Void
@@ -110,7 +110,7 @@ feature {TRAFFIC_CITY_ITEM} -- Insertion
 			end
 		end
 
-	put_node (a_node: like item) is
+	put_node (a_node: like item)
 			-- Insert a new node in the graph if it is not already present.
 			-- The cursor is not moved.
 		local
@@ -161,7 +161,7 @@ feature -- Removal
 			end
 		end
 
-	prune_node (a_item: like item) is
+	prune_node (a_item: like item)
 			-- Remove `a_item' and all of its incident edges from the graph.
 			-- `off' will be set when `item' is removed.
 			-- The cursor will turn right if `target' is removed.
@@ -227,7 +227,7 @@ feature -- Access
 	current_node: TRAFFIC_NODE
 			-- Value of the currently focused node
 
-	edge_item: TRAFFIC_SEGMENT is
+	edge_item: TRAFFIC_SEGMENT
 			-- Current edge
 		do
 			if not current_node.connection_list.off then
@@ -239,7 +239,7 @@ feature -- Access
 
 feature -- Basic operations
 
-	find_shortest_path (a_start_node, a_end_node: like item) is
+	find_shortest_path (a_start_node, a_end_node: like item)
 			-- Enable the weight functions first.
 		do
 			enable_user_defined_weight_function (agent calculate_weight (?))
@@ -248,15 +248,15 @@ feature -- Basic operations
 
 feature -- Constants
 
-	normal_distance: INTEGER is 0
+	normal_distance: INTEGER = 0
 			-- Use normal path calculation
 
-	minimal_switches: INTEGER is 1
+	minimal_switches: INTEGER = 1
 			-- Use minimal switches path calculation
 
 feature -- Status Setting
 
-	set_shortest_path_mode (a_mode: INTEGER) is
+	set_shortest_path_mode (a_mode: INTEGER)
 			-- Set path mode to `a_mode'.
 		require
 			a_mode_valid: a_mode = normal_distance or a_mode = minimal_switches
@@ -334,14 +334,14 @@ feature {NONE} -- Implementation
 	weight_function: FUNCTION [ANY, TUPLE [TRAFFIC_SEGMENT], REAL_64]
 			-- Weight function for edges, if Void, no weight function is used.
 
-	prune_edge_impl (a_edge: like edge_item) is
+	prune_edge_impl (a_edge: like edge_item)
 			-- Redefined to subtract the length of the segment from the total.
 		do
 			total_weight := total_weight - a_edge.length
 			Precursor (a_edge)
 		end
 
-	calculate_weight (a_edge: TRAFFIC_SEGMENT): REAL_64 is
+	calculate_weight (a_edge: TRAFFIC_SEGMENT): REAL_64
 			-- Calculate the edge based on the current status.
 			-- This is only used for "dummy" segments.
 		local
@@ -367,7 +367,7 @@ feature {NONE} -- Implementation
 		-- Usually less then the total weight of the edges because
 		-- the "dummy" segments have a higher weight than their length.
 
-	average_weight: REAL_64 is
+	average_weight: REAL_64
 			-- Average weight of an edge used for "dummy" segments
 			-- between nodes of the same station.
 		do

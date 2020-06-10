@@ -19,7 +19,7 @@ create
 
 feature {NONE} -- Creation
 
-	set_station_and_line (s: TRAFFIC_STATION; l: TRAFFIC_LINE) is
+	set_station_and_line (s: TRAFFIC_STATION; l: TRAFFIC_LINE) 
 			-- Associate this stop with station `s' and line `l'.
 		require
 			station_exists: s /= Void
@@ -33,7 +33,7 @@ feature {NONE} -- Creation
 			line_set: line = l
 		end
 
-	make_with_location (a_station: TRAFFIC_STATION; a_line: TRAFFIC_LINE; a_location: TRAFFIC_POINT) is
+	make_with_location (a_station: TRAFFIC_STATION; a_line: TRAFFIC_LINE; a_location: TRAFFIC_POINT)
 			-- Initialize `Current'.
 		require
 			station_not_void: a_station /= Void
@@ -53,7 +53,7 @@ feature {NONE} -- Creation
 
 feature -- Access
 
-	name: STRING is
+	name: STRING
 			-- "Unique" name
 		do
 			Result := station.name + line.name
@@ -62,7 +62,7 @@ feature -- Access
 	line: TRAFFIC_LINE
 			-- Line this stop belongs to
 
-	hash_code: INTEGER is
+	hash_code: INTEGER
 			-- Hash code value
 		do
 			Result := ([station.name, line.name]).hash_code
@@ -104,7 +104,7 @@ feature -- Access
 
 feature -- Basic operations
 
-	put_connection (a_connection: TRAFFIC_SEGMENT) is
+	put_connection (a_connection: TRAFFIC_SEGMENT)
 			-- Insert `a_connection'.
 		local
 			c: TRAFFIC_LINE_SEGMENT
@@ -117,7 +117,7 @@ feature -- Basic operations
 			end
 		end
 
-	link (s: TRAFFIC_STOP) is
+	link (s: TRAFFIC_STOP)
 			-- Make `s' the next stop on the line.
 		require
 			s_exists: s /= Void
@@ -142,7 +142,7 @@ feature -- Basic operations
 
 feature -- Output
 
-	out: STRING is
+	out: STRING
 			-- Info about stop
 		do
 			Result := "Traffic stop:%NStation: " + station.name + "%NLine: " + line.name

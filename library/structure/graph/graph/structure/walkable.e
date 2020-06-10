@@ -25,7 +25,7 @@ inherit
 
 feature -- Access
 
-	target: G is
+	target: G
 			-- Item at the target of the current edge
 		require
 			not_off: not off
@@ -35,7 +35,7 @@ feature -- Access
 
 feature -- Measurement
 
-	link_count: INTEGER is
+	link_count: INTEGER
 			-- Number of links of item
 		require
 			not_off: not off
@@ -44,14 +44,14 @@ feature -- Measurement
 
 feature -- Status report
 
-	has_links: BOOLEAN is
+	has_links: BOOLEAN
 			-- Are there any links from item ?
 		require
 			not_off: not off
 		deferred
 		end
 
-	exhausted: BOOLEAN is
+	exhausted: BOOLEAN
 			-- Last `left' or `right' turned to the first link ?
 		require
 			not_off: not off
@@ -60,13 +60,13 @@ feature -- Status report
 			no_links_always_exhausted: not has_links implies exhausted
 		end
 
-	has_previous: BOOLEAN is
+	has_previous: BOOLEAN
 			-- Is there another node in the traversal history?
 			-- Must be True in order to use the `back' command.
 		deferred
 		end
 
-	is_first: BOOLEAN is
+	is_first: BOOLEAN
 			-- Am I on the first link ?
 		require
 			not_off: not off
@@ -76,7 +76,7 @@ feature -- Status report
 
 feature -- Cursor movement
 
-	left is
+	left
 			-- Turn to the left link.
 		require
 			not_off: not off
@@ -86,7 +86,7 @@ feature -- Cursor movement
 			went_around: is_first = exhausted
 		end
 
-	right is
+	right
 			-- Turn to the right link.
 		require
 			not_off: not off
@@ -96,7 +96,7 @@ feature -- Cursor movement
 			went_around: is_first = exhausted
 		end
 
-	turn_to (t: like target) is
+	turn_to (t: like target)
 			-- Try to turn the cursor towards `t'.
 			-- If not possible, `exhausted' will be set
 		require
@@ -116,14 +116,14 @@ feature -- Cursor movement
 			object_found: (not exhausted and object_comparison) implies equal(target,t)
 		end
 
-	back is
+	back
 			-- Move the cursor back to the previous node.
 		require
 			can_go_back: has_previous
 		deferred
 		end
 
-	forth is
+	forth
 			-- Move the cursor to the target item by following the link that it is
 			-- currently pointing to. If there are no links, the cursor
 			-- will be moved to `off'.
@@ -135,7 +135,7 @@ feature -- Cursor movement
 			move_to_off: not old has_links = off
 		end
 
-	start is
+	start
 			-- Turn to the first link.
 		require else
 			not_off: not off
@@ -145,7 +145,7 @@ feature -- Cursor movement
 			exhausted_iff_no_links: not has_links = exhausted
 		end
 
-	search (a_item: G) is
+	search (a_item: G)
 			-- Move to the item equal to `a_item' are equal.
 			-- (Reference or object equality)
 			-- If no such position exists, `off' will be true

@@ -38,7 +38,7 @@ create
 
 feature {NONE} -- Initialization
 
-	make_empty_linked_graph is
+	make_empty_linked_graph
 			-- Make an empty linked graph.
 		do
 			create node_list.make (1, 0)
@@ -56,7 +56,7 @@ feature {NONE} -- Initialization
 
 feature -- Access
 
-	nodes,vertices: SET [like item] is
+	nodes,vertices: SET [like item]
 			-- All nodes of the graph
 		local
 			i: INTEGER
@@ -75,19 +75,19 @@ feature -- Access
 			end
 		end
 
-	edges: LIST [like edge_item] is
+	edges: LIST [like edge_item]
 			-- All edges of the graph
 		do
 			Result := internal_edges.twin
 		end
 
-	item: G is
+	item: G
 			-- Value of the currently focused node
 		do
 			Result := current_node.item
 		end
 
-	edge_item: LINKED_GRAPH_EDGE [like item, L] is
+	edge_item: LINKED_GRAPH_EDGE [like item, L]
 			-- Current edge
 		do
 			if not current_node.edge_list.off then
@@ -97,7 +97,7 @@ feature -- Access
 			end
 		end
 
-	incident_edges: LIST [like edge_item] is
+	incident_edges: LIST [like edge_item]
 			-- All incident edges of `item'
 		local
 			edge_list: TWO_WAY_CIRCULAR [like edge_item]
@@ -124,7 +124,7 @@ feature -- Access
 			end
 		end
 
-	incident_edge_labels: LIST [L] is
+	incident_edge_labels: LIST [L]
 			-- Labels of all incident edges of `item'
 		local
 			edge_list: TWO_WAY_CIRCULAR [like edge_item]
@@ -151,7 +151,7 @@ feature -- Access
 			end
 		end
 
-	edge_from_values (a_start_node, a_end_node: like item; a_label: L): like edge_item is
+	edge_from_values (a_start_node, a_end_node: like item; a_label: L): like edge_item
 			-- Edge that matches `a_start_node', `a_end_node' and `a_label'.
 			-- Result is Void if there is no match.
 			-- The cursor is not moved.
@@ -171,7 +171,7 @@ feature -- Access
 			end
 		end
 
-	node_identity: HASHABLE is
+	node_identity: HASHABLE
 			-- Object that identifies the current item
 		do
 			Result := current_node.item
@@ -182,13 +182,13 @@ feature -- Measurement
 	node_count: INTEGER
 			-- Number of nodes in the graph
 
-	edge_count: INTEGER is
+	edge_count: INTEGER
 			-- Number of edges in the graph
 		do
 			Result := internal_edges.count
 		end
 
-	in_degree: INTEGER is
+	in_degree: INTEGER
 			-- Number of incoming edges of the current node
 		do
 ----- DEBUG --- DEBUG --- DEBUG --- DEBUG --- DEBUG --- DEBUG -----
@@ -219,7 +219,7 @@ feature -- Measurement
 ----- DEBUG --- DEBUG --- DEBUG --- DEBUG --- DEBUG --- DEBUG -----
 		end
 
-	out_degree: INTEGER is
+	out_degree: INTEGER
 			-- Number of outgoing edges of `item'
 		do
 			Result := current_node.out_degree
@@ -227,13 +227,13 @@ feature -- Measurement
 
 feature -- Status report
 
-	has_multi_graph_support: BOOLEAN is
+	has_multi_graph_support: BOOLEAN
 			-- Are multigraphs supported by the current implementation?
 		do
 			Result := True
 		end
 
-	has_edge (a_edge: EDGE [like item, L]): BOOLEAN is
+	has_edge (a_edge: EDGE [like item, L]): BOOLEAN
 			-- Is `a_edge' part of the graph?
 		local
 			linked_graph_edge: like edge_item
@@ -262,7 +262,7 @@ feature -- Status report
 			node.edge_list.go_i_th (index)
 		end
 
-	has_edge_between (a_start_node, a_end_node: like item): BOOLEAN is
+	has_edge_between (a_start_node, a_end_node: like item): BOOLEAN
 			-- Are `a_start_node' and `a_end_node' directly connected?
 			-- Note: Edges are directed.
 		local
@@ -294,13 +294,13 @@ feature -- Status report
 			end
 		end
 
-	has_links: BOOLEAN is
+	has_links: BOOLEAN
 			-- Does the current node have outgoing edges (links)?
 		do
 			Result := not current_node.edge_list.is_empty
 		end
 
-	is_first_edge: BOOLEAN is
+	is_first_edge: BOOLEAN
 			-- Is the focused edge the first one?
 		do
 			Result := current_node.edge_list.index = 1
@@ -322,13 +322,13 @@ feature -- Status report
 	exhausted: BOOLEAN
 			-- Has `left' or `right' turned to the first link?
 
-	after, off: BOOLEAN is
+	after, off: BOOLEAN
 			-- Does `cursor' currently denote a valid graph position?
 		do
 			Result := current_node = Void
 		end
 
-	Full: BOOLEAN is False
+	Full: BOOLEAN = False
 			-- Is the maximum number of nodes reached?
 
 feature -- New Cursor
@@ -341,14 +341,14 @@ feature -- New Cursor
 
 feature -- Cursor movement
 
-	start is
+	start
 			-- Turn to the first link.
 		do
 			current_node.edge_list.start
 			exhausted := current_node.out_degree = 0
 		end
 
-	left is
+	left
 			-- Turn one edge to the left.
 		do
 			current_node.edge_list.back
@@ -367,7 +367,7 @@ feature -- Cursor movement
 			end
 		end
 
-	right is
+	right
 			-- Turn one edge to the right.
 		do
 			current_node.edge_list.forth
@@ -376,7 +376,7 @@ feature -- Cursor movement
 			end
 		end
 
-	forth is
+	forth
 			-- Walk along the currently focused edge.
 		do
 			history_stack.extend (cursor)
@@ -384,7 +384,7 @@ feature -- Cursor movement
 			start
 		end
 
-	search (a_item: like item) is
+	search (a_item: like item)
 			-- Move to `a_item'. If no such position exists, `off' will be true.
 		do
 			if has_node (a_item) then
@@ -397,7 +397,7 @@ feature -- Cursor movement
 
 feature -- Element change
 
-	put_node (a_node: like item) is
+	put_node (a_node: like item)
 			-- Insert a new node in the graph if it is not already present.
 			-- The cursor is not moved.
 		local
@@ -423,7 +423,7 @@ feature -- Element change
 			end
 		end
 
-	put_edge (a_start_node, a_end_node: like item; a_label: L) is
+	put_edge (a_start_node, a_end_node: like item; a_label: L)
 			-- Create an edge between `a_start_node' and `a_end_node'
 			-- and set its label to `a_label'.
 			-- For symmetric graphs, another edge is inserted in the opposite direction.
@@ -446,7 +446,7 @@ feature -- Element change
 
 feature -- Removal
 
-	prune_node (a_item: like item) is
+	prune_node (a_item: like item)
 			-- Remove `a_item' and all of its incident edges from the graph.
 			-- `off' will be set when `item' is removed.
 			-- The cursor will turn right if `target' is removed.
@@ -500,7 +500,7 @@ feature -- Removal
 			end
 		end
 
-	prune_edge (a_edge: EDGE [like item, L]) is
+	prune_edge (a_edge: EDGE [like item, L])
 			-- Remove `a_edge' from the graph.
 		local
 			linked_edge, symmetric_edge: like edge_item
@@ -522,7 +522,7 @@ feature -- Removal
 			end
 		end
 
-	prune_edge_between (a_start_node, a_end_node: like item) is
+	prune_edge_between (a_start_node, a_end_node: like item)
 			-- Remove the edge connecting `a_start_node' and `a_end_node'.
 			-- This operation is only permitted on simple graphs because of ambiguity.
 		local
@@ -564,7 +564,7 @@ feature -- Inapplicable
 
 feature -- Output
 
-	out: STRING is
+	out: STRING
 			-- Printable representation of the graph
 		local
 			i: INTEGER
@@ -632,7 +632,7 @@ feature {NONE} -- Implementation
 	internal_edges: ARRAYED_LIST [like edge_item]
 			-- Set of all edges of the graph
 
-	empty_graph: like Current is
+	empty_graph: like Current
 			-- Empty graph with the same actual type than `Current'
 		do
 			if is_simple_graph then
@@ -650,7 +650,7 @@ feature {NONE} -- Implementation
 			end
 		end
 
-	valid_index (a_index: INTEGER): BOOLEAN is
+	valid_index (a_index: INTEGER): BOOLEAN
 			-- If `a_index' a valid index for `node_list'?
 		require
 			positive: a_index > 0
@@ -658,7 +658,7 @@ feature {NONE} -- Implementation
 			Result := (a_index <= node_list.count) and not inactive_nodes.has (a_index)
 		end
 
-	linked_node_from_item (a_item: G): like current_node is
+	linked_node_from_item (a_item: G): like current_node
 			-- Find the node with item `a_item'.
 		require
 			has_node (a_item)
@@ -672,7 +672,7 @@ feature {NONE} -- Implementation
 			correct_result: Result.item.is_equal (a_item)
 		end
 
-	prune_edge_impl (a_edge: EDGE [like item, L]) is
+	prune_edge_impl (a_edge: EDGE [like item, L])
 			-- Remove `a_edge' from the graph.
 		require
 			edge_exists: has_edge (a_edge)
@@ -721,7 +721,7 @@ feature {NONE} -- Implementation
 			end
 		end
 
-	invalidate_cursor is
+	invalidate_cursor
 			-- Invalidate cursor. `off' will be set to true.
 		do
 			current_node := Void
@@ -729,25 +729,25 @@ feature {NONE} -- Implementation
 
 feature {NONE} -- Status setting
 
-	set_path_found (a_value: BOOLEAN) is
+	set_path_found (a_value: BOOLEAN)
 			-- Set `path_found' to `a_value'.
 		do
 			path_found := a_value
 		end
 
-	set_merge_succeeded (a_value: BOOLEAN) is
+	set_merge_succeeded (a_value: BOOLEAN)
 			-- Set `merge_succeeded' to `a_value'.
 		do
 			merge_succeeded := a_value
 		end
 
-	set_is_simple_graph (a_value: BOOLEAN) is
+	set_is_simple_graph (a_value: BOOLEAN)
 			-- Set `is_simple_graph' to `a_value'.
 		do
 			is_simple_graph := a_value
 		end
 
-	set_is_symmetric_graph (a_value: BOOLEAN) is
+	set_is_symmetric_graph (a_value: BOOLEAN)
 			-- Set `is_symmetric_graph' to `a_value'.
 		do
 			is_symmetric_graph := a_value

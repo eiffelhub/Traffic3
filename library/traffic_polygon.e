@@ -10,7 +10,7 @@ create
 	make
 
 feature
-	make (a_point_array: like points; a_color: like color) is
+	make (a_point_array: like points; a_color: like color) 
 			-- Create a polygon from `a_point_array' and `a_color'
 		require
 			a_point_array_not_void: a_point_array /= Void
@@ -39,7 +39,7 @@ feature -- Access
 
 feature -- Commands
 
-	set_points (new_points: like points) is
+	set_points (new_points: like points)
 			-- Replace the polygon's points with `new_points'
 		require
 			new_points_not_void: new_points /= Void
@@ -49,7 +49,7 @@ feature -- Commands
 			new_points: points = new_points
 		end
 
-	set_color (new_color: like color) is
+	set_color (new_color: like color)
 			-- Replace the polygon's color with `new_color'
 		require
 			new_color_not_void: new_color /= Void
@@ -61,7 +61,7 @@ feature -- Commands
 
 feature {NONE} -- Implementation
 
-	invert_y_coordinates is
+	invert_y_coordinates
 			-- sets the y coordinate of all `points_with_y_inverted' to -y.
 		local
 			i: INTEGER

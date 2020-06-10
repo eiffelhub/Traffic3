@@ -14,13 +14,10 @@ create
 
 feature -- Access
 
-	Name: STRING is
+	Name: STRING = "color"
 			-- Name of element to process
-		once
-			Result := "color"
-		end
 
-	Mandatory_attributes: ARRAY [STRING] is
+	Mandatory_attributes: ARRAY [STRING]
 			-- Table of mandatory attributes
 		once
 			Result := << "red", "green", "blue" >>
@@ -29,7 +26,7 @@ feature -- Access
 
 feature -- Basic operations
 
-	process is
+	process 
 			-- Process element.
 		do
 			if not has_attribute ("red") and has_attribute ("green") and has_attribute ("blue") then
@@ -43,7 +40,7 @@ feature -- Basic operations
 
 feature {NONE} -- Implementation
 
-	valid_color: BOOLEAN is
+	valid_color: BOOLEAN
 			-- Does node contain a valid color?
 		require
 			red_exists: has_attribute ("red")
@@ -55,7 +52,7 @@ feature {NONE} -- Implementation
 				valid_color_value ("blue")
 		end
 
-	valid_color_value (attr: STRING): BOOLEAN is
+	valid_color_value (attr: STRING): BOOLEAN
 			-- Does attribute `attr' contain a valid color value?
 		require
 			attribute_exists: attr /= Void
@@ -69,7 +66,7 @@ feature {NONE} -- Implementation
 			end
 		end
 
-	new_color: TRAFFIC_COLOR is
+	new_color: TRAFFIC_COLOR
 			-- Color specified by node
 		require
 			valid_color: valid_color

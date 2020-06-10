@@ -27,7 +27,7 @@ create
 
 feature -- Initialize
 
-	create_dispenser is
+	create_dispenser 
 			-- Create the dispenser for a DFS walker
 		do
 			create {LINKED_STACK [GRAPH_CURSOR[G, L]]} dispenser.make

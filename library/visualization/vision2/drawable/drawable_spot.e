@@ -18,7 +18,7 @@ create
 
 feature -- Creation
 
-	make (a_center: like center) is
+	make (a_center: like center)
 			-- Create a circle that does not scale at `a_center'.
 		require
 			a_center_not_void: a_center /= Void
@@ -37,7 +37,7 @@ feature -- Creation
 
 feature -- Element change
 
-	set_width (a_width: like width)  is
+	set_width (a_width: like width)
 			-- Set the circle's edge width to `a_width'.
 		do
 			width:= a_width
@@ -47,7 +47,7 @@ feature -- Element change
 			not_valid: not is_valid
 		end
 
-	set_diameter (a_diameter: like diameter) is
+	set_diameter (a_diameter: like diameter)
 			-- Set the circle's diameter to `a_diameter'.
 		do
 			diameter := a_diameter
@@ -57,7 +57,7 @@ feature -- Element change
 			not_valid: not is_valid
 		end
 
-	set_center (a_center: like center) is
+	set_center (a_center: like center)
 			-- Set the center of the spot to `a_center'.
 		require
 			a_center_not_void: a_center /= Void
@@ -80,7 +80,7 @@ feature -- Access
 	center: REAL_COORDINATE
 			-- Center attribute
 
-	bounding_box: REAL_RECTANGLE is
+	bounding_box: REAL_RECTANGLE
 			-- The bounding-box of the spot
 		do
 			create Result.make (center, center)
@@ -88,7 +88,7 @@ feature -- Access
 
 feature {CANVAS} -- Implementation
 
-	draw_object is
+	draw_object
 			-- Draw the spot
 		local
 			scaled_center: EV_COORDINATE
@@ -115,7 +115,7 @@ feature -- Status report
 
 feature -- Status setting
 
-	enable_filled is
+	enable_filled
 			-- Fill the circle.
 		do
 			is_filled:= True
@@ -125,7 +125,7 @@ feature -- Status setting
 			not_valid: not is_valid
 		end
 
-	disable_filled is
+	disable_filled
 			-- Unfill the circle.
 		do
 			is_filled:= False
@@ -137,10 +137,10 @@ feature -- Status setting
 
 feature {NONE} -- Implementation
 
-	Default_diameter: INTEGER is 20
+	Default_diameter: INTEGER = 20
 			-- The default diameter of the spot
 
-	Default_width: INTEGER is 1
+	Default_width: INTEGER = 1
 			-- The default width of the spot's edge
 
 invariant

@@ -17,7 +17,7 @@ create
 
 feature -- Initialization
 
-	make_with_route (a_route: TRAFFIC_ROUTE; a_speed: REAL_64) is
+	make_with_route (a_route: TRAFFIC_ROUTE; a_speed: REAL_64)
 			-- Set passenger's route to be `a_route' and `speed' to `a_speed' (in m/s).
 		require
 			a_route_not_void: a_route /= Void
@@ -67,13 +67,13 @@ feature -- Access
 
 feature -- Status report
 
-	is_insertable (a_city: TRAFFIC_CITY): BOOLEAN is
+	is_insertable (a_city: TRAFFIC_CITY): BOOLEAN
 			-- Is `Current' insertable into `a_city'?
 		do
 			Result := True
 		end
 
-	is_removable: BOOLEAN is
+	is_removable: BOOLEAN
 			-- Is `Current' removable from `a_city'?
 		do
 			Result := True
@@ -86,7 +86,7 @@ feature -- Status report
 
 feature {NONE} -- Implementation
 
-	move_next is
+	move_next
 			--  Move to following position
 		do
 			-- Set the locations to the corresponding ones of the line segment.
@@ -120,7 +120,7 @@ feature {NONE} -- Implementation
 			end
 		end
 
-	set_intended_line_info (a_line: TRAFFIC_LINE; a_boarding_stop: INTEGER; a_deboarding_stop: INTEGER) is
+	set_intended_line_info (a_line: TRAFFIC_LINE; a_boarding_stop: INTEGER; a_deboarding_stop: INTEGER)
 			-- Set where 'Current' intends to board and to get off.
 		require
 			line_not_empty: a_line /= Void
@@ -141,7 +141,7 @@ feature {NONE} -- Implementation
 			stop_set: deboarding_stop > 0
 		end
 
-	board (a_line_transport: TRAFFIC_LINE_VEHICLE) is
+	board (a_line_transport: TRAFFIC_LINE_VEHICLE)
 			-- Board 'a_line_transportation'.
 		require
 			inteded_line: a_line_transport.line = intended_line
@@ -152,7 +152,7 @@ feature {NONE} -- Implementation
 			vehicle_set: current_vehicle = a_line_transport
 		end
 
-	deboard is
+	deboard
 			-- Deboard current_vehicle.
 		require
 			current_vehicle /= void

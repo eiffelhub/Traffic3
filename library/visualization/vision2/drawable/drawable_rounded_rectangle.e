@@ -17,7 +17,7 @@ create
 
 feature -- Initialization
 
-	make (a_point_a, a_point_b: REAL_COORDINATE) is
+	make (a_point_a, a_point_b: REAL_COORDINATE)
 			-- Create a rounded_rectangle  from `a_point_a' and `a_point_b'
 		require
 			a_point_a_not_void: a_point_a /= Void
@@ -38,7 +38,7 @@ feature -- Initialization
 
 feature -- Commands
 
-	set_points (a_new_point_a, a_new_point_b: REAL_COORDINATE) is
+	set_points (a_new_point_a, a_new_point_b: REAL_COORDINATE)
 			-- Replace the rounded rectangel's points with `a_new_point_a' and `a_new_point_b'.
 		require
 			a_new_point_a_not_void: a_new_point_a /= Void
@@ -52,7 +52,7 @@ feature -- Commands
 			a_new_point_b_set: point_b = a_new_point_b
 		end
 
-	set_edge_color (a_color: EV_COLOR) is
+	set_edge_color (a_color: EV_COLOR)
 			-- Set the color of the rounded rectangle's edge to `a_color'
 		require
 			a_color_not_void: a_color /= Void
@@ -63,7 +63,7 @@ feature -- Commands
 			new_edge_color: edge_color = a_color
 		end
 
-	set_radius (a_radius: INTEGER) is
+	set_radius (a_radius: INTEGER)
 			-- Set the radius of the rounded corners to `a_radius'
 		do
 			radius:= a_radius
@@ -86,7 +86,7 @@ feature -- Access
 	radius: INTEGER
 			-- The radius of the rounded corners
 
-	bounding_box : REAL_RECTANGLE is
+	bounding_box : REAL_RECTANGLE
 			-- The bounding box of the rounded_rectangle
 		do
 			create Result.make (point_a, point_b)
@@ -99,7 +99,7 @@ feature -- Status report
 
 feature -- Status setting
 
-	enable_filled is
+	enable_filled
 			-- Fill the circle.
 		do
 			is_filled:= True
@@ -108,7 +108,7 @@ feature -- Status setting
 			is_filled: is_filled
 		end
 
-	disable_filled is
+	disable_filled
 			-- Unfill the circle.
 		do
 			is_filled:= False
@@ -119,7 +119,7 @@ feature -- Status setting
 
 feature{EV_CANVAS} -- Display
 
-	draw_object is
+	draw_object
 			-- Draws the polygon.
 		local
 			point_to_draw_a : EV_COORDINATE
@@ -146,7 +146,7 @@ feature{EV_CANVAS} -- Display
 feature {NONE} -- Implementation
 
 
-	Default_radius: INTEGER is 10
+	Default_radius: INTEGER = 10
 		-- The default radius of the rounded rectangle's corners
 
 invariant

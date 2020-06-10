@@ -25,7 +25,7 @@ create
 
 feature {NONE} -- Initialization
 
-	make_directed (a_start_node, a_end_node: LINKED_GRAPH_NODE [G, L]; a_label: L) is
+	make_directed (a_start_node, a_end_node: LINKED_GRAPH_NODE [G, L]; a_label: L)
 			-- Make a directed edge from `a_start_node' to `a_end_node' with label `a_label'.
 		require
 			nodes_not_void: a_start_node /= Void and a_end_node /= Void
@@ -45,7 +45,7 @@ feature {NONE} -- Initialization
 			is_directed: is_directed
 		end
 
-	make_undirected (a_start_node, a_end_node: LINKED_GRAPH_NODE [G, L]; a_label: L) is
+	make_undirected (a_start_node, a_end_node: LINKED_GRAPH_NODE [G, L]; a_label: L)
 			-- Make an undirected edge from `a_start_node' to a_end_node' with label `a_label'.
 		require
 			nodes_not_void: a_start_node /= Void and a_end_node /= Void
@@ -73,7 +73,7 @@ feature {LINKED_GRAPH, LINKED_GRAPH_NODE} -- Access
 	internal_end_node: LINKED_GRAPH_NODE [G, L]
 			-- End node (linked graph)
 
-	opposite (a_node: LINKED_GRAPH_NODE [G, L]): LINKED_GRAPH_NODE [G, L] is
+	opposite (a_node: LINKED_GRAPH_NODE [G, L]): LINKED_GRAPH_NODE [G, L]
 			-- Opposite node of `a_linked_node' in an undirected graph
 		require
 			undirected: not is_directed

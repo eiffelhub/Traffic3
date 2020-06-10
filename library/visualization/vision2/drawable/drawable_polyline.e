@@ -15,7 +15,7 @@ create
 
 feature -- Creation
 
-	make (a_point_array: like points; a_scaling_reference: like scaling_reference) is
+	make (a_point_array: like points; a_scaling_reference: like scaling_reference)
 			-- Create a line from the `a_point_array'
 			-- `A_scaling_reference' is used to calulate the width of the polyline
 		require
@@ -51,7 +51,7 @@ feature -- Commands
 			new_points: points = new_points
 		end
 
-	set_width (a_width: like width) is
+	set_width (a_width: like width)
 			-- Set the polyline's width to `a_width'
 		do
 			width:= a_width
@@ -60,7 +60,7 @@ feature -- Commands
 			new_width: width = a_width
 		end
 
-	enable_dashed_line is
+	enable_dashed_line
 			-- Draw the line dashed.
 		do
 			dashed := True
@@ -82,7 +82,7 @@ feature -- Queries
 
 feature{EV_CANVAS} -- Display
 
-	bounding_box : REAL_RECTANGLE is
+	bounding_box : REAL_RECTANGLE
 			-- The bounding box of the polyline
 		local
 			index: INTEGER
@@ -113,7 +113,7 @@ feature{EV_CANVAS} -- Display
 		end
 
 
-	draw_object is
+	draw_object
 			-- Draw the polyline
 		local
 			index, line_width: INTEGER
@@ -166,7 +166,7 @@ feature {NONE} -- Implementation
 	scaling_reference: REAL_64
 			-- The scaling reference
 
-	Default_width: INTEGER is 4
+	Default_width: INTEGER = 4
 			-- The default width for polylines
 
 invariant

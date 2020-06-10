@@ -17,7 +17,7 @@ create
 
 feature -- Creation
 
-	make is
+	make
 			-- Create new walking type.
 		do
 			name := "walking"
@@ -26,7 +26,7 @@ feature -- Creation
 
 feature -- Basic
 
-	is_allowed_type(a_moving: TRAFFIC_MOVING): BOOLEAN is
+	is_allowed_type(a_moving: TRAFFIC_MOVING): BOOLEAN 
 			-- Is 'a_moving' allowed to go on a walk road?
 		local
 			passenger: TRAFFIC_PASSENGER

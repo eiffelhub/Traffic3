@@ -11,7 +11,7 @@ create
 
 feature -- Initialization
 
-	make (a_center: TRAFFIC_POINT; a_radius: REAL_64) is
+	make (a_center: TRAFFIC_POINT; a_radius: REAL_64)
 			-- Initialize with `a_center' and `a_radius'.
 		require
 			a_center_exists: a_center /= Void
@@ -32,7 +32,7 @@ feature -- Initialization
 
 feature -- Element change
 
-	set_center (a_center: TRAFFIC_POINT) is
+	set_center (a_center: TRAFFIC_POINT)
 			-- Set `center' to `a_center'.
 		require
 			a_center_exists: a_center /= Void
@@ -42,7 +42,7 @@ feature -- Element change
 			center_set: center = a_center
 		end
 
-	set_radius (a_radius: REAL_64) is
+	set_radius (a_radius: REAL_64)
 			-- Set `radius' to `a_radius'.
 		require
 			a_radius_valid: a_radius > 0
@@ -54,7 +54,7 @@ feature -- Element change
 
 feature -- Basic operations
 
-	generate_point_array (n: INTEGER) is
+	generate_point_array (n: INTEGER)
 			-- Generate a new array with `n' random points on `city'.
 			-- Result is accessable via `last_array'.
 		require

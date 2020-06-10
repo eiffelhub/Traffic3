@@ -17,7 +17,7 @@ create
 
 feature -- Initialization
 
-	make_with_factory (a_traffic_map_factory: TRAFFIC_MAP_FACTORY) is
+	make_with_factory (a_traffic_map_factory: TRAFFIC_MAP_FACTORY)
 			-- Create parser with `a_traffic_map_factory'.
 		require
 			a_traffic_map_factory_exists: a_traffic_map_factory /= Void
@@ -35,7 +35,7 @@ feature -- Initialization
 
 feature -- Status report
 
-	can_process: BOOLEAN is
+	can_process: BOOLEAN
 			-- Can document tree be processed?
 		do
 			Result := is_parsed and then has_processor (root_element.name)
@@ -43,7 +43,7 @@ feature -- Status report
 
 feature -- Basic operations
 
-	process is
+	process
 			-- Process document tree.
 		local
 			p: TRAFFIC_NODE_PROCESSOR

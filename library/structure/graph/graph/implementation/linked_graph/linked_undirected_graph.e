@@ -62,7 +62,7 @@ feature -- Access
 
 feature -- Measurement
 
-	degree: INTEGER is
+	degree: INTEGER
 			-- Number of edges attached to `item'
 		do
 			Result := current_node.out_degree
@@ -70,7 +70,7 @@ feature -- Measurement
 
 feature -- Status report
 
-	has_edge_between (a_start_node, a_end_node: like item): BOOLEAN is
+	has_edge_between (a_start_node, a_end_node: like item): BOOLEAN
 			-- Are `a_start_node' and `a_end_node' directly connected?
 		local
 			index: INTEGER
@@ -106,7 +106,7 @@ feature -- Cursor movement
 
 feature -- Element change
 
-	put_edge (a_start_node, a_end_node: like item; a_label: L) is
+	put_edge (a_start_node, a_end_node: like item; a_label: L)
 			-- Create an edge between `a_start_node' and `a_end_node'
 			-- and set its label to `a_label'.
 			-- The cursor is not moved.
@@ -124,7 +124,7 @@ feature -- Element change
 
 feature -- Removal
 
-	prune_edge (a_edge: EDGE [like item, L]) is
+	prune_edge (a_edge: EDGE [like item, L])
 			-- Remove `a_edge' from the graph.
 			-- The cursor will turn right if `current_egde' is removed.
 		local
@@ -203,7 +203,7 @@ feature -- Inapplicable
 
 feature -- Output
 
-	out: STRING is
+	out: STRING
 			-- Textual representation of the graph
 		local
 			i, index: INTEGER
@@ -262,7 +262,7 @@ feature -- Output
 
 feature {NONE} -- Implementation
 
-	empty_graph: like Current is
+	empty_graph: like Current
 			-- Empty graph with the same actual type than `Current'
 		do
 			if is_simple_graph then

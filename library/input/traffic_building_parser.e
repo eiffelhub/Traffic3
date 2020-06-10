@@ -18,7 +18,7 @@ create
 
 feature -- Initialization
 
-	make_with_city (a_city:TRAFFIC_CITY)  is
+	make_with_city (a_city:TRAFFIC_CITY)
 			-- Create parser.
 
 		require
@@ -37,7 +37,7 @@ feature -- Initialization
 
 feature -- Status report		
 
-	can_process: BOOLEAN is
+	can_process: BOOLEAN
 			-- Can document tree be processed?
 
 		do
@@ -46,7 +46,7 @@ feature -- Status report
 
 feature -- Basic operations
 
-	process is
+	process 
 			-- Process document tree.
 		local
 			p: TRAFFIC_NODE_PROCESSOR

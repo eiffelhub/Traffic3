@@ -24,7 +24,7 @@ create
 
 feature -- Initialization
 
-	make_with_pix (a_item: like item; a_pix: EV_PIXMAP) is
+	make_with_pix (a_item: like item; a_pix: EV_PIXMAP)  
 			-- Initialize view for `a_item'.
 		require
 			a_pix_valid: a_pix /= Void
@@ -46,14 +46,14 @@ feature -- Initialization
 			internal_color_exists: internal_color /= Void
 		end
 
-	define is
+	define
 			-- Do nothing.
 		do
 		end
 
 feature -- Basic operations
 
-	update is
+	update
 			-- Update view to represent item.
 		do
 			if item.is_highlighted then
@@ -66,7 +66,7 @@ feature -- Basic operations
 							create {REAL_COORDINATE}.make (icon.bounding_box.point_b.x +5, icon.bounding_box.point_b.x +5))
 		end
 
-	set_color (a_color: TRAFFIC_COLOR) is
+	set_color (a_color: TRAFFIC_COLOR)
 			-- Set the color of the view to `a_color'.
 		do
 			color := a_color
@@ -81,7 +81,7 @@ feature -- Basic operations
 			end
 		end
 
-	set_highlight_color (a_color: TRAFFIC_COLOR) is
+	set_highlight_color (a_color: TRAFFIC_COLOR)
 			-- Set the color of the view to `a_color'.
 		do
 			highlight_color := a_color
@@ -96,7 +96,7 @@ feature -- Basic operations
 			end
 		end
 
-	highlight is
+	highlight
 			-- Highlight the view.
 		do
 			if highlight_color /= Void then
@@ -109,7 +109,7 @@ feature -- Basic operations
 			is_highlighted := True
 		end
 
-	unhighlight is
+	unhighlight
 			-- Unhighlight the view.
 		do
 			if color /= Void then
@@ -122,7 +122,7 @@ feature -- Basic operations
 			is_highlighted := False
 		end
 
-	draw (a_target: CANVAS) is
+	draw (a_target: CANVAS)
 			--
 		do
 			icon.set_position (create {REAL_COORDINATE}.make (item.location.x - icon.bounding_box.width/2, -item.location.y-icon.bounding_box.height/2))
@@ -134,7 +134,7 @@ feature -- Basic operations
 
 feature {NONE} -- Implementation
 
-	draw_object is
+	draw_object
 			-- Draw the circle.
 		do
 			Precursor
@@ -146,13 +146,13 @@ feature -- Access
 
 	rectangle: DRAWABLE_RECTANGLE
 
-	default_color: EV_COLOR is
+	default_color: EV_COLOR
 			-- Default color
 		once
 			create Result.make_with_8_bit_rgb (200, 200, 200)
 		end
 
-	default_highlight_color: EV_COLOR is
+	default_highlight_color: EV_COLOR
 			-- Default highlight color
 		once
 			create Result.make_with_8_bit_rgb (255, 0, 0)

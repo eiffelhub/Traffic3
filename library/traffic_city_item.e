@@ -13,7 +13,7 @@ feature -- Status report
 
 feature {TRAFFIC_EVENT_CONTAINER} -- Basic operations
 
-	add_to_city (a_city: TRAFFIC_CITY) is
+	add_to_city (a_city: TRAFFIC_CITY) 
 			-- Add `Current' to `a_city'.
 		require
 			a_city_exists: a_city /= Void
@@ -27,7 +27,7 @@ feature {TRAFFIC_EVENT_CONTAINER} -- Basic operations
 			city_set: city = a_city
 		end
 
-	remove_from_city is
+	remove_from_city
 			-- Remove `Current' from `city'.
 		require
 			is_in_city: is_in_city
@@ -42,7 +42,7 @@ feature {TRAFFIC_EVENT_CONTAINER} -- Basic operations
 
 feature -- Status setting
 
-	highlight is
+	highlight
 			-- Highlight.
 		do
 			is_highlighted := True
@@ -51,7 +51,7 @@ feature -- Status setting
 			highlighted: is_highlighted
 		end
 
-	unhighlight is
+	unhighlight
 			-- Unhighlight.
 		do
 			is_highlighted := False
@@ -66,17 +66,17 @@ feature -- Access
 			-- City to which the item belongs (may be void)
 
 	changed_event: TRAFFIC_EVENT_CHANNEL [TUPLE []]
-			-- Event to publish when `Current' is changed
+			-- Event to publish when `Current'  changed
 
 feature -- Status report
 
-	is_insertable (a_city: TRAFFIC_CITY): BOOLEAN is
+	is_insertable (a_city: TRAFFIC_CITY): BOOLEAN
 			-- Is `Current' insertable into `a_city'?
 			-- E.g. are all needed elements already inserted in the city?
 		deferred
 		end
 
-	is_removable: BOOLEAN is
+	is_removable: BOOLEAN
 			-- Is `Current' removable from `city'?
 			-- E.g. no other elements need it any more?
 		deferred

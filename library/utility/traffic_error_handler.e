@@ -29,7 +29,7 @@ create
 
 feature {NONE} -- Initialization
 
-	make is
+	make
 			-- Create an error handler instance
 		do
 			is_verbose := True
@@ -52,7 +52,7 @@ feature -- Status report
 	is_verbose: BOOLEAN
 			-- Is error handler printing error messages?
 
-	has_error_occured: BOOLEAN is
+	has_error_occured: BOOLEAN
 			-- True if `last_error_code' /= 0
 		do
 			Result := last_error_code /= 0
@@ -60,7 +60,7 @@ feature -- Status report
 
 feature -- Status setting
 
-	set_verbose (a_value: like is_verbose) is
+	set_verbose (a_value: like is_verbose)
 			-- Set `is_verbose' to `a_value'.
 		do
 			is_verbose := a_value
@@ -70,7 +70,7 @@ feature -- Status setting
 
 feature -- Element change
 
-	set_error (an_error_code: like last_error_code) is
+	set_error (an_error_code: like last_error_code)
 			-- Set `last_error_code' to `an_error_code'.
 		do
 			last_error_code := an_error_code
@@ -82,7 +82,7 @@ feature -- Element change
 
 feature -- Basic operations
 
-	clear_last_error is
+	clear_last_error
 			-- Clear `last_error_code' and `last_error_message'.
 		do
 			last_error_code := 0
@@ -93,7 +93,7 @@ feature -- Basic operations
 			error_cleared: not has_error_occured
 		end
 
-	raise_warning (an_error_code: INTEGER; error_data: TUPLE []) is
+	raise_warning (an_error_code: INTEGER; error_data: TUPLE [])
 			-- Set `last_error' to `error_code' and display an error message.
 		do
 			last_error_code := an_error_code
@@ -112,7 +112,7 @@ feature -- Basic operations
 			error_message_set: not last_error_message.is_empty
 		end
 
-	raise_error (an_error_code: INTEGER; error_data: TUPLE []) is
+	raise_error (an_error_code: INTEGER; error_data: TUPLE []) 
 			-- Set `last_error' to `error_code', display an error message and raise developer exception.
 		do
 			last_error_code := an_error_code
@@ -134,7 +134,7 @@ feature -- Basic operations
 
 feature {NONE} -- Implementation
 
-	generate_message (an_error_code: INTEGER; error_data: TUPLE []): STRING is
+	generate_message (an_error_code: INTEGER; error_data: TUPLE []): STRING
 			-- Generate message for `an_error_code' and use `error_data' to fill placeholders in the error message.
 		require
 			error_data_not_void: error_data /= Void
@@ -158,7 +158,7 @@ feature {NONE} -- Implementation
 			generated_message_not_void: Result /= Void
 		end
 
-	print_to_error_log_file (a_message: STRING; prepend_date: BOOLEAN) is
+	print_to_error_log_file (a_message: STRING; prepend_date: BOOLEAN)
 			-- Print `a_message' to error log file.
 		local
 			clock: DT_SYSTEM_CLOCK
@@ -176,10 +176,10 @@ feature {NONE} -- Implementation
 			end
 		end
 
-	Error_log_file_name: STRING is "error.txt"
+	Error_log_file_name: STRING = "error.txt"
 			-- Name of error log file
 
-	Error_log_file: KL_TEXT_OUTPUT_FILE is
+	Error_log_file: KL_TEXT_OUTPUT_FILE
 			-- Error log file
 		local
 			alredy_exists: BOOLEAN

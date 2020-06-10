@@ -14,7 +14,7 @@ inherit
 
 feature -- Initialization
 
-	default_create is
+	default_create 
 			-- Create `id_list'.
 		do
 			create id_list.make_default
@@ -24,7 +24,7 @@ feature -- Initialization
 
 feature -- Element change
 
-	take (an_id: INTEGER) is
+	take (an_id: INTEGER)
 			-- Set `an_id' to be taken.
 		do
 			id_list.force (True, an_id)
@@ -32,7 +32,7 @@ feature -- Element change
 			is_taken: is_taken (an_id)
 		end
 
-	free (an_id: INTEGER) is
+	free (an_id: INTEGER)
 			-- Set `an_id' to be free.
 		do
 			id_list.force (False, an_id)
@@ -42,7 +42,7 @@ feature -- Element change
 
 feature -- Status report
 
-	is_taken (an_id: INTEGER): BOOLEAN is
+	is_taken (an_id: INTEGER): BOOLEAN
 			-- Is `an_id' taken?
 		do
 			if an_id <= id_list.count then
@@ -54,7 +54,7 @@ feature -- Status report
 
 feature -- Search
 
-	next_free_index: INTEGER is
+	next_free_index: INTEGER
 			-- Get the next free index.
 		do
 			-- Todo improve implementation

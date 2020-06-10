@@ -13,7 +13,7 @@ inherit
 
 feature -- Access
 
-	Paris: TRAFFIC_CITY is
+	Paris: TRAFFIC_CITY
 			-- City of Paris
 		deferred
 		ensure
@@ -27,7 +27,7 @@ feature -- Status report
 
 feature -- Access (Lines)
 
-	Empty_line: TRAFFIC_LINE is
+	Empty_line: TRAFFIC_LINE
 			-- Line 1 of Paris
 		require
 			Paris_exists: is_paris_loaded
@@ -35,7 +35,7 @@ feature -- Access (Lines)
 			Result ?= Paris.lines.item ("Empty_line")
 		end
 
-	Line1: TRAFFIC_LINE is
+	Line1: TRAFFIC_LINE
 			-- Line 1 of Paris
 		require
 			Paris_exists: is_paris_loaded
@@ -43,7 +43,7 @@ feature -- Access (Lines)
 			Result ?= Paris.lines.item ("tram 1")
 		end
 
-	Line2: TRAFFIC_LINE is
+	Line2: TRAFFIC_LINE
 			-- Line 2 of Paris
 		require
 			Paris_exists: is_paris_loaded
@@ -51,7 +51,7 @@ feature -- Access (Lines)
 			Result ?= Paris.lines.item ("tram 2")
 		end
 
-	Line3: TRAFFIC_LINE is
+	Line3: TRAFFIC_LINE
 			-- Line 3 of Paris
 		require
 			Paris_exists: is_paris_loaded
@@ -59,7 +59,7 @@ feature -- Access (Lines)
 			Result ?= Paris.lines.item ("tram 3")
 		end
 
-	Line6: TRAFFIC_LINE is
+	Line6: TRAFFIC_LINE
 			-- Line 6 of Paris
 		require
 			Paris_exists: is_paris_loaded
@@ -67,7 +67,7 @@ feature -- Access (Lines)
 			Result ?= Paris.lines.item ("tram 6")
 		end
 
-	Line7_a: TRAFFIC_LINE is
+	Line7_a: TRAFFIC_LINE
 			-- Line 7 of Paris
 		require
 			Paris_exists: is_paris_loaded
@@ -75,7 +75,7 @@ feature -- Access (Lines)
 			Result ?= Paris.lines.item ("tram 7(a)")
 		end
 
-	Line8: TRAFFIC_LINE is
+	Line8: TRAFFIC_LINE
 			-- Line 8 of Paris
 		require
 			Paris_exists: is_paris_loaded
@@ -84,7 +84,7 @@ feature -- Access (Lines)
 			Result ?= Paris.lines.item ("tram 8")
 		end
 
-	Line9: TRAFFIC_LINE is
+	Line9: TRAFFIC_LINE
 			-- Line 9 of Paris
 		require
 			Paris_exists: is_paris_loaded
@@ -92,7 +92,7 @@ feature -- Access (Lines)
 			Result ?= Paris.lines.item ("tram 9")
 		end
 
-	Line11: TRAFFIC_LINE is
+	Line11: TRAFFIC_LINE
 			-- Line 11 of Paris
 		require
 			Paris_exists: is_paris_loaded
@@ -100,7 +100,7 @@ feature -- Access (Lines)
 			Result ?= Paris.lines.item ("tram 11")
 		end
 
-	RER_A: TRAFFIC_LINE is
+	RER_A: TRAFFIC_LINE
 			-- Line 11 of Paris
 		require
 			Paris_exists: is_paris_loaded
@@ -108,7 +108,7 @@ feature -- Access (Lines)
 			Result ?= Paris.lines.item ("RER A")
 		end
 
-	RER_B: TRAFFIC_LINE is
+	RER_B: TRAFFIC_LINE
 			-- Line 11 of Paris
 		require
 			Paris_exists: is_paris_loaded
@@ -116,7 +116,7 @@ feature -- Access (Lines)
 			Result ?= Paris.lines.item ("RER B")
 		end
 
-	RER_C_a: TRAFFIC_LINE is
+	RER_C_a: TRAFFIC_LINE
 			-- Line 11 of Paris
 		require
 			Paris_exists: is_paris_loaded
@@ -126,7 +126,7 @@ feature -- Access (Lines)
 
 feature  -- Predefined objects (Stations)
 
-	Station_Balard: TRAFFIC_STATION is
+	Station_Balard: TRAFFIC_STATION
 			-- Station
 		require
 			Paris_exists: is_paris_loaded
@@ -136,7 +136,7 @@ feature  -- Predefined objects (Stations)
 			Result_exists: Result /= Void
 		end
 
-	Station_Issy: TRAFFIC_STATION is
+	Station_Issy: TRAFFIC_STATION
 			-- Station
 		require
 			Paris_exists: is_paris_loaded
@@ -146,7 +146,7 @@ feature  -- Predefined objects (Stations)
 			Result_exists: Result /= Void
 		end
 
-	Station_St_Michel_Notre_Dame: TRAFFIC_STATION is
+	Station_St_Michel_Notre_Dame: TRAFFIC_STATION
 			-- Station
 		require
 			Paris_exists: is_paris_loaded
@@ -156,7 +156,7 @@ feature  -- Predefined objects (Stations)
 			Result_exists: Result /= Void
 		end
 
-	Station_Cergy: TRAFFIC_STATION is
+	Station_Cergy: TRAFFIC_STATION
 			-- Station
 		require
 			Paris_exists: is_paris_loaded
@@ -166,7 +166,7 @@ feature  -- Predefined objects (Stations)
 			Result_exists: Result /= Void
 		end
 
-	Station_Opera: TRAFFIC_STATION is
+	Station_Opera: TRAFFIC_STATION
 			-- Station
 		require
 			Paris_exists: is_paris_loaded
@@ -176,7 +176,7 @@ feature  -- Predefined objects (Stations)
 			Result_exists: Result /= Void
 		end
 
-	Station_Champs_de_Mars_Tour_Eiffel_Bir_Hakeim: TRAFFIC_STATION is
+	Station_Champs_de_Mars_Tour_Eiffel_Bir_Hakeim: TRAFFIC_STATION
 			-- Station
 		require
 			Paris_exists: is_paris_loaded
@@ -186,7 +186,7 @@ feature  -- Predefined objects (Stations)
 			Result_exists: Result /= Void
 		end
 
-	Station_Trocadero: TRAFFIC_STATION is
+	Station_Trocadero: TRAFFIC_STATION
 			-- Station
 		require
 			Paris_exists: is_paris_loaded
@@ -196,7 +196,7 @@ feature  -- Predefined objects (Stations)
 			Result_exists: Result /= Void
 		end
 
-	Station_Hotel_de_Ville: TRAFFIC_STATION is
+	Station_Hotel_de_Ville: TRAFFIC_STATION
 			-- Station
 		require
 			Paris_exists: is_paris_loaded
@@ -206,7 +206,7 @@ feature  -- Predefined objects (Stations)
 			Result_exists: Result /= Void
 		end
 
-	Station_Charles_de_Gaulle_Etoile: TRAFFIC_STATION is
+	Station_Charles_de_Gaulle_Etoile: TRAFFIC_STATION
 			-- Station
 		require
 			Paris_exists: is_paris_loaded
@@ -216,7 +216,7 @@ feature  -- Predefined objects (Stations)
 			Result_exists: Result /= Void
 		end
 
-	Station_Chatelet: TRAFFIC_STATION is
+	Station_Chatelet: TRAFFIC_STATION
 			-- Station
 		require
 			Paris_exists: is_paris_loaded
@@ -226,7 +226,7 @@ feature  -- Predefined objects (Stations)
 			Result_exists: Result /= Void
 		end
 
-	Station_Nation: TRAFFIC_STATION is
+	Station_Nation: TRAFFIC_STATION
 			-- Station
 		require
 			Paris_exists: is_paris_loaded
@@ -236,7 +236,7 @@ feature  -- Predefined objects (Stations)
 			Result_exists: Result /= Void
 		end
 
-	Station_Palais_Royal_Musee_du_Louvre: TRAFFIC_STATION is
+	Station_Palais_Royal_Musee_du_Louvre: TRAFFIC_STATION
 			-- Place Balard
 		require
 			Paris_exists: is_paris_loaded
@@ -246,7 +246,7 @@ feature  -- Predefined objects (Stations)
 			Result_exists: Result /= Void
 		end
 
-	Station_Mairie_d_Issy: TRAFFIC_STATION is
+	Station_Mairie_d_Issy: TRAFFIC_STATION
 			-- Place Issy
 		require
 			Paris_exists: is_paris_loaded
@@ -256,7 +256,7 @@ feature  -- Predefined objects (Stations)
 			Result_exists: Result /= Void
 		end
 
-	Station_Montrouge: TRAFFIC_STATION is
+	Station_Montrouge: TRAFFIC_STATION
 			-- Place Montrouge
 		require
 			Paris_exists: is_paris_loaded
@@ -266,7 +266,7 @@ feature  -- Predefined objects (Stations)
 			Result_exists: Result /= Void
 		end
 
-	Station_Gare_de_Lyon: TRAFFIC_STATION is
+	Station_Gare_de_Lyon: TRAFFIC_STATION
 			-- PLACE Gare de Lyon
 		require
 			Paris_exists: is_paris_loaded
@@ -276,7 +276,7 @@ feature  -- Predefined objects (Stations)
 			Result_exists: Result /= Void
 		end
 
-	Station_Invalides: TRAFFIC_STATION is
+	Station_Invalides: TRAFFIC_STATION
 			-- Place Invalides
 		require
 			Paris_exists: is_paris_loaded
@@ -286,7 +286,7 @@ feature  -- Predefined objects (Stations)
 			Result_exists: Result /= Void
 		end
 
-	Station_Madeleine: TRAFFIC_STATION is
+	Station_Madeleine: TRAFFIC_STATION
 			-- Place Madeleine
 		require
 			Paris_exists: is_paris_loaded
@@ -296,7 +296,7 @@ feature  -- Predefined objects (Stations)
 			Result_exists: Result /= Void
 		end
 
-	Station_Bobigny_Pablo_Picasso: TRAFFIC_STATION is
+	Station_Bobigny_Pablo_Picasso: TRAFFIC_STATION
 			-- Place Bobigny - Pablo Picasso
 		require
 			Paris_exists: is_paris_loaded
@@ -306,7 +306,7 @@ feature  -- Predefined objects (Stations)
 			Result_exists: Result /= Void
 		end
 
-	Station_La_Fourche: TRAFFIC_STATION is
+	Station_La_Fourche: TRAFFIC_STATION
 			-- Place La Fourche
 		require
 			Paris_exists: is_paris_loaded
@@ -316,7 +316,7 @@ feature  -- Predefined objects (Stations)
 			Result_exists: Result /= Void
 		end
 
-	Station_Bastille: TRAFFIC_STATION is
+	Station_Bastille: TRAFFIC_STATION
 			-- Place Bastille
 		require
 			Paris_exists: is_paris_loaded
@@ -326,7 +326,7 @@ feature  -- Predefined objects (Stations)
 			Result_exists: Result /= Void
 		end
 
-	Station_Concorde: TRAFFIC_STATION is
+	Station_Concorde: TRAFFIC_STATION
 			-- Place Concorde
 		require
 			Paris_exists: is_paris_loaded
@@ -336,7 +336,7 @@ feature  -- Predefined objects (Stations)
 			Result_exists: Result /= Void
 		end
 
-	Station_Republique: TRAFFIC_STATION is
+	Station_Republique: TRAFFIC_STATION
 			-- Place Republique
 		require
 			Paris_exists: is_paris_loaded
@@ -346,7 +346,7 @@ feature  -- Predefined objects (Stations)
 			Result_exists: Result /= Void
 		end
 
-	Station_La_Motte: TRAFFIC_STATION is
+	Station_La_Motte: TRAFFIC_STATION
 			-- Place La Motte - Picquet - Grenelle
 		require
 			Paris_exists: is_paris_loaded
@@ -356,7 +356,7 @@ feature  -- Predefined objects (Stations)
 			Result_exists: Result /= Void
 		end
 
-	Place_Musee_du_Louvre: TRAFFIC_STATION is
+	Place_Musee_du_Louvre: TRAFFIC_STATION
 			-- Place
 		require
 			Paris_exists: is_paris_loaded
@@ -366,7 +366,7 @@ feature  -- Predefined objects (Stations)
 			Result_exists: Result /= Void
 		end
 
-	Eiffel_tower: TRAFFIC_STATION is
+	Eiffel_tower: TRAFFIC_STATION
 			-- Place
 		require
 			Paris_exists: is_paris_loaded
@@ -376,7 +376,7 @@ feature  -- Predefined objects (Stations)
 			Result_exists: Result /= Void
 		end
 
-	Elysee_palace: TRAFFIC_STATION is
+	Elysee_palace: TRAFFIC_STATION
 			-- Place
 		require
 			Paris_exists: is_paris_loaded
@@ -388,7 +388,7 @@ feature  -- Predefined objects (Stations)
 
 feature -- Predefined objects (Buildings)
 
-	Louvre: TRAFFIC_LANDMARK is
+	Louvre: TRAFFIC_LANDMARK
 			-- The building at the place of Louvre
 		require
 			Paris_exists: is_paris_loaded
@@ -399,7 +399,7 @@ feature -- Predefined objects (Buildings)
 
 feature -- Passengers
 
-	Michela: TRAFFIC_PASSENGER is
+	Michela: TRAFFIC_PASSENGER
 			-- Michela
 		require
 			Paris_exists: is_paris_loaded
@@ -419,7 +419,7 @@ feature -- Passengers
 
 feature -- Predefined objects (Routes)
 
-	Route1: TRAFFIC_ROUTE is
+	Route1: TRAFFIC_ROUTE
 			-- Route one
 		require
 			Paris_exists: is_paris_loaded
@@ -435,7 +435,7 @@ feature -- Predefined objects (Routes)
 			Paris.routes.put_last (Result)
 		end
 
-	Route2: TRAFFIC_ROUTE is
+	Route2: TRAFFIC_ROUTE
 			-- Route 2
 		require
 			Paris_exists: is_paris_loaded
@@ -451,7 +451,7 @@ feature -- Predefined objects (Routes)
 			Paris.routes.put_last (Result)
 		end
 
-	Route3: TRAFFIC_ROUTE is
+	Route3: TRAFFIC_ROUTE
 			-- Route one
 		require
 			Paris_exists: is_paris_loaded
@@ -466,7 +466,7 @@ feature -- Predefined objects (Routes)
 
 feature --Predefined objects (Line-Sections)
 
-	line_section (a_line: TRAFFIC_LINE; o, d: TRAFFIC_STATION):TRAFFIC_LINE_SEGMENT is
+	line_section (a_line: TRAFFIC_LINE; o, d: TRAFFIC_STATION):TRAFFIC_LINE_SEGMENT
 			-- Find the line section of `a_line' between `o' and `d'.
 		local
 			line_sections: DS_ARRAYED_LIST [TRAFFIC_LINE_SEGMENT]
@@ -482,7 +482,7 @@ feature --Predefined objects (Line-Sections)
 			Result := line_sections.item_for_iteration
 		end
 
-	Line7a_Louvre_to_Chatelet: TRAFFIC_LINE_SEGMENT is
+	Line7a_Louvre_to_Chatelet: TRAFFIC_LINE_SEGMENT
 			-- Line section
 		require
 			Paris_exists: is_paris_loaded
@@ -492,7 +492,7 @@ feature --Predefined objects (Line-Sections)
 			Result_exists: Result /= Void
 		end
 
-	Line9_Nation_to_Republique: TRAFFIC_LINE_SEGMENT is
+	Line9_Nation_to_Republique: TRAFFIC_LINE_SEGMENT
 			-- Line section
 		require
 			Paris_exists: is_paris_loaded
@@ -502,7 +502,7 @@ feature --Predefined objects (Line-Sections)
 			Result_exists: Result /= Void
 		end
 
-	Line11_Republique_to_Hotel_de_Ville: TRAFFIC_LINE_SEGMENT is
+	Line11_Republique_to_Hotel_de_Ville: TRAFFIC_LINE_SEGMENT
 			-- Line section
 		require
 			Paris_exists: is_paris_loaded
@@ -512,7 +512,7 @@ feature --Predefined objects (Line-Sections)
 			Result_exists: Result /= Void
 		end
 
-	Line11_Hotel_de_Ville_to_Chatelet: TRAFFIC_LINE_SEGMENT is
+	Line11_Hotel_de_Ville_to_Chatelet: TRAFFIC_LINE_SEGMENT
 			-- Line section
 		require
 			Paris_exists: is_paris_loaded
@@ -522,7 +522,7 @@ feature --Predefined objects (Line-Sections)
 			Result_exists: Result /= Void
 		end
 
-	Line6_Etoile_to_Trocadero: TRAFFIC_LINE_SEGMENT is
+	Line6_Etoile_to_Trocadero: TRAFFIC_LINE_SEGMENT
 			-- Line section
 		require
 			Paris_exists: is_paris_loaded
@@ -532,7 +532,7 @@ feature --Predefined objects (Line-Sections)
 			Result_exists: Result /= Void
 		end
 
-	Line6_Trocadero_to_Champs_De_Mars: TRAFFIC_LINE_SEGMENT is
+	Line6_Trocadero_to_Champs_De_Mars: TRAFFIC_LINE_SEGMENT
 			-- Line section
 		require
 			Paris_exists: is_paris_loaded
@@ -542,7 +542,7 @@ feature --Predefined objects (Line-Sections)
 			Result_exists: Result /= Void
 		end
 
-	rer_A_Chatelet_to_Opera: TRAFFIC_LINE_SEGMENT is
+	rer_A_Chatelet_to_Opera: TRAFFIC_LINE_SEGMENT
 			-- Line section
 		require
 			Paris_exists: is_paris_loaded
@@ -552,7 +552,7 @@ feature --Predefined objects (Line-Sections)
 			Result_exists: Result /= Void
 		end
 
-	rer_A_Opera_to_Etoile: TRAFFIC_LINE_SEGMENT is
+	rer_A_Opera_to_Etoile: TRAFFIC_LINE_SEGMENT
 			-- Line section
 		require
 			Paris_exists: is_paris_loaded
@@ -562,7 +562,7 @@ feature --Predefined objects (Line-Sections)
 			Result_exists: Result /= Void
 		end
 
-	rer_A_Etoile_to_Cergy: TRAFFIC_LINE_SEGMENT is
+	rer_A_Etoile_to_Cergy: TRAFFIC_LINE_SEGMENT
 			-- Line section
 		require
 			Paris_exists: is_paris_loaded
@@ -572,7 +572,7 @@ feature --Predefined objects (Line-Sections)
 			Result_exists: Result /= Void
 		end
 
-	rer_B_Chatelet_to_Notre_Dame: TRAFFIC_LINE_SEGMENT is
+	rer_B_Chatelet_to_Notre_Dame: TRAFFIC_LINE_SEGMENT
 			-- Line section
 		require
 			Paris_exists: is_paris_loaded
@@ -582,7 +582,7 @@ feature --Predefined objects (Line-Sections)
 			Result_exists: Result /= Void
 		end
 
-	rer_c_a_Invalides_to_Champs_de_Mars: TRAFFIC_LINE_SEGMENT is
+	rer_c_a_Invalides_to_Champs_de_Mars: TRAFFIC_LINE_SEGMENT
 			-- Line section
 		require
 			Paris_exists: is_paris_loaded
@@ -592,7 +592,7 @@ feature --Predefined objects (Line-Sections)
 			Result_exists: Result /= Void
 		end
 
-	rer_c_a_Notre_Dame_to_Invalides: TRAFFIC_LINE_SEGMENT is
+	rer_c_a_Notre_Dame_to_Invalides: TRAFFIC_LINE_SEGMENT
 			-- Line section
 		require
 			Paris_exists: is_paris_loaded
@@ -604,7 +604,7 @@ feature --Predefined objects (Line-Sections)
 
 feature --Predefined Objects (Roads)
 
-	Road_Place_Etoile: TRAFFIC_ROAD_SEGMENT is
+	Road_Place_Etoile: TRAFFIC_ROAD_SEGMENT
 			-- the road from Etoile to place Etoile
 		require
 			Paris_exists: is_paris_loaded
@@ -614,7 +614,7 @@ feature --Predefined Objects (Roads)
 			Result_exists: Result /= Void
 		end
 
-	Road_Place_de_la_Nation: TRAFFIC_ROAD_SEGMENT is
+	Road_Place_de_la_Nation: TRAFFIC_ROAD_SEGMENT
 			-- the road from Place de la Opera to place Opera
 		require
 			Paris_exists: is_paris_loaded
@@ -624,7 +624,7 @@ feature --Predefined Objects (Roads)
 			Result_exists: Result /= Void
 		end
 
-	Road_pere_la_chaise_to_station_pere_la_chaise: TRAFFIC_ROAD_SEGMENT is
+	Road_pere_la_chaise_to_station_pere_la_chaise: TRAFFIC_ROAD_SEGMENT
 			-- Road from Pere La Chaise to the metro station Pere La Chaise
 		require
 			Paris_exists: is_paris_loaded
@@ -634,7 +634,7 @@ feature --Predefined Objects (Roads)
 			Result_exists: Result /= Void
 		end
 
-	Road_Hotel_de_Ville_to_station_Hotel_de_Ville: TRAFFIC_ROAD_SEGMENT is
+	Road_Hotel_de_Ville_to_station_Hotel_de_Ville: TRAFFIC_ROAD_SEGMENT
 			-- Road from Hotel de Ville to the metro station Hotel de Ville
 		require
 			Paris_exists: is_paris_loaded
@@ -644,7 +644,7 @@ feature --Predefined Objects (Roads)
 			Result_exists: Result /= Void
 		end
 
-	Road_station_Champs_de_Mars_to_Tour_Eiffel: TRAFFIC_ROAD_SEGMENT is
+	Road_station_Champs_de_Mars_to_Tour_Eiffel: TRAFFIC_ROAD_SEGMENT
 			-- Road from Tour Eiffel to the metro station Champs de Mars
 		require
 			Paris_exists: is_paris_loaded
@@ -654,7 +654,7 @@ feature --Predefined Objects (Roads)
 			Result_exists: Result /= Void
 		end
 
-	Road_Champs_Elysee_Etoile_to_place_Charles_de_Gaulle_Etoile: TRAFFIC_ROAD_SEGMENT is
+	Road_Champs_Elysee_Etoile_to_place_Charles_de_Gaulle_Etoile: TRAFFIC_ROAD_SEGMENT
 			-- Road from Champs Elysee-Etoile to the metro station place Charles de Gaulle
 		require
 			Paris_exists: is_paris_loaded
@@ -664,7 +664,7 @@ feature --Predefined Objects (Roads)
 			Result_exists: Result /= Void
 		end
 
-	Road_Invalides_to_station_Invalides: TRAFFIC_ROAD_SEGMENT is
+	Road_Invalides_to_station_Invalides: TRAFFIC_ROAD_SEGMENT
 			-- Road from Invalides to the metro station Invalides
 		require
 			Paris_exists: is_paris_loaded
@@ -676,13 +676,13 @@ feature --Predefined Objects (Roads)
 
 feature -- Timer
 
-	Wait_time: INTEGER is 4
+	Wait_time: INTEGER = 4
 			-- Time to wait in feature `wait'
 
-	Short_wait_time: INTEGER is 1
+	Short_wait_time: INTEGER = 1
 			-- Intervall time for the blinking action
 
-	wait is
+	wait
 			-- Wait for `Wait_time' seconds.
 		local
 			env: EV_ENVIRONMENT
@@ -702,7 +702,7 @@ feature -- Timer
 			end
 		end
 
-	short_wait is
+	short_wait  
 			-- Wait for `Short_wait_time' seconds.
 		local
 			env: EV_ENVIRONMENT

@@ -8,7 +8,7 @@ deferred class
 
 feature -- Initialization
 
-	make (a_item: G) is
+	make (a_item: G) 
 			-- Set `item' to `a_item'.
 		require
 			a_item_exists: a_item /= Void
@@ -32,45 +32,45 @@ feature -- Access
 
 feature -- Status setting
 
-	set_color (a_color: TRAFFIC_COLOR) is
+	set_color (a_color: TRAFFIC_COLOR)
 			-- Set the color of the view to `a_color'.
 		deferred
 		end
 
-	set_highlight_color (a_color: TRAFFIC_COLOR) is
+	set_highlight_color (a_color: TRAFFIC_COLOR)
 			-- Set the color of the view to `a_color'.
 		deferred
 		end
 
 feature -- Basic operations
 
-	update is
+	update
 			-- Update `Current' to reflect changes in `item'.
 		deferred
 		end
 
-	highlight is
+	highlight
 			-- Highlight the view.
 		deferred
 		ensure
 			highlighted: is_highlighted
 		end
 
-	unhighlight is
+	unhighlight
 			-- Unhighlight the view.
 		deferred
 		ensure
 			not_highlighted: not is_highlighted
 		end
 
-	hide is
+	hide
 			-- Hide the view.
 		deferred
 		ensure
 			hidden: not is_shown
 		end
 
-	show is
+	show
 			-- Show the view.
 		deferred
 		ensure
@@ -91,7 +91,7 @@ feature -- Status report
 
 feature -- Element change
 
-	set_item (a_item: like item) is
+	set_item (a_item: like item)
 			-- Set `item' to `a_item'.
 		require
 			a_item_exists: a_item /= Void

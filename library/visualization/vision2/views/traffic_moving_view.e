@@ -32,7 +32,7 @@ create
 
 feature -- Initialization
 
-	make (a_item: like item) is
+	make (a_item: like item)  
 			-- Initialize view for `a_item'.
 		do
 			item := a_item
@@ -48,7 +48,7 @@ feature -- Initialization
 
 feature -- Basic operations
 
-	update is
+	update
 			-- Update to reflect changes in city item.
 		do
 			if item.is_highlighted then
@@ -60,13 +60,13 @@ feature -- Basic operations
 
 feature -- Constants
 
-	default_color: EV_COLOR is
+	default_color: EV_COLOR
 			-- Default color
 		once
 			create Result.make_with_8_bit_rgb (255, 255, 0)
 		end
 
-	default_highlight_color: EV_COLOR is
+	default_highlight_color: EV_COLOR
 			-- Default highlight color
 		once
 			create Result.make_with_8_bit_rgb (255, 0, 0)
@@ -74,14 +74,14 @@ feature -- Constants
 
 feature {NONE} -- Implementation
 
-	draw_object is
+	draw_object
 			-- Draw the circle.
 		do
 			set_center (create {REAL_COORDINATE}.make (item.location.x, -item.location.y))
 			Precursor
 		end
 
-	invalidate is
+	invalidate
 			-- Some property of `Current' has changed.
 		do
 			is_valid := False

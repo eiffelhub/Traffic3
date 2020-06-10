@@ -18,7 +18,7 @@ create
 
 feature {NONE} -- Inititalization
 
-	make is
+	make
 			-- Set state to normal.
 		do
 			value := State_normal
@@ -33,7 +33,7 @@ feature -- Access
 
 feature -- Element change
 
-	set_state (a_value: INTEGER) is
+	set_state (a_value: INTEGER)
 			-- Set `value' to `a_value'.
 		require
 			is_valid_state_value (a_value)
@@ -45,12 +45,12 @@ feature -- Element change
 
 feature -- Constants
 
-	State_normal, State_collision: INTEGER is unique
+	State_normal, State_collision: INTEGER = unique
 			-- State constants
 
 feature -- Status report
 
-	is_valid_state_value (a_state_value: INTEGER): BOOLEAN is
+	is_valid_state_value (a_state_value: INTEGER): BOOLEAN
 			-- Is `a_state_value' a state constants?
 		do
 			Result := False
@@ -66,7 +66,7 @@ feature -- Status report
 
 feature -- Basic operation
 
-	to_string (a_state_value: INTEGER): STRING is
+	to_string (a_state_value: INTEGER): STRING
 			-- String representation of state `a_state_value'
 		require
 			a_state_value_valid: is_valid_state_value (a_state_value)
@@ -84,7 +84,7 @@ feature -- Basic operation
 
 feature -- Basic operation
 
-	out: STRING is
+	out: STRING
 			-- Textual representation
 		do
 			Result := "state: " + to_string (value)

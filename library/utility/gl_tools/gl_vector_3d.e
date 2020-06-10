@@ -27,7 +27,7 @@ create
 
 feature {NONE} -- Initialisation
 
-	make_xyz (a_x, a_y, a_z: G) is
+	make_xyz (a_x, a_y, a_z: G)
 			-- Initialise `Current' with values `a_x' `a_y' `a_z'.
 		require
 			a_x_not_void: a_x /= Void
@@ -42,7 +42,7 @@ feature {NONE} -- Initialisation
 			z_set: z = a_z
 		end
 
-	make_from_other (other: like Current) is
+	make_from_other (other: like Current)
 			-- Initialise `Current' with values from `other'.
 		require
 			other_not_void: other /= Void
@@ -56,7 +56,7 @@ feature {NONE} -- Initialisation
 
 feature -- Access
 
-	x: G is
+	x: G
 			-- First element
 		do
 			Result := array @ (0)
@@ -64,7 +64,7 @@ feature -- Access
 			result_exists: Result /= Void
 		end
 
-	y: G is
+	y: G
 			-- Second element
 		do
 			Result := array @ (1)
@@ -72,7 +72,7 @@ feature -- Access
 			result_exists: Result /= Void
 		end
 
-	z: G is
+	z: G
 			-- Third element
 		do
 			Result := array @ (2)
@@ -80,7 +80,7 @@ feature -- Access
 			result_exists: Result /= Void
 		end
 
-	pointer: POINTER is
+	pointer: POINTER
 			-- Pointer to `Current' which can be used in OpenGL
 		local
 			tmp: ANY
@@ -91,7 +91,7 @@ feature -- Access
 
 feature -- Element change
 
-	set_xyz (a, b, c: G) is
+	set_xyz (a, b, c: G) 
 			-- Set values to `a' `b' `c'.
 		require
 			a_not_void: a /= Void
@@ -109,7 +109,7 @@ feature -- Element change
 
 feature -- Support
 
-	out, debug_output: STRING is
+	out, debug_output: STRING
 			-- Convert to string.
 		do
 			create Result.make_from_string (x.out+"/"+y.out+"/"+z.out)

@@ -14,7 +14,7 @@ create
 
 feature -- Creation
 
-	make is
+	make 
 			-- Create new event taxi type.
 		do
 			name := "event taxi"

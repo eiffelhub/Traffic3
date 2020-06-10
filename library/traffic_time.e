@@ -15,7 +15,7 @@ inherit
 
 feature -- Initialization
 
-	make_with_speedup (a_speedup: INTEGER) is
+	make_with_speedup (a_speedup: INTEGER)
 			-- Set `speedup' to `a_speedup'.
 		require
 			a_speedup_valid: a_speedup >= 1
@@ -44,7 +44,7 @@ feature  -- Access
 	speedup: INTEGER
 			-- Speedup to let the time run faster than the original time
 
-	duration (a_start_time, a_end_time: like actual_time): TIME_DURATION is
+	duration (a_start_time, a_end_time: like actual_time): TIME_DURATION
 			-- Duration from `a_start_time' until `a_time2'.
 			-- Takes into account midnight.
 		require
@@ -67,7 +67,7 @@ feature -- Status report
 
 feature -- Basic operations
 
-	set_speedup (a_speedup: INTEGER) is
+	set_speedup (a_speedup: INTEGER)
 			-- Set `speedup' to `a_speedup'.
 		require
 			a_speedup_valid: a_speedup >= 1
@@ -83,7 +83,7 @@ feature -- Basic operations
 			speedup_set: speedup = a_speedup
 		end
 
-	start is
+	start
 			-- Start to count the time at (0:0:0).
 		require
 			not is_time_running
@@ -92,7 +92,7 @@ feature -- Basic operations
 			is_time_running
 		end
 
-	pause is
+	pause
 			-- Pause the time count.
 		require
 			is_time_running
@@ -101,7 +101,7 @@ feature -- Basic operations
 			not is_time_running
 		end
 
-	resume is
+	resume
 			-- Resume the paused time.
 		require
 			not is_time_running
@@ -110,7 +110,7 @@ feature -- Basic operations
 			is_time_running
 		end
 
-	reset is
+	reset
 			-- Reset the time to (0:0:0).
 		deferred
 		ensure
@@ -120,7 +120,7 @@ feature -- Basic operations
 			actual_time.second = 0
 		end
 
-	set (a_hour, a_minute, a_second: INTEGER) is
+	set (a_hour, a_minute, a_second: INTEGER)
 			-- Sets the time to (`a_hour':`a_minute':`a_second').
 		require
 			valid_time: a_hour >=0 and a_minute >=0 and a_second >=0
@@ -133,11 +133,11 @@ feature -- Basic operations
 
 feature -- Constants
 
-	Default_scale_factor: REAL_64 is 5.52
+	Default_scale_factor: REAL_64 = 5.52
 
 feature -- Output
 
-	out: STRING is
+	out: STRING
 			-- Output
 		do
 			Result := actual_time.hour.out + ":" + actual_time.minute.out + ":" + actual_time.second.out
@@ -160,7 +160,7 @@ feature{NONE} -- Implementation
 	update_agent: PROCEDURE [ANY, TUPLE]
 			-- Agent used for updating current simulated time
 
-	update_time is
+	update_time
 			-- Update the time count
 		require
 			actual_time.second >= 0
@@ -171,7 +171,7 @@ feature{NONE} -- Implementation
 
 feature -- Procedures
 
-	add_callback_procedure (a_procedure: PROCEDURE[ANY, TUPLE]) is
+	add_callback_procedure (a_procedure: PROCEDURE[ANY, TUPLE])
 			-- Add a procedure.
 		require
 			a_procedure_exists: a_procedure /= Void
@@ -179,7 +179,7 @@ feature -- Procedures
 			all_procedures.force (a_procedure)
 		end
 
-	add_callback_tour (a_tour_procedure: PROCEDURE[ANY, TUPLE]) is
+	add_callback_tour (a_tour_procedure: PROCEDURE[ANY, TUPLE])
 			-- Add the tour algorithms here.
 		require
 			a_procedure_exists: a_tour_procedure /= Void
@@ -187,7 +187,7 @@ feature -- Procedures
 			all_tours.force (a_tour_procedure)
 		end
 
-	call_tours is
+	call_tours
 			-- Call all procedures all 'an_interval' milliseconds.
 		do
 			from
@@ -200,7 +200,7 @@ feature -- Procedures
 			end
 		end
 
-	call_procedure is
+	call_procedure
 			-- Call all procedures all 'an_interval' milliseconds.
 		do
 			from

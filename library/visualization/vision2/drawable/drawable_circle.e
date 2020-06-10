@@ -15,7 +15,7 @@ create
 
 feature -- Initialization
 
-	make (a_center: like center) is
+	make (a_center: like center) 
 			-- Create a circle that scales at `a_center' with default diameter and edge width.
 		require
 			a_center_not_void: a_center /= Void
@@ -43,7 +43,7 @@ feature -- Access
 	center: REAL_COORDINATE
 			-- The circle's center
 
-	bounding_box: REAL_RECTANGLE is
+	bounding_box: REAL_RECTANGLE
 			-- The bounding box of the circle
 		do
 			create Result.make (
@@ -53,7 +53,7 @@ feature -- Access
 
 feature -- Element change
 
-	set_diameter (a_diameter: INTEGER) is
+	set_diameter (a_diameter: INTEGER)
 			-- Change the circle's diameter to `a_diameter'.
 		do
 			diameter:= a_diameter
@@ -62,7 +62,7 @@ feature -- Element change
 			new_diameter: diameter = a_diameter
 		end
 
-	set_center (a_center: REAL_COORDINATE) is
+	set_center (a_center: REAL_COORDINATE)
 			-- Change the circle's center to `a_center'.
 		require
 			a_center_not_void: a_center /= Void
@@ -73,7 +73,7 @@ feature -- Element change
 			new_center: center = a_center
 		end
 
-	set_width (a_width: INTEGER)  is
+	set_width (a_width: INTEGER)
 			-- Change the circle's edge width to `a_width'.
 		do
 			width:= a_width
@@ -89,7 +89,7 @@ feature -- Status report
 
 feature -- Status setting
 
-	enable_filled is
+	enable_filled
 			-- Fill the circle.
 		do
 			is_filled:= True
@@ -98,7 +98,7 @@ feature -- Status setting
 			is_filled: is_filled
 		end
 
-	disable_filled is
+	disable_filled
 			-- Unfill the circle.
 		do
 			is_filled:= False
@@ -109,7 +109,7 @@ feature -- Status setting
 
 feature {CANVAS} -- Basic operations
 
-	draw_object is
+	draw_object
 			-- Draw the circle.
 		local
 			scaled_p1, scaled_p2 : EV_COORDINATE
@@ -131,10 +131,10 @@ feature {CANVAS} -- Basic operations
 
 feature {NONE} -- Constants for implementation
 
-	Default_width: INTEGER is 1
+	Default_width: INTEGER = 1
 			-- The default width for the circles edge
 
-	Default_diameter: INTEGER is 5
+	Default_diameter: INTEGER = 5
 			-- The default diameter of the circle
 
 invariant

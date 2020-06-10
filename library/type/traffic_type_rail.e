@@ -14,7 +14,7 @@ create
 
 feature -- Creation
 
-	make is
+	make 
 			-- Create new rail type.
 		do
 			name := "rail"

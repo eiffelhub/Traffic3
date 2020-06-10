@@ -20,13 +20,13 @@ feature -- Access
 	shortest_path_mode: INTEGER
 			-- Mode used for shortest path calculation (either normal or minimal switches)
 
-	shortest_path_mode_normal_distance: INTEGER is
+	shortest_path_mode_normal_distance: INTEGER
 			-- Number representing path calculation mode based on regular distance
 		do
 			Result := city.graph.normal_distance
 		end
 
-	shortest_path_mode_minimal_switches: INTEGER is
+	shortest_path_mode_minimal_switches: INTEGER
 			-- Number representing path calculation mode based on regular distance
 		do
 			Result := city.graph.minimal_switches
@@ -34,7 +34,7 @@ feature -- Access
 
 feature -- Basic operations
 
-	find_shortest_path (a_origin: TRAFFIC_STATION; a_destination: TRAFFIC_STATION) is
+	find_shortest_path (a_origin: TRAFFIC_STATION; a_destination: TRAFFIC_STATION)
 			-- Find shortest route.
 		require
 			a_origin_exists: a_origin /= Void
@@ -80,7 +80,7 @@ feature -- Basic operations
 			city.graph.set_shortest_path_mode (old_mode)
 		end
 
-	find_shortest_path_of_a_list_of_stations(stations_to_visit: LINKED_LIST [TRAFFIC_STATION]) is
+	find_shortest_path_of_a_list_of_stations(stations_to_visit: LINKED_LIST [TRAFFIC_STATION])
 			-- Find shortest path given a list of stations `stations_to_visit'.
 		require
 			stations_to_visit_exists: stations_to_visit /= Void
@@ -112,7 +112,7 @@ feature -- Basic operations
 
 feature -- Element change
 
-	set_city (a_city: TRAFFIC_CITY) is
+	set_city (a_city: TRAFFIC_CITY)
 			-- Set `city' to `a_city'.
 		require
 			a_city_exists: a_city /= Void
@@ -122,7 +122,7 @@ feature -- Element change
 			city_set: city = a_city
 		end
 
-	set_shortest_path_mode (a_mode: INTEGER) is
+	set_shortest_path_mode (a_mode: INTEGER)
 			-- Set the shortest path mode to `a_mode'.
 		require
 			valide_mode: is_valid_shortest_path_mode (a_mode)
@@ -134,7 +134,7 @@ feature -- Element change
 
 feature -- Status report
 
-	is_valid_shortest_path_mode (a_mode: INTEGER): BOOLEAN is
+	is_valid_shortest_path_mode (a_mode: INTEGER): BOOLEAN 
 			-- Is `a_mode' valid?
 		do
 			Result := a_mode = shortest_path_mode_minimal_switches or

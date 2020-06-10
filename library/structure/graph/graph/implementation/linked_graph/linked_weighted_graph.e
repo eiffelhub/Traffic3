@@ -63,7 +63,7 @@ create
 
 feature -- Access
 
-	edge_item: LINKED_GRAPH_WEIGHTED_EDGE [like item, L] is
+	edge_item: LINKED_GRAPH_WEIGHTED_EDGE [like item, L]
 			-- Current edge
 		do
 			if not current_node.edge_list.off then
@@ -73,7 +73,7 @@ feature -- Access
 			end
 		end
 
-	edge_from_values (a_start_node, a_end_node: like item; a_label: L; a_weight: REAL_64): like edge_item is
+	edge_from_values (a_start_node, a_end_node: like item; a_label: L; a_weight: REAL_64): like edge_item
 			-- Edge that matches `a_start_node', `a_end_node', `a_label' and `a_weight'.
 			-- Result is Void if there is no match.
 			-- The cursor is not moved.
@@ -104,7 +104,7 @@ feature -- Cursor movement
 
 feature -- Element change
 
-	put_edge (a_start_node, a_end_node: like item; a_label: L; a_weight: REAL_64) is
+	put_edge (a_start_node, a_end_node: like item; a_label: L; a_weight: REAL_64)
 			-- Create an edge with weight `a_weight' between `a_start_node' and `a_end_node'.
 			-- The edge will be labeled `a_label'.
 			-- For symmetric graphs, another edge is inserted in the opposite direction.
@@ -144,7 +144,7 @@ feature -- Inapplicable
 
 feature -- Output
 
-	out: STRING is
+	out: STRING 
 			-- Printable representation of the graph
 		local
 			node: like current_node

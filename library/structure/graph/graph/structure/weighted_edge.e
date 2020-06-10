@@ -29,7 +29,7 @@ create
 
 feature -- Initialization
 
-	make (a_start_node, a_end_node: G; a_label: L; a_weight: REAL_64) is
+	make (a_start_node, a_end_node: G; a_label: L; a_weight: REAL_64)
 			-- Make a labeled edge from two nodes with weight `a_weight'.
 		require
 			nodes_not_void: a_start_node /= Void and a_end_node /= Void
@@ -49,7 +49,7 @@ feature -- Initialization
 			default_weight_function: not user_defined_weight_function
 		end
 
-	make_directed (a_start_node, a_end_node: G; a_label: L; a_weight: REAL_64) is
+	make_directed (a_start_node, a_end_node: G; a_label: L; a_weight: REAL_64)
 			-- Make a directed labeled edge from two nodes with weight `a_weight'.
 		require
 			nodes_not_void: a_start_node /= Void and a_end_node /= Void
@@ -66,7 +66,7 @@ feature -- Initialization
 			is_directed: is_directed
 		end
 
-	make_undirected (a_start_node, a_end_node: G; a_label: L; a_weight: REAL_64) is
+	make_undirected (a_start_node, a_end_node: G; a_label: L; a_weight: REAL_64)
 			-- Make an undirected labeled edge from two nodes with weight `a_weight'.
 		require
 			nodes_not_void: a_start_node /= Void and a_end_node /= Void
@@ -85,7 +85,7 @@ feature -- Initialization
 
 feature -- Access
 
-	weight: REAL_64 is
+	weight: REAL_64
 			-- Weight of the edge
 		do
 			if not user_defined_weight_function then
@@ -104,7 +104,7 @@ feature -- Status report
 
 feature -- Status setting
 
-	restore_default_weight is
+	restore_default_weight
 			-- `weight' will return the assigned edge weight.
 		do
 			user_defined_weight_function := False
@@ -112,7 +112,7 @@ feature -- Status setting
 			default_weight_function: not user_defined_weight_function
 		end
 
-	enable_user_defined_weight_function (a_function: like weight_function) is
+	enable_user_defined_weight_function (a_function: like weight_function)
 			-- `weight' will be computed by a user-defined function on `label'.
 		do
 			user_defined_weight_function := True
@@ -123,7 +123,7 @@ feature -- Status setting
 
 feature -- Comparison
 
-	is_equal (other: like Current): BOOLEAN is
+	is_equal (other: like Current): BOOLEAN
 			-- Is `other' attached to an object considered
 			-- equal to current object?
 		do
@@ -148,7 +148,7 @@ feature -- Cursor movement
 
 feature -- Element change
 
-	set_weight (a_weight: REAL_64) is
+	set_weight (a_weight: REAL_64)
 			-- Set the weight of the edge.
 		do
 			internal_weight := a_weight
@@ -174,7 +174,7 @@ feature -- Inapplicable
 
 feature -- Output
 
-	out: STRING is
+	out: STRING
 			-- Textual representation of the edge
 		do
 			Result := start_node.out

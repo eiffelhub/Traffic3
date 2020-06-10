@@ -22,7 +22,7 @@ feature -- Obsolete
 
 feature -- Basic operations
 
-	highlight is
+	highlight  
 			-- Highlight the view.
 		do
 			if highlight_color /= Void then
@@ -33,7 +33,7 @@ feature -- Basic operations
 			is_highlighted := True
 		end
 
-	unhighlight is
+	unhighlight
 			-- Unhighlight the view.
 		do
 			if color /= Void then
@@ -44,7 +44,7 @@ feature -- Basic operations
 			is_highlighted := False
 		end
 
-	set_color (a_color: TRAFFIC_COLOR) is
+	set_color (a_color: TRAFFIC_COLOR)
 			-- Set the color of the view to `a_color'.
 		do
 			color := a_color
@@ -57,7 +57,7 @@ feature -- Basic operations
 			end
 		end
 
-	set_highlight_color (a_color: TRAFFIC_COLOR) is
+	set_highlight_color (a_color: TRAFFIC_COLOR)
 			-- Set the color of the view to `a_color'.
 		do
 			highlight_color := a_color
@@ -72,12 +72,12 @@ feature -- Basic operations
 
 feature -- Constants
 
-	default_color: EV_COLOR is
+	default_color: EV_COLOR
 			-- Default color
 		deferred
 		end
 
-	default_highlight_color: EV_COLOR is
+	default_highlight_color: EV_COLOR
 			-- Default highlight color
 		deferred
 		end

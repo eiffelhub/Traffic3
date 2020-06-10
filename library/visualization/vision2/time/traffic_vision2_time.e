@@ -15,7 +15,7 @@ create
 
 feature -- Basic operations
 
-	start is
+	start  
 			-- Start to count the time at (0:0:0).
 		local
 			t: TIME
@@ -27,7 +27,7 @@ feature -- Basic operations
 			simulated_ms_start := 0
 		end
 
-	pause is
+	pause
 			-- Pause the time count.
 		do
 			is_time_running := False
@@ -35,7 +35,7 @@ feature -- Basic operations
 			simulated_ms_start := actual_time.seconds*1000
 		end
 
-	resume is
+	resume
 			-- Resume the paused time.
 		local
 			t: TIME
@@ -46,7 +46,7 @@ feature -- Basic operations
 			real_ms_start := t.seconds*1000 + t.milli_second
 		end
 
-	reset is
+	reset
 			-- Reset the time to (0:0:0).
 		do
 			actual_time.set_hour (0)
@@ -59,7 +59,7 @@ feature -- Basic operations
 
 feature{NONE} -- Implementation		
 
-	update_time is
+	update_time
 			-- Update the time count
 		local
 			real_ms: INTEGER
@@ -85,7 +85,7 @@ feature{NONE} -- Implementation
 			end
 		end
 
-	application: EV_APPLICATION is
+	application: EV_APPLICATION
 			-- Application
 		once
 			Result := (create {EV_ENVIRONMENT}).application

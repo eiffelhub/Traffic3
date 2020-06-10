@@ -21,7 +21,7 @@ create
 
 feature -- Creation
 
-	make (a_label: like text; a_position: like position) is
+	make (a_label: like text; a_position: like position)
 			-- Create `a_label' at `a_position'
 		require
 			a_label_not_void: a_label /= Void
@@ -40,7 +40,7 @@ feature -- Creation
 
 feature -- Commands
 
-	set_font (a_font: like font) is
+	set_font (a_font: like font)
 			-- Change the font of the text to `a_font'.
 		require
 			a_font_not_void: a_font /= Void
@@ -52,7 +52,7 @@ feature -- Commands
 			not_valid: not is_valid
 		end
 
-	set_text (a_text: like text) is
+	set_text (a_text: like text)
 			-- Change the text to `a_text'.
 		require
 			a_text_not_void: a_text /= Void
@@ -64,7 +64,7 @@ feature -- Commands
 			not_valid: not is_valid
 		end
 
-	set_position (a_position: like position) is
+	set_position (a_position: like position)
 			-- Change the position of the text to `a_position'.
 		require
 			a_position_not_void: a_position /= Void
@@ -86,19 +86,19 @@ feature -- Access
 	text: STRING
 			-- The string
 
-	text_width: INTEGER is
+	text_width: INTEGER
 			-- Width of text
 		do
 			Result := font.width * text.count
 		end
 
-	text_height: INTEGER is
+	text_height: INTEGER
 			-- Height of text
 		do
 			Result := font.height
 		end
 
-	bounding_box : REAL_RECTANGLE is
+	bounding_box : REAL_RECTANGLE
 			-- The bounding box of the text
 		local
 			lower: REAL_COORDINATE
@@ -109,7 +109,7 @@ feature -- Access
 
 feature {EV_CANVAS} -- Display
 
-	draw_object is
+	draw_object
 			-- Draw the text label.
 		local
 			scaled_position : EV_COORDINATE

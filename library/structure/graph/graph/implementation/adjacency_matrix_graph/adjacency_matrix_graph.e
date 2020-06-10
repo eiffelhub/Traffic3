@@ -38,7 +38,7 @@ create
 
 feature {NONE} -- Initialization
 
-	make_empty_adjacency_matrix_graph is
+	make_empty_adjacency_matrix_graph
 			-- Make an empty adjacency matrix graph.
 		do
 			-- Make empty node array and edge set.
@@ -65,7 +65,7 @@ feature {NONE} -- Initialization
 
 feature -- Access
 
-	nodes,vertices: SET [like item] is
+	nodes,vertices: SET [like item]
 			-- All nodes of the graph
 		local
 			i: INTEGER
@@ -83,25 +83,25 @@ feature -- Access
 			end
 		end
 
-	edges: LIST [like edge_item] is
+	edges: LIST [like edge_item]
 			-- All edges of the graph
 		do
 			Result := internal_edges.twin
 		end
 
-	item: G is
+	item: G
 			-- Value of the currently focused node
 		do
 			Result := node_array.item (current_node_index)
 		end
 
-	target: like item is
+	target: like item
 			-- Item at the target of the current edge
 		do
 			Result := node_array.item (current_target_node_index)
 		end
 
-	edge_item: EDGE [like item, L] is
+	edge_item: EDGE [like item, L]
 			-- Current edge
 		do
 			if current_target_node_index /= -1 then
@@ -111,7 +111,7 @@ feature -- Access
 			end
 		end
 
-	incident_edges: LIST [like edge_item] is
+	incident_edges: LIST [like edge_item]
 			-- All incident edges of `item'
 		local
 			i: INTEGER
@@ -144,7 +144,7 @@ feature -- Access
 			end
 		end
 
-	incident_edge_labels: LIST [L] is
+	incident_edge_labels: LIST [L]
 			-- Labels of all incident edges of `item'
 		local
 			i: INTEGER
@@ -167,7 +167,7 @@ feature -- Access
 			end
 		end
 
-	edge_from_values (a_start_node, a_end_node: like item; a_label: L): like edge_item is
+	edge_from_values (a_start_node, a_end_node: like item; a_label: L): like edge_item
 			-- Edge that matches `a_start_node', `a_end_node' and `a_label'.
 			-- Result is Void if there is no match.
 			-- The cursor is not moved.
@@ -189,7 +189,7 @@ feature -- Access
 			end
 		end
 
-	node_identity: HASHABLE is
+	node_identity: HASHABLE
 			-- Object that identifies the current item
 		do
 			Result := current_node_index
@@ -204,13 +204,13 @@ feature -- Access
 
 feature -- Measurement
 
-	node_count: INTEGER is
+	node_count: INTEGER
 			-- Number of nodes in the graph
 		do
 			Result := node_array.count - inactive_nodes.count
 		end
 
-	edge_count: INTEGER is
+	edge_count: INTEGER
 			-- Number of edges in the graph
 		local
 			i, j: INTEGER
@@ -235,7 +235,7 @@ feature -- Measurement
 			end
 		end
 
-	in_degree: INTEGER is
+	in_degree: INTEGER
 			-- Number of incoming edges of `item'
 		local
 			i: INTEGER
@@ -253,7 +253,7 @@ feature -- Measurement
 			end
 		end
 
-	out_degree: INTEGER is
+	out_degree: INTEGER
 			-- Number of outgoing edges of `item'
 		local
 			i: INTEGER
@@ -277,13 +277,13 @@ feature -- Measurement
 
 feature -- Status report
 
-	has_multi_graph_support: BOOLEAN is
+	has_multi_graph_support: BOOLEAN
 			-- Are multigraphs supported by the current implementation?
 		do
 			Result := False
 		end
 
-	has_edge (a_edge: EDGE [like item, L]): BOOLEAN is
+	has_edge (a_edge: EDGE [like item, L]): BOOLEAN
 			-- Is `a_edge' part of the graph?
 		local
 			start_index, end_index: INTEGER
@@ -293,7 +293,7 @@ feature -- Status report
 			Result := a_edge.is_equal (adjacency_matrix.item (start_index, end_index))
 		end
 
-	has_edge_between (a_start_node, a_end_node: like item): BOOLEAN is
+	has_edge_between (a_start_node, a_end_node: like item): BOOLEAN
 			-- Are `a_start_node' and `a_end_node' directly connected?
 			-- Note: Edges are directed.
 		local
@@ -304,7 +304,7 @@ feature -- Status report
 			Result := adjacency_matrix.item (start_index, end_index) /= Void
 		end
 
-	has_cycles: BOOLEAN is
+	has_cycles: BOOLEAN
 			-- Does the graph contain cyclic (directed) paths?
 		local
 			i: INTEGER
@@ -327,22 +327,22 @@ feature -- Status report
 			end
 		end
 
-	after, off: BOOLEAN is
+	after, off: BOOLEAN
 			-- Does `cursor' currently denote a valid graph position?
 		do
 			Result := current_node_index = -1
 		end
 
-	Full: BOOLEAN is False
+	Full: BOOLEAN = False
 			-- Is the maximum number of nodes reached?
 
-	is_first_edge: BOOLEAN is
+	is_first_edge: BOOLEAN
 			-- Is the focused edge the first one?
 		do
 			Result := current_target_node_index = first_edge_index
 		end
 
-	is_last_edge: BOOLEAN is
+	is_last_edge: BOOLEAN
 			-- Is the focused edge the last one?
 		do
 			Result := current_target_node_index = last_edge_index
@@ -351,7 +351,7 @@ feature -- Status report
 	exhausted: BOOLEAN
 			-- Has `left' or `right' turned to the first link?
 
-	has_links: BOOLEAN is
+	has_links: BOOLEAN
 			-- Does the current node have outgoing edges (links)?
 		do
 			Result := current_target_node_index /= -1
@@ -383,7 +383,7 @@ feature -- New Cursor
 
 feature -- Cursor movement
 
-	start is
+	start
 			-- Turn to the first link.
 		do
 			find_first_edge_index
@@ -401,7 +401,7 @@ feature -- Cursor movement
 			exhausted := current_target_node_index = -1
 		end
 
-	left is
+	left
 			-- Turn one edge to the left.
 		local
 			i: INTEGER
@@ -429,7 +429,7 @@ feature -- Cursor movement
 			end
 		end
 
-	right is
+	right
 			-- Turn one edge to the right.
 		local
 			i: INTEGER
@@ -454,7 +454,7 @@ feature -- Cursor movement
 			end
 		end
 
-	forth is
+	forth
 			-- Walk along the currently focused edge.
 		do
 			history_stack.put (cursor)
@@ -462,7 +462,7 @@ feature -- Cursor movement
 			start
 		end
 
-	search (a_item: like item) is
+	search (a_item: like item)
 			-- Move to `a_item'. If no such position exists, `off' will be true.
 		local
 			i: INTEGER
@@ -489,7 +489,7 @@ feature -- Cursor movement
 
 feature -- Element change
 
-	put_node (a_item: like item) is
+	put_node (a_item: like item)
 			-- Insert a new node in the graph if it is not already present.
 			-- The cursor is not moved.
 		local
@@ -524,7 +524,7 @@ feature -- Element change
 			end
 		end
 
-	put_edge (a_start_node, a_end_node: like item; a_label: L) is
+	put_edge (a_start_node, a_end_node: like item; a_label: L)
 			-- Create an edge between `a_start_node' and `a_end_node'
 			-- and set its label to `a_label'.
 			-- For symmetric graphs, another edge is inserted in the opposite direction.
@@ -554,7 +554,7 @@ feature -- Element change
 
 feature -- Removal
 
-	prune_node (a_item: like item) is
+	prune_node (a_item: like item)
 			-- Remove `a_item' and all of its incident edges from the graph.
 			-- `off' will be set when `item' is removed.
 			-- The cursor will turn right if `target' is removed.
@@ -596,7 +596,7 @@ feature -- Removal
 			end
 		end
 
-	prune_edge (a_edge: EDGE [like item, L]) is
+	prune_edge (a_edge: EDGE [like item, L])
 			-- Remove `a_edge' from the graph.
 			-- The cursor will turn right if `current_egde' is removed.
 		do
@@ -604,7 +604,7 @@ feature -- Removal
 			prune_edge_between (a_edge.start_node, a_edge.end_node)
 		end
 
-	prune_edge_between (a_start_node, a_end_node: like item) is
+	prune_edge_between (a_start_node, a_end_node: like item)
 			-- Remove the edge connecting `a_start_node' and `a_end_node'.
 			-- This operation is only permitted on simple graphs because of ambiguity.
 			-- The cursor will turn right if `edge_item' is removed.
@@ -652,7 +652,7 @@ feature -- Duplication
 
 feature -- Miscellaneous
 
-	compact_adjacency_matrix is
+	compact_adjacency_matrix
 			-- Shrink adjacency to minimal size.
 			-- The matrix is not resized when a node is removed for performance reasons.
 			-- This routine resizes the matrix to node_count*node_count.
@@ -696,7 +696,7 @@ feature -- Basic operations
 
 feature -- Output
 
-	out: STRING is
+	out: STRING
 			-- Textual representation of the graph
 		local
 			i, j: INTEGER
@@ -778,7 +778,7 @@ feature {NONE} -- Implementation
 
 
 
-	empty_graph: like Current is
+	empty_graph: like Current
 			-- Empty graph with the same actual type than `Current'
 		do
 			if is_simple_graph then
@@ -789,7 +789,7 @@ feature {NONE} -- Implementation
 		end
 
 
-	find_first_edge_index is
+	find_first_edge_index
 			-- Find the first edge for the current node.
 		require
 			not_off: not off
@@ -813,7 +813,7 @@ feature {NONE} -- Implementation
 			end
 		end
 
-	find_last_edge_index is
+	find_last_edge_index
 			-- Find the last edge for the current node.
 		require
 			not_off: not off
@@ -837,7 +837,7 @@ feature {NONE} -- Implementation
 			end
 		end
 
-	valid_index (i: INTEGER): BOOLEAN is
+	valid_index (i: INTEGER): BOOLEAN
 			-- Is `i' a valid index for `node_array'?
 		require
 			positive: i > 0
@@ -845,32 +845,32 @@ feature {NONE} -- Implementation
 			Result := (i <= node_array.count) and not inactive_nodes.has (i)
 		end
 
-	invalidate_cursor is
+	invalidate_cursor
 			-- Invalidate cursor. `off' will be set to true.
 		do
 			current_node_index := -1
 			current_target_node_index := -1
 		end
 
-	set_path_found (a_value: BOOLEAN) is
+	set_path_found (a_value: BOOLEAN)
 			-- Set `path_found' to `a_value'.
 		do
 			path_found := a_value
 		end
 
-	set_merge_succeeded (a_value: BOOLEAN) is
+	set_merge_succeeded (a_value: BOOLEAN)
 			-- Set `merge_succeeded' to `a_value'.
 		do
 			merge_succeeded := a_value
 		end
 
-	set_is_simple_graph (a_value: BOOLEAN) is
+	set_is_simple_graph (a_value: BOOLEAN)
 			-- Set `is_simple_graph' to `a_value'.
 		do
 			is_simple_graph := a_value
 		end
 
-	set_is_symmetric_graph (a_value: BOOLEAN) is
+	set_is_symmetric_graph (a_value: BOOLEAN)
 			-- Set `is_symmetric_graph' to `a_value'.
 		do
 			is_symmetric_graph := a_value

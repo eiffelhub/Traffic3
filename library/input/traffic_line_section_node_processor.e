@@ -29,7 +29,7 @@ feature -- Access
 
 feature -- Basic operations
 
-	process 
+	process
 			-- Process node.
 		local
 			line: TRAFFIC_LINE
@@ -89,7 +89,7 @@ feature -- Basic operations
 			end
 		end
 
-	process_subnodes is
+	process_subnodes 
 			-- Process subnodes.
 		local
 			n: XM_ELEMENT

@@ -38,7 +38,7 @@ feature -- Access
 
 feature -- Measurement
 
-	min: like item is
+	min: like item
 			-- Minimum item stored in tree
 		require
 			is_sorted
@@ -48,7 +48,7 @@ feature -- Measurement
 			min_item: not is_empty implies Result /= Void
 		end
 
-	max: like item is
+	max: like item
 			-- Maximum item stored in tree
 		require
 			is_sorted
@@ -58,14 +58,14 @@ feature -- Measurement
 			max_item: not is_empty implies Result /= Void
 		end
 
-	height: INTEGER is
+	height: INTEGER
 			-- Tree height
 		deferred
 		end
 
 feature -- Status report
 
-	changeable_comparison_criterion: BOOLEAN is
+	changeable_comparison_criterion: BOOLEAN
 			-- May `object_comparison' be changed?
 			-- (Answer: `No' because there must not be duplicate items
 			-- in a balanced tree).
@@ -73,7 +73,7 @@ feature -- Status report
 			Result := False
 		end
 
-	has (v: like item): BOOLEAN is
+	has (v: like item): BOOLEAN 
 			-- Does subtree include `v'?
 			-- (Reference of object equality,
 			-- based on `object_comparison'.)
@@ -84,29 +84,29 @@ feature -- Status report
 			sorted_tree: is_sorted
 		end
 
-	is_sorted: BOOLEAN is
+	is_sorted: BOOLEAN
 			-- Are all tree items in sorted order?
 			-- (Order can be destroyed by modifying
 			-- item values after insertion in tree.)
 		deferred
 		end
 
-	is_valid_balanced_search_tree: BOOLEAN is
+	is_valid_balanced_search_tree: BOOLEAN
 			-- Is tree sorted and are all items unique?
 			-- (item values may have changed after insertion)
 		do
 			Result := is_sorted and has_unique_items
 		end
 
-	has_unique_items: BOOLEAN is
+	has_unique_items: BOOLEAN
 			-- Are all items unique?
 		deferred
 		end
 
-	child_writable: BOOLEAN is False
+	child_writable: BOOLEAN = False
 			-- Is there a current `child_item' that may be modified?
 
-	writable_child: BOOLEAN is False
+	writable_child: BOOLEAN = False
 			-- Is there a current child that may be modified?
 			-- False because balanced trees are self-organizing.
 
@@ -116,7 +116,7 @@ feature -- Cursor movement
 
 feature -- Element change
 
-	put, extend (v: G) is
+	put, extend (v: G)
 			-- Put `v' at proper position in tree
 			-- (unless `v' exists already).
 			-- (Reference or object equality,
@@ -132,7 +132,7 @@ feature -- Element change
 
 feature -- Removal
 
-	prune (v: G) is
+	prune (v: G)
 			-- Remove `v' from tree if `v' exists.
 			-- (Reference or object equality,
 			-- based on `object_comparison'.)
@@ -156,7 +156,7 @@ feature -- Miscellaneous
 
 feature -- Basic operations
 
-	sort is
+	sort
 			-- Restore order of all elements and balance tree.
 			-- Necessary when item values have changed after insertion in tree.
 			-- Note that duplicate item values will be removed (object comparison).
@@ -169,38 +169,38 @@ feature -- Obsolete
 
 feature {BALANCED_SEARCH_TREE} -- Inapplicable
 
-	forget_left is
+	forget_left
 			-- Forget all left siblings.
 		do
 		end
 
-	forget_right is
+	forget_right
 			-- Forget all right siblings.
 		do
 		end
 
-	wipe_out is
+	wipe_out
 			-- Remove all children.
 		do
 		end
 
-	tree_put, replace (v: like item) is
+	tree_put, replace (v: like item)
 			-- Replace element at cursor position by `v'.
 		do
 		end
 
-	put_child (n: like parent) is
+	put_child (n: like parent)
 			-- Add `n' to the list of children.
 			-- Do not move child cursor.
 		do
 		end
 
-	replace_child (n: like parent) is
+	replace_child (n: like parent)
 			-- Put `n' at current child position.
 		do
 		end
 
-	child_put, child_replace (v: like item) is
+	child_put, child_replace (v: like item)
 			-- Put `v' at current child position.
 		do
 		end

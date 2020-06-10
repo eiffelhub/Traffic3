@@ -16,7 +16,7 @@ create
 
 feature -- Creation
 
-	make (a_x, a_y: REAL_64) is
+	make (a_x, a_y: REAL_64)
 			-- Assign `a_x' to `x' and `a_y' to `y'.
 		do
 			x := a_x
@@ -36,31 +36,31 @@ feature -- Access
 
 feature -- Calculations
 
-	right_by (a_value: REAL_64): like Current is
+	right_by (a_value: REAL_64): like Current
 			-- Return a new point `a_value' right of the current point
 		do
 			create Result.make (x + a_value, y)
 		end
 
-	up_by (a_value: REAL_64) : like Current is
+	up_by (a_value: REAL_64) : like Current
 			-- Return a new point `a_value' above of the current point
 		do
 			create Result.make(x, y + a_value)
 		end
 
-	down_by (a_value: REAL_64) : like Current is
+	down_by (a_value: REAL_64) : like Current
 			-- Return a new point `a_value' right of the current point
 		do
 			create Result.make (x, y - a_value)
 		end
 
-	left_by (a_value: REAL_64) : like Current is
+	left_by (a_value: REAL_64) : like Current
 			-- Return a new point `a_value' above of the current point
 		do
 			create Result.make (x - a_value, y)
 		end
 
-	add  alias "+" (other: like Current): like Current is
+	add  alias "+" (other: like Current): like Current
 			-- Add `other' to `Current'
 		require
 			other_not_void: other /= Void
@@ -68,7 +68,7 @@ feature -- Calculations
 			create Result.make (x + other.x, y + other.y)
 		end
 
-	subtract alias "-" (other: like Current): like Current is
+	subtract alias "-" (other: like Current): like Current
 			-- Subtract `other' from `Current'
 		require
 			other_not_void: other /= Void
@@ -76,13 +76,13 @@ feature -- Calculations
 			create Result.make (x - other.x, y - other.y)
 		end
 
-	multiply alias "*" (a_factor: REAL_64): like Current is
+	multiply alias "*" (a_factor: REAL_64): like Current
 			-- Scalar multiplication by `a_factor'
 		do
 			create Result.make (x * a_factor, y * a_factor)
 		end
 
-	distance (a_coordinate: like Current): REAL_64 is
+	distance (a_coordinate: like Current): REAL_64
 			-- Distance between Current and `a_coordinate'
 		local
 			c: REAL_COORDINATE
@@ -93,7 +93,7 @@ feature -- Calculations
 
 feature -- Output
 
-	out: STRING is
+	out: STRING
 			-- Textual representation
 		do
 			Result := "(X: " + x.out + ", Y: " + y.out + ")"

@@ -14,7 +14,7 @@ inherit
 
 feature -- Access
 
-	run (a_console: TRAFFIC_CONSOLE; a_main_window: TRAFFIC_MAIN_WINDOW) is
+	run (a_console: TRAFFIC_CONSOLE; a_main_window: TRAFFIC_MAIN_WINDOW)  
 			-- Run the example code defined in `explore'.
 		require
 			a_console_exists: a_console /= Void
@@ -29,7 +29,7 @@ feature -- Access
 
 feature  -- Example main feature
 
-	explore_at_startup is
+	explore_at_startup
 			-- Executed on startup.
 		do
 		end
@@ -46,7 +46,7 @@ feature -- Status report
 
 feature -- Access (Paris)
 
-	Paris: TRAFFIC_CITY is
+	Paris: TRAFFIC_CITY
 			-- Object representing the city of Paris
 		local
 			loader: TRAFFIC_MAP_LOADER
@@ -77,7 +77,7 @@ feature -- Access (Paris)
 			end
 		end
 
-	Zurich: TRAFFIC_CITY is
+	Zurich: TRAFFIC_CITY
 			-- Object representing the city of Zurich
 		local
 			loader: TRAFFIC_MAP_LOADER
@@ -110,7 +110,7 @@ feature -- Access (Paris)
 
 feature -- Basic operations
 
-	show_spot (a_location: TRAFFIC_POINT) is
+	show_spot (a_location: TRAFFIC_POINT)
 			-- Show a yellow small spot at `a_location' for `Wait_time' seconds.
 		local
 			s: DRAWABLE_SPOT
@@ -124,7 +124,7 @@ feature -- Basic operations
 			main_window.canvas.object_list.delete (s)
 		end
 
-	show_big_red_spot (a_location: TRAFFIC_POINT) is
+	show_big_red_spot (a_location: TRAFFIC_POINT)
 			--  Show a red big spot at `a_location' for `Wait_time' seconds.
 		local
 			s: DRAWABLE_SPOT
@@ -138,7 +138,7 @@ feature -- Basic operations
 			main_window.canvas.object_list.delete (s)
 		end
 
-	show_blinking_spot (a_location: TRAFFIC_POINT) is
+	show_blinking_spot (a_location: TRAFFIC_POINT)
 			--  Show blinking green spot
 		local
 			s: DRAWABLE_SPOT
@@ -158,7 +158,7 @@ feature -- Basic operations
 			wait
 		end
 
-	show_green_spot (a_location: TRAFFIC_POINT) is
+	show_green_spot (a_location: TRAFFIC_POINT)
 			-- Show a green medium spot at `a_location' for `Wait_time' seconds.
 		local
 			s: DRAWABLE_SPOT

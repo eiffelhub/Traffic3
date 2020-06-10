@@ -11,7 +11,7 @@ inherit
 
 feature {NONE} -- Access
 
-	error_text (a_code: INTEGER): STRING is
+	error_text (a_code: INTEGER): STRING
 			-- Raw error text for error `a_code'
 		do
 			inspect
@@ -71,59 +71,59 @@ feature {NONE} -- Access
 
 feature {NONE} -- Constants
 
-	Unknown_subnode: INTEGER is 1
+	Unknown_subnode: INTEGER = 1
 
-	Mandatory_attribute_missing: INTEGER is 2
+	Mandatory_attribute_missing: INTEGER = 2
 
-	Unknown_node_processor: INTEGER is 3
+	Unknown_node_processor: INTEGER = 3
 
-	Wrong_attribute_type: INTEGER is 4
+	Wrong_attribute_type: INTEGER = 4
 
-	Wrong_property_value: INTEGER is 5
+	Wrong_property_value: INTEGER = 5
 
-	Incorrect_property: INTEGER is 6
+	Incorrect_property: INTEGER = 6
 
-	Unknown_source: INTEGER is 7
+	Unknown_source: INTEGER = 7
 
-	Unknown_destination: INTEGER is 8
+	Unknown_destination: INTEGER = 8
 
-	Unknown_line: INTEGER is 9
+	Unknown_line: INTEGER = 9
 
-	Missing_line: INTEGER is 10
+	Missing_line: INTEGER = 10
 
-	Duplicate_name: INTEGER is 11
+	Duplicate_name: INTEGER = 11
 
-	Invalid_line_section: INTEGER is 12
+	Invalid_line_section: INTEGER = 12
 
-	Invalid_option: INTEGER is 13
+	Invalid_option: INTEGER = 13
 
---	Unknown_station: INTEGER is 14
+--	Unknown_station: INTEGER = 14
 
-	Unknown_route_type: INTEGER is 15
+	Unknown_route_type: INTEGER = 15
 
-	Wrong_color_value: INTEGER is 16
+	Wrong_color_value: INTEGER = 16
 
-	File_not_readable: INTEGER is 17
+	File_not_readable: INTEGER = 17
 
-	Invalid_file_name: INTEGER is 18
+	Invalid_file_name: INTEGER = 18
 
-	Wrong_position: INTEGER is 19
+	Wrong_position: INTEGER = 19
 
-	Invalid_parent_node: INTEGER is 20
+	Invalid_parent_node: INTEGER = 20
 
-	Invalid_attribute_value: INTEGER is 21
+	Invalid_attribute_value: INTEGER = 21
 
-	Invalid_incoming_line_section: INTEGER is 22
+	Invalid_incoming_line_section: INTEGER = 22
 
-	Invalid_outgoing_line_section: INTEGER is 23
+	Invalid_outgoing_line_section: INTEGER = 23
 
-	Duplicate_id: INTEGER is 24
+	Duplicate_id: INTEGER = 24
 
-	Too_few_points: INTEGER is 25
+	Too_few_points: INTEGER = 25
 
-	Mandatory_subnode_missing: INTEGER is 26
+	Mandatory_subnode_missing: INTEGER = 26
 
-	No_road_with_given_id_exists: INTEGER is 27
+	No_road_with_given_id_exists: INTEGER = 27
 
 end
 

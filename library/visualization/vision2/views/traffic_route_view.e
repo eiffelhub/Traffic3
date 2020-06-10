@@ -37,7 +37,7 @@ create
 
 feature -- Initialization
 
-	make (a_item: like item) is
+	make (a_item: like item)
 			-- Initialize view for `a_item'.
 		local
 			conns: DS_LINKED_LIST [TRAFFIC_SEGMENT]
@@ -72,24 +72,24 @@ feature -- Initialization
 
 feature -- Constants
 
-	default_color: EV_COLOR is
+	default_color: EV_COLOR
 			-- Default color
 		once
 			create Result.make_with_8_bit_rgb (255, 0, 0)
 		end
 
-	default_highlight_color: EV_COLOR is
+	default_highlight_color: EV_COLOR
 			-- Default highlight color
 		once
 			create Result.make_with_8_bit_rgb (0, 255, 0)
 		end
 
-	Default_highlight_width_delta: INTEGER is 5
+	Default_highlight_width_delta: INTEGER = 5
 			-- Delta to make lines thicker when highlighted
 
 feature -- Basic operations
 
-	update is
+	update
 			-- Update to reflect changes in city item.
 		do
 			if item.is_illuminated then
@@ -99,7 +99,7 @@ feature -- Basic operations
 			end
 		end
 
-	highlight is
+	highlight
 			-- Highlight the view.
 		local
 			l: DRAWABLE_POLYLINE
@@ -141,7 +141,7 @@ feature -- Basic operations
 			is_highlighted := True
 		end
 
-	unhighlight is
+	unhighlight
 			-- Unhighlight the view.
 		local
 			l: DRAWABLE_POLYLINE
@@ -183,7 +183,7 @@ feature -- Basic operations
 			is_highlighted := False
 		end
 
-	set_color (a_color: TRAFFIC_COLOR) is
+	set_color (a_color: TRAFFIC_COLOR)
 			-- Set the color of the view to `a_color'.
 		local
 			l: DRAWABLE_POLYLINE
@@ -225,7 +225,7 @@ feature -- Basic operations
 			end
 		end
 
-	set_highlight_color (a_color: TRAFFIC_COLOR) is
+	set_highlight_color (a_color: TRAFFIC_COLOR)
 			-- Set the color of the view to `a_color'.
 		local
 			l: DRAWABLE_POLYLINE
@@ -275,7 +275,7 @@ feature -- Access
 
 feature {NONE} -- Implementation
 
-	new_connection_view (a_item: TRAFFIC_SEGMENT): DRAWABLE_POLYLINE is
+	new_connection_view (a_item: TRAFFIC_SEGMENT): DRAWABLE_POLYLINE
 			-- Generate connection view for `a_item'.
 		local
 			pp: ARRAY [REAL_COORDINATE]
@@ -295,7 +295,7 @@ feature {NONE} -- Implementation
 			Result_exists: Result /= Void
 		end
 
-	new_station_view (a_item: TRAFFIC_STATION): DRAWABLE_ROUNDED_RECTANGLE is
+	new_station_view (a_item: TRAFFIC_STATION): DRAWABLE_ROUNDED_RECTANGLE
 			-- Generate view for `a_item'.
 		do
 			create Result.make (create {REAL_COORDINATE}.make ((a_item.location.x-(a_item.width/2).max(5)), (-a_item.location.y-(a_item.breadth/2).max(5))),

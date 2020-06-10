@@ -23,7 +23,7 @@ create
 
 feature {NONE} -- Initialization
 
-	make_directed (a_start_node, a_end_node: G; a_label: L) is
+	make_directed (a_start_node, a_end_node: G; a_label: L)
 			-- Make a directed edge from `a_start_node' to `a_end_node' with label `a_label'.
 		require
 			nodes_not_void: a_start_node /= Void and a_end_node /= Void
@@ -41,7 +41,7 @@ feature {NONE} -- Initialization
 			is_directed: is_directed
 		end
 
-	make_undirected (a_start_node, a_end_node: G; a_label: L) is
+	make_undirected (a_start_node, a_end_node: G; a_label: L)
 			-- Make an undirected edge from `a_start_node' to a_end_node' with label `a_label'.
 		require
 			nodes_not_void: a_start_node /= Void and a_end_node /= Void
@@ -70,7 +70,7 @@ feature -- Access
 	label: L
 			-- Label of the edge
 
-	opposite_node (a_node: G): G is
+	opposite_node (a_node: G): G
 			-- Node at the opposite end of `a_node'
 			-- Only allowed for undirected edges.
 		require
@@ -89,7 +89,7 @@ feature -- Measurement
 
 feature -- Status report
 
-	is_loop: BOOLEAN is
+	is_loop: BOOLEAN
 			-- Is the current edge a loop?
 		do
 			Result := start_node.is_equal (end_node)
@@ -100,7 +100,7 @@ feature -- Status report
 
 feature -- Comparison
 
-	is_equal (other: like Current): BOOLEAN is
+	is_equal (other: like Current): BOOLEAN
 			-- Is `other' attached to an object considered
 			-- equal to current object?
 		do
@@ -120,7 +120,7 @@ feature -- Comparison
 
 feature -- Status setting
 
-	set_label (a_label: L) is
+	set_label (a_label: L)
 			-- Set the label of `Current'.
 		do
 			label := a_label
@@ -134,7 +134,7 @@ feature -- Resizing
 
 feature {GRAPH} -- Transformation
 
-	flip is
+	flip
 			-- Flip the nodes of an undirected edge.
 		require
 			undirected_edge: not is_directed
@@ -158,7 +158,7 @@ feature -- Basic operations
 
 feature -- Output
 
-	out: STRING is
+	out: STRING 
 			-- Textual representation of the edge
 		do
 			Result := start_node.out

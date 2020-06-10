@@ -18,13 +18,13 @@ create
 
 feature -- Access
 
-	Name: STRING is "landmark"
+	Name: STRING = "landmark"
 			-- Name of node to process
 
 	station: TRAFFIC_STATION
 			-- Reference to node
 
-	Mandatory_attributes: ARRAY [STRING] is
+	Mandatory_attributes: ARRAY [STRING]
 			-- Table of mandatory attributes
 		once
 			Result := << "name", "x", "y", "filename">>
@@ -33,7 +33,7 @@ feature -- Access
 
 feature -- Basic operations
 
-	process is
+	process 
 			-- Process node.
 		do
 			if not has_attribute ("name") then
@@ -56,7 +56,7 @@ feature -- Basic operations
 			end
 		end
 
-	process_subnodes is
+	process_subnodes
 			-- Process subnodes.
 		local
 			n: XM_ELEMENT

@@ -23,7 +23,7 @@ create
 
 feature -- Initialization
 
-	make_with_filename (a_item: like item; a_filename: STRING) is
+	make_with_filename (a_item: like item; a_filename: STRING)  
 			-- Initialize view for `a_item'.
 		require
 			a_filename_valid: a_filename /= Void and then not a_filename.is_empty
@@ -51,14 +51,14 @@ feature -- Initialization
 			internal_color_exists: internal_color /= Void
 		end
 
-	define is
+	define
 			-- Do nothing.
 		do
 		end
 
 feature -- Basic operations
 
-	update is
+	update
 			-- Update view to represent item.
 		do
 			if item.is_spotlighted then
@@ -71,7 +71,7 @@ feature -- Basic operations
 			icon.set_position (create {REAL_COORDINATE}.make (item.corner_1.x, -item.corner_3.y))
 		end
 
-	set_color (a_color: TRAFFIC_COLOR) is
+	set_color (a_color: TRAFFIC_COLOR)
 			-- Set the color of the view to `a_color'.
 		do
 			color := a_color
@@ -86,7 +86,7 @@ feature -- Basic operations
 			end
 		end
 
-	set_highlight_color (a_color: TRAFFIC_COLOR) is
+	set_highlight_color (a_color: TRAFFIC_COLOR)
 			-- Set the color of the view to `a_color'.
 		do
 			highlight_color := a_color
@@ -101,7 +101,7 @@ feature -- Basic operations
 			end
 		end
 
-	highlight is
+	highlight
 			-- Highlight the view.
 		do
 			if highlight_color /= Void then
@@ -114,7 +114,7 @@ feature -- Basic operations
 			is_highlighted := True
 		end
 
-	unhighlight is
+	unhighlight
 			-- Unhighlight the view.
 		do
 			if color /= Void then

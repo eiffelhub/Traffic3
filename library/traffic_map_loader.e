@@ -19,7 +19,7 @@ create
 
 feature -- Initialization
 
-	make (a_filename: STRING) is
+	make (a_filename: STRING)
 			-- Sets all necessary pathnames if the directory and the xml-file specified by `a_filename' exists.
 		require
 			a_filename_exists: a_filename /= Void
@@ -44,7 +44,7 @@ feature -- Initialization
 
 feature -- Basic operations
 
-	load_map is
+	load_map
 			-- Load map if available from dump file, else from xml file.
 			-- If map loading was unsuccessful, has_error will be set to `True'.
 		local
@@ -81,7 +81,7 @@ feature -- Status report
 
 feature -- Status setting
 
-	enable_dump_loading is
+	enable_dump_loading
 			-- Set `is_dump_loading_enabled' to `True'.
 		do
 			is_dump_loading_enabled := True
@@ -89,7 +89,7 @@ feature -- Status setting
 			dump_loading_enabled: is_dump_loading_enabled
 		end
 
-	disable_dump_loading is
+	disable_dump_loading
 			-- Set `is_dump_loading_enabled' to `False'.
 		do
 			is_dump_loading_enabled := False
@@ -116,7 +116,7 @@ feature {NONE} -- Implementation
 	dump_filename: STRING
 			-- Location of the dump-File
 
-	get_from_xml is
+	get_from_xml
 			-- Initialize with map loaded from file with `a_filename'.
 			-- (either `a_filename' is an absolute path
 			--  or relative to current working directory)
@@ -144,7 +144,7 @@ feature {NONE} -- Implementation
 			end
 		end
 
-	get_from_dump is
+	get_from_dump
 			-- Getting the dumped map
 		require
 			dump_file_exists: dump_filename /= Void and then file_system.file_exists (dump_filename)
@@ -165,7 +165,7 @@ feature {NONE} -- Implementation
 			retry
 		end
 
-	is_dump_up_to_date: BOOLEAN is
+	is_dump_up_to_date: BOOLEAN
 			-- Is the dump file up to date?
 		require
 			log_file_exists: log_filename /= Void and then file_system.file_exists (log_filename)
@@ -199,7 +199,7 @@ feature {NONE} -- Implementation
 			log_file.close
 		end
 
-	create_dump is
+	create_dump
 			-- Write map to dump file.
 		require
 			dump_file_exists: dump_filename /= Void and then not dump_filename.is_empty

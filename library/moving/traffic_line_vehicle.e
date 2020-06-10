@@ -12,7 +12,7 @@ inherit
 
 feature -- Element change
 
-	set_line (a_line: TRAFFIC_LINE) is
+	set_line (a_line: TRAFFIC_LINE)
 			-- Set `line' to `a_line' and initialize position, etc.
 		require
 			a_line_exists: a_line /= Void
@@ -29,7 +29,7 @@ feature -- Element change
 			line_set: line = a_line
 		end
 
-	set_to_station (a_station: TRAFFIC_STATION) is
+	set_to_station (a_station: TRAFFIC_STATION)
 			-- Set the line vehicle to `a_station'.
 		require
 			a_station_not_void: a_station /= Void
@@ -78,7 +78,7 @@ feature --Access
 
 feature -- Status report
 
-	is_valid_line (a_line: TRAFFIC_LINE): BOOLEAN is
+	is_valid_line (a_line: TRAFFIC_LINE): BOOLEAN
 			-- Is `a_line' a valid line for `Current'?
 		require
 			a_line_exists: a_line /= Void
@@ -91,7 +91,7 @@ feature -- Basic operations
 
 feature{NONE} --Implementation		
 
-	move_next is
+	move_next
 			-- Set the positions to the corresponding ones of the line segments.
 		do
 			origin :=  poly_cursor.item

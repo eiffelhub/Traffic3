@@ -23,7 +23,7 @@ create
 
 feature {NONE} -- Initialisation
 
-	make_xyzt (a_x, a_y, a_z, a_t: G) is
+	make_xyzt (a_x, a_y, a_z, a_t: G)
 			-- Initialise `Current' with values `a_x' `a_y' `a_z' `a_t'.
 		require
 			a_x_not_void: a_x /= Void
@@ -42,7 +42,7 @@ feature {NONE} -- Initialisation
 
 feature -- Access
 
-	t: G is
+	t: G
 			-- Fourth element
 		do
 			Result := array @ (3)
@@ -52,7 +52,7 @@ feature -- Access
 
 feature -- Element change
 
-	set_xyzt (a_x, a_y, a_z, a_t: G) is
+	set_xyzt (a_x, a_y, a_z, a_t: G) 
 			-- Set the values to `a_x' `a_y' `a_z' `a_t'.
 		require
 			a_x_not_void: a_x /= Void
@@ -73,7 +73,7 @@ feature -- Element change
 
 feature -- Support
 
-	out, debug_output: STRING is
+	out, debug_output: STRING
 			-- Convert to string.
 		do
 			create Result.make_from_string (x.out+"/"+y.out+"/"+z.out)

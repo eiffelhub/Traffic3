@@ -38,7 +38,7 @@ inherit
 
 feature -- Initialization
 
-	make_empty is
+	make_empty 
 			-- Initialize `scale_factor'.
 		do
 			scale_factor := 1
@@ -50,7 +50,7 @@ feature -- Initialization
 
 feature -- Access
 
-	count: INTEGER is
+	count: INTEGER
 			-- Number of legs (route_sections)
 		local
 			l: TRAFFIC_LEG
@@ -68,7 +68,7 @@ feature -- Access
 	first: TRAFFIC_LEG
 			-- First leg
 
-	last: TRAFFIC_LEG is
+	last: TRAFFIC_LEG
 			-- Last route leg
 		do
 			if first /= Void then
@@ -83,7 +83,7 @@ feature -- Access
 		end
 
 
-	origin: TRAFFIC_STATION is
+	origin: TRAFFIC_STATION
 			-- Origin of the route
 		require
 			first_exists: first /= Void
@@ -91,7 +91,7 @@ feature -- Access
 			Result := first.origin
 		end
 
-	destination: TRAFFIC_STATION is
+	destination: TRAFFIC_STATION
 			-- Destination of the route
 		require
 			first_exists: first /= Void
@@ -99,7 +99,7 @@ feature -- Access
 			Result := segments.last.destination
 		end
 
-	segments: DS_LINKED_LIST [TRAFFIC_SEGMENT] is
+	segments: DS_LINKED_LIST [TRAFFIC_SEGMENT]
 			-- All segments traveled by the route
 		require
 			first_exists: first /= Void
@@ -150,19 +150,19 @@ feature -- Access
 
 feature -- Status report
 
-	is_insertable (a_city: TRAFFIC_CITY): BOOLEAN is
+	is_insertable (a_city: TRAFFIC_CITY): BOOLEAN
 			-- Is `Current' insertable into `a_city'?
 		do
 			Result := True
 		end
 
-	is_removable: BOOLEAN is
+	is_removable: BOOLEAN
 			-- Is `Current' removable from `a_city'?
 		do
 			Result := True
 		end
 
-	is_valid_for_insertion (a_connection: TRAFFIC_SEGMENT): BOOLEAN is
+	is_valid_for_insertion (a_connection: TRAFFIC_SEGMENT): BOOLEAN
 			-- Is `a_connection' valid for insertion?
 		require
 			connection_exists: a_connection /= Void
@@ -194,7 +194,7 @@ feature -- Status report
 
 feature -- Output
 
-	out: STRING is
+	out: STRING
 			-- Description providing information about the route
 		local
 			leg: TRAFFIC_LEG
@@ -255,7 +255,7 @@ feature -- Output
 feature -- Basic operations
 
 
-	animate is
+	animate
 			-- Create passenger that walks along `Current', add it to city, and make it start walking.
 		require
 			city_has_route: is_in_city
@@ -268,7 +268,7 @@ feature -- Basic operations
 		end
 
 
-	extend(a_leg: TRAFFIC_LEG) is
+	extend(a_leg: TRAFFIC_LEG)
 			-- Extends current with `a_leg' at the end
 		require
 			leg_exists: a_leg /= void
@@ -288,7 +288,7 @@ feature -- Basic operations
 		end
 
 
-	append (a_route: TRAFFIC_ROUTE) is
+	append (a_route: TRAFFIC_ROUTE)
 			-- Append a TRAFFIC_ROUTE `a_route' at the end of the actual route
 		require
 			route_exists: a_route /= VOID
@@ -308,7 +308,7 @@ feature -- Basic operations
 			end
 		end
 
-	set_first(a_leg: TRAFFIC_LEG) is
+	set_first(a_leg: TRAFFIC_LEG)
 			-- sets pointer 'first' to the 'a_leg'
 		require
 			a_leg_exists: a_leg /= Void
@@ -319,7 +319,7 @@ feature -- Basic operations
 			end
 		end
 
-	set_scale_factor (a_scale_factor: REAL_64) is
+	set_scale_factor (a_scale_factor: REAL_64)
 			-- sets the scale factor
 		require
 			a_scale_factor_exists: a_scale_factor /= Void
@@ -341,7 +341,7 @@ feature -- Iteration
 
 feature -- Cursor movement
 
-	start is
+	start
 			-- Move to first position if any.
 		do
 			if first /= Void then
@@ -352,7 +352,7 @@ feature -- Cursor movement
 			end
 		end
 
-	forth is
+	forth
 			-- Move to next position; if no next position,
 			-- ensure that `exhausted' will be true.
 		do
@@ -363,7 +363,7 @@ feature -- Cursor movement
 			end
 		end
 
-	finish is
+	finish
 			-- Move cursor to last position.
 			-- (Go before if empty)
 		do
