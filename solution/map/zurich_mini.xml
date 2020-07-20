@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<!DOCTYPE city SYSTEM "map.dtd"> 
+<map name="Zurich (little)" scale_factor="5.52" center_x="468.5" center_y="162.5" radius="468.5"> 
+
+<description text="kleine zurich city map."/>
+
+<places>
+
+	<place name="Bahnhof Stadelhofen"/>
+	<place name="Bellevue"/>
+	<place name="Boersenstrasse"/>
+	<place name="Buerkliplatz"/>
+	<place name="Central"/>
+	<place name="Hauptbahnhof"/>
+	<place name="Helmhaus"/>
+	<place name="Kunsthaus"/>
+	<place name="Neumarkt"/>
+	<place name="Paradeplatz"/>
+	<place name="Rennweg"/>
+	<place name="Rathaus"/>
+	<place name="Rudolf-Brun-Bruecke"/>
+
+</places>
+
+<roads>
+
+<!--roads-->
+
+	<road id="1" from="Paradeplatz" to="Boersenstrasse" direction="undirected" type="lightrail">
+		        <point x="660" y="235"/> 
+		        <point x="740" y="315"/>
+	</road>
+	<road id="2" from="Boersenstrasse" to="Buerkliplatz" direction="undirected" type="lightrail">
+		        <point x="740" y="315"/>
+		        <point x="744" y="320"/>
+		        <point x="750" y="320"/> 
+	</road>
+	<road id="3" from="Buerkliplatz" to="Bellevue" direction="undirected" type="lightrail">
+		        <point x="750" y="320"/> 
+		        <point x="820" y="320"/>
+		        <point x="843" y="295"/>	   
+	</road>
+	<road id="4" from="Bellevue" to="Kunsthaus" direction="undirected" type="lightrail">
+		        <point x="843" y="295"/> 
+		        <point x="940" y="197"/> 
+	</road>
+	<road id="5" from="Kunsthaus" to="Neumarkt" direction="undirected" type="street">
+			<point x="934" y="218"/>
+			<point x="880" y="164"/>
+	</road>
+	<road id="6" from="Neumarkt" to="Central" direction="undirected" type="street">
+			<point x="880" y="164"/>
+			<point x="833" y="117"/>
+	</road>
+	<road id="7" from="Central" to="Hauptbahnhof" direction="undirected" type="street">
+			<point x="833" y="117"/>
+			<point x="681" y="117"/>
+	</road>
+	<road id="8" from="Hauptbahnhof" to="Bahnhof Stadelhofen" direction="undirected" type="railroad">
+			<point x="693" y="2"/>
+			<point x="811" y="2"/>
+			<point x="822" y="4"/>
+			<point x="831" y="8"/>
+			<point x="839" y="13"/>
+			<point x="846" y="21"/>
+			<point x="851" y="33"/>
+			<point x="853" y="43"/>
+			<point x="853" y="50"/>
+			<point x="853" y="266"/>
+			<point x="854" y="272"/>
+			<point x="859" y="278"/>
+			<point x="862" y="285"/>
+			<point x="902" y="325"/>
+	</road>
+</roads>
+
+<!-- tram lines -->
+<lines>
+<line name="9" type="tram">
+	<color red="102" green="102" blue="153"/>
+	<line_section from="Paradeplatz" to="Boersenstrasse" direction="undirected">
+				<onroad id="1" back="false"/>
+		        <point x="660" y="235"/> 
+		        <point x="740" y="315"/>
+	</line_section>
+	<line_section from="Boersenstrasse" to="Buerkliplatz" direction="undirected">
+				<onroad id="2" back="false"/>
+		        <point x="740" y="315"/>
+		        <point x="744" y="320"/>
+		        <point x="750" y="320"/> 
+	</line_section>
+	<line_section from="Buerkliplatz" to="Bellevue" direction="undirected">
+				<onroad id="3" back="false"/>
+		        <point x="750" y="320"/> 
+		        <point x="820" y="320"/>
+		        <point x="843" y="295"/>	   
+	</line_section>
+	<line_section from="Bellevue" to="Kunsthaus" direction="undirected">
+				<onroad id="4" back="false"/>
+		        <point x="843" y="295"/> 
+		        <point x="940" y="197"/> 
+	</line_section>
+</line>
+
+<!-- bus lines -->
+<line name="31" type="bus">
+	<color red="153" green="204" blue="255"/>
+	<line_section from="Kunsthaus" to="Neumarkt" direction="undirected">
+			<onroad id="5" back="false"/>
+			<point x="934" y="218"/>
+			<point x="880" y="164"/>
+	</line_section>
+	<line_section from="Neumarkt" to="Central" direction="undirected">
+			<onroad id="6" back="false"/>
+			<point x="880" y="164"/>
+			<point x="833" y="117"/>
+	</line_section>
+	<line_section from="Central" to="Hauptbahnhof" direction="undirected">
+			<onroad id="7" back="false"/>
+			<point x="833" y="117"/>
+			<point x="681" y="117"/>
+	</line_section>
+</line> 
+
+
+<!-- s lines -->
+<line name="s7" type="rail">
+	<color red="0" green="0" blue="0"/>
+	<line_section from="Hauptbahnhof" to="Bahnhof Stadelhofen" direction="undirected">
+			<onroad id="8" back="false"/>
+			<point x="693" y="2"/>
+			<point x="811" y="2"/>
+			<point x="822" y="4"/>
+			<point x="831" y="8"/>
+			<point x="839" y="13"/>
+			<point x="846" y="21"/>
+			<point x="851" y="33"/>
+			<point x="853" y="43"/>
+			<point x="853" y="50"/>
+			<point x="853" y="266"/>
+			<point x="854" y="272"/>
+			<point x="859" y="278"/>
+			<point x="862" y="285"/>
+			<point x="902" y="325"/>
+	</line_section>
+</line>
+
+</lines>
+
+</map>
+

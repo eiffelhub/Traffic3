@@ -1,0 +1,4944 @@
+<?xml version="1.0"?>
+<!--DOCTYPE city SYSTEM "map.dtd"--> 
+<map name="Zurich" scale_factor="5.52" center_x="685" center_y="713.5" radius="713.5"> 
+
+<description text="grosse zurich city map." />
+
+<places>
+
+	<place name="Albisguetli"/>
+	<place name="Albisrank"/>
+	<place name="Albisrieden"/>
+	<place name="Albisriederdoerfli"/>
+	<place name="Albisriederplatz"/>
+	<place name="Alte Trotte"/>
+	<place name="Altried"/>
+	<place name="Bachmattstrasse"/>
+	<place name="Baeckeranlage"/>
+	<place name="Bad Allenmoos"/>
+	<place name="Bahnhof Altstetten"/>
+	<place name="Bahnhof Enge"/>
+	<place name="Bahnhof Enge/Bederstrasse"/>
+	<place name="Bahnhof Giesshuebel"/>
+	<place name="Bahnhof Hardbruecke"/>
+	<place name="Bahnhof Oerlikon"/>
+	<place name="Bahnhof Selnau"/>
+	<place name="Bahnhof Stadelhofen"/>
+	<place name="Bahnhof Stettbach"/>
+	<place name="Bahnhof Tiefenbrunnen"/>
+	<place name="Bahnhof Wiedikon"/>
+	<place name="Bahnhof Wipkingen"/>
+	<place name="Bahnhof Wollishofen"/>
+	<place name="Balgrist"/>
+	<place name="Baendliweg"/>
+	<place name="Baslerstrasse"/>
+	<place name="Beckenhof"/>
+	<place name="Bellevue"/>
+	<place name="Bergstation Dolderbahn"/>
+	<place name="Berninaplatz"/>
+	<place name="Bernoulli-Haeuser"/>
+	<place name="Bertastrasse"/>
+	<place name="Bethanien"/>
+	<place name="Bezirksgebaeude"/>
+	<place name="Billoweg"/>
+	<place name="Binz SZU"/>
+	<place name="Birchdoerfli"/>
+	<place name="Boersenstrasse"/>
+	<place name="Botanischer Garten"/>
+	<place name="Brandschenkestrasse"/>
+	<place name="Bristenstrasse"/>
+	<place name="Brunau"/>
+	<place name="Brunau-/Mutschellenstrasse"/>
+	<place name="Brunaupark"/>
+	<place name="Brunaustrasse"/>
+	<place name="Bucheggplatz"/>
+	<place name="Burgwies"/>
+	<place name="Buerkliplatz"/>
+	<place name="Butzenstrasse"/>
+	<place name="Central"/>
+	<place name="Dammweg"/>
+	<place name="Dorflinde"/>
+	<place name="Englischviertelstrasse"/>
+	<place name="Escher-Wyss-Platz"/>
+	<place name="Eschergutweg"/>
+	<place name="ETH Hoenggerberg"/>
+	<place name="ETH/Universitaetsspital"/>
+	<place name="Farbhof"/>
+	<place name="Feldeggstrasse"/>
+	<place name="Fellenbergstrasse"/>
+	<place name="Fernsehstudio / WTC"/>
+	<place name="Fischerweg"/>
+	<place name="Flobotstrasse"/>
+	<place name="Flurstrasse"/>
+	<place name="Frankental"/>
+	<place name="Freiestrasse"/>
+	<place name="Freihofstrasse"/>
+	<place name="Friedackerstrasse"/>
+	<place name="Friedhof Enzenbuehl"/>
+	<place name="Friedhof Sihlfeld"/>
+	<place name="Friedrichstrasse"/>
+	<place name="Friesenberg SZU"/>
+	<place name="Friesenbergstrasse"/>
+	<place name="Frohburg"/>
+	<place name="Froehlichstrasse"/>
+	<place name="Germaniastrasse"/>
+	<place name="Glattwiesen"/>
+	<place name="Goldackerweg"/>
+	<place name="Goldauerstrasse"/>
+	<place name="Goldbrunnenplatz"/>
+	<place name="Grimselstrasse"/>
+	<place name="Gruenaustrasse"/>
+	<place name="Guggachstrasse"/>
+	<place name="Gueterbahnhof"/>
+	<place name="Gutstrasse"/>
+	<place name="Hadlaubstrasse"/>
+	<place name="Haldenbach"/>
+	<place name="Haldenegg"/>
+	<place name="Hardhof"/>
+	<place name="Hardplatz"/>
+	<place name="Hardturm"/>
+	<place name="Hauptbahnhof"/>
+	<place name="Hedwigsteig"/>
+	<place name="Heerenwiesen"/>
+	<place name="Hegianwandweg"/>
+	<place name="Hegibachplatz"/>
+	<place name="Helmhaus"/>
+	<place name="Helvetiaplatz"/>
+	<place name="Herdernstrasse"/>
+	<place name="Heubeeriweg"/>
+	<place name="Heuried"/>
+	<place name="Hirschwiesenstrasse"/>
+	<place name="Hirzenbach"/>
+	<place name="Hoefliweg"/>
+	<place name="Hofstrasse"/>
+	<place name="Hohenklingensteig"/>
+	<place name="Hoelderlinsteig"/>
+	<place name="Hoelderlinstrasse"/>
+	<place name="Hoenggerberg"/>
+	<place name="Hoeschgasse"/>
+	<place name="Hottingerplatz"/>
+	<place name="Hubertus"/>
+	<place name="Huegelstrasse"/>
+	<place name="Im Gut"/>
+	<place name="Im Hagacker"/>
+	<place name="Im Kloesterli"/>
+	<place name="Im Wingert"/>
+	<place name="In der Ey"/>
+	<place name="Irchel"/>
+	<place name="Jugendherberge"/>
+	<place name="Kalchbuehlweg"/>
+	<place name="Kalkbreite"/>
+	<place name="Kanonengasse"/>
+	<place name="Kantonsschule"/>
+	<place name="Kappeli"/>
+	<place name="Kaserne"/>
+	<place name="Kempfhofsteig"/>
+	<place name="Kernstrasse"/>
+	<place name="Kinkelstrasse"/>
+	<place name="Kirche Fluntern"/>
+	<place name="Klosbach"/>
+	<place name="Klosterweg"/>
+	<place name="Klusplatz"/>
+	<place name="Krankenheim Kaeferberg"/>
+	<place name="Krematorium Sihlfeld"/>
+	<place name="Kreuzplatz"/>
+	<place name="Kreuzstrasse"/>
+	<place name="Kronenstrasse"/>
+	<place name="Kroenleinstrasse"/>
+	<place name="Kunsthaus"/>
+	<place name="Laegernstrasse"/>
+	<place name="Langensteinenstrasse"/>
+	<place name="Langgruetstrasse"/>
+	<place name="Langmauerstrasse"/>
+	<place name="Laubegg"/>
+	<place name="Laubiweg"/>
+	<place name="Lehenstrasse"/>
+	<place name="Lerchenhalde"/>
+	<place name="Lettenstrasse"/>
+	<place name="Letzibeck"/>
+	<place name="Letzigrund"/>
+	<place name="Letzipark"/>
+	<place name="Letzistrasse"/>
+	<place name="Limmatplatz"/>
+	<place name="Lindenplatz (Altstetten)"/>
+	<place name="Lochergut"/>
+	<place name="Loewenplatz"/>
+	<place name="Luchswiesen"/>
+	<place name="Luegisland"/>
+	<place name="Luggwegstrasse"/>
+	<place name="Manegg"/>
+	<place name="Manesseplatz"/>
+	<place name="Mattenhof"/>
+	<place name="Meierhofplatz"/>
+	<place name="Messe / Hallenstadion"/>
+	<place name="Micafil"/>
+	<place name="Milchbuck"/>
+	<place name="Militaer-/Langstrasse"/>
+	<place name="Morgental"/>
+	<place name="Museum fuer Gestaltung"/>
+	<place name="Museum Rietberg"/>
+	<place name="Neu-Affoltern"/>
+	<place name="Neumarkt"/>
+	<place name="Nordstrasse"/>
+	<place name="Nuerenbergstrasse"/>
+	<place name="Oberwiesenstrasse"/>
+	<place name="Opernhaus"/>
+	<place name="Ottikerstrasse"/>
+	<place name="Paradeplatz"/>
+	<place name="Parkring"/>
+	<place name="Pfingstweidstrasse"/>
+	<place name="Platte"/>
+	<place name="Post Wollishofen"/>
+	<place name="Probstei"/>
+	<place name="Quellenstrasse"/>
+	<place name="Radiostudio"/>
+	<place name="Rathaus"/>
+	<place name="Rautistrasse"/>
+	<place name="Rebbergsteig"/>
+	<place name="Regensbergbruecke"/>
+	<place name="Rehalp"/>
+	<place name="Rennweg"/>
+	<place name="Rentenanstalt"/>
+	<place name="Rigiblick"/>
+	<place name="Roemerhof"/>
+	<place name="Roentgenstrasse"/>
+	<place name="Rosengartenstrasse"/>
+	<place name="Roeslistrasse"/>
+	<place name="Roswiesen"/>
+	<place name="Rotbuchstrasse"/>
+	<place name="Rudolf-Brun-Bruecke"/>
+	<place name="Saalsporthalle"/>
+	<place name="Sackzelg"/>
+	<place name="Salersteig"/>
+	<place name="SBB-Werkstaette"/>
+	<place name="Schaffhauserplatz"/>
+	<place name="Schaeppiweg"/>
+	<place name="Schaufelbergerstrasse"/>
+	<place name="Scheuchzerstrasse"/>
+	<place name="Schmiede Wiedikon"/>
+	<place name="Schoerlistrasse"/>
+	<place name="Schulhaus Altweg"/>
+	<place name="Schwamendingerplatz"/>
+	<place name="Schweighof SZU"/>
+	<place name="Schwert"/>
+	<place name="Seidelhof"/>
+	<place name="Seilbahn Rigiblick"/>
+	<place name="Siemens"/>
+	<place name="Signaustrasse"/>
+	<place name="Sihlquai"/>
+	<place name="Sihlstrasse"/>
+	<place name="Sonneggstrasse"/>
+	<place name="Sprecherstrasse"/>
+	<place name="Spyriplatz"/>
+	<place name="Spyristeig"/>
+	<place name="Stampfenbachplatz"/>
+	<place name="Stauffacher"/>
+	<place name="Sternen Oerlikon"/>
+	<place name="Stockerstrasse"/>
+	<place name="Strassenverkehrsamt"/>
+	<place name="Susenbergstrasse"/>
+	<place name="Talwiesenstrasse"/>
+	<place name="Thujastrasse"/>
+	<place name="Tierspital"/>
+	<place name="Titlisstrasse"/>
+	<place name="Toblerplatz"/>
+	<place name="Triemli"/>
+	<place name="Triemli SZU"/>
+	<place name="Triemlispital"/>
+	<place name="Tueffenwies"/>
+	<place name="Tunnelstrasse"/>
+	<place name="Uetliberg"/>
+	<place name="Uetlihof"/>
+	<place name="Uitikon Waldegg"/>
+	<place name="Untermoosstrasse"/>
+	<place name="Utobruecke"/>
+	<place name="Vogelsangstrasse"/>
+	<place name="Voltastrasse"/>
+	<place name="Waffenplatzstrasse"/>
+	<place name="Waidbadstrasse"/>
+	<place name="Waidspital"/>
+	<place name="Waldgarten"/>
+	<place name="Waldhaus Dolder"/>
+	<place name="Wartau"/>
+	<place name="Weihersteig"/>
+	<place name="Werdhoelzli"/>
+	<place name="Wetlistrasse"/>
+	<place name="Widmerstrasse"/>
+	<place name="Wildbachstrasse"/>
+	<place name="Winkelriedstrasse"/>
+	<place name="Winzerhalde"/>
+	<place name="Winzerstrasse"/>
+	<place name="Wipkingerplatz"/>
+	<place name="Wollishofen"/>
+	<place name="Zoo"/>
+	<place name="Zuerichbergstrasse"/>
+	<place name="Zwielplatz"/>
+	<place name="Zwinglihaus"/>
+	<place name="Zypressenstrasse"/>
+</places>
+
+
+
+<!-- roads-->
+<roads>
+	<road id="1" from="Central" to="ETH/Universitaetsspital" direction="undirected" type="lightrail">
+		<point x="820" y="693"/> 
+		<point x="975" y="693"/> 	
+	</road>	
+	<road id="2" from="Seilbahn Rigiblick" to="Goldauerstrasse" direction="undirected" type="lightrail">
+		<point x="1005" y="463"/> 
+		<point x="1035" y="433"/>
+	</road>
+	<road id="3" from="Goldauerstrasse" to="Hadlaubstrasse" direction="undirected" type="lightrail">
+		<point x="1035" y="433"/>
+		<point x="1060" y="408"/>
+	</road>
+	<road id="4" from="Hadlaubstrasse" to="Germaniastrasse" direction="undirected" type="lightrail">
+		<point x="1060" y="408"/>
+		<point x="1080" y="388"/>
+		<point x="1090" y="388"/>
+	</road>
+	<road id="5" from="Germaniastrasse" to="Rigiblick" direction="undirected" type="lightrail">
+		<point x="1090" y="388"/>
+		<point x="1125" y="388"/>
+	</road>
+	<road id="6" from="Roemerhof" to="Titlisstrasse" direction="undirected" type="lightrail">
+		<point x="1083" y="803"/> 
+		<point x="1133" y="753"/>
+	</road>
+	<road id="7" from="Titlisstrasse" to="Waldhaus Dolder" direction="undirected" type="lightrail">
+		<point x="1133" y="753"/>
+		<point x="1168" y="718"/>
+	</road>
+	<road id="8" from="Waldhaus Dolder" to="Bergstation Dolderbahn" direction="undirected" type="lightrail">
+		<point x="1168" y="718"/>
+		<point x="1183" y="703"/>
+		<point x="1223" y="743"/>
+	</road>
+	<road id="9" from="Bucheggplatz" to="Laubiweg" direction="undirected" type="lightrail">
+		<point x="760" y="283"/> 
+		<point x="760" y="328"/> 
+		<point x="780" y="348"/> 
+	</road>
+	<road id="10" from="Laubiweg" to="Schaffhauserplatz" direction="undirected" type="lightrail">
+		<point x="780" y="348"/> 
+		<point x="825" y="393"/>
+	</road>
+	<road id="11" from="Schaffhauserplatz" to="Roeslistrasse" direction="undirected" type="lightrail">
+		<point x="825" y="393"/> 
+		<point x="855" y="423"/> 
+	</road>
+	<road id="12" from="Roeslistrasse" to="Ottikerstrasse" direction="undirected" type="lightrail">
+		<point x="855" y="423"/> 
+		<point x="890" y="458"/> 
+	</road>
+	<road id="13" from="Ottikerstrasse" to="Sonneggstrasse" direction="undirected" type="lightrail">
+		<point x="890" y="458"/> 
+		<point x="895" y="463"/> 
+		<point x="895" y="508"/> 
+	</road>
+	<road id="14" from="Sonneggstrasse" to="Haldenegg" direction="undirected" type="lightrail">
+		<point x="895" y="508"/> 
+		<point x="895" y="563"/> 
+		<point x="855" y="603"/> 
+	</road>
+	<road id="15" from="Haldenegg" to="Central" direction="undirected" type="lightrail">
+		<point x="855" y="603"/> 
+		<point x="819" y="638"/> 
+	</road>
+	<road id="16" from="Central" to="Rudolf-Brun-Bruecke" direction="undirected" type="lightrail">
+		<point x="819" y="638"/> 
+		<point x="819" y="778"/> 
+	</road>
+	<road id="17" from="Rudolf-Brun-Bruecke" to="Rathaus" direction="undirected" type="lightrail">
+		<point x="819" y="778"/> 
+		<point x="819" y="813"/> 
+	</road>
+	<road id="18" from="Rathaus" to="Helmhaus" direction="undirected" type="lightrail">
+		<point x="819" y="813"/> 
+		<point x="819" y="850"/> 
+	</road>
+	<road id="19" from="Helmhaus" to="Bellevue" direction="undirected" type="lightrail">
+		<point x="819" y="850"/> 
+		<point x="819" y="878"/> 
+		<point x="843" y="902"/> 
+	</road>
+	<road id="20" from="Bellevue" to="Bahnhof Stadelhofen" direction="undirected" type="lightrail">
+		<point x="843" y="902"/> 
+		<point x="870" y="928"/> 
+		<point x="909" y="928"/> 
+	</road>
+	<road id="21" from="Bahnhof Stadelhofen" to="Kreuzplatz" direction="undirected" type="lightrail">
+		<point x="909" y="928"/> 
+		<point x="989" y="928"/> 
+		<point x="1004" y="914"/> 
+	</road>
+	<road id="22" from="Kreuzplatz" to="Englischviertelstrasse" direction="undirected" type="lightrail">
+		<point x="1004" y="914"/> 
+		<point x="1038" y="880"/> 
+	</road>
+	<road id="23" from="Englischviertelstrasse" to="Roemerhof" direction="undirected" type="lightrail">
+		<point x="1038" y="880"/> 
+		<point x="1083" y="835"/> 
+	</road>
+	<road id="24" from="Roemerhof" to="Hoelderlinstrasse" direction="undirected" type="lightrail">
+		<point x="1083" y="835"/> 
+		<point x="1122" y="874"/> 
+	</road>
+	<road id="25" from="Hoelderlinstrasse" to="Klusplatz" direction="undirected" type="lightrail">
+		<point x="1122" y="874"/> 
+		<point x="1156" y="908"/> 
+		<point x="1175" y="908"/> 
+	</road>
+	<road id="26" from="Bahnhof Oerlikon" to="Sternen Oerlikon" direction="undirected" type="lightrail">
+		<point x="985" y="3"/> 
+		<point x="985" y="88"/> 
+	</road>
+	<road id="27" from="Sternen Oerlikon" to="Salersteig" direction="undirected" type="lightrail">
+		<point x="985" y="88"/> 
+		<point x="965" y="108"/> 
+	</road>
+	<road id="28" from="Salersteig" to="Berninaplatz" direction="undirected" type="lightrail">
+		<point x="965" y="108"/> 
+		<point x="925" y="148"/> 
+	</road>
+	<road id="29" from="Berninaplatz" to="Hirschwiesenstrasse" direction="undirected" type="lightrail">
+		<point x="925" y="148"/> 
+		<point x="895" y="178"/> 
+	</road>
+	<road id="30" from="Hirschwiesenstrasse" to="Milchbuck" direction="undirected" type="lightrail">
+		<point x="895" y="178"/> 
+		<point x="815" y="258"/> 
+		<point x="815" y="263"/> 
+	</road>
+	<road id="31" from="Milchbuck" to="Guggachstrasse" direction="undirected" type="lightrail">
+		<point x="815" y="263"/> 
+		<point x="815" y="328"/> 
+	</road>
+	<road id="32" from="Guggachstrasse" to="Schaffhauserplatz" direction="undirected" type="lightrail">
+		<point x="815" y="328"/> 
+		<point x="815" y="389"/> 
+	</road>
+	<road id="33" from="Schaffhauserplatz" to="Kronenstrasse" direction="undirected" type="lightrail">
+		<point x="815" y="389"/> 
+		<point x="815" y="448"/> 
+	</road>
+	<road id="34" from="Kronenstrasse" to="Beckenhof" direction="undirected" type="lightrail">
+		<point x="815" y="448"/> 
+		<point x="815" y="468"/> 
+		<point x="810" y="478"/> 
+	</road>
+	<road id="35" from="Beckenhof" to="Stampfenbachplatz" direction="undirected" type="lightrail">
+		<point x="810" y="478"/> 
+		<point x="770" y="518"/> 
+	</road>
+	<road id="36" from="Stampfenbachplatz" to="Hauptbahnhof" direction="undirected" type="lightrail">
+		<point x="770" y="518"/> 
+		<point x="685" y="603"/> 
+		<point x="685" y="663"/> 
+		<point x="685" y="683"/> 
+	</road>
+	<road id="37" from="Hauptbahnhof" to="Loewenplatz" direction="undirected" type="lightrail">
+		<point x="685" y="683"/> 
+		<point x="638" y="683"/> 
+	</road>
+	<road id="38" from="Loewenplatz" to="Kaserne" direction="undirected" type="lightrail">
+		<point x="638" y="683"/> 
+		<point x="595" y="683"/> 
+	</road>
+	<road id="39" from="Kaserne" to="Stauffacher" direction="undirected" type="lightrail">
+		<point x="595" y="683"/> 
+		<point x="590" y="683"/> 
+		<point x="550" y="723"/> 
+	</road>
+	<road id="40" from="Stauffacher" to="Bahnhof Wiedikon" direction="undirected" type="lightrail">
+		<point x="550" y="733"/>  
+		<point x="475" y="808"/> 
+	</road>
+	<road id="41" from="Bahnhof Wiedikon" to="Schmiede Wiedikon" direction="undirected" type="lightrail">
+		<point x="475" y="808"/> 
+		<point x="460" y="823"/> 
+		<point x="392" y="823"/> 
+	</road>
+	<road id="42" from="Schmiede Wiedikon" to="Goldbrunnenplatz" direction="undirected" type="lightrail">
+		<point x="392" y="823"/> 
+		<point x="332" y="823"/> 
+	</road>
+	<road id="43" from="Goldbrunnenplatz" to="Talwiesenstrasse" direction="undirected" type="lightrail">
+		<point x="332" y="823"/> 
+		<point x="275" y="823"/> 
+	</road>
+	<road id="44" from="Talwiesenstrasse" to="Heuried" direction="undirected" type="lightrail">
+		<point x="275" y="823"/> 
+		<point x="218" y="823"/> 
+	</road>
+	<road id="45" from="Heuried" to="Schaufelbergerstrasse" direction="undirected" type="lightrail">
+		<point x="218" y="823"/> 
+		<point x="165" y="823"/> 
+	</road>
+	<road id="46" from="Schaufelbergerstrasse" to="Triemli" direction="undirected" type="lightrail">
+		<point x="165" y="823"/> 
+		<point x="100" y="823"/> 
+	</road>
+	<road id="47" from="Frankental" to="Winzerstrasse" direction="undirected" type="lightrail">
+		<point x="260" y="38"/>
+		<point x="295" y="73"/>
+	</road>
+	<road id="48" from="Winzerstrasse" to="Wartau" direction="undirected" type="lightrail">
+		<point x="295" y="73"/>
+		<point x="340" y="118"/>
+	</road>
+	<road id="49" from="Wartau" to="Zwielplatz" direction="undirected" type="lightrail">
+		<point x="340" y="118"/>
+		<point x="365" y="138"/>			
+		<point x="395" y="138"/>
+	</road>
+	<road id="50" from="Zwielplatz" to="Meierhofplatz" direction="undirected" type="lightrail">
+		<point x="395" y="138"/>
+		<point x="450" y="138"/>
+	</road>
+	<road id="51" from="Meierhofplatz" to="Schwert" direction="undirected" type="lightrail">
+		<point x="450" y="138"/>
+		<point x="480" y="168"/>
+	</road>
+	<road id="52" from="Schwert" to="Alte Trotte" direction="undirected" type="lightrail">
+		<point x="480" y="168"/>
+		<point x="495" y="183"/>
+		<point x="495" y="228"/>
+	</road>
+	<road id="53" from="Alte Trotte" to="Eschergutweg" direction="undirected" type="lightrail">
+		<point x="495" y="228"/>
+		<point x="495" y="253"/>
+		<point x="515" y="273"/>
+	</road>
+	<road id="54" from="Eschergutweg" to="Wipkingerplatz" direction="undirected" type="lightrail">
+		<point x="515" y="273"/>
+		<point x="560" y="318"/>
+	</road>
+	<road id="55" from="Wipkingerplatz" to="Escher-Wyss-Platz" direction="undirected" type="lightrail">
+		<point x="560" y="318"/>
+		<point x="560" y="353"/>
+		<point x="510" y="403"/>
+	</road>
+	<road id="56" from="Escher-Wyss-Platz" to="Dammweg" direction="undirected" type="lightrail">
+		<point x="510" y="403"/>
+		<point x="510" y="422"/>
+		<point x="550" y="463"/>
+	</road>
+	<road id="57" from="Dammweg" to="Quellenstrasse" direction="undirected" type="lightrail">
+		<point x="550" y="463"/>
+		<point x="570" y="483"/>
+	</road>
+	<road id="58" from="Quellenstrasse" to="Limmatplatz" direction="undirected" type="lightrail">
+		<point x="570" y="483"/>
+		<point x="595" y="508"/>
+	</road>
+	<road id="59" from="Limmatplatz" to="Museum fuer Gestaltung" direction="undirected" type="lightrail">
+		<point x="595" y="508"/>
+		<point x="620" y="533"/>
+	</road>
+	<road id="60" from="Museum fuer Gestaltung" to="Sihlquai" direction="undirected" type="lightrail">
+		<point x="620" y="533"/>
+		<point x="645" y="558"/>
+	</road>
+	<road id="61" from="Sihlquai" to="Hauptbahnhof" direction="undirected" type="lightrail">
+		<point x="645" y="558"/>
+		<point x="690" y="603"/>
+		<point x="695" y="603"/>
+		<point x="695" y="733"/>
+	</road>
+	<road id="62" from="Hauptbahnhof" to="Rennweg" direction="undirected" type="lightrail">
+		<point x="695" y="733"/>
+		<point x="695" y="778"/>
+	</road>
+	<road id="63" from="Rennweg" to="Paradeplatz" direction="undirected" type="lightrail">
+		<point x="695" y="778"/>
+		<point x="695" y="813"/>
+		<point x="660" y="848"/>
+	</road>
+	<road id="64" from="Paradeplatz" to="Stockerstrasse" direction="undirected" type="lightrail">
+		<point x="660" y="863"/>
+		<point x="640" y="883"/>
+	</road>
+	<road id="65" from="Stockerstrasse" to="Tunnelstrasse" direction="undirected" type="lightrail">
+		<point x="640" y="883"/>
+		<point x="610" y="913"/>
+	</road>
+	<road id="66" from="Tunnelstrasse" to="Bahnhof Enge/Bederstrasse" direction="undirected" type="lightrail">
+		<point x="610" y="913"/>
+		<point x="545" y="978"/>
+	</road>
+	<road id="67" from="Bahnhof Enge/Bederstrasse" to="Waffenplatzstrasse" direction="undirected" type="lightrail">
+		<point x="545" y="978"/>
+		<point x="505" y="1018"/>
+	</road>
+	<road id="68" from="Waffenplatzstrasse" to="Utobruecke" direction="undirected" type="lightrail">
+		<point x="505" y="1018"/>
+		<point x="475" y="1048"/>
+	</road>
+	<road id="69" from="Utobruecke" to="Saalsporthalle" direction="undirected" type="lightrail">
+		<point x="475" y="1048"/>
+		<point x="435" y="1088"/>
+	</road>
+	<road id="70" from="Saalsporthalle" to="Laubegg" direction="undirected" type="lightrail">
+		<point x="435" y="1088"/>
+		<point x="360" y="1088"/>
+		<point x="325" y="1123"/>
+	</road>
+	<road id="71" from="Laubegg" to="Uetlihof" direction="undirected" type="lightrail">
+		<point x="325" y="1123"/>
+		<point x="285" y="1163"/>
+	</road>
+	<road id="72" from="Uetlihof" to="Strassenverkehrsamt" direction="undirected" type="lightrail">
+		<point x="285" y="1163"/>
+		<point x="245" y="1203"/>
+	</road>
+	<road id="73" from="Strassenverkehrsamt" to="Albisguetli" direction="undirected" type="lightrail">
+		<point x="245" y="1203"/>
+		<point x="200" y="1248"/>
+	</road>
+	<road id="74" from="Rehalp" to="Friedhof Enzenbuehl" direction="undirected" type="lightrail">
+		<point x="1355" y="1178"/>
+		<point x="1318" y="1138"/>
+	</road>
+	<road id="75" from="Friedhof Enzenbuehl" to="Balgrist" direction="undirected" type="lightrail">
+		<point x="1318" y="1138"/>
+		<point x="1285" y="1103"/>
+	</road>
+	<road id="76" from="Balgrist" to="Burgwies" direction="undirected" type="lightrail">
+		<point x="1285" y="1103"/>
+		<point x="1250" y="1068"/>
+	</road>
+	<road id="77" from="Burgwies" to="Wetlistrasse" direction="undirected" type="lightrail">
+		<point x="1250" y="1068"/>
+		<point x="1220" y="1038"/>
+	</road>
+	<road id="78" from="Wetlistrasse" to="Hedwigsteig" direction="undirected" type="lightrail">
+		<point x="1220" y="1038"/>
+		<point x="1190" y="1008"/>
+		<point x="1145" y="1008"/>
+	</road>
+	<road id="79" from="Hedwigsteig" to="Hegibachplatz" direction="undirected" type="lightrail">
+		<point x="1145" y="1008"/>
+		<point x="1085" y="1008"/>
+	</road>
+	<road id="80" from="Hegibachplatz" to="Signaustrasse" direction="undirected" type="lightrail">
+		<point x="1085" y="1008"/>
+		<point x="1045" y="968"/>
+	</road>
+	<road id="81" from="Signaustrasse" to="Kreuzplatz" direction="undirected" type="lightrail">
+		<point x="1045" y="968"/>
+		<point x="1015" y="938"/>
+		<point x="1005" y="938"/>
+	</road>
+	<road id="82" from="Bellevue" to="Buerkliplatz" direction="undirected" type="lightrail">
+		<point x="843" y="938"/>
+		<point x="750" y="938"/>
+	</road>
+	<road id="83" from="Buerkliplatz" to="Boersenstrasse" direction="undirected" type="lightrail">
+		<point x="750" y="938"/>
+		<point x="735" y="938"/>
+		<point x="710" y="913"/>
+	</road>
+	<road id="84" from="Boersenstrasse" to="Paradeplatz" direction="undirected" type="lightrail">
+		<point x="710" y="913"/> 
+		<point x="660" y="863"/>
+	</road>
+	<road id="85" from="Bucheggplatz" to="Radiostudio" direction="undirected" type="lightrail">
+		<point x="750" y="283"/>
+		<point x="750" y="213"/>
+		<point x="775" y="188"/>
+	</road>
+	<road id="86" from="Radiostudio" to="Bad Allenmoos" direction="undirected" type="lightrail">
+		<point x="775" y="188"/>
+		<point x="820" y="143"/>
+	</road>
+	<road id="87" from="Bad Allenmoos" to="Regensbergbruecke" direction="undirected" type="lightrail">
+		<point x="820" y="143"/>
+		<point x="870" y="93"/>
+	</road>
+	<road id="88" from="Regensbergbruecke" to="Bahnhof Oerlikon" direction="undirected" type="lightrail">
+		<point x="870" y="93"/>
+		<point x="915" y="48"/>
+	</road>
+	<road id="89" from="Sternen Oerlikon" to="Messe / Hallenstadion" direction="undirected" type="lightrail">
+		<point x="990" y="68"/>
+		<point x="1040" y="68"/>
+	</road>
+	<road id="90" from="Hauptbahnhof" to="Central" direction="undirected" type="lightrail">
+		<point x="695" y="683"/> 
+		<point x="820" y="683"/> 
+	</road>
+	<road id="91" from="Haldenegg" to="ETH/Universitaetsspital" direction="undirected" type="lightrail">
+		<point x="905" y="603"/> 
+		<point x="995" y="693"/> 
+	</road>
+	<road id="92" from="ETH/Universitaetsspital" to="Haldenbach" direction="undirected" type="lightrail">
+		<point x="995" y="693"/> 
+		<point x="995" y="603"/> 
+	</road>
+	<road id="93" from="Haldenbach" to="Winkelriedstrasse" direction="undirected" type="lightrail">
+		<point x="995" y="603"/> 
+		<point x="995" y="533"/> 
+	</road>
+	<road id="94" from="Winkelriedstrasse" to="Seilbahn Rigiblick" direction="undirected" type="lightrail">
+		<point x="995" y="533"/> 
+		<point x="995" y="463"/> 
+	</road>
+	<road id="95" from="Seilbahn Rigiblick" to="Kinkelstrasse" direction="undirected" type="lightrail">
+		<point x="995" y="463"/> 
+		<point x="995" y="403"/> 
+	</road>
+	<road id="96" from="Kinkelstrasse" to="Letzistrasse" direction="undirected" type="lightrail">
+		<point x="995" y="403"/> 
+		<point x="995" y="378"/> 
+		<point x="975" y="358"/> 
+	</road>
+	<road id="97" from="Letzistrasse" to="Langmauerstrasse" direction="undirected" type="lightrail">
+		<point x="975" y="358"/> 
+		<point x="950" y="333"/> 
+	</road>
+	<road id="98" from="Langmauerstrasse" to="Irchel" direction="undirected" type="lightrail">
+		<point x="950" y="333"/> 
+		<point x="925" y="308"/> 
+	</road>
+	<road id="99" from="Irchel" to="Milchbuck" direction="undirected" type="lightrail">
+		<point x="925" y="308"/> 
+		<point x="885" y="268"/>
+		<point x="825" y="268"/> 
+		<point x="825" y="263"/> 
+	</road>
+	<road id="100" from="Stauffacher" to="Sihlstrasse" direction="undirected" type="lightrail">
+		<point x="550" y="748" />
+		<point x="562" y="735" />
+		<point x="635" y="808" />
+	</road>
+	<road id="101" from="Sihlstrasse" to="Paradeplatz" direction="undirected" type="lightrail">
+		<point x="635" y="808" />
+		<point x="660" y="833" /> 
+	</road>
+	<road id="102" from="Bellevue" to="Kunsthaus" direction="undirected" type="lightrail">
+		<point x="843" y="893" /> 
+		<point x="940" y="795" /> 
+	</road>
+	<road id="103" from="Kunsthaus" to="Kantonsschule" direction="undirected" type="lightrail">
+		<point x="940" y="795" /> 
+		<point x="968" y="768" /> 
+	</road>
+	<road id="104" from="Kantonsschule" to="ETH/Universitaetsspital" direction="undirected" type="lightrail">
+		<point x="968" y="768" />
+		<point x="985" y="750" />
+		<point x="985" y="693" />
+	</road>
+	<road id="105" from="Milchbuck" to="Tierspital" direction="undirected" type="lightrail">
+		<point x="840" y="263" /> 
+		<point x="885" y="218" />
+		<point x="1000" y="218" />
+		<point x="1015" y="203" /> 
+	</road>
+	<road id="106" from="Tierspital" to="Waldgarten" direction="undirected" type="lightrail">
+		<point x="1015" y="203" /> 
+		<point x="1095" y="123" />
+	</road>
+	<road id="107" from="Waldgarten" to="Schoerlistrasse" direction="undirected" type="lightrail">
+		<point x="1095" y="123" />
+		<point x="1100" y="118" /> 
+		<point x="1150" y="118" /> 
+	</road>
+	<road id="108" from="Schoerlistrasse" to="Schwamendingerplatz" direction="undirected" type="lightrail">
+		<point x="1150" y="118" />
+		<point x="1225" y="118" />
+	</road>
+	<road id="109" from="Schwamendingerplatz" to="Heerenwiesen" direction="undirected" type="lightrail">
+		<point x="1225" y="118" />
+		<point x="1265" y="118" />
+	</road>
+	<road id="110" from="Heerenwiesen" to="Luegisland" direction="undirected" type="lightrail">
+		<point x="1265" y="118" />
+		<point x="1285" y="118" />
+		<point x="1310" y="93" />
+	</road>
+	<road id="111" from="Luegisland" to="Luchswiesen" direction="undirected" type="lightrail">
+		<point x="1310" y="93" />
+		<point x="1325" y="78" />
+		<point x="1330" y="83" /> 
+	</road>
+	<road id="112" from="Luchswiesen" to="Altried" direction="undirected" type="lightrail">
+		<point x="1330" y="83" /> 
+		<point x="1370" y="123" /> 
+	</road>
+	<road id="113" from="Altried" to="Hirzenbach" direction="undirected" type="lightrail">
+		<point x="1370" y="123" />
+		<point x="1380" y="133" /> 
+		<point x="1350" y="163" /> 
+	</road>
+	<road id="114" from="Hardplatz" to="Gueterbahnhof" direction="undirected" type="lightrail">
+		<point x="410" y="578"/> 
+		<point x="430" y="598"/> 
+	</road>
+	<road id="115" from="Gueterbahnhof" to="Helvetiaplatz" direction="undirected" type="lightrail">
+		<point x="430" y="598"/> 
+		<point x="490" y="658"/> 
+	</road>
+	<road id="116" from="Helvetiaplatz" to="Stauffacher" direction="undirected" type="lightrail">
+		<point x="490" y="658"/> 
+		<point x="550" y="718"/>  
+	</road>
+	<road id="117" from="Stauffacher" to="Bahnhof Selnau" direction="undirected" type="lightrail">
+		<point x="550" y="718"/> 
+		<point x="550" y="828"/> 
+	</road>
+	<road id="118" from="Bahnhof Selnau" to="Stockerstrasse" direction="undirected" type="lightrail">
+		<point x="550" y="828"/> 
+		<point x="615" y="893"/>
+		<point x="640" y="868"/>  
+	</road>
+	<road id="119" from="Kunsthaus" to="Hottingerplatz" direction="undirected" type="lightrail">
+		<point x="940" y="825"/>
+		<point x="942" y="823"/> 
+		<point x="1005" y="823"/>	 
+	</road>
+	<road id="120" from="Hottingerplatz" to="Roemerhof" direction="undirected" type="lightrail">
+		<point x="1005" y="823"/> 
+		<point x="1083" y="823"/>	 
+	</road>
+	<road id="121" from="Wollishofen" to="Butzenstrasse" direction="undirected" type="lightrail">
+		<point x="505" y="1418"/> 
+		<point x="505" y="1358"/> 
+	</road>
+	<road id="122" from="Butzenstrasse" to="Morgental" direction="undirected" type="lightrail">
+		<point x="505" y="1358"/> 
+		<point x="505" y="1308"/> 
+	</road>
+	<road id="123" from="Morgental" to="Post Wollishofen" direction="undirected" type="lightrail">
+		<point x="505" y="1308"/> 
+		<point x="555" y="1258"/> 
+	</road>
+	<road id="124" from="Post Wollishofen" to="Bahnhof Wollishofen" direction="undirected" type="lightrail">
+		<point x="555" y="1258"/> 
+		<point x="590" y="1223"/> 
+	</road>
+	<road id="125" from="Bahnhof Wollishofen" to="Billoweg" direction="undirected" type="lightrail">
+		<point x="590" y="1223"/> 
+		<point x="590" y="1173"/> 
+	</road>
+	<road id="126" from="Billoweg" to="Brunaustrasse" direction="undirected" type="lightrail">
+		<point x="590" y="1173"/> 
+		<point x="590" y="1118"/> 
+	</road>
+	<road id="127" from="Brunaustrasse" to="Museum Rietberg" direction="undirected" type="lightrail">
+		<point x="590" y="1118"/> 
+		<point x="590" y="1068"/> 
+	</road>
+	<road id="128" from="Museum Rietberg" to="Bahnhof Enge" direction="undirected" type="lightrail">
+		<point x="590" y="1068"/> 
+		<point x="590" y="1013"/> 
+	</road>
+	<road id="129" from="Bahnhof Enge" to="Tunnelstrasse" direction="undirected" type="lightrail">
+		<point x="590" y="1013"/>
+		<point x="590" y="948"/> 
+		<point x="610" y="928"/> 
+	</road>
+	<road id="130" from="Schwamendingerplatz" to="Roswiesen" direction="undirected" type="lightrail">
+		<point x="1225" y="128"/>
+		<point x="1245" y="128"/> 
+		<point x="1265" y="148"/> 
+	</road>
+	<road id="131" from="Roswiesen" to="Glattwiesen" direction="undirected" type="lightrail">
+		<point x="1265" y="148"/> 
+		<point x="1290" y="173"/> 
+	</road>
+	<road id="132" from="Glattwiesen" to="Probstei" direction="undirected" type="lightrail">
+		<point x="1290" y="173"/> 
+		<point x="1320" y="203"/> 
+	</road>
+	<road id="133" from="Probstei" to="Mattenhof" direction="undirected" type="lightrail">
+		<point x="1320" y="203"/> 
+		<point x="1345" y="228"/> 
+	</road>
+	<road id="134" from="Mattenhof" to="Bahnhof Stettbach" direction="undirected" type="lightrail">
+		<point x="1345" y="228"/> 
+		<point x="1365" y="248"/> 
+	</road>
+	<road id="135" from="ETH/Universitaetsspital" to="Platte" direction="undirected" type="lightrail">
+		<point x="995" y="693"/> 
+		<point x="995" y="748"/> 
+		<point x="1030" y="748"/> 
+		<point x="1040" y="738"/> 
+	</road>
+	<road id="136" from="Platte" to="Voltastrasse" direction="undirected" type="lightrail">
+		<point x="1040" y="738"/> 
+		<point x="1075" y="703"/> 
+	</road>
+	<road id="137" from="Voltastrasse" to="Kirche Fluntern" direction="undirected" type="lightrail">
+		<point x="1075" y="703"/> 
+		<point x="1110" y="668"/> 
+	</road>
+	<road id="138" from="Kirche Fluntern" to="Toblerplatz" direction="undirected" type="lightrail">
+		<point x="1110" y="668"/> 
+		<point x="1145" y="633"/> 
+	</road>
+	<road id="139" from="Toblerplatz" to="Zuerichbergstrasse" direction="undirected" type="lightrail">
+		<point x="1145" y="633"/>
+		<point x="1155" y="623"/>
+		<point x="1205" y="623"/> 
+		<point x="1220" y="608"/> 
+	</road>
+	<road id="140" from="Zuerichbergstrasse" to="Susenbergstrasse" direction="undirected" type="lightrail">
+		<point x="1220" y="608"/> 
+		<point x="1255" y="573"/> 
+	</road>
+	<road id="141" from="Susenbergstrasse" to="Zoo" direction="undirected" type="lightrail">
+		<point x="1255" y="573"/> 
+		<point x="1295" y="533"/> 
+	</road>
+	<road id="142" from="Bahnhof Enge" to="Rentenanstalt" direction="undirected" type="lightrail"> 
+		<point x="605" y="1013"/> 
+		<point x="660" y="1013"/> 
+		<point x="670" y="1003"/> 
+	</road>
+	<road id="143" from="Rentenanstalt" to="Buerkliplatz" direction="undirected" type="lightrail">  
+		<point x="670" y="1003"/> 
+		<point x="715" y="958"/> 
+		<point x="750" y="958"/> 
+	</road>
+	<road id="144" from="Kantonsschule" to="Platte" direction="undirected" type="lightrail">
+		<point x="983" y="768"/> 
+		<point x="993" y="758"/> 
+		<point x="1035" y="758"/> 
+		<point x="1055" y="738"/> 
+	</road>
+	<road id="145" from="Werdhoelzli" to="Baendliweg" direction="undirected" type="lightrail">
+		<point x="201" y="218" />
+		<point x="230" y="248" />
+	</road>
+	<road id="146" from="Baendliweg" to="Gruenaustrasse" direction="undirected" type="lightrail">
+		<point x="230" y="248" />
+		<point x="260" y="278" />
+	</road>
+	<road id="147" from="Gruenaustrasse" to="Tueffenwies" direction="undirected" type="lightrail">
+		<point x="260" y="278" />
+		<point x="275" y="288" />
+		<point x="345" y="288" />
+		<point x="355" y="298" />
+	</road>
+	<road id="148" from="Tueffenwies" to="Hardhof" direction="undirected" type="lightrail">
+		<point x="355" y="298" />
+		<point x="385" y="328" />
+	</road>
+	<road id="149" from="Hardhof" to="Hardturm" direction="undirected" type="lightrail">
+		<point x="385" y="328" />
+		<point x="405" y="348" />
+	</road>
+	<road id="150" from="Hardturm" to="Bernoulli-Haeuser" direction="undirected" type="lightrail">						
+		<point x="405" y="348" />
+		<point x="420" y="363" />
+	</road>
+	<road id="151" from="Bernoulli-Haeuser" to="Fischerweg" direction="undirected" type="lightrail">
+		<point x="420" y="363" />
+		<point x="445" y="388" />
+	</road>
+	<road id="152" from="Fischerweg" to="Fernsehstudio / WTC" direction="undirected" type="lightrail">
+		<point x="445" y="388" />
+		<point x="465" y="408" />
+	</road>
+	<road id="153" from="Fernsehstudio / WTC" to="Escher-Wyss-Platz" direction="undirected" type="lightrail">
+		<point x="465" y="408" />
+		<point x="470" y="413" />
+		<point x="515" y="413" />
+	</road>
+	<road id="154" from="Bellevue" to="Opernhaus" direction="undirected" type="lightrail">
+		<point x="843" y="918" />
+		<point x="915" y="988" />
+	</road>
+	<road id="155" from="Opernhaus" to="Kreuzstrasse" direction="undirected" type="lightrail">
+		<point x="915" y="988" />
+		<point x="950" y="1023" />
+	</road>
+	<road id="156" from="Kreuzstrasse" to="Feldeggstrasse" direction="undirected" type="lightrail">
+		<point x="950" y="1023" />
+		<point x="990" y="1063" />
+	</road>
+	<road id="157" from="Feldeggstrasse" to="Hoeschgasse" direction="undirected" type="lightrail">
+		<point x="990" y="1063" />
+		<point x="1030" y="1103" />
+	</road>
+	<road id="158" from="Hoeschgasse" to="Froehlichstrasse" direction="undirected" type="lightrail">
+		<point x="1030" y="1103" />
+		<point x="1065" y="1138" />
+	</road>
+	<road id="159" from="Froehlichstrasse" to="Wildbachstrasse" direction="undirected" type="lightrail">
+		<point x="1065" y="1138" />
+		<point x="1080" y="1153" />
+		<point x="1080" y="1198" />
+	</road>
+	<road id="160" from="Wildbachstrasse" to="Bahnhof Tiefenbrunnen" direction="undirected" type="lightrail">
+		<point x="1080" y="1198" />
+		<point x="1080" y="1253" /> 
+	</road>
+	<road id="161" from="Albisrieden" to="Fellenbergstrasse" direction="undirected" type="lightrail">
+		<point x="25" y="733"/> 
+		<point x="70" y="688"/> 
+	</road>
+	<road id="162" from="Fellenbergstrasse" to="Siemens" direction="undirected" type="lightrail">
+		<point x="70" y="688"/> 
+		<point x="120" y="638"/> 
+	</road>
+	<road id="163" from="Siemens" to="Hubertus" direction="undirected" type="lightrail">
+		<point x="120" y="638"/> 
+		<point x="140" y="618"/> 
+		<point x="170" y="648"/> 
+	</road>
+	<road id="164" from="Hubertus" to="Krematorium Sihlfeld" direction="undirected" type="lightrail">
+		<point x="170" y="648"/> 
+		<point x="245" y="648"/> 
+	</road>
+	<road id="165" from="Krematorium Sihlfeld" to="Albisriederplatz" direction="undirected" type="lightrail">
+		<point x="245" y="648"/>
+		<point x="285" y="648"/> 
+		<point x="300" y="663"/> 
+	</road>
+	<road id="166" from="Albisriederplatz" to="Zypressenstrasse" direction="undirected" type="lightrail">
+		<point x="300" y="663"/> 
+		<point x="325" y="688"/> 
+	</road>
+	<road id="167" from="Zypressenstrasse" to="Lochergut" direction="undirected" type="lightrail">
+		<point x="325" y="688"/> 
+		<point x="355" y="718"/> 
+	</road>
+	<road id="168" from="Lochergut" to="Kalkbreite" direction="undirected" type="lightrail">
+		<point x="355" y="718"/>
+		<point x="370" y="733"/> 
+		<point x="420" y="733"/> 
+	</road>
+	<road id="169" from="Kalkbreite" to="Bezirksgebaeude" direction="undirected" type="lightrail">
+		<point x="420" y="733"/> 
+		<point x="490" y="733"/> 
+	</road>
+	<road id="170" from="Bezirksgebaeude" to="Stauffacher" direction="undirected" type="lightrail">
+		<point x="490" y="733"/> 
+		<point x="550" y="733"/> 
+	</road>
+	<road id="171" from="Central" to="Neumarkt" direction="undirected" type="lightrail">
+		<point x="820" y="693"/> 
+		<point x="875" y="748"/> 
+	</road>
+	<road id="172" from="Neumarkt" to="Kunsthaus" direction="undirected" type="lightrail">
+		<point x="875" y="748"/> 
+		<point x="940" y="813"/> 
+	</road>
+	<road id="173" from="Farbhof" to="Bachmattstrasse" direction="undirected" type="lightrail"> 
+		<point x="30" y="378"/> 
+		<point x="70" y="418"/> 
+	</road>
+	<road id="174" from="Bachmattstrasse" to="Lindenplatz (Altstetten)" direction="undirected" type="lightrail">  
+		<point x="70" y="418"/> 
+		<point x="110" y="458"/> 
+	</road>
+	<road id="175" from="Lindenplatz (Altstetten)" to="Grimselstrasse" direction="undirected" type="lightrail"> 
+		<point x="110" y="458"/> 
+		<point x="140" y="488"/> 
+	</road>
+	<road id="176" from="Grimselstrasse" to="Kappeli" direction="undirected" type="lightrail"> 
+		<point x="140" y="488"/> 
+		<point x="180" y="528"/> 
+	</road>
+	<road id="177" from="Kappeli" to="Freihofstrasse" direction="undirected" type="lightrail"> 
+		<point x="180" y="528"/> 
+		<point x="215" y="563"/> 
+	</road>
+	<road id="178" from="Freihofstrasse" to="Letzigrund" direction="undirected" type="lightrail"> 
+		<point x="215" y="563"/> 
+		<point x="260" y="608"/> 
+	</road>
+	<road id="179" from="Letzigrund" to="Albisriederplatz" direction="undirected" type="lightrail">
+		<point x="260" y="608"/> 
+		<point x="300" y="648"/> 
+	</road>
+	<road id="180" from="Brunaupark" to="Laubegg" direction="undirected" type="street">
+		<point x="358" y="1078"/>
+		<point x="319" y="1117"/>
+	</road>
+	<road id="181" from="Strassenverkehrsamt" to="Hegianwandweg" direction="undirected" type="street">
+		<point x="224" y="1212"/>
+		<point x="177" y="1165"/>
+	</road>
+	<road id="182" from="Hegianwandweg" to="Im Hagacker" direction="undirected" type="street">
+		<point x="177" y="1165"/>
+		<point x="149" y="1137"/>
+		<point x="149" y="1092"/>
+	</road>
+	<road id="183" from="Im Hagacker" to="Friesenbergstrasse" direction="undirected" type="street">
+		<point x="149" y="1092"/>
+		<point x="149" y="1014"/>
+	</road>
+	<road id="184" from="Friesenbergstrasse" to="Schweighof SZU" direction="undirected" type="street">
+		<point x="149" y="1014"/>
+		<point x="149" y="947"/>
+	</road>
+	<road id="185" from="Schweighof SZU" to="Schaufelbergerstrasse" direction="undirected" type="street">
+		<point x="149" y="947"/>
+		<point x="149" y="820"/>
+	</road>
+	<road id="186" from="Schaufelbergerstrasse" to="Im Gut" direction="undirected" type="street">
+		<point x="149" y="820"/>
+		<point x="149" y="776"/>
+		<point x="185" y="740"/>
+	</road>
+	<road id="187" from="Im Gut" to="Hubertus" direction="undirected" type="street">
+		<point x="185" y="740"/>
+		<point x="212" y="713"/>
+		<point x="160" y="661"/>
+	</road>
+	<road id="188" from="Hubertus" to="Albisrank" direction="undirected" type="street">
+		<point x="160" y="661"/>
+		<point x="93" y="594"/>
+	</road>
+	<road id="189" from="Albisrank" to="Flurstrasse" direction="undirected" type="street">
+		<point x="93" y="594"/>
+		<point x="73" y="574"/>
+		<point x="99" y="548"/>
+	</road>
+	<road id="190" from="Flurstrasse" to="Kappeli" direction="undirected" type="street">
+		<point x="99" y="548"/>
+		<point x="137" y="510"/>
+		<point x="169" y="512"/>
+	</road>
+	<road id="191" from="Kappeli" to="Letzipark" direction="undirected" type="street">
+		<point x="169" y="512"/>
+		<point x="197" y="512"/>
+	</road>
+	<road id="192" from="Letzipark" to="Baslerstrasse" direction="undirected" type="street">
+		<point x="197" y="512"/>
+		<point x="197" y="486"/>
+		<point x="165" y="454"/>
+	</road>
+	<road id="193" from="Baslerstrasse" to="Bristenstrasse" direction="undirected" type="street">
+		<point x="165" y="454"/>
+		<point x="138" y="427"/>
+		<point x="159" y="406"/>
+	</road>
+	<road id="194" from="Bristenstrasse" to="Bahnhof Altstetten" direction="undirected" type="street">
+		<point x="159" y="406"/>
+		<point x="189" y="376"/>
+		<point x="202" y="389"/>
+	</road>
+	<road id="195" from="Bahnhof Altstetten" to="Tueffenwies" direction="undirected" type="street">
+		<point x="202" y="389"/>
+		<point x="237" y="424"/>
+		<point x="357" y="304"/>
+		<point x="357" y="291"/>
+	</road>
+	<road id="196" from="Tueffenwies" to="Winzerhalde" direction="undirected" type="street">
+		<point x="357" y="291"/>
+		<point x="357" y="192"/>
+		<point x="339" y="176"/>				
+	</road>
+	<road id="197" from="Winzerhalde" to="Hohenklingensteig" direction="undirected" type="street">
+		<point x="339" y="176"/>
+		<point x="319" y="156"/>
+		<point x="319" y="144"/>
+	</road>
+	<road id="198" from="Hohenklingensteig" to="Winzerstrasse" direction="undirected" type="street">
+		<point x="319" y="144"/>
+		<point x="319" y="73"/>
+	</road>
+	<road id="199" from="Triemlispital" to="Triemli" direction="undirected" type="street">
+		<point x="98" y="923"/>
+		<point x="98" y="834"/>
+	</road>
+	<road id="200" from="Triemli" to="In der Ey" direction="undirected" type="street">
+		<point x="98" y="834"/>
+		<point x="59" y="795"/>
+	</road>
+	<road id="201" from="In der Ey" to="Goldackerweg" direction="undirected" type="street">
+		<point x="59" y="795"/>
+		<point x="31" y="767"/>
+	</road>
+	<road id="202" from="Goldackerweg" to="Albisrieden" direction="undirected" type="street">
+		<point x="31" y="767"/>
+		<point x="7" y="743"/>
+	</road>
+	<road id="203" from="Albisrieden" to="Albisriederdoerfli" direction="undirected" type="street">
+		<point x="7" y="743"/>
+		<point x="7" y="684"/>
+	</road>
+	<road id="204" from="Albisriederdoerfli" to="Untermoosstrasse" direction="undirected" type="street">
+		<point x="7" y="684"/>
+		<point x="7" y="624"/>
+	</road>
+	<road id="205" from="Untermoosstrasse" to="Rautistrasse" direction="undirected" type="street">
+		<point x="7" y="624"/>
+		<point x="7" y="548"/>
+	</road>
+	<road id="206" from="Rautistrasse" to="Lindenplatz (Altstetten)" direction="undirected" type="street">
+		<point x="7" y="548"/>
+		<point x="99" y="456"/>
+	</road>
+	<road id="207" from="Lindenplatz (Altstetten)" to="Bristenstrasse" direction="undirected" type="street">
+		<point x="99" y="456"/>
+		<point x="153" y="402"/>
+	</road>
+	<road id="208" from="Meierhofplatz" to="Hoenggerberg" direction="undirected" type="street">
+		<point x="458" y="118"/>
+		<point x="497" y="118"/>
+		<point x="529" y="86"/>
+	</road>
+	<road id="209" from="Hoenggerberg" to="ETH Hoenggerberg" direction="undirected" type="street">
+		<point x="529" y="86"/>
+		<point x="529" y="34"/>
+	</road>
+	<road id="210" from="ETH Hoenggerberg" to="Lerchenhalde" direction="undirected" type="street">
+		<point x="529" y="34"/>
+		<point x="529" y="0"/>
+	</road>
+	<road id="211" from="In der Ey" to="Schulhaus Altweg" direction="undirected" type="street">
+		<point x="65" y="784"/>
+		<point x="52" y="771"/>
+		<point x="73" y="750"/>
+	</road>
+	<road id="212" from="Schulhaus Altweg" to="Sackzelg" direction="undirected" type="street">
+		<point x="73" y="750"/>
+		<point x="98" y="725"/>
+	</road>
+	<road id="213" from="Sackzelg" to="Hubertus" direction="undirected" type="street">
+		<point x="98" y="725"/>
+		<point x="166" y="657"/>
+	</road>
+	<road id="214" from="Albisriederplatz" to="Hardplatz" direction="undirected" type="street">
+		<point x="279" y="657"/>
+		<point x="382" y="554"/>
+	</road>
+	<road id="215" from="Hardplatz" to="Bahnhof Hardbruecke" direction="undirected" type="street">
+		<point x="382" y="554"/>
+		<point x="407" y="529"/>
+	</road>
+	<road id="216" from="Bahnhof Hardbruecke" to="Pfingstweidstrasse" direction="undirected" type="street">
+		<point x="407" y="529"/>
+		<point x="434" y="502"/>
+	</road>
+	<road id="217" from="Pfingstweidstrasse" to="Escher-Wyss-Platz" direction="undirected" type="street">
+		<point x="434" y="502"/>
+		<point x="512" y="424"/>
+	</road>
+	<road id="218" from="Escher-Wyss-Platz" to="Rosengartenstrasse" direction="undirected" type="street">
+		<point x="512" y="424"/>
+		<point x="630" y="306"/>
+	</road>
+	<road id="219" from="Rosengartenstrasse" to="Bucheggplatz" direction="undirected" type="street">
+		<point x="630" y="306"/>
+		<point x="649" y="287"/>
+		<point x="723" y="287"/>
+	</road>
+	<road id="220" from="Bucheggplatz" to="Milchbuck" direction="undirected" type="street">
+		<point x="723" y="287"/>
+		<point x="821" y="287"/>
+	</road>
+	<road id="221" from="Bucheggplatz" to="Weihersteig" direction="undirected" type="street">
+		<point x="728" y="272"/>
+		<point x="703" y="272"/>
+		<point x="664" y="233"/>
+	</road>
+	<road id="222" from="Weihersteig" to="Waidspital" direction="undirected" type="street">
+		<point x="664" y="233"/>
+		<point x="637" y="206"/>
+	</road>
+	<road id="223" from="Waidspital" to="Krankenheim Kaeferberg" direction="undirected" type="street">
+		<point x="637" y="206"/>
+		<point x="613" y="182"/>
+	</road>
+	<road id="224" from="Krankenheim Kaeferberg" to="Waidbadstrasse" direction="undirected" type="street">
+		<point x="613" y="182"/>
+		<point x="587" y="156"/>
+	</road>
+	<road id="225" from="Waidbadstrasse" to="Im Wingert" direction="undirected" type="street">
+		<point x="587" y="156"/>
+		<point x="551" y="120"/>
+	</road>
+	<road id="226" from="Im Wingert" to="Hoenggerberg" direction="undirected" type="street">
+		<point x="551" y="120"/>
+		<point x="541" y="110"/>
+		<point x="541" y="80"/>
+	</road>
+	<road id="227" from="Goldbrunnenplatz" to="Gutstrasse" direction="undirected" type="street">
+		<point x="325" y="817"/>
+		<point x="299" y="817"/>
+		<point x="251" y="769"/>
+	</road>
+	<road id="228" from="Gutstrasse" to="Im Gut" direction="undirected" type="street">
+		<point x="251" y="769"/>
+		<point x="236" y="754"/>
+		<point x="191" y="754"/>
+	</road>
+	<road id="229" from="Im Gut" to="Langgruetstrasse" direction="undirected" type="street">
+		<point x="191" y="754"/>
+		<point x="157" y="754"/>
+	</road>
+	<road id="230" from="Langgruetstrasse" to="Sackzelg" direction="undirected" type="street">
+		<point x="157" y="754"/>
+		<point x="124" y="754"/>
+		<point x="103" y="733"/>
+	</road>
+	<road id="231" from="Sackzelg" to="Fellenbergstrasse" direction="undirected" type="street">
+		<point x="103" y="733"/>
+		<point x="62" y="692"/>
+	</road>
+	<road id="232" from="Fellenbergstrasse" to="Albisriederdoerfli" direction="undirected" type="street">
+		<point x="62" y="692"/>
+		<point x="12" y="692"/>
+	</road>
+	<road id="233" from="Widmerstrasse" to="Kalchbuehlweg" direction="undirected" type="street">
+		<point x="510" y="1427"/>
+		<point x="510" y="1378"/>
+	</road>
+	<road id="234" from="Kalchbuehlweg" to="Morgental" direction="undirected" type="street">
+		<point x="510" y="1378"/>
+		<point x="510" y="1323"/>
+	</road>
+	<road id="235" from="Morgental" to="Jugendherberge" direction="undirected" type="street">
+		<point x="510" y="1323"/>
+		<point x="510" y="1247"/>
+	</road>
+	<road id="236" from="Jugendherberge" to="Thujastrasse" direction="undirected" type="street">
+		<point x="510" y="1247"/>
+		<point x="510" y="1189"/>
+	</road>
+	<road id="237" from="Thujastrasse" to="Brunau-/Mutschellenstrasse" direction="undirected" type="street">
+		<point x="510" y="1189"/>
+		<point x="510" y="1129"/>
+	</road>
+	<road id="238" from="Brunau-/Mutschellenstrasse" to="Huegelstrasse" direction="undirected" type="street">
+		<point x="510" y="1129"/>
+		<point x="510" y="1073"/>
+	</road>
+	<road id="239" from="Huegelstrasse" to="Waffenplatzstrasse" direction="undirected" type="street">
+		<point x="510" y="1073"/>
+		<point x="510" y="1027"/>
+	</road>
+	<road id="240" from="Waffenplatzstrasse" to="Parkring" direction="undirected" type="street">
+		<point x="510" y="1027"/>
+		<point x="510" y="916"/>
+	</road>
+	<road id="241" from="Parkring" to="Brandschenkestrasse" direction="undirected" type="street">
+		<point x="510" y="916"/>
+		<point x="556" y="870"/>
+	</road>
+	<road id="242" from="Brandschenkestrasse" to="Sihlstrasse" direction="undirected" type="street">
+		<point x="556" y="870"/>
+		<point x="626" y="802"/>
+	</road>
+	<road id="243" from="Schwamendingerplatz" to="Friedrichstrasse" direction="undirected" type="street">
+		<point x="1214" y="127"/>
+		<point x="1179" y="162"/>
+	</road>
+	<road id="244" from="Friedrichstrasse" to="Frohburg" direction="undirected" type="street">
+		<point x="1179" y="162"/>
+		<point x="1118" y="162"/>
+	</road>
+	<road id="245" from="Frohburg" to="Waldgarten" direction="undirected" type="street">
+		<point x="1118" y="162"/>
+		<point x="1079" y="162"/>
+		<point x="1063" y="146"/>
+	</road>
+	<road id="246" from="Waldgarten" to="Friedackerstrasse" direction="undirected" type="street">
+		<point x="1063" y="146"/>
+		<point x="1027" y="110"/>
+	</road>
+	<road id="247" from="Friedackerstrasse" to="Dorflinde" direction="undirected" type="street">
+		<point x="1027" y="110"/>
+		<point x="1005" y="88"/>
+	</road>
+	<road id="248" from="Dorflinde" to="Sternen Oerlikon" direction="undirected" type="street">
+		<point x="1005" y="88"/>
+		<point x="981" y="63"/>
+	</road>
+	<road id="249" from="Regensbergbruecke" to="Oberwiesenstrasse" direction="undirected" type="street">
+		<point x="854" y="69"/>
+		<point x="786" y="1"/>
+	</road>
+	<road id="250" from="Stampfenbachplatz" to="Nordstrasse" direction="undirected" type="street">
+		<point x="780" y="533"/>
+		<point x="675" y="428"/>
+	</road>
+	<road id="251" from="Nordstrasse" to="Lettenstrasse" direction="undirected" type="street">
+		<point x="675" y="428"/>
+		<point x="659" y="412"/>
+		<point x="659" y="390"/>
+	</road>
+	<road id="252" from="Lettenstrasse" to="Bahnhof Wipkingen" direction="undirected" type="street">
+		<point x="659" y="390"/>
+		<point x="659" y="329"/>
+	</road>
+	<road id="253" from="Bahnhof Wipkingen" to="Rosengartenstrasse" direction="undirected" type="street">
+		<point x="659" y="329"/>
+		<point x="629" y="299"/>
+	</road>
+	<road id="254" from="Rosengartenstrasse" to="Lehenstrasse" direction="undirected" type="street">
+		<point x="629" y="299"/>
+		<point x="597" y="267"/>
+	</road>
+	<road id="255" from="Lehenstrasse" to="Rebbergsteig" direction="undirected" type="street">
+		<point x="597" y="267"/>
+		<point x="559" y="229"/>
+	</road>
+	<road id="256" from="Rebbergsteig" to="Kempfhofsteig" direction="undirected" type="street">
+		<point x="559" y="229"/>
+		<point x="533" y="203"/>
+	</road>
+	<road id="257" from="Kempfhofsteig" to="Schwert" direction="undirected" type="street">
+		<point x="533" y="203"/>
+		<point x="486" y="156"/>
+	</road>
+	<road id="258" from="Im Kloesterli" to="Klosterweg" direction="undirected" type="street">
+		<point x="1332" y="465"/>
+		<point x="1306" y="491"/>
+	</road>
+	<road id="259" from="Klosterweg" to="Zoo" direction="undirected" type="street">
+		<point x="1306" y="491"/>
+		<point x="1280" y="517"/>
+	</road>
+	<road id="260" from="Zoo" to="Flobotstrasse" direction="undirected" type="street">
+		<point x="1280" y="517"/>
+		<point x="1268" y="517"/>
+		<point x="1248" y="497"/>
+	</road>
+	<road id="261" from="Flobotstrasse" to="Heubeeriweg" direction="undirected" type="street">
+		<point x="1248" y="497"/>
+		<point x="1215" y="464"/>
+	</road>
+	<road id="262" from="Heubeeriweg" to="Kroenleinstrasse" direction="undirected" type="street">
+		<point x="1215" y="464"/>
+		<point x="1185" y="434"/>
+	</road>
+	<road id="263" from="Kroenleinstrasse" to="Spyristeig" direction="undirected" type="street">
+		<point x="1185" y="434"/>
+		<point x="1153" y="402"/>
+	</road>
+	<road id="264" from="Spyristeig" to="Rigiblick" direction="undirected" type="street">
+		<point x="1153" y="402"/>
+		<point x="1132" y="381"/>
+		<point x="1115" y="381"/>
+	</road>
+	<road id="265" from="Germaniastrasse" to="Schaeppiweg" direction="undirected" type="street">
+		<point x="1077" y="381"/>
+		<point x="1064" y="381"/>
+		<point x="1039" y="356"/>
+	</road>
+	<road id="266" from="Schaeppiweg" to="Langensteinenstrasse" direction="undirected" type="street">
+		<point x="1039" y="356"/>
+		<point x="1012" y="329"/>
+	</road>
+	<road id="267" from="Langensteinenstrasse" to="Letzistrasse" direction="undirected" type="street">
+		<point x="1012" y="329"/>
+		<point x="996" y="313"/>
+		<point x="971" y="338"/>
+	</road>
+	<road id="268" from="Letzistrasse" to="Irchel" direction="undirected" type="street">
+		<point x="971" y="338"/>
+		<point x="919" y="286"/>
+	</road>
+	<road id="269" from="Utobruecke" to="Manesseplatz" direction="undirected" type="street">
+		<point x="456" y="1034"/>
+		<point x="388" y="966"/>
+		<point x="388" y="944"/>
+	</road>
+	<road id="270" from="Manesseplatz" to="Schmiede Wiedikon" direction="undirected" type="street">
+		<point x="388" y="944"/>
+		<point x="388" y="818"/>
+	</road>
+	<road id="271" from="Schmiede Wiedikon" to="Zwinglihaus" direction="undirected" type="street">
+		<point x="388" y="818"/>
+		<point x="350" y="780"/>
+	</road>
+	<road id="272" from="Zwinglihaus" to="Bertastrasse" direction="undirected" type="street">
+		<point x="350" y="780"/>
+		<point x="315" y="745"/>
+	</road>
+	<road id="273" from="Bertastrasse" to="Friedhof Sihlfeld" direction="undirected" type="street">
+		<point x="315" y="745"/>
+		<point x="280" y="710"/>
+	</road>
+	<road id="274" from="Friedhof Sihlfeld" to="Krematorium Sihlfeld" direction="undirected" type="street">
+		<point x="280" y="710"/>
+		<point x="235" y="665"/>
+	</road>
+	<road id="275" from="Bahnhof Wipkingen" to="Nuerenbergstrasse" direction="undirected" type="street">
+		<point x="640" y="341"/>
+		<point x="673" y="374"/>
+	</road>
+	<road id="276" from="Nuerenbergstrasse" to="Rotbuchstrasse" direction="undirected" type="street">
+		<point x="673" y="374"/>
+		<point x="688" y="389"/>
+		<point x="715" y="389"/>
+	</road>
+	<road id="277" from="Rotbuchstrasse" to="Schaffhauserplatz" direction="undirected" type="street">
+		<point x="715" y="389"/>
+		<point x="815" y="389"/>
+	</road>
+	<road id="278" from="Schaffhauserplatz" to="Scheuchzerstrasse" direction="undirected" type="street">
+		<point x="815" y="389"/>
+		<point x="903" y="389"/>
+		<point x="908" y="394"/>
+	</road>
+	<road id="279" from="Scheuchzerstrasse" to="Seilbahn Rigiblick" direction="undirected" type="street">
+		<point x="908" y="394"/>
+		<point x="971" y="457"/>
+	</road>
+	<road id="280" from="Seilbahn Rigiblick" to="Vogelsangstrasse" direction="undirected" type="street">
+		<point x="971" y="457"/>
+		<point x="1014" y="500"/>
+	</road>
+	<road id="281" from="Vogelsangstrasse" to="Spyriplatz" direction="undirected" type="street">
+		<point x="1014" y="500"/>
+		<point x="1047" y="533"/>
+	</road>
+	<road id="282" from="Spyriplatz" to="Bethanien" direction="undirected" type="street">
+		<point x="1047" y="533"/>
+		<point x="1083" y="569"/>
+	</road>
+	<road id="283" from="Bethanien" to="Toblerplatz" direction="undirected" type="street">
+		<point x="1083" y="569"/>
+		<point x="1133" y="619"/>
+	</road>
+	<road id="284" from="Kirche Fluntern" to="Hofstrasse" direction="undirected" type="street">
+		<point x="1100" y="652"/>
+		<point x="1126" y="678"/>
+		<point x="1126" y="716"/>
+	</road>
+	<road id="285" from="Hofstrasse" to="Klosbach" direction="undirected" type="street">
+		<point x="1126" y="716"/>
+		<point x="1126" y="743"/>
+		<point x="1158" y="775"/>
+	</road>
+	<road id="286" from="Klosbach" to="Hoelderlinsteig" direction="undirected" type="street">
+		<point x="1158" y="775"/>
+		<point x="1166" y="785"/>
+		<point x="1166" y="816"/>				
+	</road>
+	<road id="287" from="Hoelderlinsteig" to="Klusplatz" direction="undirected" type="street">
+		<point x="1166" y="816"/>
+		<point x="1166" y="913"/>
+	</road>
+	<road id="288" from="Klusplatz" to="Freiestrasse" direction="undirected" type="street">
+		<point x="1166" y="913"/>
+		<point x="1135" y="944"/>
+	</road>
+	<road id="289" from="Freiestrasse" to="Hegibachplatz" direction="undirected" type="street">
+		<point x="1135" y="944"/>
+		<point x="1070" y="1009"/>
+	</road>
+	<road id="290" from="Hegibachplatz" to="Botanischer Garten" direction="undirected" type="street">
+		<point x="1070" y="1009"/>
+		<point x="1070" y="1037"/>
+	</road>
+	<road id="291" from="Botanischer Garten" to="Hoeschgasse" direction="undirected" type="street">
+		<point x="1070" y="1037"/>
+		<point x="1024" y="1083"/>
+	</road>
+	<road id="292" from="Friesenbergstrasse" to="Friesenberg SZU" direction="undirected" type="street">
+		<point x="168" y="1023"/>
+		<point x="232" y="959"/>
+	</road>
+	<road id="293" from="Friesenberg SZU" to="Hoefliweg" direction="undirected" type="street">
+		<point x="232" y="959"/>
+		<point x="271" y="920"/>
+	</road>
+	<road id="294" from="Hoefliweg" to="Goldbrunnenplatz" direction="undirected" type="street">
+		<point x="271" y="920"/>
+		<point x="327" y="864"/>
+		<point x="327" y="815"/>
+	</road>
+	<road id="295" from="Goldbrunnenplatz" to="Zwinglihaus" direction="undirected" type="street">
+		<point x="327" y="815"/>
+		<point x="355" y="787"/>
+	</road>
+	<road id="296" from="Zwinglihaus" to="Kalkbreite" direction="undirected" type="street">
+		<point x="355" y="787"/>
+		<point x="415" y="727"/>
+	</road>
+	<road id="297" from="Kalkbreite" to="Kernstrasse" direction="undirected" type="street">
+		<point x="415" y="727"/>
+		<point x="451" y="691"/>
+	</road>
+	<road id="298" from="Kernstrasse" to="Helvetiaplatz" direction="undirected" type="street">
+		<point x="451" y="691"/>
+		<point x="482" y="660"/>
+	</road>
+	<road id="299" from="Helvetiaplatz" to="Militaer-/Langstrasse" direction="undirected" type="street">
+		<point x="482" y="660"/>
+		<point x="513" y="629"/>
+	</road>
+	<road id="300" from="Militaer-/Langstrasse" to="Roentgenstrasse" direction="undirected" type="street">
+		<point x="513" y="629"/>
+		<point x="533" y="609"/>
+		<point x="533" y="584"/>
+		<point x="554" y="563"/>
+	</road>
+	<road id="301" from="Roentgenstrasse" to="Limmatplatz" direction="undirected" type="street">
+		<point x="554" y="563"/>
+		<point x="599" y="518"/>
+	</road>
+	<road id="302" from="Limmatplatz" to="Nordstrasse" direction="undirected" type="street">
+		<point x="599" y="518"/>
+		<point x="679" y="438"/>
+	</road>
+	<road id="303" from="Nordstrasse" to="Rotbuchstrasse" direction="undirected" type="street">
+		<point x="679" y="438"/>
+		<point x="716" y="401"/>
+	</road>
+	<road id="304" from="Rotbuchstrasse" to="Laegernstrasse" direction="undirected" type="street">
+		<point x="716" y="401"/>
+		<point x="726" y="391"/>
+		<point x="726" y="370"/>
+	</road>
+	<road id="305" from="Laegernstrasse" to="Bucheggplatz" direction="undirected" type="street">
+		<point x="726" y="370"/>
+		<point x="726" y="286"/>
+	</road>
+	<road id="306" from="Radiostudio" to="Birchdoerfli" direction="undirected" type="street">
+		<point x="726" y="189"/>
+		<point x="726" y="66"/>
+	</road>
+	<road id="307" from="Birchdoerfli" to="Neu-Affoltern" direction="undirected" type="street">
+		<point x="726" y="66"/>
+		<point x="726" y="0"/>
+	</road>
+	<road id="308" from="Kreuzplatz" to="Sprecherstrasse" direction="undirected" type="street">
+		<point x="1004" y="919"/>
+		<point x="967" y="882"/>
+	</road>
+	<road id="309" from="Sprecherstrasse" to="Kunsthaus" direction="undirected" type="street">
+		<point x="967" y="882"/>
+		<point x="934" y="849"/>
+		<point x="934" y="816"/>
+	</road>
+	<road id="310" from="Kaserne" to="Kanonengasse" direction="undirected" type="street">
+		<point x="590" y="682"/>
+		<point x="550" y="642"/>
+	</road>
+	<road id="311" from="Kanonengasse" to="Militaer-/Langstrasse" direction="undirected" type="street">
+		<point x="550" y="642"/>
+		<point x="537" y="629"/>
+		<point x="513" y="629"/>
+	</road>
+	<road id="312" from="Militaer-/Langstrasse" to="Baeckeranlage" direction="undirected" type="street">
+		<point x="513" y="629"/>
+		<point x="463" y="629"/>
+	</road>
+	<road id="313" from="Baeckeranlage" to="Gueterbahnhof" direction="undirected" type="street">
+		<point x="463" y="629"/>
+		<point x="427" y="593"/>
+	</road>
+	<road id="314" from="Hardplatz" to="Herdernstrasse" direction="undirected" type="street">
+		<point x="392" y="558"/>
+		<point x="356" y="522"/>
+		<point x="334" y="522"/>
+	</road>
+	<road id="315" from="Herdernstrasse" to="SBB-Werkstaette" direction="undirected" type="street">
+		<point x="334" y="522"/>
+		<point x="313" y="522"/>
+		<point x="294" y="503"/>
+	</road>
+	<road id="316" from="SBB-Werkstaette" to="Letzibeck" direction="undirected" type="street">
+		<point x="294" y="503"/>
+		<point x="274" y="483"/>
+	</road>
+	<road id="317" from="Letzibeck" to="Luggwegstrasse" direction="undirected" type="street">
+		<point x="274" y="483"/>
+		<point x="252" y="461"/>
+	</road>
+	<road id="318" from="Luggwegstrasse" to="Bahnhof Altstetten" direction="undirected" type="street">
+		<point x="252" y="461"/>
+		<point x="197" y="406"/>
+	</road>
+	<road id="319" from="Bahnhof Altstetten" to="Seidelhof" direction="undirected" type="street">
+		<point x="197" y="406"/>
+		<point x="156" y="365"/>
+		<point x="104" y="365"/>
+	</road>
+	<road id="320" from="Seidelhof" to="Farbhof" direction="undirected" type="street">
+		<point x="104" y="365"/>
+		<point x="48" y="365"/>
+	</road>
+	<road id="321" from="Farbhof" to="Micafil" direction="undirected" type="street">
+		<point x="48" y="365"/>
+		<point x="0" y="314"/>
+	</road>
+	<road id="322" from="Hauptbahnhof" to="Bahnhof Wiedikon" direction="undirected" type="railroad">
+		<point x="691" y="599"/>
+		<point x="439" y="599"/>
+		<point x="427" y="600"/>
+		<point x="415" y="605"/>
+		<point x="407" y="614"/>
+		<point x="399" y="626"/>
+		<point x="395" y="641"/>
+		<point x="395" y="722"/>
+		<point x="397" y="727"/>
+		<point x="402" y="734"/>
+		<point x="407" y="740"/>
+		<point x="479" y="812"/>
+	</road>
+	<road id="323" from="Bahnhof Wiedikon" to="Bahnhof Enge" direction="undirected" type="railroad">
+		<point x="479" y="812"/>
+		<point x="569" y="902"/>
+		<point x="573" y="910"/>
+		<point x="576" y="920"/>
+		<point x="579" y="939"/>
+		<point x="579" y="998"/>
+	</road>
+	<road id="324" from="Bahnhof Enge" to="Bahnhof Wollishofen" direction="undirected" type="railroad">
+		<point x="579" y="998"/>
+		<point x="579" y="1128"/>
+		<point x="578" y="1137"/>
+		<point x="582" y="1146"/>
+		<point x="588" y="1155"/>
+		<point x="596" y="1166"/>
+		<point x="648" y="1218"/>
+		<point x="658" y="1230"/>
+		<point x="661" y="1237"/>
+		<point x="663" y="1247"/>
+	</road>
+	<road id="325" from="Hauptbahnhof" to="Bahnhof Wipkingen" direction="undirected" type="railroad">
+		<point x="691" y="598"/>
+		<point x="504" y="598"/>
+		<point x="482" y="591"/>
+		<point x="471" y="584"/>
+		<point x="462" y="572"/>
+		<point x="457" y="559"/>
+		<point x="455" y="546"/>
+		<point x="458" y="532"/>
+		<point x="462" y="521"/>
+		<point x="470" y="514"/>
+		<point x="650" y="334"/>
+	</road>
+	<road id="326" from="Bahnhof Wipkingen" to="Bahnhof Oerlikon" direction="undirected" type="railroad">
+		<point x="650" y="334"/>
+		<point x="674" y="310"/>
+		<point x="680" y="299"/>
+		<point x="683" y="279"/>
+		<point x="683" y="200"/>
+		<point x="684" y="183"/>
+		<point x="692" y="169"/>
+		<point x="702" y="158"/>
+		<point x="851" y="9"/>
+		<point x="867" y="5"/>
+		<point x="886" y="4"/>
+		<point x="908" y="4"/>
+	</road>
+	<road id="327" from="Hauptbahnhof" to="Bahnhof Hardbruecke" direction="undirected" type="railroad">
+		<point x="693" y="599"/>
+		<point x="505" y="599"/>
+		<point x="495" y="597"/>
+		<point x="473" y="586"/>
+		<point x="463" y="577"/>
+		<point x="411" y="525"/>
+	</road>
+	<road id="328" from="Bahnhof Hardbruecke" to="Bahnhof Altstetten" direction="undirected" type="railroad">
+		<point x="411" y="525"/>
+		<point x="238" y="352"/>
+	</road>
+	<road id="329" from="Hauptbahnhof" to="Bahnhof Selnau" direction="undirected" type="railroad">
+		<point x="688" y="599"/>
+		<point x="666" y="599"/>
+		<point x="650" y="607"/>
+		<point x="640" y="619"/>
+		<point x="635" y="632"/>
+		<point x="634" y="645"/>
+		<point x="634" y="750"/>
+		<point x="632" y="759"/>
+		<point x="621" y="773"/>
+		<point x="554" y="840"/>
+	</road>
+	<road id="330" from="Bahnhof Selnau" to="Bahnhof Giesshuebel" direction="undirected" type="railroad">
+		<point x="554" y="840"/>
+		<point x="411" y="983"/>
+		<point x="399" y="995"/>
+		<point x="391" y="1010"/>
+	</road>
+	<road id="331" from="Bahnhof Giesshuebel" to="Saalsporthalle" direction="undirected" type="railroad">
+		<point x="391" y="1010"/>
+		<point x="387" y="1033"/>
+		<point x="392" y="1049"/>
+		<point x="403" y="1063"/>
+		<point x="424" y="1084"/>
+	</road>
+	<road id="332" from="Saalsporthalle" to="Brunau" direction="undirected" type="railroad">
+		<point x="424" y="1084"/>
+		<point x="454" y="1114"/>
+		<point x="463" y="1129"/>
+		<point x="463" y="1145"/>
+		<point x="462" y="1161"/>
+		<point x="457" y="1170"/>
+		<point x="447" y="1180"/>
+	</road>
+	<road id="333" from="Brunau" to="Manegg" direction="undirected" type="railroad">
+		<point x="447" y="1180"/>
+		<point x="303" y="1324"/>
+		<point x="298" y="1334"/>
+		<point x="293" y="1345"/>
+		<point x="293" y="1365"/>
+	</road>
+	<road id="334" from="Bahnhof Hardbruecke" to="Bahnhof Oerlikon" direction="undirected" type="railroad">
+		<point x="410" y="525"/>
+		<point x="370" y="485"/>
+		<point x="362" y="458"/>
+		<point x="367" y="440"/>
+		<point x="378" y="424"/>
+		<point x="595" y="207"/>
+		<point x="608" y="200"/>
+		<point x="627" y="197"/>
+		<point x="657" y="197"/>
+		<point x="664" y="195"/>
+		<point x="672" y="190"/>
+		<point x="680" y="179"/>
+		<point x="849" y="10"/>
+		<point x="859" y="6"/>
+		<point x="876" y="3"/>
+		<point x="908" y="3"/>
+	</road>
+	<road id="335" from="Hauptbahnhof" to="Bahnhof Stadelhofen" direction="undirected" type="railroad">
+		<point x="693" y="600"/>
+		<point x="811" y="600"/>
+		<point x="822" y="602"/>
+		<point x="831" y="606"/>
+		<point x="839" y="611"/>
+		<point x="846" y="619"/>
+		<point x="851" y="631"/>
+		<point x="853" y="641"/>
+		<point x="853" y="648"/>
+		<point x="853" y="864"/>
+		<point x="854" y="870"/>
+		<point x="859" y="876"/>
+		<point x="862" y="883"/>
+		<point x="902" y="923"/>
+	</road>
+	<road id="336" from="Bahnhof Stadelhofen" to="Bahnhof Tiefenbrunnen" direction="undirected" type="railroad">
+		<point x="902" y="923"/>
+		<point x="1084" y="1105"/>
+		<point x="1092" y="1116"/>
+		<point x="1097" y="1123"/>
+		<point x="1099" y="1134"/>
+		<point x="1099" y="1248"/>
+	</road>
+	<road id="337" from="Bahnhof Stadelhofen" to="Bahnhof Stettbach" direction="undirected" type="railroad">
+		<point x="900" y="903"/>
+		<point x="1027" y="903"/>
+		<point x="1038" y="900"/>
+		<point x="1051" y="892"/>
+		<point x="1062" y="881"/>
+		<point x="1354" y="589"/>
+		<point x="1360" y="581"/>
+		<point x="1363" y="562"/>
+		<point x="1365" y="542"/>
+		<point x="1365" y="248"/>
+	</road>
+	<road id="338" from="Bahnhof Selnau" to="Binz SZU" direction="undirected" type="railroad">
+		<point x="554" y="839"/>
+		<point x="418" y="975"/>
+		<point x="404" y="985"/>
+		<point x="388" y="988"/>
+		<point x="376" y="986"/>
+		<point x="368" y="985"/>
+		<point x="359" y="981"/>
+	</road>
+	<road id="339" from="Binz SZU" to="Friesenberg SZU" direction="undirected" type="railroad">
+		<point x="359" y="981"/>
+		<point x="336" y="958"/>
+		<point x="324" y="950"/>
+		<point x="306" y="945"/>
+		<point x="228" y="945"/>
+	</road>
+	<road id="340" from="Friesenberg SZU" to="Schweighof SZU" direction="undirected" type="railroad">
+		<point x="228" y="945"/>
+		<point x="149" y="945"/>
+	</road>
+	<road id="341" from="Schweighof SZU" to="Triemli SZU" direction="undirected" type="railroad">
+		<point x="149" y="945"/>
+		<point x="99" y="945"/>
+	</road>
+	<road id="342" from="Triemli SZU" to="Uitikon Waldegg" direction="undirected" type="railroad">
+		<point x="99" y="945"/>
+		<point x="81" y="945"/>
+		<point x="65" y="948"/>
+		<point x="55" y="955"/>
+		<point x="46" y="963"/>
+		<point x="41" y="971"/>
+		<point x="37" y="979"/>
+		<point x="35" y="987"/>
+		<point x="35" y="1006"/>
+	</road>
+	<road id="343" from="Uitikon Waldegg" to="Uetliberg" direction="undirected" type="railroad">
+		<point x="35" y="1006"/>
+		<point x="35" y="1243"/>
+	</road>
+	<road id="344" from="Bahnhof Stadelhofen" to="Rehalp" direction="undirected" type="railroad">
+		<point x="902" y="911"/>
+		<point x="1003" y="911"/>
+		<point x="1014" y="915"/>
+		<point x="1025" y="920"/>
+		<point x="1030" y="928"/>
+		<point x="1084" y="982"/>
+		<point x="1093" y="986"/>
+		<point x="1099" y="988"/>
+		<point x="1110" y="991"/>
+		<point x="1175" y="991"/>
+		<point x="1185" y="994"/>
+		<point x="1194" y="1000"/>
+		<point x="1198" y="1005"/>
+		<point x="1355" y="1162"/>
+	</road>
+</roads>
+
+
+<!-- tram lines -->
+<lines>
+<line name="Polybahn" type="tram">
+	<color red="0" green="0" blue="0"/> 
+	<line_section from="Central" to="ETH/Universitaetsspital" direction="undirected">
+		<onroad id="1" back="false"/>
+		<point x="820" y="693"/> 
+		<point x="975" y="693"/> 	
+	</line_section>
+</line>
+
+<line name="Seilbahn Rigiblick" type="tram">	  
+	<color red="0" green="0" blue="0"/> 
+	 
+	<line_section from="Seilbahn Rigiblick" to="Goldauerstrasse" direction="undirected">
+		<!--<onroad id="1"/>-->
+		<onroad id="2" back="false"/>
+		<point x="1005" y="463"/> 
+		<point x="1035" y="433"/>
+	</line_section>
+	<line_section from="Goldauerstrasse" to="Hadlaubstrasse" direction="undirected">
+		<onroad id="3" back="false"/>
+		<point x="1035" y="433"/>
+		<point x="1060" y="408"/>
+	</line_section>
+	<line_section from="Hadlaubstrasse" to="Germaniastrasse" direction="undirected">
+		<onroad id="4" back="false"/>
+		<point x="1060" y="408"/>
+		<point x="1080" y="388"/>
+		<point x="1090" y="388"/>
+	</line_section>
+	<line_section from="Germaniastrasse" to="Rigiblick" direction="undirected">
+		<onroad id="5" back="false"/>
+		<point x="1090" y="388"/>
+		<point x="1125" y="388"/>
+	</line_section>
+</line>
+
+<line name="Dolderbahn" type="tram">
+	<color red="0" green="0" blue="0"/> 
+	 
+	<line_section from="Roemerhof" to="Titlisstrasse" direction="undirected">
+		<onroad id="6" back="false"/>
+		<point x="1083" y="803"/> 
+		<point x="1133" y="753"/>
+	</line_section>
+	<line_section from="Titlisstrasse" to="Waldhaus Dolder" direction="undirected">
+		<onroad id="7" back="false"/>
+		<point x="1133" y="753"/>
+		<point x="1168" y="718"/>
+	</line_section>
+	<line_section from="Waldhaus Dolder" to="Bergstation Dolderbahn" direction="undirected">
+		<onroad id="8" back="false"/>
+		<point x="1168" y="718"/>
+		<point x="1183" y="703"/>
+		<point x="1223" y="743"/>
+	</line_section>
+</line>
+
+<line name="15" type="tram">
+	<color red="243" green="45" blue="31"/> 
+	 
+	<line_section from="Bucheggplatz" to="Laubiweg" direction="undirected">
+		<onroad id="9" back="false"/>
+		<point x="760" y="283"/> 
+		<point x="760" y="328"/> 
+		<point x="780" y="348"/> 
+	</line_section>
+	<line_section from="Laubiweg" to="Schaffhauserplatz" direction="undirected">
+		<onroad id="10" back="false"/>
+		<point x="780" y="348"/> 
+		<point x="825" y="393"/>
+	</line_section>
+	<line_section from="Schaffhauserplatz" to="Roeslistrasse" direction="undirected">
+		<onroad id="11" back="false"/>
+		<point x="825" y="393"/> 
+		<point x="855" y="423"/> 
+	</line_section>
+	<line_section from="Roeslistrasse" to="Ottikerstrasse" direction="undirected">
+		<onroad id="12" back="false"/>
+		<point x="855" y="423"/> 
+		<point x="890" y="458"/> 
+	</line_section>
+	<line_section from="Ottikerstrasse" to="Sonneggstrasse" direction="undirected">
+		<onroad id="13" back="false"/>
+		<point x="890" y="458"/> 
+		<point x="895" y="463"/> 
+		<point x="895" y="508"/> 
+	</line_section>
+	<line_section from="Sonneggstrasse" to="Haldenegg" direction="undirected">
+		<onroad id="14" back="false"/>
+		<point x="895" y="508"/> 
+		<point x="895" y="563"/> 
+		<point x="855" y="603"/> 
+	</line_section>
+	<line_section from="Haldenegg" to="Central" direction="undirected">
+		<onroad id="15" back="false"/>
+		<point x="855" y="603"/> 
+		<point x="819" y="638"/> 
+	</line_section>
+	<line_section from="Central" to="Rudolf-Brun-Bruecke" direction="undirected">
+		<onroad id="16" back="false"/>
+		<point x="819" y="638"/> 
+		<point x="819" y="778"/> 
+	</line_section>
+	<line_section from="Rudolf-Brun-Bruecke" to="Rathaus" direction="undirected">
+		<onroad id="17" back="false"/>
+		<point x="819" y="778"/> 
+		<point x="819" y="813"/> 
+	</line_section>
+	<line_section from="Rathaus" to="Helmhaus" direction="undirected">
+		<onroad id="18" back="false"/>
+		<point x="819" y="813"/> 
+		<point x="819" y="850"/> 
+	</line_section>
+	<line_section from="Helmhaus" to="Bellevue" direction="undirected">
+		<onroad id="19" back="false"/>
+		<point x="819" y="850"/> 
+		<point x="819" y="878"/> 
+		<point x="843" y="902"/> 
+	</line_section>
+	<line_section from="Bellevue" to="Bahnhof Stadelhofen" direction="undirected">
+		<onroad id="20" back="false"/>
+		<point x="843" y="902"/> 
+		<point x="870" y="928"/> 
+		<point x="909" y="928"/> 
+	</line_section>
+	<line_section from="Bahnhof Stadelhofen" to="Kreuzplatz" direction="undirected">
+		<onroad id="21" back="false"/>
+		<point x="909" y="928"/> 
+		<point x="989" y="928"/> 
+		<point x="1004" y="914"/> 
+	</line_section>
+	<line_section from="Kreuzplatz" to="Englischviertelstrasse" direction="undirected">
+		<onroad id="22" back="false"/>
+		<point x="1004" y="914"/> 
+		<point x="1038" y="880"/> 
+	</line_section>
+	<line_section from="Englischviertelstrasse" to="Roemerhof" direction="undirected">
+		<onroad id="23" back="false"/>
+		<point x="1038" y="880"/> 
+		<point x="1083" y="835"/> 
+	</line_section>
+	<line_section from="Roemerhof" to="Hoelderlinstrasse" direction="undirected">
+		<onroad id="24" back="false"/>
+		<point x="1083" y="835"/> 
+		<point x="1122" y="874"/> 
+	</line_section>
+	<line_section from="Hoelderlinstrasse" to="Klusplatz" direction="undirected">
+		<onroad id="25" back="false"/>
+		<point x="1122" y="874"/> 
+		<point x="1156" y="908"/> 
+		<point x="1175" y="908"/> 
+	</line_section>
+</line>
+
+<line name="14" type="tram">
+	<color red="0" green="153" blue="204"/> 
+	 
+	<line_section from="Bahnhof Oerlikon" to="Sternen Oerlikon" direction="undirected">
+		<onroad id="26" back="false"/>
+		<point x="985" y="3"/> 
+		<point x="985" y="88"/> 
+	</line_section>
+	<line_section from="Sternen Oerlikon" to="Salersteig" direction="undirected">
+		<onroad id="27" back="false"/>
+		<point x="985" y="88"/> 
+		<point x="965" y="108"/> 
+	</line_section>
+	<line_section from="Salersteig" to="Berninaplatz" direction="undirected">
+		<onroad id="28" back="false"/>
+		<point x="965" y="108"/> 
+		<point x="925" y="148"/> 
+	</line_section>
+	<line_section from="Berninaplatz" to="Hirschwiesenstrasse" direction="undirected">
+		<onroad id="29" back="false"/>
+		<point x="925" y="148"/> 
+		<point x="895" y="178"/> 
+	</line_section>
+	<line_section from="Hirschwiesenstrasse" to="Milchbuck" direction="undirected">
+		<onroad id="30" back="false"/>
+		<point x="895" y="178"/> 
+		<point x="815" y="258"/> 
+		<point x="815" y="263"/> 
+	</line_section>
+	<line_section from="Milchbuck" to="Guggachstrasse" direction="undirected">
+		<onroad id="31" back="false"/>
+		<point x="815" y="263"/> 
+		<point x="815" y="328"/> 
+	</line_section>
+	<line_section from="Guggachstrasse" to="Schaffhauserplatz" direction="undirected">
+		<onroad id="32" back="false"/>
+		<point x="815" y="328"/> 
+		<point x="815" y="389"/> 
+	</line_section>
+	<line_section from="Schaffhauserplatz" to="Kronenstrasse" direction="undirected">
+		<onroad id="33" back="false"/>
+		<point x="815" y="389"/> 
+		<point x="815" y="448"/> 
+	</line_section>
+	<line_section from="Kronenstrasse" to="Beckenhof" direction="undirected">
+		<onroad id="34" back="false"/>
+		<point x="815" y="448"/> 
+		<point x="815" y="468"/> 
+		<point x="810" y="478"/> 
+	</line_section>
+	<line_section from="Beckenhof" to="Stampfenbachplatz" direction="undirected">
+		<onroad id="35" back="false"/>
+		<point x="810" y="478"/> 
+		<point x="770" y="518"/> 
+	</line_section>
+	<line_section from="Stampfenbachplatz" to="Hauptbahnhof" direction="undirected">
+		<onroad id="36" back="false"/>
+		<point x="770" y="518"/> 
+		<point x="685" y="603"/> 
+		<point x="685" y="663"/> 
+		<point x="685" y="683"/> 
+	</line_section>
+	<line_section from="Hauptbahnhof" to="Loewenplatz" direction="undirected">
+		<onroad id="37" back="false"/>
+		<point x="685" y="683"/> 
+		<point x="638" y="683"/> 
+	</line_section>
+	<line_section from="Loewenplatz" to="Kaserne" direction="undirected">
+		<onroad id="38" back="false"/>
+		<point x="638" y="683"/> 
+		<point x="595" y="683"/> 
+	</line_section>
+	<line_section from="Kaserne" to="Stauffacher" direction="undirected">
+		<onroad id="39" back="false"/>
+		<point x="595" y="683"/> 
+		<point x="590" y="683"/> 
+		<point x="550" y="723"/> 
+	</line_section>
+	<line_section from="Stauffacher" to="Bahnhof Wiedikon" direction="undirected">
+		<onroad id="40" back="false"/>
+		<point x="550" y="733"/>  
+		<point x="475" y="808"/> 
+	</line_section>
+	<line_section from="Bahnhof Wiedikon" to="Schmiede Wiedikon" direction="undirected">
+		<onroad id="41" back="false"/>
+		<point x="475" y="808"/> 
+		<point x="460" y="823"/> 
+		<point x="392" y="823"/> 
+	</line_section>
+	<line_section from="Schmiede Wiedikon" to="Goldbrunnenplatz" direction="undirected">
+		<onroad id="42" back="false"/>
+		<point x="392" y="823"/> 
+		<point x="332" y="823"/> 
+	</line_section>
+	<line_section from="Goldbrunnenplatz" to="Talwiesenstrasse" direction="undirected">
+		<onroad id="43" back="false"/>
+		<point x="332" y="823"/> 
+		<point x="275" y="823"/> 
+	</line_section>
+	<line_section from="Talwiesenstrasse" to="Heuried" direction="undirected">
+		<onroad id="44" back="false"/>
+		<point x="275" y="823"/> 
+		<point x="218" y="823"/> 
+	</line_section>
+	<line_section from="Heuried" to="Schaufelbergerstrasse" direction="undirected">
+		<onroad id="45" back="false"/>
+		<point x="218" y="823"/> 
+		<point x="165" y="823"/> 
+	</line_section>
+	<line_section from="Schaufelbergerstrasse" to="Triemli" direction="undirected">
+		<onroad id="46" back="false"/>
+		<point x="165" y="823"/> 
+		<point x="100" y="823"/> 
+	</line_section>
+</line>
+
+<line name="13" type="tram">
+	<color red="255" green="205" blue="50"/>
+	 
+	<line_section from="Frankental" to="Winzerstrasse" direction="undirected">
+		<onroad id="47" back="false"/>
+		<point x="260" y="38"/>
+		<point x="295" y="73"/>
+	</line_section>
+	<line_section from="Winzerstrasse" to="Wartau" direction="undirected">
+		<onroad id="48" back="false"/>
+		<point x="295" y="73"/>
+		<point x="340" y="118"/>
+	</line_section>
+	<line_section from="Wartau" to="Zwielplatz" direction="undirected">
+		<onroad id="49" back="false"/>
+		<point x="340" y="118"/>
+		<point x="365" y="138"/>			
+		<point x="395" y="138"/>
+	</line_section>
+	<line_section from="Zwielplatz" to="Meierhofplatz" direction="undirected">
+		<onroad id="50" back="false"/>
+		<point x="395" y="138"/>
+		<point x="450" y="138"/>
+	</line_section>
+	<line_section from="Meierhofplatz" to="Schwert" direction="undirected">
+		<onroad id="51" back="false"/>
+		<point x="450" y="138"/>
+		<point x="480" y="168"/>
+	</line_section>
+	<line_section from="Schwert" to="Alte Trotte" direction="undirected">
+		<onroad id="52" back="false"/>
+		<point x="480" y="168"/>
+		<point x="495" y="183"/>
+		<point x="495" y="228"/>
+	</line_section>
+	<line_section from="Alte Trotte" to="Eschergutweg" direction="undirected">
+		<onroad id="53" back="false"/>
+		<point x="495" y="228"/>
+		<point x="495" y="253"/>
+		<point x="515" y="273"/>
+	</line_section>
+	<line_section from="Eschergutweg" to="Wipkingerplatz" direction="undirected">
+		<onroad id="54" back="false"/>
+		<point x="515" y="273"/>
+		<point x="560" y="318"/>
+	</line_section>
+	<line_section from="Wipkingerplatz" to="Escher-Wyss-Platz" direction="undirected">
+		<onroad id="55" back="false"/>
+		<point x="560" y="318"/>
+		<point x="560" y="353"/>
+		<point x="510" y="403"/>
+	</line_section>
+	<line_section from="Escher-Wyss-Platz" to="Dammweg" direction="undirected">
+		<onroad id="56" back="false"/>
+		<point x="510" y="403"/>
+		<point x="510" y="422"/>
+		<point x="550" y="463"/>
+	</line_section>
+	<line_section from="Dammweg" to="Quellenstrasse" direction="undirected">
+		<onroad id="57" back="false"/>
+		<point x="550" y="463"/>
+		<point x="570" y="483"/>
+	</line_section>
+	<line_section from="Quellenstrasse" to="Limmatplatz" direction="undirected">
+		<onroad id="58" back="false"/>
+		<point x="570" y="483"/>
+		<point x="595" y="508"/>
+	</line_section>
+	<line_section from="Limmatplatz" to="Museum fuer Gestaltung" direction="undirected">
+		<onroad id="59" back="false"/>
+		<point x="595" y="508"/>
+		<point x="620" y="533"/>
+	</line_section>
+	<line_section from="Museum fuer Gestaltung" to="Sihlquai" direction="undirected">
+		<onroad id="60" back="false"/>
+		<point x="620" y="533"/>
+		<point x="645" y="558"/>
+	</line_section>
+	<line_section from="Sihlquai" to="Hauptbahnhof" direction="undirected">
+		<onroad id="61" back="false"/>
+		<point x="645" y="558"/>
+		<point x="690" y="603"/>
+		<point x="695" y="603"/>
+		<point x="695" y="733"/>
+	</line_section>
+	<line_section from="Hauptbahnhof" to="Rennweg" direction="undirected">
+		<onroad id="62" back="false"/>
+		<point x="695" y="733"/>
+		<point x="695" y="778"/>
+	</line_section>
+	<line_section from="Rennweg" to="Paradeplatz" direction="undirected">
+		<onroad id="63" back="false"/>
+		<point x="695" y="778"/>
+		<point x="695" y="813"/>
+		<point x="660" y="848"/>
+	</line_section>
+	<line_section from="Paradeplatz" to="Stockerstrasse" direction="undirected">
+		<onroad id="64" back="false"/>
+		<point x="660" y="863"/>
+		<point x="640" y="883"/>
+	</line_section>
+	<line_section from="Stockerstrasse" to="Tunnelstrasse" direction="undirected">
+		<onroad id="65" back="false"/>
+		<point x="640" y="883"/>
+		<point x="610" y="913"/>
+	</line_section>
+	<line_section from="Tunnelstrasse" to="Bahnhof Enge/Bederstrasse" direction="undirected">
+		<onroad id="66" back="false"/>
+		<point x="610" y="913"/>
+		<point x="545" y="978"/>
+	</line_section>
+	<line_section from="Bahnhof Enge/Bederstrasse" to="Waffenplatzstrasse" direction="undirected">
+		<onroad id="67" back="false"/>
+		<point x="545" y="978"/>
+		<point x="505" y="1018"/>
+	</line_section>
+	<line_section from="Waffenplatzstrasse" to="Utobruecke" direction="undirected">
+		<onroad id="68" back="false"/>
+		<point x="505" y="1018"/>
+		<point x="475" y="1048"/>
+	</line_section>
+	<line_section from="Utobruecke" to="Saalsporthalle" direction="undirected">
+		<onroad id="69" back="false"/>
+		<point x="475" y="1048"/>
+		<point x="435" y="1088"/>
+	</line_section>
+	<line_section from="Saalsporthalle" to="Laubegg" direction="undirected">
+		<onroad id="70" back="false"/>
+		<point x="435" y="1088"/>
+		<point x="360" y="1088"/>
+		<point x="325" y="1123"/>
+	</line_section>
+	<line_section from="Laubegg" to="Uetlihof" direction="undirected">
+		<onroad id="71" back="false"/>
+		<point x="325" y="1123"/>
+		<point x="285" y="1163"/>
+	</line_section>
+	<line_section from="Uetlihof" to="Strassenverkehrsamt" direction="undirected">
+		<onroad id="72" back="false"/>
+		<point x="285" y="1163"/>
+		<point x="245" y="1203"/>
+	</line_section>
+	<line_section from="Strassenverkehrsamt" to="Albisguetli" direction="undirected">
+		<onroad id="73" back="false"/>
+		<point x="245" y="1203"/>
+		<point x="200" y="1248"/>
+	</line_section>
+</line>
+
+<line name="11" type="tram">
+	<color red="0" green="154" blue="0"/>
+	 
+	<line_section from="Rehalp" to="Friedhof Enzenbuehl" direction="undirected">
+		<onroad id="74" back="false"/>
+		<point x="1355" y="1178"/>
+		<point x="1318" y="1138"/>
+	</line_section>
+	<line_section from="Friedhof Enzenbuehl" to="Balgrist" direction="undirected">
+		<onroad id="75" back="false"/>
+		<point x="1318" y="1138"/>
+		<point x="1285" y="1103"/>
+	</line_section>	
+	<line_section from="Balgrist" to="Burgwies" direction="undirected">
+		<onroad id="76" back="false"/>
+		<point x="1285" y="1103"/>
+		<point x="1250" y="1068"/>
+	</line_section>
+	<line_section from="Burgwies" to="Wetlistrasse" direction="undirected">
+		<onroad id="77" back="false"/>
+		<point x="1250" y="1068"/>
+		<point x="1220" y="1038"/>
+	</line_section>
+	<line_section from="Wetlistrasse" to="Hedwigsteig" direction="undirected">
+		<onroad id="78" back="false"/>
+		<point x="1220" y="1038"/>
+		<point x="1190" y="1008"/>
+		<point x="1145" y="1008"/>
+	</line_section>
+	<line_section from="Hedwigsteig" to="Hegibachplatz" direction="undirected">
+		<onroad id="79" back="false"/>
+		<point x="1145" y="1008"/>
+		<point x="1085" y="1008"/>
+	</line_section>
+	<line_section from="Hegibachplatz" to="Signaustrasse" direction="undirected">
+		<onroad id="80" back="false"/>
+		<point x="1085" y="1008"/>
+		<point x="1045" y="968"/>
+	</line_section>
+	<line_section from="Signaustrasse" to="Kreuzplatz" direction="undirected">
+		<onroad id="81" back="false"/>
+		<point x="1045" y="968"/>
+		<point x="1015" y="938"/>
+		<point x="1005" y="938"/>
+	</line_section>
+	<line_section from="Kreuzplatz" to="Bahnhof Stadelhofen" direction="undirected">
+		<onroad id="21" back="true"/>
+		<point x="1005" y="938"/>
+		<point x="910" y="938"/>
+	</line_section>
+	<line_section from="Bahnhof Stadelhofen" to="Bellevue" direction="undirected">
+		<onroad id="20" back="true"/>
+		<point x="910" y="938"/>
+		<point x="843" y="938"/>
+	</line_section>
+	<line_section from="Bellevue" to="Buerkliplatz" direction="undirected">
+		<onroad id="82" back="false"/>
+		<point x="843" y="938"/>
+		<point x="750" y="938"/>
+	</line_section>
+	<line_section from="Buerkliplatz" to="Boersenstrasse" direction="undirected">
+		<onroad id="83" back="false"/>
+		<point x="750" y="938"/>
+		<point x="735" y="938"/>
+		<point x="710" y="913"/>
+	</line_section>
+	<line_section from="Boersenstrasse" to="Paradeplatz" direction="undirected">
+		<onroad id="84" back="false"/>
+		<point x="710" y="913"/> 
+		<point x="660" y="863"/>
+	</line_section>
+	<line_section from="Paradeplatz" to="Rennweg" direction="undirected">
+		<onroad id="63" back="true"/>
+		<point x="660" y="863"/>
+		<point x="705" y="818"/>
+		<point x="705" y="778"/>
+	</line_section>
+	<line_section from="Rennweg" to="Hauptbahnhof" direction="undirected">
+		<onroad id="62" back="true"/>
+		<point x="705" y="778"/>
+		<point x="705" y="598"/>
+	</line_section>
+	<line_section from="Hauptbahnhof" to="Stampfenbachplatz" direction="undirected">
+		<onroad id="36" back="true"/>
+		<point x="705" y="598"/>	  
+		<point x="770" y="533"/>
+	</line_section>
+	<line_section from="Stampfenbachplatz" to="Beckenhof" direction="undirected">
+		<onroad id="35" back="true"/>
+		<point x="770" y="533"/>
+		<point x="810" y="493"/>
+	</line_section>
+	<line_section from="Beckenhof" to="Kronenstrasse" direction="undirected">
+		<onroad id="34" back="true"/>
+		<point x="810" y="493"/>
+		<point x="825" y="478"/>
+		<point x="825" y="448"/>
+	</line_section>
+	<line_section from="Kronenstrasse" to="Schaffhauserplatz" direction="undirected">
+		<onroad id="33" back="true"/>
+		<point x="825" y="448"/>
+		<point x="825" y="408"/>
+		<point x="810" y="393"/>
+	</line_section>
+	<line_section from="Schaffhauserplatz" to="Laubiweg" direction="undirected">
+		<onroad id="10" back="true"/>
+		<point x="810" y="393"/>
+		<point x="765" y="348"/>
+	</line_section>
+	<line_section from="Laubiweg" to="Bucheggplatz" direction="undirected">
+		<onroad id="9" back="true"/>
+		<point x="765" y="348"/>
+		<point x="750" y="333"/>
+		<point x="750" y="283"/>
+	</line_section>
+	<line_section from="Bucheggplatz" to="Radiostudio" direction="undirected">
+		<onroad id="85" back="false"/>
+		<point x="750" y="283"/>
+		<point x="750" y="213"/>
+		<point x="775" y="188"/>
+	</line_section>
+	<line_section from="Radiostudio" to="Bad Allenmoos" direction="undirected">
+		<onroad id="86" back="false"/>
+		<point x="775" y="188"/>
+		<point x="820" y="143"/>
+	</line_section>
+	<line_section from="Bad Allenmoos" to="Regensbergbruecke" direction="undirected">
+		<onroad id="87" back="false"/>
+		<point x="820" y="143"/>
+		<point x="870" y="93"/>
+	</line_section>
+	<line_section from="Regensbergbruecke" to="Bahnhof Oerlikon" direction="undirected">
+		<onroad id="88" back="false"/>
+		<point x="870" y="93"/>
+		<point x="915" y="48"/>
+	</line_section>
+	<line_section from="Bahnhof Oerlikon" to="Sternen Oerlikon" direction="undirected">
+		<onroad id="26" back="false"/>
+		<point x="915" y="48"/>
+		<point x="970" y="48"/>
+		<point x="990" y="68"/>
+	</line_section>
+	<line_section from="Sternen Oerlikon" to="Messe / Hallenstadion" direction="undirected">
+		<onroad id="89" back="false"/>
+		<point x="990" y="68"/>
+		<point x="1040" y="68"/>
+	</line_section>
+</line>
+
+<line name="10" type="tram">
+	<color red="250" green="130" blue="200"/> 
+	 
+	<line_section from="Hauptbahnhof" to="Central" direction="undirected">
+		<onroad id="90" back="false"/>
+		<point x="695" y="683"/> 
+		<point x="820" y="683"/> 
+	</line_section>
+	<line_section from="Central" to="Haldenegg" direction="undirected">
+		<onroad id="15" back="true"/>
+		<point x="820" y="683"/> 
+		<point x="905" y="603"/> 
+	</line_section>
+	<line_section from="Haldenegg" to="ETH/Universitaetsspital" direction="undirected">
+		<onroad id="91" back="false"/>
+		<point x="905" y="603"/> 
+		<point x="995" y="693"/> 
+	</line_section>
+	<line_section from="ETH/Universitaetsspital" to="Haldenbach" direction="undirected">
+		<onroad id="92" back="false"/>
+		<point x="995" y="693"/> 
+		<point x="995" y="603"/> 
+	</line_section>
+	<line_section from="Haldenbach" to="Winkelriedstrasse" direction="undirected">
+		<onroad id="93" back="false"/>
+		<point x="995" y="603"/> 
+		<point x="995" y="533"/> 
+	</line_section>
+	<line_section from="Winkelriedstrasse" to="Seilbahn Rigiblick" direction="undirected">
+		<onroad id="94" back="false"/>
+		<point x="995" y="533"/> 
+		<point x="995" y="463"/> 
+	</line_section>
+	<line_section from="Seilbahn Rigiblick" to="Kinkelstrasse" direction="undirected">
+		<onroad id="95" back="false"/>
+		<point x="995" y="463"/> 
+		<point x="995" y="403"/> 
+	</line_section>
+	<line_section from="Kinkelstrasse" to="Letzistrasse" direction="undirected">
+		<onroad id="96" back="false"/>
+		<point x="995" y="403"/> 
+		<point x="995" y="378"/> 
+		<point x="975" y="358"/> 
+	</line_section>
+	<line_section from="Letzistrasse" to="Langmauerstrasse" direction="undirected">
+		<onroad id="97" back="false"/>
+		<point x="975" y="358"/> 
+		<point x="950" y="333"/> 
+	</line_section>
+	<line_section from="Langmauerstrasse" to="Irchel" direction="undirected">
+		<onroad id="98" back="false"/>
+		<point x="950" y="333"/> 
+		<point x="925" y="308"/> 
+	</line_section>
+	<line_section from="Irchel" to="Milchbuck" direction="undirected">
+		<onroad id="99" back="false"/>
+		<point x="925" y="308"/> 
+		<point x="885" y="268"/>
+		<point x="825" y="268"/> 
+		<point x="825" y="263"/> 
+	</line_section>
+	<line_section from="Milchbuck" to="Hirschwiesenstrasse" direction="undirected">
+		<onroad id="30" back="true"/>
+		<point x="825" y="263"/> 
+		<point x="910" y="178"/> 
+	</line_section>
+	<line_section from="Hirschwiesenstrasse" to="Berninaplatz" direction="undirected">
+		<onroad id="29" back="true"/>
+		<point x="910" y="178"/> 
+		<point x="940" y="148"/> 
+	</line_section>
+	<line_section from="Berninaplatz" to="Salersteig" direction="undirected">
+		<onroad id="28" back="true"/>
+		<point x="940" y="148"/> 
+		<point x="980" y="108"/> 
+	</line_section>
+	<line_section from="Salersteig" to="Sternen Oerlikon" direction="undirected">
+		<onroad id="27" back="true"/>
+		<point x="980" y="108"/> 
+		<point x="995" y="93"/> 
+	</line_section>
+	<line_section from="Sternen Oerlikon" to="Bahnhof Oerlikon" direction="undirected">
+		<onroad id="26" back="true"/>
+		<point x="995" y="93"/> 
+		<point x="995" y="3"/> 
+	</line_section>
+</line>
+
+<line name="9" type="tram">
+	<color red="102" green="102" blue="153" /> 
+	 
+	<line_section from="Triemli" to="Schaufelbergerstrasse" direction="undirected">
+		<onroad id="46" back="true"/>
+		<point x="100" y="833" /> 
+		<point x="165" y="833" />
+	</line_section>
+	<line_section from="Schaufelbergerstrasse" to="Heuried" direction="undirected">
+		<onroad id="45" back="true"/>
+		<point x="165" y="833" />
+		<point x="218" y="833" /> 
+	</line_section>
+	<line_section from="Heuried" to="Talwiesenstrasse" direction="undirected">
+		<onroad id="44" back="true"/>
+		<point x="218" y="833" /> 
+		<point x="275" y="833" />
+	</line_section>
+	<line_section from="Talwiesenstrasse" to="Goldbrunnenplatz" direction="undirected">
+		<onroad id="43" back="true"/>
+		<point x="275" y="833" />
+		<point x="332" y="833" />
+	</line_section>
+	<line_section from="Goldbrunnenplatz" to="Schmiede Wiedikon" direction="undirected">
+		<onroad id="42" back="true"/>
+		<point x="332" y="833" />
+		<point x="392" y="833" />
+	</line_section>
+	<line_section from="Schmiede Wiedikon" to="Bahnhof Wiedikon" direction="undirected">
+		<onroad id="41" back="true"/>
+		<point x="392" y="833" />
+		<point x="465" y="833" />
+		<point x="475" y="823" />
+	</line_section>
+	<line_section from="Bahnhof Wiedikon" to="Stauffacher" direction="undirected">
+		<onroad id="40" back="true"/>
+		<point x="475" y="823" /> 
+		<point x="550" y="748" /> 
+	</line_section>
+	<line_section from="Stauffacher" to="Sihlstrasse" direction="undirected">
+		<onroad id="100" back="false"/>
+		<point x="550" y="748" />
+		<point x="562" y="735" />
+		<point x="635" y="808" />
+	</line_section>
+	<line_section from="Sihlstrasse" to="Paradeplatz" direction="undirected">
+		<onroad id="101" back="false"/>
+		<point x="635" y="808" />
+		<point x="660" y="833" /> 
+	</line_section>
+	<line_section from="Paradeplatz" to="Boersenstrasse" direction="undirected">
+		<onroad id="84" back="true"/>
+		<point x="660" y="833" /> 
+		<point x="740" y="913" />
+	</line_section>
+	<line_section from="Boersenstrasse" to="Buerkliplatz" direction="undirected">
+		<onroad id="83" back="true"/>
+		<point x="740" y="913" />
+		<point x="744" y="918" />
+		<point x="750" y="918" /> 
+	</line_section>
+	<line_section from="Buerkliplatz" to="Bellevue" direction="undirected">
+		<onroad id="82" back="true"/>
+		<point x="750" y="918" /> 
+		<point x="820" y="918" />
+		<point x="843" y="893" />	   
+	</line_section>
+	<line_section from="Bellevue" to="Kunsthaus" direction="undirected">
+		<onroad id="102" back="false"/>
+		<point x="843" y="893" /> 
+		<point x="940" y="795" /> 
+	</line_section>
+	<line_section from="Kunsthaus" to="Kantonsschule" direction="undirected">
+		<onroad id="103" back="false"/>
+		<point x="940" y="795" /> 
+		<point x="968" y="768" /> 
+	</line_section>
+	<line_section from="Kantonsschule" to="ETH/Universitaetsspital" direction="undirected">
+		<onroad id="104" back="false"/>
+		<point x="968" y="768" />
+		<point x="985" y="750" />
+		<point x="985" y="693" />
+	</line_section>
+	<line_section from="ETH/Universitaetsspital" to="Haldenbach" direction="undirected">
+		<onroad id="92" back="false"/>
+		<point x="985" y="693" />
+		<point x="985" y="603" />
+	</line_section>
+	<line_section from="Haldenbach" to="Winkelriedstrasse" direction="undirected">
+		<onroad id="93" back="false"/>
+		<point x="985" y="603" />
+		<point x="985" y="533" />
+	</line_section>
+	<line_section from="Winkelriedstrasse" to="Seilbahn Rigiblick" direction="undirected">
+		<onroad id="94" back="false"/>
+		<point x="985" y="533" />
+		<point x="985" y="463" />
+	</line_section>
+	<line_section from="Seilbahn Rigiblick" to="Kinkelstrasse" direction="undirected">
+		<onroad id="95" back="false"/>
+		<point x="985" y="463" />
+		<point x="985" y="403" />
+	</line_section>
+	<line_section from="Kinkelstrasse" to="Letzistrasse" direction="undirected">
+		<onroad id="96" back="false"/>
+		<point x="985" y="403" /> 
+		<point x="985" y="383" />
+		<point x="960" y="358" />
+	</line_section>
+	<line_section from="Letzistrasse" to="Langmauerstrasse" direction="undirected">
+		<onroad id="97" back="false"/>
+		<point x="960" y="358" /> 
+		<point x="935" y="333" />
+	</line_section>
+	<line_section from="Langmauerstrasse" to="Irchel" direction="undirected">
+		<onroad id="98" back="false"/>
+		<point x="935" y="333" />
+		<point x="910" y="308" /> 
+	</line_section>
+	<line_section from="Irchel" to="Milchbuck" direction="undirected">
+		<onroad id="99" back="false"/>
+		<point x="910" y="308" /> 
+		<point x="880" y="278" />
+		<point x="825" y="278" />
+		<point x="840" y="263" />	  
+	</line_section>
+	<line_section from="Milchbuck" to="Tierspital" direction="undirected">
+		<onroad id="105" back="false"/>
+		<point x="840" y="263" /> 
+		<point x="885" y="218" />
+		<point x="1000" y="218" />
+		<point x="1015" y="203" /> 
+	</line_section>
+	<line_section from="Tierspital" to="Waldgarten" direction="undirected">
+		<onroad id="106" back="false"/>
+		<point x="1015" y="203" /> 
+		<point x="1095" y="123" />
+	</line_section>
+	<line_section from="Waldgarten" to="Schoerlistrasse" direction="undirected">
+		<onroad id="107" back="false"/>
+		<point x="1095" y="123" />
+		<point x="1100" y="118" /> 
+		<point x="1150" y="118" /> 
+	</line_section>
+	<line_section from="Schoerlistrasse" to="Schwamendingerplatz" direction="undirected">
+		<onroad id="108" back="false"/>
+		<point x="1150" y="118" />
+		<point x="1225" y="118" />
+	</line_section>
+	<line_section from="Schwamendingerplatz" to="Heerenwiesen" direction="undirected">
+		<onroad id="109" back="false"/>
+		<point x="1225" y="118" />
+		<point x="1265" y="118" />
+	</line_section>
+	<line_section from="Heerenwiesen" to="Luegisland" direction="undirected">
+		<onroad id="110" back="false"/>
+		<point x="1265" y="118" />
+		<point x="1285" y="118" />
+		<point x="1310" y="93" />
+	</line_section>
+	<line_section from="Luegisland" to="Luchswiesen" direction="undirected">
+		<onroad id="111" back="false"/>
+		<point x="1310" y="93" />
+		<point x="1325" y="78" />
+		<point x="1330" y="83" /> 
+	</line_section>
+	<line_section from="Luchswiesen" to="Altried" direction="undirected">
+		<onroad id="112" back="false"/>
+		<point x="1330" y="83" /> 
+		<point x="1370" y="123" /> 
+	</line_section>
+	<line_section from="Altried" to="Hirzenbach" direction="undirected">
+		<onroad id="113" back="false"/>
+		<point x="1370" y="123" />
+		<point x="1380" y="133" /> 
+		<point x="1350" y="163" /> 
+	</line_section>
+</line>
+
+<line name="8" type="tram">
+	<color red="153" green="204" blue="0"/> 
+	 
+	<line_section from="Hardplatz" to="Gueterbahnhof" direction="undirected">
+		<onroad id="114" back="false"/>
+		<point x="410" y="578"/> 
+		<point x="430" y="598"/> 
+	</line_section>
+	<line_section from="Gueterbahnhof" to="Helvetiaplatz" direction="undirected">
+		<onroad id="115" back="false"/>
+		<point x="430" y="598"/> 
+		<point x="490" y="658"/> 
+	</line_section>
+	<line_section from="Helvetiaplatz" to="Stauffacher" direction="undirected">
+		<onroad id="116" back="false"/>
+		<point x="490" y="658"/> 
+		<point x="550" y="718"/>  
+	</line_section>
+	<line_section from="Stauffacher" to="Bahnhof Selnau" direction="undirected">
+		<onroad id="117" back="false"/>
+		<point x="550" y="718"/> 
+		<point x="550" y="828"/> 
+	</line_section>
+	<line_section from="Bahnhof Selnau" to="Stockerstrasse" direction="undirected">
+		<onroad id="118" back="false"/>
+		<point x="550" y="828"/> 
+		<point x="615" y="893"/>
+		<point x="640" y="868"/>  
+	</line_section>
+	<line_section from="Stockerstrasse" to="Paradeplatz" direction="undirected">
+		<onroad id="64" back="true"/>
+		<point x="640" y="868"/> 
+		<point x="660" y="848"/>
+	</line_section>
+	<line_section from="Paradeplatz" to="Boersenstrasse" direction="undirected">
+		<onroad id="84" back="true"/>
+		<point x="660" y="848"/>
+		<point x="725" y="913"/>	
+	</line_section>
+	<line_section from="Boersenstrasse" to="Buerkliplatz" direction="undirected">
+		<onroad id="83" back="true"/>
+		<point x="725" y="913"/>
+		<point x="740" y="928"/> 
+		<point x="750" y="928"/>  
+	</line_section>
+	<line_section from="Buerkliplatz" to="Bellevue" direction="undirected">
+		<onroad id="82" back="true"/>
+		<point x="750" y="928"/> 
+		<point x="843" y="928"/>	
+	</line_section>
+	<line_section from="Bellevue" to="Kunsthaus" direction="undirected">
+		<onroad id="102" back="false"/>
+		<point x="843" y="923"/> 
+		<point x="940" y="825"/>	
+	</line_section>
+	<line_section from="Kunsthaus" to="Hottingerplatz" direction="undirected">
+		<onroad id="119" back="false"/>
+		<point x="940" y="825"/>
+		<point x="942" y="823"/> 
+		<point x="1005" y="823"/>	 
+	</line_section>
+	<line_section from="Hottingerplatz" to="Roemerhof" direction="undirected">
+		<onroad id="120" back="false"/>
+		<point x="1005" y="823"/> 
+		<point x="1083" y="823"/>	 
+	</line_section>
+	<line_section from="Roemerhof" to="Hoelderlinstrasse" direction="undirected">
+		<onroad id="24" back="false"/>
+		<point x="1083" y="823"/>
+		<point x="1085" y="823"/> 
+		<point x="1122" y="860"/>	 
+	</line_section>
+	<line_section from="Hoelderlinstrasse" to="Klusplatz" direction="undirected">
+		<onroad id="25" back="false"/>
+		<point x="1122" y="860"/>
+		<point x="1160" y="898"/> 
+		<point x="1175" y="898"/>	   
+	</line_section>
+</line>
+
+<line name="7" type="tram">
+	<color red="100" green="100" blue="100"/> 
+	 
+	<line_section from="Wollishofen" to="Butzenstrasse" direction="undirected">
+		<onroad id="121" back="false"/>
+		<point x="505" y="1418"/> 
+		<point x="505" y="1358"/> 
+	</line_section>
+	<line_section from="Butzenstrasse" to="Morgental" direction="undirected">
+		<onroad id="122" back="false"/>
+		<point x="505" y="1358"/> 
+		<point x="505" y="1308"/> 
+	</line_section>
+	<line_section from="Morgental" to="Post Wollishofen" direction="undirected">
+		<onroad id="123" back="false"/>
+		<point x="505" y="1308"/> 
+		<point x="555" y="1258"/> 
+	</line_section>
+	<line_section from="Post Wollishofen" to="Bahnhof Wollishofen" direction="undirected">
+		<onroad id="124" back="false"/>
+		<point x="555" y="1258"/> 
+		<point x="590" y="1223"/> 
+	</line_section>
+	<line_section from="Bahnhof Wollishofen" to="Billoweg" direction="undirected">
+		<onroad id="125" back="false"/>
+		<point x="590" y="1223"/> 
+		<point x="590" y="1173"/> 
+	</line_section>
+	<line_section from="Billoweg" to="Brunaustrasse" direction="undirected">
+		<onroad id="126" back="false"/>
+		<point x="590" y="1173"/> 
+		<point x="590" y="1118"/> 
+	</line_section>
+	<line_section from="Brunaustrasse" to="Museum Rietberg" direction="undirected">
+		<onroad id="127" back="false"/>
+		<point x="590" y="1118"/> 
+		<point x="590" y="1068"/> 
+	</line_section>
+	<line_section from="Museum Rietberg" to="Bahnhof Enge" direction="undirected">
+		<onroad id="128" back="false"/>
+		<point x="590" y="1068"/> 
+		<point x="590" y="1013"/> 
+	</line_section>
+	<line_section from="Bahnhof Enge" to="Tunnelstrasse" direction="undirected">
+		<onroad id="129" back="false"/>
+		<point x="590" y="1013"/>
+		<point x="590" y="948"/> 
+		<point x="610" y="928"/> 
+	</line_section>
+	<line_section from="Tunnelstrasse" to="Stockerstrasse" direction="undirected">
+		<onroad id="65" back="true"/>
+		<point x="610" y="928"/> 
+		<point x="640" y="898"/> 
+	</line_section>
+	<line_section from="Stockerstrasse" to="Paradeplatz" direction="undirected">
+		<onroad id="64" back="true"/>
+		<point x="640" y="898"/> 
+		<point x="660" y="878"/>  
+	</line_section>
+	<line_section from="Paradeplatz" to="Rennweg" direction="undirected">
+		<onroad id="63" back="true"/>
+		<point x="660" y="878"/> 
+		<point x="715" y="823"/> 
+		<point x="715" y="778"/> 
+	</line_section>
+	<line_section from="Rennweg" to="Hauptbahnhof" direction="undirected">
+		<onroad id="62" back="true"/>
+		<point x="715" y="778"/> 
+		<point x="715" y="733"/> 
+	</line_section>
+	<line_section from="Hauptbahnhof" to="Central" direction="undirected">
+		<onroad id="90" back="false"/>
+		<point x="715" y="733"/>	  
+		<point x="715" y="663"/> 
+		<point x="820" y="663"/> 
+	</line_section>
+	<line_section from="Central" to="Haldenegg" direction="undirected">
+		<onroad id="15" back="true"/>
+		<point x="820" y="653"/> 
+		<point x="870" y="603"/> 
+	</line_section>
+	<line_section from="Haldenegg" to="Sonneggstrasse" direction="undirected">
+		<onroad id="14" back="true"/>
+		<point x="870" y="603"/>	  
+		<point x="905" y="568"/> 
+		<point x="905" y="508"/> 
+	</line_section>
+	<line_section from="Sonneggstrasse" to="Ottikerstrasse" direction="undirected">
+		<onroad id="13" back="true"/>
+		<point x="905" y="508"/>	  
+		<point x="905" y="458"/> 
+	</line_section>
+	<line_section from="Ottikerstrasse" to="Roeslistrasse" direction="undirected">
+		<onroad id="12" back="true"/>
+		<point x="905" y="458"/> 
+		<point x="870" y="423"/> 
+	</line_section>
+	<line_section from="Roeslistrasse" to="Schaffhauserplatz" direction="undirected">
+		<onroad id="11" back="true"/>
+		<point x="870" y="423"/>	   
+		<point x="840" y="393"/> 
+	</line_section>
+	<line_section from="Schaffhauserplatz" to="Guggachstrasse" direction="undirected">
+		<onroad id="32" back="true"/>
+		<point x="840" y="393"/>
+		<point x="825" y="378"/> 
+		<point x="825" y="328"/> 
+	</line_section>
+	<line_section from="Guggachstrasse" to="Milchbuck" direction="undirected">
+		<onroad id="31" back="true"/>
+		<point x="825" y="328"/>	   
+		<point x="825" y="293"/>
+		<point x="855" y="263"/>	   
+	</line_section>
+	<line_section from="Milchbuck" to="Tierspital" direction="undirected">
+		<onroad id="105" back="false"/>
+		<point x="855" y="263"/> 
+		<point x="890" y="228"/>
+		<point x="1005" y="228"/> 
+		<point x="1015" y="218"/> 
+	</line_section>
+	<line_section from="Tierspital" to="Waldgarten" direction="undirected">
+		<onroad id="106" back="false"/>
+		<point x="1015" y="218"/> 
+		<point x="1095" y="138"/> 
+	</line_section>
+	<line_section from="Waldgarten" to="Schoerlistrasse" direction="undirected">
+		<onroad id="107" back="false"/>
+		<point x="1095" y="138"/>
+		<point x="1105" y="128"/> 
+		<point x="1150" y="128"/> 
+	</line_section>
+	<line_section from="Schoerlistrasse" to="Schwamendingerplatz" direction="undirected">
+		<onroad id="108" back="false"/>
+		<point x="1150" y="128"/> 
+		<point x="1225" y="128"/> 
+	</line_section>
+	<line_section from="Schwamendingerplatz" to="Roswiesen" direction="undirected">
+		<onroad id="130" back="false"/>
+		<point x="1225" y="128"/>
+		<point x="1245" y="128"/> 
+		<point x="1265" y="148"/> 
+	</line_section>
+	<line_section from="Roswiesen" to="Glattwiesen" direction="undirected">
+		<onroad id="131" back="false"/>
+		<point x="1265" y="148"/> 
+		<point x="1290" y="173"/> 
+	</line_section>
+	<line_section from="Glattwiesen" to="Probstei" direction="undirected">
+		<onroad id="132" back="false"/>
+		<point x="1290" y="173"/> 
+		<point x="1320" y="203"/> 
+	</line_section>
+	<line_section from="Probstei" to="Mattenhof" direction="undirected">
+		<onroad id="133" back="false"/>
+		<point x="1320" y="203"/> 
+		<point x="1345" y="228"/> 
+	</line_section>
+	<line_section from="Mattenhof" to="Bahnhof Stettbach" direction="undirected">
+		<onroad id="134" back="false"/>
+		<point x="1345" y="228"/> 
+		<point x="1365" y="248"/> 
+	</line_section>
+</line>
+
+<line name="6" type="tram">
+	<color red="204" green="153" blue="51"/> 
+	 
+	<line_section from="Bahnhof Enge" to="Tunnelstrasse" direction="undirected">
+		<onroad id="129" back="false"/>
+		<point x="600" y="1013"/> 
+		<point x="600" y="953"/> 
+		<point x="610" y="943"/> 
+	</line_section>
+	<line_section from="Tunnelstrasse" to="Stockerstrasse" direction="undirected"> 
+ 		<onroad id="65" back="true"/>
+		<point x="610" y="943"/> 
+		<point x="640" y="913"/> 
+	</line_section>
+	<line_section from="Stockerstrasse" to="Paradeplatz" direction="undirected">
+		<onroad id="64" back="true"/>
+		<point x="640" y="913"/> 
+		<point x="660" y="893"/> 
+	</line_section>
+	<line_section from="Paradeplatz" to="Rennweg" direction="undirected">
+		<onroad id="63" back="true"/>
+		<point x="660" y="893"/> 
+		<point x="725" y="828"/> 
+		<point x="725" y="778"/> 
+	</line_section>
+	<line_section from="Rennweg" to="Hauptbahnhof" direction="undirected">
+		<onroad id="62" back="true"/>
+		<point x="725" y="778"/> 
+		<point x="725" y="733"/> 
+	</line_section>
+	<line_section from="Hauptbahnhof" to="Central" direction="undirected">
+		<onroad id="90" back="false"/>
+		<point x="725" y="733"/> 
+		<point x="725" y="673"/> 
+		<point x="815" y="673"/> 
+	</line_section>
+	<line_section from="Central" to="Haldenegg" direction="undirected">
+		<onroad id="15" back="true"/>
+		<point x="815" y="668"/> 
+		<point x="885" y="603"/> 
+	</line_section>
+	<line_section from="Haldenegg" to="ETH/Universitaetsspital" direction="undirected">
+		<onroad id="91" back="false"/>
+		<point x="885" y="603"/> 
+		<point x="903" y="585"/> 
+		<point x="995" y="678"/> 
+		<point x="995" y="693"/> 
+	</line_section>
+	<line_section from="ETH/Universitaetsspital" to="Platte" direction="undirected">
+		<onroad id="135" back="false"/>
+		<point x="995" y="693"/> 
+		<point x="995" y="748"/> 
+		<point x="1030" y="748"/> 
+		<point x="1040" y="738"/> 
+	</line_section>
+	<line_section from="Platte" to="Voltastrasse" direction="undirected">
+		<onroad id="136" back="false"/>
+		<point x="1040" y="738"/> 
+		<point x="1075" y="703"/> 
+	</line_section>
+	<line_section from="Voltastrasse" to="Kirche Fluntern" direction="undirected">
+		<onroad id="137" back="false"/>
+		<point x="1075" y="703"/> 
+		<point x="1110" y="668"/> 
+	</line_section>
+	<line_section from="Kirche Fluntern" to="Toblerplatz" direction="undirected">
+		<onroad id="138" back="false"/>
+		<point x="1110" y="668"/> 
+		<point x="1145" y="633"/> 
+	</line_section>
+	<line_section from="Toblerplatz" to="Zuerichbergstrasse" direction="undirected">
+		<onroad id="139" back="false"/>
+		<point x="1145" y="633"/>
+		<point x="1155" y="623"/>
+		<point x="1205" y="623"/> 
+		<point x="1220" y="608"/> 
+	</line_section>
+	<line_section from="Zuerichbergstrasse" to="Susenbergstrasse" direction="undirected">
+		<onroad id="140" back="false"/>
+		<point x="1220" y="608"/> 
+		<point x="1255" y="573"/> 
+	</line_section>
+	<line_section from="Susenbergstrasse" to="Zoo" direction="undirected">
+		<onroad id="141" back="false"/>
+		<point x="1255" y="573"/> 
+		<point x="1295" y="533"/> 
+	</line_section>
+</line>
+
+<line name="5" type="tram">
+	<color red="153" green="102" blue="0"/> 
+	 
+	<line_section from="Bahnhof Enge" to="Rentenanstalt" direction="undirected"> 
+		<onroad id="142" back="false"/>
+		<point x="605" y="1013"/> 
+		<point x="660" y="1013"/> 
+		<point x="670" y="1003"/> 
+	</line_section>
+	<line_section from="Rentenanstalt" to="Buerkliplatz" direction="undirected">  
+		<onroad id="143" back="false"/>
+		<point x="670" y="1003"/> 
+		<point x="715" y="958"/> 
+		<point x="750" y="958"/> 
+	</line_section>
+	<line_section from="Buerkliplatz" to="Bellevue" direction="undirected"> 
+		<onroad id="82" back="true"/>
+		<point x="750" y="958"/> 
+		<point x="793" y="958"/> 
+		<point x="843" y="908"/> 
+	</line_section>
+	<line_section from="Bellevue" to="Kunsthaus" direction="undirected"> 
+		<onroad id="102" back="false"/>
+		<point x="843" y="908"/> 
+		<point x="940" y="810"/> 
+	</line_section>
+	<line_section from="Kunsthaus" to="Kantonsschule" direction="undirected"> 
+		<onroad id="103" back="false"/>
+		<point x="940" y="810"/> 
+		<point x="983" y="768"/> 
+	</line_section>
+	<line_section from="Kantonsschule" to="Platte" direction="undirected">
+		<onroad id="144" back="false"/>
+		<point x="983" y="768"/> 
+		<point x="993" y="758"/> 
+		<point x="1035" y="758"/> 
+		<point x="1055" y="738"/> 
+	</line_section>
+	<line_section from="Platte" to="Voltastrasse" direction="undirected"> 
+		<onroad id="136" back="false"/>
+		<point x="1055" y="738"/> 
+		<point x="1090" y="703"/> 
+	</line_section>
+	<line_section from="Voltastrasse" to="Kirche Fluntern" direction="undirected"> 
+		<onroad id="137" back="false"/>
+		<point x="1090" y="703"/> 
+		<point x="1125" y="668"/> 
+	</line_section>
+</line>
+
+<line name="4" type="tram">
+	<color red="90" green="90" blue="143"/> 
+	 
+	<line_section from="Werdhoelzli" to="Baendliweg" direction="undirected">
+		<onroad id="145" back="false"/>
+		<point x="201" y="218" />
+		<point x="230" y="248" />
+	</line_section>
+	<line_section from="Baendliweg" to="Gruenaustrasse" direction="undirected">
+		<onroad id="146" back="false"/>
+		<point x="230" y="248" />
+		<point x="260" y="278" />
+	</line_section>
+	<line_section from="Gruenaustrasse" to="Tueffenwies" direction="undirected">
+		<onroad id="147" back="false"/>
+		<point x="260" y="278" />
+		<point x="275" y="288" />
+		<point x="345" y="288" />
+		<point x="355" y="298" />
+	</line_section>
+	<line_section from="Tueffenwies" to="Hardhof" direction="undirected">
+		<onroad id="148" back="false"/>
+		<point x="355" y="298" />
+		<point x="385" y="328" />
+	</line_section>
+	<line_section from="Hardhof" to="Hardturm" direction="undirected">
+		<onroad id="149" back="false"/>
+		<point x="385" y="328" />
+		<point x="405" y="348" />
+	</line_section>
+	<line_section from="Hardturm" to="Bernoulli-Haeuser" direction="undirected">						
+		<onroad id="150" back="false"/>
+		<point x="405" y="348" />
+		<point x="420" y="363" />
+	</line_section>
+	<line_section from="Bernoulli-Haeuser" to="Fischerweg" direction="undirected">
+		<onroad id="151" back="false"/>
+		<point x="420" y="363" />
+		<point x="445" y="388" />
+	</line_section>
+	<line_section from="Fischerweg" to="Fernsehstudio / WTC" direction="undirected">
+		<onroad id="152" back="false"/>
+		<point x="445" y="388" />
+		<point x="465" y="408" />
+	</line_section>
+	<line_section from="Fernsehstudio / WTC" to="Escher-Wyss-Platz" direction="undirected">
+		<onroad id="153" back="false"/>
+		<point x="465" y="408" />
+		<point x="470" y="413" />
+		<point x="515" y="413" />
+	</line_section>
+	<line_section from="Escher-Wyss-Platz" to="Dammweg" direction="undirected">
+		<onroad id="56" back="false"/>
+		<point x="515" y="413" />
+		<point x="565" y="463" />
+	</line_section>
+	<line_section from="Dammweg" to="Quellenstrasse" direction="undirected">
+		<onroad id="57" back="false"/>
+		<point x="565" y="463" />
+		<point x="585" y="483" />
+	</line_section>
+	<line_section from="Quellenstrasse" to="Limmatplatz" direction="undirected">			
+		<onroad id="58" back="false"/>
+		<point x="585" y="483" />
+		<point x="610" y="508" />
+	</line_section>
+	<line_section from="Limmatplatz" to="Museum fuer Gestaltung" direction="undirected">
+		<onroad id="59" back="false"/>
+		<point x="610" y="508" />
+		<point x="635" y="533" />
+	</line_section>
+	<line_section from="Museum fuer Gestaltung" to="Sihlquai" direction="undirected">
+		<onroad id="60" back="false"/>
+		<point x="635" y="533" />
+		<point x="660" y="558" />
+	</line_section>
+	<line_section from="Sihlquai" to="Hauptbahnhof" direction="undirected">
+		<onroad id="61" back="false"/>
+		<point x="660" y="558" />
+		<point x="705" y="603" />
+	</line_section>
+	<line_section from="Hauptbahnhof" to="Central" direction="undirected">
+		<onroad id="90" back="false"/>
+		<point x="715" y="603" />
+		<point x="715" y="653" />
+		<point x="810" y="653" />
+	</line_section>
+	<line_section from="Central" to="Rudolf-Brun-Bruecke" direction="undirected">
+		<onroad id="16" back="false"/>
+		<point x="810" y="653" />
+		<point x="810" y="778" />
+	</line_section>
+	<line_section from="Rudolf-Brun-Bruecke" to="Rathaus" direction="undirected">
+		<onroad id="17" back="false"/>
+		<point x="810" y="778" />
+		<point x="810" y="813" />
+	</line_section>
+	<line_section from="Rathaus" to="Helmhaus" direction="undirected">
+		<onroad id="18" back="false"/>
+		<point x="810" y="813" />
+		<point x="810" y="850" />
+	</line_section>
+	<line_section from="Helmhaus" to="Bellevue" direction="undirected">
+		<onroad id="19" back="false"/>
+		<point x="810" y="850" />
+		<point x="810" y="886" />
+		<point x="843" y="918" />
+	</line_section>
+	<line_section from="Bellevue" to="Opernhaus" direction="undirected">
+		<onroad id="154" back="false"/>
+		<point x="843" y="918" />
+		<point x="915" y="988" />
+	</line_section>
+	<line_section from="Opernhaus" to="Kreuzstrasse" direction="undirected">
+		<onroad id="155" back="false"/>
+		<point x="915" y="988" />
+		<point x="950" y="1023" />
+	</line_section>
+	<line_section from="Kreuzstrasse" to="Feldeggstrasse" direction="undirected">
+		<onroad id="156" back="false"/>
+		<point x="950" y="1023" />
+		<point x="990" y="1063" />
+	</line_section>
+	<line_section from="Feldeggstrasse" to="Hoeschgasse" direction="undirected">
+		<onroad id="157" back="false"/>
+		<point x="990" y="1063" />
+		<point x="1030" y="1103" />
+	</line_section>
+	<line_section from="Hoeschgasse" to="Froehlichstrasse" direction="undirected">
+		<onroad id="158" back="false"/>
+		<point x="1030" y="1103" />
+		<point x="1065" y="1138" />
+	</line_section>
+	<line_section from="Froehlichstrasse" to="Wildbachstrasse" direction="undirected">
+		<onroad id="159" back="false"/>
+		<point x="1065" y="1138" />
+		<point x="1080" y="1153" />
+		<point x="1080" y="1198" />
+	</line_section>
+	<line_section from="Wildbachstrasse" to="Bahnhof Tiefenbrunnen" direction="undirected">
+		<onroad id="160" back="false"/>
+		<point x="1080" y="1198" />
+		<point x="1080" y="1253" /> 
+	</line_section>
+</line>
+
+<line name="3" type="tram">
+	<color red="0" green="153" blue="0"/> 
+	 
+	<line_section from="Albisrieden" to="Fellenbergstrasse" direction="undirected">
+		<onroad id="161" back="false"/>
+		<point x="25" y="733"/> 
+		<point x="70" y="688"/> 
+	</line_section>
+	<line_section from="Fellenbergstrasse" to="Siemens" direction="undirected">
+		<onroad id="162" back="false"/>
+		<point x="70" y="688"/> 
+		<point x="120" y="638"/> 
+	</line_section>
+	<line_section from="Siemens" to="Hubertus" direction="undirected">
+		<onroad id="163" back="false"/>
+		<point x="120" y="638"/> 
+		<point x="140" y="618"/> 
+		<point x="170" y="648"/> 
+	</line_section>
+	<line_section from="Hubertus" to="Krematorium Sihlfeld" direction="undirected">
+		<onroad id="164" back="false"/>
+		<point x="170" y="648"/> 
+		<point x="245" y="648"/> 
+	</line_section>
+	<line_section from="Krematorium Sihlfeld" to="Albisriederplatz" direction="undirected">
+		<onroad id="165" back="false"/>
+		<point x="245" y="648"/>
+		<point x="285" y="648"/> 
+		<point x="300" y="663"/> 
+	</line_section>
+	<line_section from="Albisriederplatz" to="Zypressenstrasse" direction="undirected">
+		<onroad id="166" back="false"/>
+		<point x="300" y="663"/> 
+		<point x="325" y="688"/> 
+	</line_section>
+	<line_section from="Zypressenstrasse" to="Lochergut" direction="undirected">
+		<onroad id="167" back="false"/>
+		<point x="325" y="688"/> 
+		<point x="355" y="718"/> 
+	</line_section>
+	<line_section from="Lochergut" to="Kalkbreite" direction="undirected">
+		<onroad id="168" back="false"/>
+		<point x="355" y="718"/>
+		<point x="370" y="733"/> 
+		<point x="420" y="733"/> 
+	</line_section>
+	<line_section from="Kalkbreite" to="Bezirksgebaeude" direction="undirected">
+		<onroad id="169" back="false"/>
+		<point x="420" y="733"/> 
+		<point x="490" y="733"/> 
+	</line_section>
+	<line_section from="Bezirksgebaeude" to="Stauffacher" direction="undirected">
+		<onroad id="170" back="false"/>
+		<point x="490" y="733"/> 
+		<point x="550" y="733"/> 
+	</line_section>
+	<line_section from="Stauffacher" to="Kaserne" direction="undirected">
+		<onroad id="39" back="true"/>
+		<point x="550" y="733"/>
+		<point x="555" y="733"/>
+		<point x="595" y="693"/> 
+	</line_section>
+	<line_section from="Kaserne" to="Loewenplatz" direction="undirected">
+		<onroad id="38" back="true"/>
+		<point x="595" y="693"/> 
+		<point x="638" y="693"/> 
+	</line_section>
+	<line_section from="Loewenplatz" to="Hauptbahnhof" direction="undirected">
+		<onroad id="37" back="true"/>
+		<point x="638" y="693"/> 
+		<point x="665" y="693"/> 
+	</line_section>
+	<line_section from="Hauptbahnhof" to="Central" direction="undirected">
+		<onroad id="90" back="false"/>
+		<point x="665" y="693"/> 
+		<point x="820" y="693"/> 
+	</line_section>
+	<line_section from="Central" to="Neumarkt" direction="undirected">
+		<onroad id="171" back="false"/>
+		<point x="820" y="693"/> 
+		<point x="875" y="748"/> 
+	</line_section>
+	<line_section from="Neumarkt" to="Kunsthaus" direction="undirected">
+		<onroad id="172" back="false"/>
+		<point x="875" y="748"/> 
+		<point x="940" y="813"/> 
+	</line_section>
+	<line_section from="Kunsthaus" to="Hottingerplatz" direction="undirected">
+		<onroad id="119" back="false"/>
+		<point x="940" y="813"/> 
+		<point x="1005" y="813"/> 
+	</line_section>
+	<line_section from="Hottingerplatz" to="Roemerhof" direction="undirected">
+		<onroad id="120" back="false"/>
+		<point x="1005" y="813"/>
+		<point x="1083" y="813"/> 
+	</line_section>
+	<line_section from="Roemerhof" to="Hoelderlinstrasse" direction="undirected">
+		<onroad id="24" back="false"/>
+		<point x="1083" y="813"/>
+		<point x="1090" y="813"/> 
+		<point x="1122" y="844"/> 
+	</line_section>
+	<line_section from="Hoelderlinstrasse" to="Klusplatz" direction="undirected">
+		<onroad id="25" back="false"/>
+		<point x="1122" y="844"/>
+		<point x="1165" y="888"/> 
+		<point x="1175" y="888"/> 
+	</line_section>
+</line>
+
+<line name="2" type="tram">
+	<color red="245" green="51" blue="51"/> 
+	 
+	<line_section from="Farbhof" to="Bachmattstrasse" direction="undirected"> 
+		<onroad id="173" back="false"/>
+		<point x="30" y="378"/> 
+		<point x="70" y="418"/> 
+	</line_section>
+	<line_section from="Bachmattstrasse" to="Lindenplatz (Altstetten)" direction="undirected">  
+		<onroad id="174" back="false"/>
+		<point x="70" y="418"/> 
+		<point x="110" y="458"/> 
+	</line_section>
+	<line_section from="Lindenplatz (Altstetten)" to="Grimselstrasse" direction="undirected"> 
+		<onroad id="175" back="false"/>
+		<point x="110" y="458"/> 
+		<point x="140" y="488"/> 
+	</line_section>
+	<line_section from="Grimselstrasse" to="Kappeli" direction="undirected"> 
+		<onroad id="176" back="false"/>
+		<point x="140" y="488"/> 
+		<point x="180" y="528"/> 
+	</line_section>
+	<line_section from="Kappeli" to="Freihofstrasse" direction="undirected"> 
+		<onroad id="177" back="false"/>
+		<point x="180" y="528"/> 
+		<point x="215" y="563"/> 
+	</line_section>
+	<line_section from="Freihofstrasse" to="Letzigrund" direction="undirected"> 
+		<onroad id="178" back="false"/>
+		<point x="215" y="563"/> 
+		<point x="260" y="608"/> 
+	</line_section>
+	<line_section from="Letzigrund" to="Albisriederplatz" direction="undirected">
+		<onroad id="179" back="false"/>
+		<point x="260" y="608"/> 
+		<point x="300" y="648"/> 
+	</line_section>
+	<line_section from="Albisriederplatz" to="Zypressenstrasse" direction="undirected"> 
+		<onroad id="166" back="false"/>
+		<point x="300" y="648"/> 
+		<point x="325" y="673"/> 
+	</line_section>
+	<line_section from="Zypressenstrasse" to="Lochergut" direction="undirected"> 
+		<onroad id="167" back="false"/>
+		<point x="325" y="673"/> 
+		<point x="370" y="718"/> 
+	</line_section>
+	<line_section from="Lochergut" to="Kalkbreite" direction="undirected">
+		<onroad id="168" back="false"/>
+		<point x="370" y="718"/> 
+		<point x="375" y="723"/> 
+		<point x="420" y="723"/> 
+	</line_section>
+	<line_section from="Kalkbreite" to="Bezirksgebaeude" direction="undirected">
+		<onroad id="169" back="false"/>
+		<point x="420" y="723"/> 
+		<point x="490" y="723"/> 
+	</line_section>
+	<line_section from="Bezirksgebaeude" to="Stauffacher" direction="undirected"> 
+		<onroad id="170" back="false"/>
+		<point x="490" y="723"/> 
+		<point x="550" y="723"/> 
+	</line_section>
+	<line_section from="Stauffacher" to="Sihlstrasse" direction="undirected"> 
+		<onroad id="100" back="false"/>
+		<point x="550" y="738"/> 
+		<point x="635" y="823"/> 
+	</line_section>
+	<line_section from="Sihlstrasse" to="Paradeplatz" direction="undirected"> 
+		<onroad id="101" back="false"/>
+		<point x="635" y="823"/> 
+		<point x="660" y="848"/> 
+	</line_section>
+	<line_section from="Paradeplatz" to="Boersenstrasse" direction="undirected"> 
+		<onroad id="84" back="true"/>
+		<point x="660" y="878"/> 
+		<point x="695" y="913"/> 
+	</line_section>
+	<line_section from="Boersenstrasse" to="Buerkliplatz" direction="undirected">
+		<onroad id="83" back="true"/>
+		<point x="695" y="913"/>    
+		<point x="730" y="948"/> 
+		<point x="750" y="948"/> 
+	</line_section>
+	<line_section from="Buerkliplatz" to="Bellevue" direction="undirected"> 
+		<onroad id="82" back="true"/>
+		<point x="750" y="948"/> 
+		<point x="843" y="948"/> 
+	</line_section>
+	<line_section from="Bellevue" to="Opernhaus" direction="undirected"> 
+		<onroad id="154" back="false"/>
+		<point x="843" y="948"/> 
+		<point x="860" y="948"/>
+		<point x="900" y="988"/> 
+	</line_section>
+	<line_section from="Opernhaus" to="Kreuzstrasse" direction="undirected"> 
+		<onroad id="155" back="false"/>
+		<point x="900" y="988"/> 
+		<point x="935" y="1023"/> 
+	</line_section>
+	<line_section from="Kreuzstrasse" to="Feldeggstrasse" direction="undirected"> 
+		<onroad id="156" back="false"/>
+		<point x="935" y="1023"/> 
+		<point x="975" y="1063"/> 
+	</line_section>
+	<line_section from="Feldeggstrasse" to="Hoeschgasse" direction="undirected"> 
+		<onroad id="157" back="false"/>
+		<point x="975" y="1063"/> 
+		<point x="1015" y="1103"/> 
+	</line_section>
+	<line_section from="Hoeschgasse" to="Froehlichstrasse" direction="undirected"> 
+		<onroad id="158" back="false"/>
+		<point x="1015" y="1103"/> 
+		<point x="1050" y="1138"/> 
+	</line_section>
+	<line_section from="Froehlichstrasse" to="Wildbachstrasse" direction="undirected"> 
+		<onroad id="159" back="false"/>
+		<point x="1050" y="1138"/> 
+		<point x="1070" y="1158"/> 
+		<point x="1070" y="1198"/> 
+	</line_section>
+	<line_section from="Wildbachstrasse" to="Bahnhof Tiefenbrunnen" direction="undirected"> 
+		<onroad id="160" back="false"/>
+		<point x="1070" y="1198"/> 
+		<point x="1070" y="1253"/> 
+	</line_section>
+</line>
+
+
+<!-- bus lines -->
+
+<line name="89" type="bus">
+		<color red="153" green="204" blue="255"/>
+	 
+	<line_section from="Brunaupark" to="Laubegg" direction="undirected">
+		<onroad id="180" back="false"/>
+		<point x="358" y="1078"/>
+		<point x="319" y="1117"/>
+	</line_section>
+	<line_section from="Laubegg" to="Uetlihof" direction="undirected">
+		<onroad id="71" back="false"/>
+		<point x="319" y="1117"/>
+		<point x="278" y="1158"/>
+	</line_section>
+	<line_section from="Uetlihof" to="Strassenverkehrsamt" direction="undirected">
+		<onroad id="72" back="false"/>
+		<point x="278" y="1158"/>
+		<point x="224" y="1212"/>
+	</line_section>
+	<line_section from="Strassenverkehrsamt" to="Hegianwandweg" direction="undirected">
+		<onroad id="181" back="false"/>
+		<point x="224" y="1212"/>
+		<point x="177" y="1165"/>
+	</line_section>
+	<line_section from="Hegianwandweg" to="Im Hagacker" direction="undirected">
+		<onroad id="182" back="false"/>
+		<point x="177" y="1165"/>
+		<point x="149" y="1137"/>
+		<point x="149" y="1092"/>
+	</line_section>
+	<line_section from="Im Hagacker" to="Friesenbergstrasse" direction="undirected">
+		<onroad id="183" back="false"/>
+		<point x="149" y="1092"/>
+		<point x="149" y="1014"/>
+	</line_section>
+	<line_section from="Friesenbergstrasse" to="Schweighof SZU" direction="undirected">
+		<onroad id="184" back="false"/>
+		<point x="149" y="1014"/>
+		<point x="149" y="947"/>
+	</line_section>
+	<line_section from="Schweighof SZU" to="Schaufelbergerstrasse" direction="undirected">
+		<onroad id="185" back="false"/>
+		<point x="149" y="947"/>
+		<point x="149" y="820"/>
+	</line_section>
+	<line_section from="Schaufelbergerstrasse" to="Im Gut" direction="undirected">
+		<onroad id="186" back="false"/>
+		<point x="149" y="820"/>
+		<point x="149" y="776"/>
+		<point x="185" y="740"/>
+	</line_section>
+	<line_section from="Im Gut" to="Hubertus" direction="undirected">
+		<onroad id="187" back="false"/>
+		<point x="185" y="740"/>
+		<point x="212" y="713"/>
+		<point x="160" y="661"/>
+	</line_section>
+	<line_section from="Hubertus" to="Albisrank" direction="undirected">
+		<onroad id="188" back="false"/>
+		<point x="160" y="661"/>
+		<point x="93" y="594"/>
+	</line_section>
+	<line_section from="Albisrank" to="Flurstrasse" direction="undirected">
+		<onroad id="189" back="false"/>
+		<point x="93" y="594"/>
+		<point x="73" y="574"/>
+		<point x="99" y="548"/>
+	</line_section>
+	<line_section from="Flurstrasse" to="Kappeli" direction="undirected">
+		<onroad id="190" back="false"/>
+		<point x="99" y="548"/>
+		<point x="137" y="510"/>
+		<point x="169" y="512"/>
+	</line_section>
+	<line_section from="Kappeli" to="Letzipark" direction="undirected">
+		<onroad id="191" back="false"/>
+		<point x="169" y="512"/>
+		<point x="197" y="512"/>
+	</line_section>
+	<line_section from="Letzipark" to="Baslerstrasse" direction="undirected">
+		<onroad id="192" back="false"/>
+		<point x="197" y="512"/>
+		<point x="197" y="486"/>
+		<point x="165" y="454"/>
+	</line_section>
+	<line_section from="Baslerstrasse" to="Bristenstrasse" direction="undirected">
+		<onroad id="193" back="false"/>
+		<point x="165" y="454"/>
+		<point x="138" y="427"/>
+		<point x="159" y="406"/>
+	</line_section>
+	<line_section from="Bristenstrasse" to="Bahnhof Altstetten" direction="undirected">
+		<onroad id="194" back="false"/>
+		<point x="159" y="406"/>
+		<point x="189" y="376"/>
+		<point x="202" y="389"/>
+	</line_section>
+	<line_section from="Bahnhof Altstetten" to="Tueffenwies" direction="undirected">
+		<onroad id="195" back="false"/>
+		<point x="202" y="389"/>
+		<point x="237" y="424"/>
+		<point x="357" y="304"/>
+		<point x="357" y="291"/>
+	</line_section>
+	<line_section from="Tueffenwies" to="Winzerhalde" direction="undirected">
+		<onroad id="196" back="false"/>
+		<point x="357" y="291"/>
+		<point x="357" y="192"/>
+		<point x="339" y="176"/>				
+	</line_section>
+	<line_section from="Winzerhalde" to="Hohenklingensteig" direction="undirected">
+		<onroad id="197" back="false"/>
+		<point x="339" y="176"/>
+		<point x="319" y="156"/>
+		<point x="319" y="144"/>
+	</line_section>
+	<line_section from="Hohenklingensteig" to="Winzerstrasse" direction="undirected">
+		<onroad id="198" back="false"/>
+		<point x="319" y="144"/>
+		<point x="319" y="73"/>
+	</line_section>
+	<line_section from="Winzerstrasse" to="Frankental" direction="undirected">
+		<onroad id="47" back="true"/>
+		<point x="319" y="76"/>
+		<point x="272" y="23"/>
+	</line_section>
+</line>
+<line name="80" type="bus">
+		<color red="153" green="204" blue="255"/>
+	 
+	<line_section from="Triemlispital" to="Triemli" direction="undirected">
+		<onroad id="199" back="false"/>
+		<point x="98" y="923"/>
+		<point x="98" y="834"/>
+	</line_section>
+	<line_section from="Triemli" to="In der Ey" direction="undirected">
+		<onroad id="200" back="false"/>
+		<point x="98" y="834"/>
+		<point x="59" y="795"/>
+	</line_section>
+	<line_section from="In der Ey" to="Goldackerweg" direction="undirected">
+		<onroad id="201" back="false"/>
+		<point x="59" y="795"/>
+		<point x="31" y="767"/>
+	</line_section>
+	<line_section from="Goldackerweg" to="Albisrieden" direction="undirected">
+		<onroad id="202" back="false"/>
+		<point x="31" y="767"/>
+		<point x="7" y="743"/>
+	</line_section>
+	<line_section from="Albisrieden" to="Albisriederdoerfli" direction="undirected">
+		<onroad id="203" back="false"/>
+		<point x="7" y="743"/>
+		<point x="7" y="684"/>
+	</line_section>
+	<line_section from="Albisriederdoerfli" to="Untermoosstrasse" direction="undirected">
+		<onroad id="204" back="false"/>
+		<point x="7" y="684"/>
+		<point x="7" y="624"/>
+	</line_section>
+	<line_section from="Untermoosstrasse" to="Rautistrasse" direction="undirected">
+		<onroad id="205" back="false"/>
+		<point x="7" y="624"/>
+		<point x="7" y="548"/>
+	</line_section>
+	<line_section from="Rautistrasse" to="Lindenplatz (Altstetten)" direction="undirected">
+		<onroad id="206" back="false"/>
+		<point x="7" y="548"/>
+		<point x="99" y="456"/>
+	</line_section>
+	<line_section from="Lindenplatz (Altstetten)" to="Bristenstrasse" direction="undirected">
+		<onroad id="207" back="false"/>
+		<point x="99" y="456"/>
+		<point x="153" y="402"/>
+	</line_section>
+	<line_section from="Bristenstrasse" to="Bahnhof Altstetten" direction="undirected">
+		<onroad id="194" back="false"/>
+		<point x="153" y="402"/>
+		<point x="189" y="366"/>
+		<point x="209" y="386"/>
+	</line_section>
+	<line_section from="Bahnhof Altstetten" to="Tueffenwies" direction="undirected">
+		<onroad id="195" back="false"/>
+		<point x="209" y="386"/>
+		<point x="237" y="413"/>
+		<point x="351" y="299"/>			
+	</line_section>
+	<line_section from="Tueffenwies" to="Winzerhalde" direction="undirected">
+		<onroad id="196" back="false"/>
+		<point x="351" y="299"/>
+		<point x="351" y="199"/>
+		<point x="333" y="181"/>
+	</line_section>
+	<line_section from="Winzerhalde" to="Hohenklingensteig" direction="undirected">
+		<onroad id="197" back="false"/>
+		<point x="333" y="181"/>
+		<point x="312" y="160"/>
+		<point x="312" y="144"/>
+	</line_section>
+	<line_section from="Hohenklingensteig" to="Winzerstrasse" direction="undirected">
+		<onroad id="198" back="false"/>
+		<point x="312" y="144"/>
+		<point x="311" y="111"/>
+		<point x="332" y="90"/>
+	</line_section>
+	<line_section from="Winzerstrasse" to="Wartau" direction="undirected">
+		<onroad id="48" back="false"/>
+		<point x="332" y="90"/>
+		<point x="360" y="118"/>
+	</line_section>
+	<line_section from="Wartau" to="Zwielplatz" direction="undirected">
+		<onroad id="49" back="false"/>
+		<point x="360" y="118"/>
+		<point x="403" y="118"/>
+	</line_section>
+	<line_section from="Zwielplatz" to="Meierhofplatz" direction="undirected">
+		<onroad id="50" back="false"/>
+		<point x="403" y="118"/>
+		<point x="458" y="118"/>
+	</line_section>
+	<line_section from="Meierhofplatz" to="Hoenggerberg" direction="undirected">
+		<onroad id="208" back="false"/>
+		<point x="458" y="118"/>
+		<point x="497" y="118"/>
+		<point x="529" y="86"/>
+	</line_section>
+	<line_section from="Hoenggerberg" to="ETH Hoenggerberg" direction="undirected">
+		<onroad id="209" back="false"/>
+		<point x="529" y="86"/>
+		<point x="529" y="34"/>
+	</line_section>
+	<line_section from="ETH Hoenggerberg" to="Lerchenhalde" direction="undirected">
+		<onroad id="210" back="false"/>
+		<point x="529" y="34"/>
+		<point x="529" y="0"/>
+	</line_section>
+</line>
+
+<line name="72" type="bus">
+		<color red="153" green="204" blue="255"/>
+	 
+	<line_section from="Triemli" to="In der Ey" direction="undirected">
+		<onroad id="200" back="false"/>
+		<point x="99" y="818"/>
+		<point x="65" y="784"/>
+	</line_section>
+	<line_section from="In der Ey" to="Schulhaus Altweg" direction="undirected">
+		<onroad id="211" back="false"/>
+		<point x="65" y="784"/>
+		<point x="52" y="771"/>
+		<point x="73" y="750"/>
+	</line_section>
+	<line_section from="Schulhaus Altweg" to="Sackzelg" direction="undirected">
+		<onroad id="212" back="false"/>
+		<point x="73" y="750"/>
+		<point x="98" y="725"/>
+	</line_section>
+	<line_section from="Sackzelg" to="Hubertus" direction="undirected">
+		<onroad id="213" back="false"/>
+		<point x="98" y="725"/>
+		<point x="166" y="657"/>
+	</line_section>
+	<line_section from="Hubertus" to="Krematorium Sihlfeld" direction="undirected">
+		<onroad id="164" back="false"/>
+		<point x="166" y="657"/>
+		<point x="240" y="657"/>
+	</line_section>
+	<line_section from="Krematorium Sihlfeld" to="Albisriederplatz" direction="undirected">
+		<onroad id="165" back="false"/>
+		<point x="240" y="657"/>
+		<point x="279" y="657"/>
+	</line_section>
+	<line_section from="Albisriederplatz" to="Hardplatz" direction="undirected">
+		<onroad id="214" back="false"/>
+		<point x="279" y="657"/>
+		<point x="382" y="554"/>
+	</line_section>
+	<line_section from="Hardplatz" to="Bahnhof Hardbruecke" direction="undirected">
+		<onroad id="215" back="false"/>
+		<point x="382" y="554"/>
+		<point x="407" y="529"/>
+	</line_section>
+	<line_section from="Bahnhof Hardbruecke" to="Pfingstweidstrasse" direction="undirected">
+		<onroad id="216" back="false"/>
+		<point x="407" y="529"/>
+		<point x="434" y="502"/>
+	</line_section>
+	<line_section from="Pfingstweidstrasse" to="Escher-Wyss-Platz" direction="undirected">
+		<onroad id="217" back="false"/>
+		<point x="434" y="502"/>
+		<point x="512" y="424"/>
+	</line_section>
+	<line_section from="Escher-Wyss-Platz" to="Rosengartenstrasse" direction="undirected">
+		<onroad id="218" back="false"/>
+		<point x="512" y="424"/>
+		<point x="630" y="306"/>
+	</line_section>
+	<line_section from="Rosengartenstrasse" to="Bucheggplatz" direction="undirected">
+		<onroad id="219" back="false"/>
+		<point x="630" y="306"/>
+		<point x="649" y="287"/>
+		<point x="723" y="287"/>
+	</line_section>
+	<line_section from="Bucheggplatz" to="Milchbuck" direction="undirected">
+		<onroad id="220" back="false"/>
+		<point x="723" y="287"/>
+		<point x="821" y="287"/>
+	</line_section>
+</line>
+
+<line name="69" type="bus">
+		<color red="153" green="204" blue="255"/>
+	 
+	<line_section from="Milchbuck" to="Bucheggplatz" direction="undirected">
+		<onroad id="220" back="true"/>
+		<point x="808" y="272"/>
+		<point x="728" y="272"/>
+	</line_section>
+	<line_section from="Bucheggplatz" to="Weihersteig" direction="undirected">
+		<onroad id="221" back="false"/>
+		<point x="728" y="272"/>
+		<point x="703" y="272"/>
+		<point x="664" y="233"/>
+	</line_section>
+	<line_section from="Weihersteig" to="Waidspital" direction="undirected">
+		<onroad id="222" back="false"/>
+		<point x="664" y="233"/>
+		<point x="637" y="206"/>
+	</line_section>
+	<line_section from="Waidspital" to="Krankenheim Kaeferberg" direction="undirected">
+		<onroad id="223" back="false"/>
+		<point x="637" y="206"/>
+		<point x="613" y="182"/>
+	</line_section>
+	<line_section from="Krankenheim Kaeferberg" to="Waidbadstrasse" direction="undirected">
+		<onroad id="224" back="false"/>
+		<point x="613" y="182"/>
+		<point x="587" y="156"/>
+	</line_section>
+	<line_section from="Waidbadstrasse" to="Im Wingert" direction="undirected">
+		<onroad id="225" back="false"/>
+		<point x="587" y="156"/>
+		<point x="551" y="120"/>
+	</line_section>
+	<line_section from="Im Wingert" to="Hoenggerberg" direction="undirected">
+		<onroad id="226" back="false"/>
+		<point x="551" y="120"/>
+		<point x="541" y="110"/>
+		<point x="541" y="80"/>
+	</line_section>
+	<line_section from="Hoenggerberg" to="ETH Hoenggerberg" direction="undirected">
+		<onroad id="209" back="false"/>
+		<point x="541" y="80"/>
+		<point x="541" y="35"/>
+	</line_section>
+</line>
+
+<line name="67" type="bus">
+		<color red="153" green="204" blue="255"/>
+	 
+	<line_section from="Schmiede Wiedikon" to="Goldbrunnenplatz" direction="undirected">
+		<onroad id="42" back="false"/>
+		<point x="387" y="817"/>
+		<point x="325" y="817"/>
+	</line_section>
+	<line_section from="Goldbrunnenplatz" to="Gutstrasse" direction="undirected">
+		<onroad id="227" back="false"/>
+		<point x="325" y="817"/>
+		<point x="299" y="817"/>
+		<point x="251" y="769"/>
+	</line_section>
+	<line_section from="Gutstrasse" to="Im Gut" direction="undirected">
+		<onroad id="228" back="false"/>
+		<point x="251" y="769"/>
+		<point x="236" y="754"/>
+		<point x="191" y="754"/>
+	</line_section>
+	<line_section from="Im Gut" to="Langgruetstrasse" direction="undirected">
+		<onroad id="229" back="false"/>
+		<point x="191" y="754"/>
+		<point x="157" y="754"/>
+	</line_section>
+	<line_section from="Langgruetstrasse" to="Sackzelg" direction="undirected">
+		<onroad id="230" back="false"/>
+		<point x="157" y="754"/>
+		<point x="124" y="754"/>
+		<point x="103" y="733"/>
+	</line_section>
+	<line_section from="Sackzelg" to="Fellenbergstrasse" direction="undirected">
+		<onroad id="231" back="false"/>
+		<point x="103" y="733"/>
+		<point x="62" y="692"/>
+	</line_section>
+	<line_section from="Fellenbergstrasse" to="Albisriederdoerfli" direction="undirected">
+		<onroad id="232" back="false"/>
+		<point x="62" y="692"/>
+		<point x="12" y="692"/>
+	</line_section>
+	<line_section from="Albisriederdoerfli" to="Untermoosstrasse" direction="undirected">
+		<onroad id="204" back="false"/>
+		<point x="12" y="692"/>
+		<point x="12" y="632"/>
+	</line_section>
+	<line_section from="Untermoosstrasse" to="Rautistrasse" direction="undirected">
+		<onroad id="205" back="false"/>
+		<point x="12" y="632"/>
+		<point x="12" y="558"/>
+	</line_section>
+</line>
+
+<line name="66" type="bus">
+		<color red="153" green="204" blue="255"/>
+	 
+	<line_section from="Widmerstrasse" to="Kalchbuehlweg" direction="undirected">
+		<onroad id="233" back="false"/>
+		<point x="510" y="1427"/>
+		<point x="510" y="1378"/>
+	</line_section>
+	<line_section from="Kalchbuehlweg" to="Morgental" direction="undirected">
+		<onroad id="234" back="false"/>
+		<point x="510" y="1378"/>
+		<point x="510" y="1323"/>
+	</line_section>
+	<line_section from="Morgental" to="Jugendherberge" direction="undirected">
+		<onroad id="235" back="false"/>
+		<point x="510" y="1323"/>
+		<point x="510" y="1247"/>
+	</line_section>
+	<line_section from="Jugendherberge" to="Thujastrasse" direction="undirected">
+		<onroad id="236" back="false"/>
+		<point x="510" y="1247"/>
+		<point x="510" y="1189"/>
+	</line_section>
+	<line_section from="Thujastrasse" to="Brunau-/Mutschellenstrasse" direction="undirected">
+		<onroad id="237" back="false"/>
+		<point x="510" y="1189"/>
+		<point x="510" y="1129"/>
+	</line_section>
+	<line_section from="Brunau-/Mutschellenstrasse" to="Huegelstrasse" direction="undirected">
+		<onroad id="238" back="false"/>
+		<point x="510" y="1129"/>
+		<point x="510" y="1073"/>
+	</line_section>
+	<line_section from="Huegelstrasse" to="Waffenplatzstrasse" direction="undirected">
+		<onroad id="239" back="false"/>
+		<point x="510" y="1073"/>
+		<point x="510" y="1027"/>
+	</line_section>
+	<line_section from="Waffenplatzstrasse" to="Parkring" direction="undirected">
+		<onroad id="240" back="false"/>
+		<point x="510" y="1027"/>
+		<point x="510" y="916"/>
+	</line_section>
+	<line_section from="Parkring" to="Brandschenkestrasse" direction="undirected">
+		<onroad id="241" back="false"/>
+		<point x="510" y="916"/>
+		<point x="556" y="870"/>
+	</line_section>
+	<line_section from="Brandschenkestrasse" to="Sihlstrasse" direction="undirected">
+		<onroad id="242" back="false"/>
+		<point x="556" y="870"/>
+		<point x="626" y="802"/>
+	</line_section>
+</line>
+
+<line name="62" type="bus">
+		<color red="153" green="204" blue="255"/>
+	 
+	<line_section from="Schwamendingerplatz" to="Friedrichstrasse" direction="undirected">
+		<onroad id="243" back="false"/>
+		<point x="1214" y="127"/>
+		<point x="1179" y="162"/>
+	</line_section>
+	<line_section from="Friedrichstrasse" to="Frohburg" direction="undirected">
+		<onroad id="244" back="false"/>
+		<point x="1179" y="162"/>
+		<point x="1118" y="162"/>
+	</line_section>
+	<line_section from="Frohburg" to="Waldgarten" direction="undirected">
+		<onroad id="245" back="false"/>
+		<point x="1118" y="162"/>
+		<point x="1079" y="162"/>
+		<point x="1063" y="146"/>
+	</line_section>
+	<line_section from="Waldgarten" to="Friedackerstrasse" direction="undirected">
+		<onroad id="246" back="false"/>
+		<point x="1063" y="146"/>
+		<point x="1027" y="110"/>
+	</line_section>
+	<line_section from="Friedackerstrasse" to="Dorflinde" direction="undirected">
+		<onroad id="247" back="false"/>
+		<point x="1027" y="110"/>
+		<point x="1005" y="88"/>
+	</line_section>
+	<line_section from="Dorflinde" to="Sternen Oerlikon" direction="undirected">
+		<onroad id="248" back="false"/>
+		<point x="1005" y="88"/>
+		<point x="981" y="63"/>
+	</line_section>
+	<line_section from="Sternen Oerlikon" to="Bahnhof Oerlikon" direction="undirected">
+		<onroad id="26" back="true"/>
+		<point x="981" y="63"/>
+		<point x="969" y="52"/>
+	</line_section>
+	<line_section from="Bahnhof Oerlikon" to="Regensbergbruecke" direction="undirected">
+		<onroad id="88" back="true"/>
+		<point x="969" y="52"/>
+		<point x="871" y="52"/>
+		<point x="854" y="69"/>
+	</line_section>
+	<line_section from="Regensbergbruecke" to="Oberwiesenstrasse" direction="undirected">
+		<onroad id="249" back="false"/>
+		<point x="854" y="69"/>
+		<point x="786" y="1"/>
+	</line_section>
+</line>
+
+<line name="46" type="bus">
+		<color red="153" green="204" blue="255"/>
+	 
+	<line_section from="Hauptbahnhof" to="Stampfenbachplatz" direction="undirected">
+		<onroad id="36" back="true"/>
+		<point x="715" y="598"/>
+		<point x="780" y="533"/>
+	</line_section>
+	<line_section from="Stampfenbachplatz" to="Nordstrasse" direction="undirected">
+		<onroad id="250" back="false"/>
+		<point x="780" y="533"/>
+		<point x="675" y="428"/>
+	</line_section>
+	<line_section from="Nordstrasse" to="Lettenstrasse" direction="undirected">
+		<onroad id="251" back="false"/>
+		<point x="675" y="428"/>
+		<point x="659" y="412"/>
+		<point x="659" y="390"/>
+	</line_section>
+	<line_section from="Lettenstrasse" to="Bahnhof Wipkingen" direction="undirected">
+		<onroad id="252" back="false"/>
+		<point x="659" y="390"/>
+		<point x="659" y="329"/>
+	</line_section>
+	<line_section from="Bahnhof Wipkingen" to="Rosengartenstrasse" direction="undirected">
+		<onroad id="253" back="false"/>
+		<point x="659" y="329"/>
+		<point x="629" y="299"/>
+	</line_section>
+	<line_section from="Rosengartenstrasse" to="Lehenstrasse" direction="undirected">
+		<onroad id="254" back="false"/>
+		<point x="629" y="299"/>
+		<point x="597" y="267"/>
+	</line_section>
+	<line_section from="Lehenstrasse" to="Rebbergsteig" direction="undirected">
+		<onroad id="255" back="false"/>
+		<point x="597" y="267"/>
+		<point x="559" y="229"/>
+	</line_section>
+	<line_section from="Rebbergsteig" to="Kempfhofsteig" direction="undirected">
+		<onroad id="256" back="false"/>
+		<point x="559" y="229"/>
+		<point x="533" y="203"/>
+	</line_section>
+	<line_section from="Kempfhofsteig" to="Schwert" direction="undirected">
+		<onroad id="257" back="false"/>
+		<point x="533" y="203"/>
+		<point x="486" y="156"/>
+	</line_section>
+	<line_section from="Schwert" to="Meierhofplatz" direction="undirected">
+		<onroad id="51" back="true"/>
+		<point x="486" y="156"/>
+		<point x="451" y="121"/>
+	</line_section>
+</line>
+
+<line name="39" type="bus">
+		<color red="153" green="204" blue="255"/>
+	 
+	<line_section from="Im Kloesterli" to="Klosterweg" direction="undirected">
+		<onroad id="258" back="false"/>
+		<point x="1332" y="465"/>
+		<point x="1306" y="491"/>
+	</line_section>
+	<line_section from="Klosterweg" to="Zoo" direction="undirected">
+		<onroad id="259" back="false"/>
+		<point x="1306" y="491"/>
+		<point x="1280" y="517"/>
+	</line_section>
+	<line_section from="Zoo" to="Flobotstrasse" direction="undirected">
+		<onroad id="260" back="false"/>
+		<point x="1280" y="517"/>
+		<point x="1268" y="517"/>
+		<point x="1248" y="497"/>
+	</line_section>
+	<line_section from="Flobotstrasse" to="Heubeeriweg" direction="undirected">
+		<onroad id="261" back="false"/>
+		<point x="1248" y="497"/>
+		<point x="1215" y="464"/>
+	</line_section>
+	<line_section from="Heubeeriweg" to="Kroenleinstrasse" direction="undirected">
+		<onroad id="262" back="false"/>
+		<point x="1215" y="464"/>
+		<point x="1185" y="434"/>
+	</line_section>
+	<line_section from="Kroenleinstrasse" to="Spyristeig" direction="undirected">
+		<onroad id="263" back="false"/>
+		<point x="1185" y="434"/>
+		<point x="1153" y="402"/>
+	</line_section>
+	<line_section from="Spyristeig" to="Rigiblick" direction="undirected">
+		<onroad id="264" back="false"/>
+		<point x="1153" y="402"/>
+		<point x="1132" y="381"/>
+		<point x="1115" y="381"/>
+	</line_section>
+	<line_section from="Rigiblick" to="Germaniastrasse" direction="undirected">
+		<onroad id="5" back="true"/>
+		<point x="1115" y="381"/>
+		<point x="1077" y="381"/>
+	</line_section>
+	<line_section from="Germaniastrasse" to="Schaeppiweg" direction="undirected">
+		<onroad id="265" back="false"/>
+		<point x="1077" y="381"/>
+		<point x="1064" y="381"/>
+		<point x="1039" y="356"/>
+	</line_section>
+	<line_section from="Schaeppiweg" to="Langensteinenstrasse" direction="undirected">
+		<onroad id="266" back="false"/>
+		<point x="1039" y="356"/>
+		<point x="1012" y="329"/>
+	</line_section>
+	<line_section from="Langensteinenstrasse" to="Letzistrasse" direction="undirected">
+		<onroad id="267" back="false"/>
+		<point x="1012" y="329"/>
+		<point x="996" y="313"/>
+		<point x="971" y="338"/>
+	</line_section>
+	<line_section from="Letzistrasse" to="Irchel" direction="undirected">
+		<onroad id="268" back="false"/>
+		<point x="971" y="338"/>
+		<point x="919" y="286"/>
+	</line_section>
+</line>
+
+<line name="33" type="bus">
+		<color red="153" green="204" blue="255"/>
+	 
+	<line_section from="Morgental" to="Jugendherberge" direction="undirected">
+		<onroad id="235" back="false"/>
+		<point x="497" y="1311"/>
+		<point x="497" y="1248"/>
+	</line_section>
+	<line_section from="Jugendherberge" to="Thujastrasse" direction="undirected">
+		<onroad id="236" back="false"/>
+		<point x="497" y="1248"/>
+		<point x="497" y="1188"/>
+	</line_section>
+	<line_section from="Thujastrasse" to="Brunau-/Mutschellenstrasse" direction="undirected">
+		<onroad id="237" back="false"/>
+		<point x="497" y="1188"/>
+		<point x="497" y="1131"/>
+	</line_section>
+	<line_section from="Brunau-/Mutschellenstrasse" to="Huegelstrasse" direction="undirected">
+		<onroad id="238" back="false"/>
+		<point x="497" y="1131"/>
+		<point x="497" y="1072"/>
+	</line_section>
+	<line_section from="Huegelstrasse" to="Waffenplatzstrasse" direction="undirected">
+		<onroad id="239" back="false"/>
+		<point x="497" y="1072"/>
+		<point x="497" y="992"/>
+	</line_section>
+	<line_section from="Waffenplatzstrasse" to="Utobruecke" direction="undirected">
+		<onroad id="68" back="false"/>
+		<point x="497" y="992"/>
+		<point x="456" y="1034"/>
+	</line_section>
+	<line_section from="Utobruecke" to="Manesseplatz" direction="undirected">
+		<onroad id="269" back="false"/>
+		<point x="456" y="1034"/>
+		<point x="388" y="966"/>
+		<point x="388" y="944"/>
+	</line_section>
+	<line_section from="Manesseplatz" to="Schmiede Wiedikon" direction="undirected">
+		<onroad id="270" back="false"/>
+		<point x="388" y="944"/>
+		<point x="388" y="818"/>
+	</line_section>
+	<line_section from="Schmiede Wiedikon" to="Zwinglihaus" direction="undirected">
+		<onroad id="271" back="false"/>
+		<point x="388" y="818"/>
+		<point x="350" y="780"/>
+	</line_section>
+	<line_section from="Zwinglihaus" to="Bertastrasse" direction="undirected">
+		<onroad id="272" back="false"/>
+		<point x="350" y="780"/>
+		<point x="315" y="745"/>
+	</line_section>
+	<line_section from="Bertastrasse" to="Friedhof Sihlfeld" direction="undirected">
+		<onroad id="273" back="false"/>
+		<point x="315" y="745"/>
+		<point x="280" y="710"/>
+	</line_section>
+	<line_section from="Friedhof Sihlfeld" to="Krematorium Sihlfeld" direction="undirected">
+		<onroad id="274" back="false"/>
+		<point x="280" y="710"/>
+		<point x="235" y="665"/>
+	</line_section>
+	<line_section from="Krematorium Sihlfeld" to="Albisriederplatz" direction="undirected">
+		<onroad id="165" back="false"/>
+		<point x="235" y="665"/>
+		<point x="288" y="665"/>
+	</line_section>
+	<line_section from="Albisriederplatz" to="Hardplatz" direction="undirected">
+		<onroad id="214" back="false"/>
+		<point x="288" y="665"/>
+		<point x="394" y="559"/>
+	</line_section>
+	<line_section from="Hardplatz" to="Bahnhof Hardbruecke" direction="undirected">
+		<onroad id="215" back="false"/>
+		<point x="394" y="559"/>
+		<point x="421" y="532"/>
+	</line_section>
+	<line_section from="Bahnhof Hardbruecke" to="Pfingstweidstrasse" direction="undirected">
+		<onroad id="216" back="false"/>
+		<point x="421" y="532"/>
+		<point x="445" y="508"/>
+	</line_section>
+	<line_section from="Pfingstweidstrasse" to="Escher-Wyss-Platz" direction="undirected">
+		<onroad id="217" back="false"/>
+		<point x="445" y="508"/>
+		<point x="525" y="428"/>
+	</line_section>
+	<line_section from="Escher-Wyss-Platz" to="Rosengartenstrasse" direction="undirected">
+		<onroad id="218" back="false"/>
+		<point x="525" y="428"/>
+		<point x="626" y="327"/>
+	</line_section>
+	<line_section from="Rosengartenstrasse" to="Bahnhof Wipkingen" direction="undirected">
+		<onroad id="253" back="true"/>
+		<point x="626" y="327"/>
+		<point x="640" y="341"/>
+	</line_section>
+	<line_section from="Bahnhof Wipkingen" to="Nuerenbergstrasse" direction="undirected">
+		<onroad id="275" back="false"/>
+		<point x="640" y="341"/>
+		<point x="673" y="374"/>
+	</line_section>
+	<line_section from="Nuerenbergstrasse" to="Rotbuchstrasse" direction="undirected">
+		<onroad id="276" back="false"/>
+		<point x="673" y="374"/>
+		<point x="688" y="389"/>
+		<point x="715" y="389"/>
+	</line_section>
+	<line_section from="Rotbuchstrasse" to="Schaffhauserplatz" direction="undirected">
+		<onroad id="277" back="false"/>
+		<point x="715" y="389"/>
+		<point x="815" y="389"/>
+	</line_section>
+	<line_section from="Schaffhauserplatz" to="Scheuchzerstrasse" direction="undirected">
+		<onroad id="278" back="false"/>
+		<point x="815" y="389"/>
+		<point x="903" y="389"/>
+		<point x="908" y="394"/>
+	</line_section>
+	<line_section from="Scheuchzerstrasse" to="Seilbahn Rigiblick" direction="undirected">
+		<onroad id="279" back="false"/>
+		<point x="908" y="394"/>
+		<point x="971" y="457"/>
+	</line_section>
+	<line_section from="Seilbahn Rigiblick" to="Vogelsangstrasse" direction="undirected">
+		<onroad id="280" back="false"/>
+		<point x="971" y="457"/>
+		<point x="1014" y="500"/>
+	</line_section>
+	<line_section from="Vogelsangstrasse" to="Spyriplatz" direction="undirected">
+		<onroad id="281" back="false"/>
+		<point x="1014" y="500"/>
+		<point x="1047" y="533"/>
+	</line_section>
+	<line_section from="Spyriplatz" to="Bethanien" direction="undirected">
+		<onroad id="282" back="false"/>
+		<point x="1047" y="533"/>
+		<point x="1083" y="569"/>
+	</line_section>
+	<line_section from="Bethanien" to="Toblerplatz" direction="undirected">
+		<onroad id="283" back="false"/>
+		<point x="1083" y="569"/>
+		<point x="1133" y="619"/>
+	</line_section>
+	<line_section from="Toblerplatz" to="Kirche Fluntern" direction="undirected">
+		<onroad id="138" back="true"/>
+		<point x="1133" y="619"/>
+		<point x="1100" y="652"/>
+	</line_section>
+	<line_section from="Kirche Fluntern" to="Hofstrasse" direction="undirected">
+		<onroad id="284" back="false"/>
+		<point x="1100" y="652"/>
+		<point x="1126" y="678"/>
+		<point x="1126" y="716"/>
+	</line_section>
+	<line_section from="Hofstrasse" to="Klosbach" direction="undirected">
+		<onroad id="285" back="false"/>
+		<point x="1126" y="716"/>
+		<point x="1126" y="743"/>
+		<point x="1158" y="775"/>
+	</line_section>
+	<line_section from="Klosbach" to="Hoelderlinsteig" direction="undirected">
+		<onroad id="286" back="false"/>
+		<point x="1158" y="775"/>
+		<point x="1166" y="785"/>
+		<point x="1166" y="816"/>				
+	</line_section>
+	<line_section from="Hoelderlinsteig" to="Klusplatz" direction="undirected">
+		<onroad id="287" back="false"/>
+		<point x="1166" y="816"/>
+		<point x="1166" y="913"/>
+	</line_section>
+	<line_section from="Klusplatz" to="Freiestrasse" direction="undirected">
+		<onroad id="288" back="false"/>
+		<point x="1166" y="913"/>
+		<point x="1135" y="944"/>
+	</line_section>
+	<line_section from="Freiestrasse" to="Hegibachplatz" direction="undirected">
+		<onroad id="289" back="false"/>
+		<point x="1135" y="944"/>
+		<point x="1070" y="1009"/>
+	</line_section>
+	<line_section from="Hegibachplatz" to="Botanischer Garten" direction="undirected">
+		<onroad id="290" back="false"/>
+		<point x="1070" y="1009"/>
+		<point x="1070" y="1037"/>
+	</line_section>
+	<line_section from="Botanischer Garten" to="Hoeschgasse" direction="undirected">
+		<onroad id="291" back="false"/>
+		<point x="1070" y="1037"/>
+		<point x="1024" y="1083"/>
+	</line_section>
+	<line_section from="Hoeschgasse" to="Froehlichstrasse" direction="undirected">
+		<onroad id="158" back="false"/>
+		<point x="1024" y="1083"/>
+		<point x="1068" y="1127"/>
+	</line_section>
+	<line_section from="Froehlichstrasse" to="Wildbachstrasse" direction="undirected">
+		<onroad id="159" back="false"/>
+		<point x="1068" y="1127"/>
+		<point x="1090" y="1149"/>
+		<point x="1090" y="1195"/>
+	</line_section>
+	<line_section from="Wildbachstrasse" to="Bahnhof Tiefenbrunnen" direction="undirected">
+		<onroad id="160" back="false"/>
+		<point x="1090" y="1195"/>
+		<point x="1090" y="1249"/>
+	</line_section>
+</line>
+
+<line name="32" type="bus">
+		<color red="153" green="204" blue="255"/>
+	 
+	<line_section from="Strassenverkehrsamt" to="Hegianwandweg" direction="undirected">
+		<onroad id="181" back="false"/>
+		<point x="241" y="1209"/>
+		<point x="195" y="1163"/>
+	</line_section>
+	<line_section from="Hegianwandweg" to="Im Hagacker" direction="undirected">
+		<onroad id="182" back="false"/>
+		<point x="195" y="1163"/>
+		<point x="168" y="1136"/>
+		<point x="168" y="1100"/>
+	</line_section>
+	<line_section from="Im Hagacker" to="Friesenbergstrasse" direction="undirected">
+		<onroad id="183" back="false"/>
+		<point x="168" y="1100"/>
+		<point x="168" y="1023"/>
+	</line_section>
+	<line_section from="Friesenbergstrasse" to="Friesenberg SZU" direction="undirected">
+		<onroad id="292" back="false"/>
+		<point x="168" y="1023"/>
+		<point x="232" y="959"/>
+	</line_section>
+	<line_section from="Friesenberg SZU" to="Hoefliweg" direction="undirected">
+		<onroad id="293" back="false"/>
+		<point x="232" y="959"/>
+		<point x="271" y="920"/>
+	</line_section>
+	<line_section from="Hoefliweg" to="Goldbrunnenplatz" direction="undirected">
+		<onroad id="294" back="false"/>
+		<point x="271" y="920"/>
+		<point x="327" y="864"/>
+		<point x="327" y="815"/>
+	</line_section>
+	<line_section from="Goldbrunnenplatz" to="Zwinglihaus" direction="undirected">
+		<onroad id="295" back="false"/>
+		<point x="327" y="815"/>
+		<point x="355" y="787"/>
+	</line_section>
+	<line_section from="Zwinglihaus" to="Kalkbreite" direction="undirected">
+		<onroad id="296" back="false"/>
+		<point x="355" y="787"/>
+		<point x="415" y="727"/>
+	</line_section>
+	<line_section from="Kalkbreite" to="Kernstrasse" direction="undirected">
+		<onroad id="297" back="false"/>
+		<point x="415" y="727"/>
+		<point x="451" y="691"/>
+	</line_section>
+	<line_section from="Kernstrasse" to="Helvetiaplatz" direction="undirected">
+		<onroad id="298" back="false"/>
+		<point x="451" y="691"/>
+		<point x="482" y="660"/>
+	</line_section>
+	<line_section from="Helvetiaplatz" to="Militaer-/Langstrasse" direction="undirected">
+		<onroad id="299" back="false"/>
+		<point x="482" y="660"/>
+		<point x="513" y="629"/>
+	</line_section>
+	<line_section from="Militaer-/Langstrasse" to="Roentgenstrasse" direction="undirected">
+		<onroad id="300" back="false"/>
+		<point x="513" y="629"/>
+		<point x="533" y="609"/>
+		<point x="533" y="584"/>
+		<point x="554" y="563"/>
+	</line_section>
+	<line_section from="Roentgenstrasse" to="Limmatplatz" direction="undirected">
+		<onroad id="301" back="false"/>
+		<point x="554" y="563"/>
+		<point x="599" y="518"/>
+	</line_section>
+	<line_section from="Limmatplatz" to="Nordstrasse" direction="undirected">
+		<onroad id="302" back="false"/>
+		<point x="599" y="518"/>
+		<point x="679" y="438"/>
+	</line_section>
+	<line_section from="Nordstrasse" to="Rotbuchstrasse" direction="undirected">
+		<onroad id="303" back="false"/>
+		<point x="679" y="438"/>
+		<point x="716" y="401"/>
+	</line_section>
+	<line_section from="Rotbuchstrasse" to="Laegernstrasse" direction="undirected">
+		<onroad id="304" back="false"/>
+		<point x="716" y="401"/>
+		<point x="726" y="391"/>
+		<point x="726" y="370"/>
+	</line_section>
+	<line_section from="Laegernstrasse" to="Bucheggplatz" direction="undirected">
+		<onroad id="305" back="false"/>
+		<point x="726" y="370"/>
+		<point x="726" y="286"/>
+	</line_section>
+	<line_section from="Bucheggplatz" to="Radiostudio" direction="undirected">
+		<onroad id="85" back="false"/>
+		<point x="726" y="286"/>
+		<point x="726" y="189"/>
+	</line_section>
+	<line_section from="Radiostudio" to="Birchdoerfli" direction="undirected">
+		<onroad id="306" back="false"/>
+		<point x="726" y="189"/>
+		<point x="726" y="66"/>
+	</line_section>
+	<line_section from="Birchdoerfli" to="Neu-Affoltern" direction="undirected">
+		<onroad id="307" back="false"/>
+		<point x="726" y="66"/>
+		<point x="726" y="0"/>
+	</line_section>
+</line>
+
+<line name="31" type="bus">
+		<color red="153" green="204" blue="255"/>
+	 
+	<line_section from="Hegibachplatz" to="Signaustrasse" direction="undirected">
+		<onroad id="80" back="false"/>
+		<point x="1087" y="1002"/>
+		<point x="1046" y="961"/>
+	</line_section>
+	<line_section from="Signaustrasse" to="Kreuzplatz" direction="undirected">
+		<onroad id="81" back="false"/>
+		<point x="1046" y="961"/>
+		<point x="1004" y="919"/>
+	</line_section>
+	<line_section from="Kreuzplatz" to="Sprecherstrasse" direction="undirected">
+		<onroad id="308" back="false"/>
+		<point x="1004" y="919"/>
+		<point x="967" y="882"/>
+	</line_section>
+	<line_section from="Sprecherstrasse" to="Kunsthaus" direction="undirected">
+		<onroad id="309" back="false"/>
+		<point x="967" y="882"/>
+		<point x="934" y="849"/>
+		<point x="934" y="816"/>
+	</line_section>
+	<line_section from="Kunsthaus" to="Neumarkt" direction="undirected">
+		<onroad id="172" back="true"/>
+		<point x="934" y="816"/>
+		<point x="880" y="762"/>
+	</line_section>
+	<line_section from="Neumarkt" to="Central" direction="undirected">
+		<onroad id="171" back="true"/>
+		<point x="880" y="762"/>
+		<point x="833" y="715"/>
+	</line_section>
+	<line_section from="Central" to="Hauptbahnhof" direction="undirected">
+		<onroad id="90" back="true"/>
+		<point x="833" y="715"/>
+		<point x="681" y="715"/>
+	</line_section>
+	<line_section from="Hauptbahnhof" to="Loewenplatz" direction="undirected">
+		<onroad id="37" back="false"/>
+		<point x="681" y="715"/>
+		<point x="623" y="715"/>
+	</line_section>
+	<line_section from="Loewenplatz" to="Kaserne" direction="undirected">
+		<onroad id="38" back="false"/>
+		<point x="623" y="715"/>
+		<point x="590" y="682"/>
+	</line_section>
+	<line_section from="Kaserne" to="Kanonengasse" direction="undirected">
+		<onroad id="310" back="false"/>
+		<point x="590" y="682"/>
+		<point x="550" y="642"/>
+	</line_section>
+	<line_section from="Kanonengasse" to="Militaer-/Langstrasse" direction="undirected">
+		<onroad id="311" back="false"/>
+		<point x="550" y="642"/>
+		<point x="537" y="629"/>
+		<point x="513" y="629"/>
+	</line_section>
+	<line_section from="Militaer-/Langstrasse" to="Baeckeranlage" direction="undirected">
+		<onroad id="312" back="false"/>
+		<point x="513" y="629"/>
+		<point x="463" y="629"/>
+	</line_section>
+	<line_section from="Baeckeranlage" to="Gueterbahnhof" direction="undirected">
+		<onroad id="313" back="false"/>
+		<point x="463" y="629"/>
+		<point x="427" y="593"/>
+	</line_section>
+	<line_section from="Gueterbahnhof" to="Hardplatz" direction="undirected">
+		<onroad id="114" back="true"/>
+		<point x="427" y="593"/>
+		<point x="392" y="558"/>
+	</line_section>
+	<line_section from="Hardplatz" to="Herdernstrasse" direction="undirected">
+		<onroad id="314" back="false"/>
+		<point x="392" y="558"/>
+		<point x="356" y="522"/>
+		<point x="334" y="522"/>
+	</line_section>
+	<line_section from="Herdernstrasse" to="SBB-Werkstaette" direction="undirected">
+		<onroad id="315" back="false"/>
+		<point x="334" y="522"/>
+		<point x="313" y="522"/>
+		<point x="294" y="503"/>
+	</line_section>
+	<line_section from="SBB-Werkstaette" to="Letzibeck" direction="undirected">
+		<onroad id="316" back="false"/>
+		<point x="294" y="503"/>
+		<point x="274" y="483"/>
+	</line_section>
+	<line_section from="Letzibeck" to="Luggwegstrasse" direction="undirected">
+		<onroad id="317" back="false"/>
+		<point x="274" y="483"/>
+		<point x="252" y="461"/>
+	</line_section>
+	<line_section from="Luggwegstrasse" to="Bahnhof Altstetten" direction="undirected">
+		<onroad id="318" back="false"/>
+		<point x="252" y="461"/>
+		<point x="197" y="406"/>
+	</line_section>
+	<line_section from="Bahnhof Altstetten" to="Seidelhof" direction="undirected">
+		<onroad id="319" back="false"/>
+		<point x="197" y="406"/>
+		<point x="156" y="365"/>
+		<point x="104" y="365"/>
+	</line_section>
+	<line_section from="Seidelhof" to="Farbhof" direction="undirected">
+		<onroad id="320" back="false"/>
+		<point x="104" y="365"/>
+		<point x="48" y="365"/>
+	</line_section>
+	<line_section from="Farbhof" to="Micafil" direction="undirected">
+		<onroad id="321" back="false"/>
+		<point x="48" y="365"/>
+		<point x="0" y="314"/>
+	</line_section>
+</line> 
+
+
+<!-- s lines -->
+
+<line name="s1" type="rail">
+		<color red="0" green="0" blue="0"/>
+	 
+	<line_section from="Hauptbahnhof" to="Bahnhof Wiedikon" direction="undirected">
+		<onroad id="322" back="false"/>
+		<point x="691" y="599"/>
+		<point x="439" y="599"/>
+		<point x="427" y="600"/>
+		<point x="415" y="605"/>
+		<point x="407" y="614"/>
+		<point x="399" y="626"/>
+		<point x="395" y="641"/>
+		<point x="395" y="722"/>
+		<point x="397" y="727"/>
+		<point x="402" y="734"/>
+		<point x="407" y="740"/>
+		<point x="479" y="812"/>
+	</line_section>
+	<line_section from="Bahnhof Wiedikon" to="Bahnhof Enge" direction="undirected">
+		<onroad id="323" back="false"/>
+		<point x="479" y="812"/>
+		<point x="569" y="902"/>
+		<point x="573" y="910"/>
+		<point x="576" y="920"/>
+		<point x="579" y="939"/>
+		<point x="579" y="998"/>
+	</line_section>
+	<line_section from="Bahnhof Enge" to="Bahnhof Wollishofen" direction="undirected">
+		<onroad id="324" back="false"/>
+		<point x="579" y="998"/>
+		<point x="579" y="1128"/>
+		<point x="578" y="1137"/>
+		<point x="582" y="1146"/>
+		<point x="588" y="1155"/>
+		<point x="596" y="1166"/>
+		<point x="648" y="1218"/>
+		<point x="658" y="1230"/>
+		<point x="661" y="1237"/>
+		<point x="663" y="1247"/>
+	</line_section>
+</line>
+
+<line name="s2" type="rail">
+		<color red="0" green="0" blue="0"/>
+	 
+	<line_section from="Hauptbahnhof" to="Bahnhof Wipkingen" direction="undirected">
+		<onroad id="325" back="false"/>
+		<point x="691" y="598"/>
+		<point x="504" y="598"/>
+		<point x="482" y="591"/>
+		<point x="471" y="584"/>
+		<point x="462" y="572"/>
+		<point x="457" y="559"/>
+		<point x="455" y="546"/>
+		<point x="458" y="532"/>
+		<point x="462" y="521"/>
+		<point x="470" y="514"/>
+		<point x="650" y="334"/>
+	</line_section>
+	<line_section from="Bahnhof Wipkingen" to="Bahnhof Oerlikon" direction="undirected">
+		<onroad id="326" back="false"/>
+		<point x="650" y="334"/>
+		<point x="674" y="310"/>
+		<point x="680" y="299"/>
+		<point x="683" y="279"/>
+		<point x="683" y="200"/>
+		<point x="684" y="183"/>
+		<point x="692" y="169"/>
+		<point x="702" y="158"/>
+		<point x="851" y="9"/>
+		<point x="867" y="5"/>
+		<point x="886" y="4"/>
+		<point x="908" y="4"/>
+	</line_section>
+</line>
+
+<line name="s3" type="rail">
+		<color red="0" green="0" blue="0"/>
+	 
+	<line_section from="Hauptbahnhof" to="Bahnhof Hardbruecke" direction="undirected">
+		<onroad id="327" back="false"/>
+		<point x="693" y="599"/>
+		<point x="505" y="599"/>
+		<point x="495" y="597"/>
+		<point x="473" y="586"/>
+		<point x="463" y="577"/>
+		<point x="411" y="525"/>
+	</line_section>
+	<line_section from="Bahnhof Hardbruecke" to="Bahnhof Altstetten" direction="undirected">
+		<onroad id="328" back="false"/>
+		<point x="411" y="525"/>
+		<point x="238" y="352"/>
+	</line_section>
+</line>
+
+<line name="s4" type="rail">
+		<color red="0" green="0" blue="0"/>
+	 
+	<line_section from="Hauptbahnhof" to="Bahnhof Selnau" direction="undirected">
+		<onroad id="329" back="false"/>
+		<point x="688" y="599"/>
+		<point x="666" y="599"/>
+		<point x="650" y="607"/>
+		<point x="640" y="619"/>
+		<point x="635" y="632"/>
+		<point x="634" y="645"/>
+		<point x="634" y="750"/>
+		<point x="632" y="759"/>
+		<point x="621" y="773"/>
+		<point x="554" y="840"/>
+	</line_section>
+	<line_section from="Bahnhof Selnau" to="Bahnhof Giesshuebel" direction="undirected">
+		<onroad id="330" back="false"/>
+		<point x="554" y="840"/>
+		<point x="411" y="983"/>
+		<point x="399" y="995"/>
+		<point x="391" y="1010"/>
+	</line_section>
+	<line_section from="Bahnhof Giesshuebel" to="Saalsporthalle" direction="undirected">
+		<onroad id="331" back="false"/>
+		<point x="391" y="1010"/>
+		<point x="387" y="1033"/>
+		<point x="392" y="1049"/>
+		<point x="403" y="1063"/>
+		<point x="424" y="1084"/>
+	</line_section>
+	<line_section from="Saalsporthalle" to="Brunau" direction="undirected">
+		<onroad id="332" back="false"/>
+		<point x="424" y="1084"/>
+		<point x="454" y="1114"/>
+		<point x="463" y="1129"/>
+		<point x="463" y="1145"/>
+		<point x="462" y="1161"/>
+		<point x="457" y="1170"/>
+		<point x="447" y="1180"/>
+	</line_section>
+	<line_section from="Brunau" to="Manegg" direction="undirected">
+		<onroad id="333" back="false"/>
+		<point x="447" y="1180"/>
+		<point x="303" y="1324"/>
+		<point x="298" y="1334"/>
+		<point x="293" y="1345"/>
+		<point x="293" y="1365"/>
+	</line_section>
+</line>
+
+<line name="s5" type="rail">
+		<color red="0" green="0" blue="0"/>
+	 
+	<line_section from="Hauptbahnhof" to="Bahnhof Hardbruecke" direction="undirected">
+		<onroad id="327" back="false"/>
+		<point x="692" y="599"/>
+		<point x="503" y="599"/>
+		<point x="480" y="591"/>
+		<point x="469" y="583"/>
+		<point x="459" y="574"/>
+		<point x="410" y="525"/>
+	</line_section>
+	<line_section from="Bahnhof Hardbruecke" to="Bahnhof Oerlikon" direction="undirected">
+		<onroad id="334" back="false"/>
+		<point x="410" y="525"/>
+		<point x="370" y="485"/>
+		<point x="362" y="458"/>
+		<point x="367" y="440"/>
+		<point x="378" y="424"/>
+		<point x="595" y="207"/>
+		<point x="608" y="200"/>
+		<point x="627" y="197"/>
+		<point x="657" y="197"/>
+		<point x="664" y="195"/>
+		<point x="672" y="190"/>
+		<point x="680" y="179"/>
+		<point x="849" y="10"/>
+		<point x="859" y="6"/>
+		<point x="876" y="3"/>
+		<point x="908" y="3"/>
+	</line_section>
+</line>
+
+<line name="s7" type="rail">
+		<color red="0" green="0" blue="0"/>
+	 
+	<line_section from="Hauptbahnhof" to="Bahnhof Stadelhofen" direction="undirected">
+		<onroad id="335" back="false"/>
+		<point x="693" y="600"/>
+		<point x="811" y="600"/>
+		<point x="822" y="602"/>
+		<point x="831" y="606"/>
+		<point x="839" y="611"/>
+		<point x="846" y="619"/>
+		<point x="851" y="631"/>
+		<point x="853" y="641"/>
+		<point x="853" y="648"/>
+		<point x="853" y="864"/>
+		<point x="854" y="870"/>
+		<point x="859" y="876"/>
+		<point x="862" y="883"/>
+		<point x="902" y="923"/>
+	</line_section>
+	<line_section from="Bahnhof Stadelhofen" to="Bahnhof Tiefenbrunnen" direction="undirected">
+		<onroad id="336" back="false"/>
+		<point x="902" y="923"/>
+		<point x="1084" y="1105"/>
+		<point x="1092" y="1116"/>
+		<point x="1097" y="1123"/>
+		<point x="1099" y="1134"/>
+		<point x="1099" y="1248"/>
+	</line_section>
+</line>
+
+<line name="s9" type="rail">
+		<color red="0" green="0" blue="0"/>
+	 
+	<line_section from="Hauptbahnhof" to="Bahnhof Stadelhofen" direction="undirected">
+		<onroad id="335" back="false"/>
+		<point x="693" y="598"/>
+		<point x="812" y="598"/>
+		<point x="828" y="603"/>
+		<point x="838" y="609"/>
+		<point x="846" y="619"/>
+		<point x="851" y="632"/>
+		<point x="855" y="648"/>
+		<point x="855" y="865"/>
+		<point x="858" y="877"/>
+		<point x="865" y="885"/>
+		<point x="874" y="895"/>
+		<point x="882" y="899"/>
+		<point x="900" y="903"/>
+	</line_section>
+	<line_section from="Bahnhof Stadelhofen" to="Bahnhof Stettbach" direction="undirected">
+		<onroad id="337" back="false"/>
+		<point x="900" y="903"/>
+		<point x="1027" y="903"/>
+		<point x="1038" y="900"/>
+		<point x="1051" y="892"/>
+		<point x="1062" y="881"/>
+		<point x="1354" y="589"/>
+		<point x="1360" y="581"/>
+		<point x="1363" y="562"/>
+		<point x="1365" y="542"/>
+		<point x="1365" y="248"/>
+	</line_section>
+</line>
+
+<line name="s10" type="rail">
+		<color red="0" green="0" blue="0"/>
+	 
+	<line_section from="Hauptbahnhof" to="Bahnhof Selnau" direction="undirected">
+		<onroad id="329" back="false"/>
+		<point x="691" y="600"/>
+		<point x="665" y="600"/>
+		<point x="650" y="606"/>
+		<point x="642" y="613"/>
+		<point x="636" y="625"/>
+		<point x="634" y="633"/>
+		<point x="634" y="742"/>
+		<point x="634" y="754"/>
+		<point x="627" y="767"/>
+		<point x="617" y="776"/>
+		<point x="554" y="839"/>
+	</line_section>
+	<line_section from="Bahnhof Selnau" to="Binz SZU" direction="undirected">
+		<onroad id="338" back="false"/>
+		<point x="554" y="839"/>
+		<point x="418" y="975"/>
+		<point x="404" y="985"/>
+		<point x="388" y="988"/>
+		<point x="376" y="986"/>
+		<point x="368" y="985"/>
+		<point x="359" y="981"/>
+	</line_section>
+	<line_section from="Binz SZU" to="Friesenberg SZU" direction="undirected">
+		<onroad id="339" back="false"/>
+		<point x="359" y="981"/>
+		<point x="336" y="958"/>
+		<point x="324" y="950"/>
+		<point x="306" y="945"/>
+		<point x="228" y="945"/>
+	</line_section>
+	<line_section from="Friesenberg SZU" to="Schweighof SZU" direction="undirected">
+		<onroad id="340" back="false"/>
+		<point x="228" y="945"/>
+		<point x="149" y="945"/>
+	</line_section>
+	<line_section from="Schweighof SZU" to="Triemli SZU" direction="undirected">
+		<onroad id="341" back="false"/>
+		<point x="149" y="945"/>
+		<point x="99" y="945"/>
+	</line_section>
+	<line_section from="Triemli SZU" to="Uitikon Waldegg" direction="undirected">
+		<onroad id="342" back="false"/>
+		<point x="99" y="945"/>
+		<point x="81" y="945"/>
+		<point x="65" y="948"/>
+		<point x="55" y="955"/>
+		<point x="46" y="963"/>
+		<point x="41" y="971"/>
+		<point x="37" y="979"/>
+		<point x="35" y="987"/>
+		<point x="35" y="1006"/>
+	</line_section>
+	<line_section from="Uitikon Waldegg" to="Uetliberg" direction="undirected">
+		<onroad id="343" back="false"/>
+		<point x="35" y="1006"/>
+		<point x="35" y="1243"/>
+	</line_section>
+</line>
+
+<line name="s18" type="rail">
+		<color red="0" green="0" blue="0"/>
+	 
+	<line_section from="Hauptbahnhof" to="Bahnhof Stadelhofen" direction="undirected">
+		<onroad id="335" back="false"/>
+		<point x="696" y="598"/>
+		<point x="811" y="597"/>
+		<point x="812" y="597"/>
+		<point x="826" y="602"/>
+		<point x="836" y="608"/>
+		<point x="845" y="616"/>
+		<point x="850" y="628"/>
+		<point x="853" y="640"/>
+		<point x="855" y="657"/>
+		<point x="855" y="859"/>
+		<point x="855" y="869"/>
+		<point x="862" y="881"/>
+		<point x="876" y="897"/>
+		<point x="885" y="905"/>
+		<point x="892" y="910"/>
+		<point x="902" y="911"/>
+	</line_section>
+	<line_section from="Bahnhof Stadelhofen" to="Rehalp" direction="undirected">
+		<onroad id="344" back="false"/>
+		<point x="902" y="911"/>
+		<point x="1003" y="911"/>
+		<point x="1014" y="915"/>
+		<point x="1025" y="920"/>
+		<point x="1030" y="928"/>
+		<point x="1084" y="982"/>
+		<point x="1093" y="986"/>
+		<point x="1099" y="988"/>
+		<point x="1110" y="991"/>
+		<point x="1175" y="991"/>
+		<point x="1185" y="994"/>
+		<point x="1194" y="1000"/>
+		<point x="1198" y="1005"/>
+		<point x="1355" y="1162"/>
+	</line_section>
+
+
+</line>
+
+
+</lines>
+
+</map>
+

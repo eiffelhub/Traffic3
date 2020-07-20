@@ -1,5 +1,5 @@
                             TRAFFIC - City modeling library and applications
-                            Version 3.3
+                            Version 3.4
 
 1. General
 2. Requirements
